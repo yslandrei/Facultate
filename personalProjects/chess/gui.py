@@ -1,4 +1,5 @@
 import pygame as p
+from gameState import gameState
 
 WIDTH = HEIGHT = 720
 DIMENSION = 8
@@ -28,3 +29,19 @@ def drawPieces(screen, board):
             piece = board[r][c]
             if piece != "--":
                 screen.blit(IMAGES[piece], p.Rect(c * SQ_SIZE, r * SQ_SIZE, SQ_SIZE, SQ_SIZE))
+
+def drawGUI():
+    p.init()
+    screen = p.display.set_mode((WIDTH, HEIGHT))
+    clock = p.time.Clock()
+    screen.fill(p.Color("white"))
+    gs = gameState()
+    loadImages()
+    running = True
+    while running:
+        for e in p.event.get():
+            if e.type == p.QUIT:
+                running = False
+        drawGamestate(screen, gs)
+        clock.tick(MAX_FPS)
+        p.display.flip()
