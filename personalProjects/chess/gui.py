@@ -1,5 +1,7 @@
 import pygame as p
-from gameState import gameState
+from chessClass import chess
+from functions import drawGamestate, loadImages, updateTurn
+
 
 WIDTH = HEIGHT = 720
 DIMENSION = 8
@@ -7,41 +9,44 @@ SQ_SIZE = HEIGHT // DIMENSION
 MAX_FPS = 15
 IMAGES = {}
 
-def loadImages():
-    pieces = ["bP", "bR", "bH", "bB", "bQ", "bK", "wP", "wR", "wH", "wB", "wQ", "wK"]
-    for piece in pieces:
-        IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
-
-def drawGamestate(screen, gs):
-    drawBoard(screen)
-    drawPieces(screen, gs.board)
-
-def drawBoard(screen):
-    colors = [p.Color("white"), p.Color("grey")]
-    for r in range(DIMENSION):
-        for c in range(DIMENSION):
-            color = colors[(r + c) % 2]
-            p.draw.rect(screen, color, p.Rect(c * SQ_SIZE, r * SQ_SIZE, SQ_SIZE, SQ_SIZE))
-
-def drawPieces(screen, board):
-    for r in range(DIMENSION):
-        for c in range(DIMENSION):
-            piece = board[r][c]
-            if piece != "--":
-                screen.blit(IMAGES[piece], p.Rect(c * SQ_SIZE, r * SQ_SIZE, SQ_SIZE, SQ_SIZE))
-
 def drawGUI():
-    p.init()
-    screen = p.display.set_mode((WIDTH, HEIGHT))
-    clock = p.time.Clock()
+    p.init() # Initialize pyGame Window
+    screen = p.display.set_mode((WIDTH, HEIGHT), p.NOFRAME)
     screen.fill(p.Color("white"))
-    gs = gameState()
+    clock = p.time.Clock()
     loadImages()
+
+    c = chess() # Initialize Variables
+    playerClicks = list()
+    possibleMoves = list()
+    possibleKills = list()
+    turn = "w"
     running = True
-    while running:
+
+    while running: # Game Loop
         for e in p.event.get():
             if e.type == p.QUIT:
                 running = False
-        drawGamestate(screen, gs)
+            elif e.type == p.MOUSEBUTTONDOWN:
+                location = p.mouse.get_pos()
+                clickX = location[0] // SQ_SIZE
+                clickY = location[1] // SQ_SIZE
+                if len(playerClicks) == 0 and c.validateFirstClick(clickY, clickX, turn): # user selected a piece
+                    playerClicks.append((clickX, clickY))
+                    possibleMoves, possibleKills = c.getValidMoves(clickY, clickX)
+                elif len(playerClicks) == 1:
+                    if playerClicks[0] == (clickX, clickY): # user deselected the piece
+                        playerClicks.clear()
+                        possibleMoves.clear()
+                        possibleKills.clear()
+                    elif playerClicks[0] != (clickX, clickY) and c.validateSecondClick(clickY, clickX, possibleMoves, possibleKills):
+                        playerClicks.append((clickX, clickY)) # user selected the position to move
+                        c.makeMove(playerClicks)
+                        turn = updateTurn(turn)
+                        playerClicks.clear()
+                        possibleMoves.clear()
+                        possibleKills.clear()
+            
+        drawGamestate(screen, c.board, possibleMoves, possibleKills) # Refresh Screen
         clock.tick(MAX_FPS)
         p.display.flip()
