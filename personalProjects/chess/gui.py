@@ -9,7 +9,7 @@ SQ_SIZE = HEIGHT // DIMENSION
 MAX_FPS = 15
 IMAGES = {}
 
-def drawGUI():
+def drawGame():
     p.init() # Initialize pyGame Window
     screen = p.display.set_mode((WIDTH, HEIGHT), p.NOFRAME)
     screen.fill(p.Color("white"))
@@ -46,6 +46,13 @@ def drawGUI():
                         playerClicks.clear()
                         possibleMoves.clear()
                         possibleKills.clear()
+                    elif c.validateFirstClick(clickY, clickX, turn): # user selected another piece
+                        playerClicks.clear()
+                        possibleMoves.clear()
+                        possibleKills.clear()
+                        playerClicks.append((clickX, clickY))
+                        possibleMoves, possibleKills = c.getValidMoves(clickY, clickX)
+
             
         drawGamestate(screen, c.board, possibleMoves, possibleKills) # Refresh Screen
         clock.tick(MAX_FPS)

@@ -1,8 +1,8 @@
-from gui import drawGUI
+from gui import drawGame
 
     
 def main():
-    drawGUI()
+    drawGame()
 
 if __name__ == "__main__":
     main()
