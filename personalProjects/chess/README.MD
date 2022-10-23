@@ -1,4 +1,4 @@
-# A classic chess game developed with pyGame
+## A classic chess game developed with pyGame
 
 TO DO:
  - Mates, Checkmates, Slatemates
