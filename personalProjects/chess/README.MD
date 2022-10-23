@@ -1,6 +1,6 @@
-A classic chess game developed with pyGame
+# A classic chess game developed with pyGame
 
-TO DO:
+######TO DO:
  -Mates, Checkmates, Slatemates
  -Castle, En-Passant, Pawn Promotion
  -Turn Time
