@@ -30,6 +30,7 @@ suma, și tipul (intrare/ieșire). Aplicația permite:
 from tests import testFunctions
 
 
+
 def main():
     testFunctions()
 

@@ -1,3 +1,4 @@
+
 def createTransaction(day, sum, type):
     return {
         "day": day,

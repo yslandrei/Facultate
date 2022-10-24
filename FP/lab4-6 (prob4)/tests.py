@@ -1,6 +1,7 @@
 from functions import addTransaction, createTransaction, popTransactionsByDay, printAllTransactions, printTransaction
     
 
+
 def testFunctions():
     List = []
     addTransaction(List, createTransaction(1, 100, "+"))
