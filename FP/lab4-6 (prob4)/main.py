@@ -3,8 +3,8 @@
 suma, și tipul (intrare/ieșire). Aplicația permite:
 
 1. Adăugare de noi tranzacții
-    • adaugă tranzacție (se dă ziua, suma, tipul)
-    • actualizare tranzacție (se dă ziua, suma, tipul)
+    • Adaugă tranzacție (se dă ziua, suma, tipul)
+    • Actualizare tranzacție (se dă ziua, suma, tipul)
 2. Ștergere
     • Șterge toate tranzacțiile de la ziua specificată
     • Șterge tranzacțiile dintr-o perioadă dată (se dă ziua de început și sfârșit)
@@ -27,12 +27,13 @@ suma, și tipul (intrare/ieșire). Aplicația permite:
     ultima operație care a modificat lista). – Nu folosiți funcția deepCopy
 """
 
+from menu import menu
 from tests import testFunctions
-
 
 
 def main():
     testFunctions()
+    menu()
 
 if __name__ == "__main__":
     main()
