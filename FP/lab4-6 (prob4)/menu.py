@@ -1,6 +1,6 @@
 
-
-from functions import addTransaction, balanceOfAccountUntilDay, createTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
+from functions import appendTransaction, balanceOfAccountUntilDay, createTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
+from undo import undoList
 
 
 def printMenu():
@@ -22,6 +22,7 @@ def printMenu():
 
 def menu():
     TList = []
+    undoStack = []
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
     while(1):
         printMenu()
@@ -32,27 +33,27 @@ def menu():
         elif com[:4] == "add ":
             com = com[4:]
             day, sum, type = com.split()
-            addTransaction(TList, createTransaction(int(day), int(sum), type))
+            appendTransaction(TList, createTransaction(int(day), int(sum), type), undoStack)
         elif com[:4] == "upt ":
             com = com[4:]
             day, sum, type, newSum = com.split()
-            modifyTransaction(TList, createTransaction(int(day), int(sum), type), int(newSum))
+            modifyTransaction(TList, createTransaction(int(day), int(sum), type), int(newSum), undoStack)
         elif com[:5] == "deld ":
             com = com[5:]
             day = int(com)
-            popTransactionsByDay(TList, day)
+            popTransactionsByDay(TList, day, undoStack)
         elif com[:5] == "delm ":
             com = com[5:]
             st, dr = com.split()
-            popTransactionsByDate(TList, int(st), int(dr))
+            popTransactionsByDate(TList, int(st), int(dr), undoStack)
         elif com[:5] == "delt ":
             com = com[5:]
             type = com
-            popTransactionsByType(TList, type)
+            popTransactionsByType(TList, type, undoStack)
         elif com[:4] == "pts ":
             com = com[4:]
             sum = com
-            printTransactionsHigherThanSum(TList, int(sum))
+            printTransactionsHigherThanSum(TList, int(sum), undoStack)
         elif com[:4] == "ptd ":
             com = com[4:]
             day, sum = com.split()
@@ -76,9 +77,14 @@ def menu():
         elif com[:6] == "ptlst ":
             com = com[6:]
             sum, type = com.split()
-            popTransactionsByTypeAndBelowSum(TList, int(sum), type)
+            popTransactionsByTypeAndBelowSum(TList, int(sum), type, undoStack)
         elif com == "u":
-            pass
+            try:
+                undoList(TList, undoStack)
+            except ValueError:
+                print("Nicio operatie ramasa pentru undo")
         elif com == "a":
             printAllTransactions(TList)
+        else:
+            print("Comanda Invalida!")
             

@@ -13,6 +13,7 @@ class complexNumb:
 
     def __str__(self):
         """
+        print(complexNumb(1,2))
         Tipareste numarul ca: a + bi / a - bi
         """
         if self.b >= 0:

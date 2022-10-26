@@ -21,13 +21,11 @@ def undoList(List, undoStack):
     undoStack retine pe fiecare pozitie operatiile de adaugare/eliminare efectuate de 
     ultima comanda, si le oglindeste astfel incat Lista revine cu un pas in spate
     """
-    if(undoStack == [list()]):
+    if(undoStack == []):
         raise ValueError
-    undoStack.pop(len(undoStack) - 1)
     for i in reversed(range(len(undoStack[len(undoStack) - 1]))):
         if undoStack[len(undoStack) - 1][i].oper == "+":
             List.pop(undoStack[len(undoStack) - 1][i].pos)
         elif undoStack[len(undoStack) - 1][i].oper == "-":
             List.insert(undoStack[len(undoStack) - 1][i].pos, complexNumb(undoStack[len(undoStack) - 1][i].a, undoStack[len(undoStack) - 1][i].b))
     undoStack.pop(len(undoStack) - 1)
-    undoStack.append(list())

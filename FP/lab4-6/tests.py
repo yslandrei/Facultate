@@ -9,7 +9,6 @@ def testFunctions():
     """
     testList = []
     undoStack = []
-    undoStack.append(list())
     appendList(testList, 5, -3, undoStack)
     assert testList[0].a == 5 and testList[0].b == -3
     insertList(testList, 1, 2, 0, undoStack)
@@ -42,7 +41,6 @@ def testUndo():
     """
     testList = []
     undoStack = []
-    undoStack.append(list())
     appendList(testList, 1, 1, undoStack)
     appendList(testList, 3, 3, undoStack)
     insertList(testList, 2, 2, 1, undoStack)

@@ -30,7 +30,6 @@ def printMenu():
 def menu():
     CList = []
     undoStack = []
-    undoStack.append(list())
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
     while(1):   
         printMenu()

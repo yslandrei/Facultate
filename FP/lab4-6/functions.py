@@ -9,8 +9,8 @@ def appendList(List, a, b, undoStack):
     Adaugă un număr complex la sfârșitul listei
     a, b - partea reala/imaginara a numarului
     """
-    undoStack[len(undoStack) - 1].append(undo(a, b, "+", len(List)))
     undoStack.append(list())
+    undoStack[len(undoStack) - 1].append(undo(a, b, "+", len(List)))
     List.append(complexNumb(a, b))
 
 def insertList(List, a, b, i, undoStack):
@@ -19,8 +19,8 @@ def insertList(List, a, b, i, undoStack):
     a, b - partea reala/imaginara a numarului
     i - pozitia la care numarul este inserat
     """
-    undoStack[len(undoStack) - 1].append(undo(a, b, "+", i))
     undoStack.append(list())
+    undoStack[len(undoStack) - 1].append(undo(a, b, "+", i))
     List.insert(i, complexNumb(a, b))
 
 def popList(List, i, undoStack):
@@ -28,8 +28,8 @@ def popList(List, i, undoStack):
     Șterge un element de pe o poziție dată
     i - pozitia numarului care este sters
     """
-    undoStack[len(undoStack) - 1].append(undo(List[i].a, List[i].b, "-", i))
     undoStack.append(list())
+    undoStack[len(undoStack) - 1].append(undo(List[i].a, List[i].b, "-", i))
     List.pop(i)
 
 def popListElements(List, st, dr, undoStack):
@@ -37,10 +37,10 @@ def popListElements(List, st, dr, undoStack):
     Șterge elementele de pe un interval de poziții
     st, dr - indicii intervalului care este sters
     """
+    undoStack.append(list())
     for i in range(dr - st + 1):
         undoStack[len(undoStack) - 1].append(undo(List[st].a, List[st].b, "-", st))
         List.pop(st)
-    undoStack.append(list())
 
 def replaceList(List, a, b, x, y, undoStack):
     """
@@ -48,12 +48,12 @@ def replaceList(List, a, b, x, y, undoStack):
     a, b - partea reala/imaginara a numarului cautat
     x, y - partea reala/imaginara a numarului inlocuit
     """
+    undoStack.append(list())
     for i in range(len(List)):
         if List[i].a == a and List[i].b == b:
             undoStack[len(undoStack) - 1].append(undo(a, b, "-", i))
             undoStack[len(undoStack) - 1].append(undo(x, y, "+", i))
             List[i].a, List[i].b = x, y
-    undoStack.append(list())
 
 def printImaginaryElements(List, st, dr):
     """
@@ -136,12 +136,12 @@ def filterByPrimalityOfRealPart(List, undoStack):
     Elimină din listă numerele complexe a căror parte reală este primă
     """
     offset = 0
+    undoStack.append(list())
     for i in range(len(List)):
         if isPrime(List[i - offset].a):
             undoStack[len(undoStack) - 1].append(undo(List[i - offset].a, List[i - offset].b, "-", i - offset))
             List.pop(i - offset)
             offset += 1
-    undoStack.append(list())
 
 def filterByModule(List, semn, nr, undoStack):
     """
@@ -150,6 +150,7 @@ def filterByModule(List, semn, nr, undoStack):
     nr - numarul dat
     """
     offset = 0
+    undoStack.append(list())
     for i in range(len(List)):
         if semn == ">" and List[i - offset].getModule() > nr:
             undoStack[len(undoStack) - 1].append(undo(List[i - offset].a, List[i - offset].b, "-", i - offset))
@@ -163,4 +164,3 @@ def filterByModule(List, semn, nr, undoStack):
             undoStack[len(undoStack) - 1].append(undo(List[i - offset].a, List[i - offset].b, "-", i - offset))
             List.pop(i - offset)
             offset += 1
-    undoStack.append(list())
