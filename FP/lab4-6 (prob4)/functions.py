@@ -2,6 +2,9 @@ from undo import createUndoStackElement, stackTop
 
 
 def createTransaction(day, sum, type):
+    """
+    Creeaza o noua tranzactie cu zi, suma si tip
+    """
     return {
         "day": day,
         "sum": sum,
@@ -9,6 +12,9 @@ def createTransaction(day, sum, type):
     }
 
 def printTransaction(transaction):
+    """
+    Printeaza o tranzactie
+    """
     day = transaction["day"]
     sum = transaction["sum"]
     if transaction["type"] == "+":
@@ -18,6 +24,9 @@ def printTransaction(transaction):
     print(f"Ziua: {day} | Suma: {sum} | Tip: {type}")
 
 def printAllTransactions(List):
+    """
+    Printeaza toate tranzactile
+    """
     for i in range(len(List)):
         printTransaction(List[i])
 
@@ -33,12 +42,12 @@ def modifyTransaction(List, transaction, newSum, undoStack):
     """
     Actualizare tranzacție (se dă ziua, suma, tipul)
     """
-    undoStack.append(list)
+    undoStack.append(list())
     for i in range(len(List)):
         if List[i] == transaction:
-            List[i]["sum"] = newSum
             undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i], "-", i))
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(createTransaction(List[i]["day"], newSum, List[i]["type"]), "+", i))
+            List[i]["sum"] = newSum
+            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i], "+", i))
     
 def popTransactionsByDay(List, day, undoStack):
     """
@@ -84,7 +93,7 @@ def printTransactionsHigherThanSum(List, sum):
         if List[i]["sum"] > sum:
             printTransaction(List[i])
 
-def printTransactionsHigherThanSumAndLowerThanDay(List, sum, day):
+def printTransactionsHigherThanSumAndLowerThanDay(List, day, sum):
     """
     Tipărește toate tranzacțiile efectuate înainte de o zi și mai mari decât o
     sumă (se dă suma și ziua)
@@ -135,7 +144,7 @@ def printSortedListOfATypeBySum(List, type):
     sortedList = sorted(sortedList, key = lambda x: x["sum"], reverse = True)
     printAllTransactions(sortedList)
 """
-def popTransactionsByType(List, type): (se repeta)
+def popTransactionsByType(List, type): (se repeta cerinta)
     
     Elimină toate tranzacțiile de un anumit tip
     

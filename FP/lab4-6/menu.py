@@ -39,45 +39,45 @@ def menu():
             break
         elif com[:4] == "add ":
             com = com[4:]
-            a, b = com.split()
             try:
+                a, b = com.split()
                 appendList(CList, int(a), int(b), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:4] == "ins ":
             com = com[4:]
-            a, b, pos = com.split()
             try:
+                a, b, pos = com.split()
                 insertList(CList, int(a), int(b), int(pos), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:4] == "pop ":
-            pos = com[4:]
             try:
+                pos = com[4:]
                 popList(CList, int(pos), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:5] == "popE ":
             com = com[5:]
-            st, dr = com.split()
             try:
+                st, dr = com.split()
                 popListElements(CList, int(st), int(dr), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:4] == "rpl ":
             com = com[4:]
-            a, b, x, y = com.split()
             try:
+                a, b, x, y = com.split()
                 replaceList(CList, int(a), int(b), int(x), int(y), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:5] == "pimg ":
             com = com[5:]
-            st, dr = com.split()
             try:
+                st, dr = com.split()
                 printImaginaryElements(CList, int(st), int(dr))
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com == "pml10":
             printModulesLessThan10(CList)
         elif com == "pme10":
@@ -86,27 +86,27 @@ def menu():
             printSortedListDescendingByImaginaryPart(CList)
         elif com[:4] == "sum ":
             com = com[4:]
-            st, dr = com.split()
             try:
+                st, dr = com.split()
                 print(sumOfModules(CList, int(st), int(dr)))
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com[:5] == "prod ":
             com = com[5:]
-            st, dr = com.split()
             try:
+                st, dr = com.split()
                 print(prodOfModules(CList, int(st), int(dr)))
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com == "fpr":
             filterByPrimalityOfRealPart(CList, undoStack)
         elif com[:3] == "fm ":
-            sign = com[3]
-            nr = com[5:]
             try:
+                sign = com[3]
+                nr = com[5:]
                 filterByModule(CList, sign, int(nr), undoStack)
             except ValueError:
-                print("Sintaxa Invalida! Introdu numere intregi")
+                print("Sintaxa Invalida!")
         elif com == "u":
             try:
                 undoList(CList, undoStack)
