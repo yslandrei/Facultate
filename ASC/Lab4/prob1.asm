@@ -10,30 +10,34 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
-    
-    a db 9
-    b dw 5
-    c dw 4
-    d dd 2  
+    a db 2
+    b dd -8
+    c dw -5
+    d dq 12
+    ;7 / a - b + (-c) * (-2) + d
 
-; (a * b) + (c * d) fara semn
 ; our code starts here
 segment code use32 class=code
     start:
-        MOVZX EAX, byte[a]
-        MOV DX, [b]
-        MUL DX ; DX:AX = a * b
+        MOV AX, 7
+        MOV BL, [a]
+        IDIV BL; AL = 7 / a
+        MOVSX EAX, AL; EAX = 7 / a
+        SUB EAX, [b]; EAX = 7 / a - b
+        MOV ECX, EAX; ECX = 7 / a - b
+        MOV AX, 0
+        SUB AX, [c]; AX = -c
+        MOV DX, -2; DX = -2
+        IMUL DX; DX:AX = (-c) * (-2)
         PUSH DX
-        PUSH AX
-        POP EBX ; EBX = a * b
-        MOVZX EAX, word[c]
-        MOV EDX, [d]
-        MUL EDX ;    EDX:EAX = c * d
-        MOV ECX, 0 ; ECX:EBX = a * b
-        SUB EAX, EBX
-        SBB EDX, ECX ; EDX:EAX = (a * b) + (c * d)
+        PUSH AX 
+        POP EAX; EAX = (-c) * (-2)
+        ADD ECX, EAX; ECX = 7 / a - b + (-c) * (-2)
+        MOV EAX, dword[d + 4]
+        MOV EBX, dword[d];EAX:EBX = d
+        add EBX, ECX
+        adc EAX, 0;EAX:EBX = 7 / a - b + (-c) n
         
-        
-        ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program
+s

@@ -3,7 +3,10 @@ from undo import createUndoStackElement, stackTop
 
 def createTransaction(day, sum, type):
     """
-    Creeaza o noua tranzactie cu zi, suma si tip
+    Creeaza o noua tranzactie cu:
+    day(int) = ziua
+    sum(int) = suma
+    type(string) = tipul ("+" / "-")
     """
     return {
         "day": day,
@@ -14,6 +17,7 @@ def createTransaction(day, sum, type):
 def printTransaction(transaction):
     """
     Printeaza o tranzactie
+    transaction(dictionary) = tranzactia dorita cu zi, suma si tip 
     """
     day = transaction["day"]
     sum = transaction["sum"]
@@ -33,6 +37,7 @@ def printAllTransactions(List):
 def appendTransaction(List, transaction, undoStack):
     """
     Adaugă tranzacție (se dă ziua, suma, tipul)
+    transaction(dictionary) = tranzactia dorita cu zi, suma si tip 
     """
     List.append(transaction)
     undoStack.append(list())
@@ -41,6 +46,8 @@ def appendTransaction(List, transaction, undoStack):
 def modifyTransaction(List, transaction, newSum, undoStack):
     """
     Actualizare tranzacție (se dă ziua, suma, tipul)
+    transaction(dictionary) = tranzactia dorita cu zi, suma si tip 
+    newSum(int) = noua suma cu care va fi actualizata cea veche
     """
     undoStack.append(list())
     for i in range(len(List)):
@@ -52,6 +59,7 @@ def modifyTransaction(List, transaction, newSum, undoStack):
 def popTransactionsByDay(List, day, undoStack):
     """
     Șterge toate tranzacțiile de la ziua specificată
+    day(int) = ziua in care vor fi sterse tranzactiile
     """
     offset = 0
     undoStack.append(list())
@@ -64,6 +72,8 @@ def popTransactionsByDay(List, day, undoStack):
 def popTransactionsByDate(List, st, dr, undoStack):
     """
     Șterge tranzacțiile dintr-o perioadă dată (se dă ziua de început și sfârșit)
+    st(int) = intervalul din stanga a perioadei data
+    dr(int) = intervalul din dreapta a perioadei data
     """
     offset = 0
     undoStack.append(list())
@@ -76,6 +86,7 @@ def popTransactionsByDate(List, st, dr, undoStack):
 def popTransactionsByType(List, type, undoStack):
     """
     Șterge toate tranzacțiile de un anumit tip
+    type(string) = tipul de tranzactii care vor fi sterse
     """
     offset = 0
     undoStack.append(list())
@@ -88,6 +99,7 @@ def popTransactionsByType(List, type, undoStack):
 def printTransactionsHigherThanSum(List, sum):
     """
     Tipărește tranzacțiile cu sume mai mari decât o sumă dată
+    sum(int) = suma care este cautata
     """
     for i in range(len(List)):
         if List[i]["sum"] > sum:
@@ -97,6 +109,8 @@ def printTransactionsHigherThanSumAndLowerThanDay(List, day, sum):
     """
     Tipărește toate tranzacțiile efectuate înainte de o zi și mai mari decât o
     sumă (se dă suma și ziua)
+    day(int) = ziua cautata
+    sum(int) = suma cautata
     """
     for i in range(len(List)):
         if List[i]["sum"] > sum and List[i]["day"] < day:
@@ -105,6 +119,7 @@ def printTransactionsHigherThanSumAndLowerThanDay(List, day, sum):
 def printTransactionsByType(List, type):
     """
     Tipărește tranzacțiile de un anumit tip
+    type(string) = tipul cautat
     """
     for i in range(len(List)):
         if List[i]["type"] == type:
@@ -113,6 +128,7 @@ def printTransactionsByType(List, type):
 def sumOfTransactionsByType(List, type):
     """
     Suma totală a tranzacțiilor de un anumit tip
+    type(string) = tipul cautat
     """
     s = 0
     for i in range(len(List)):
@@ -123,6 +139,7 @@ def sumOfTransactionsByType(List, type):
 def balanceOfAccountUntilDay(List, day):
     """
     Soldul contului la o dată specificată
+    day(int) = ziua cautata
     """
     s = 0
     for i in range(len(List)):
@@ -136,6 +153,7 @@ def balanceOfAccountUntilDay(List, day):
 def printSortedListOfATypeBySum(List, type):
     """
     Tipărește toate tranzacțiile de un anumit tip ordonat după sumă
+    type(string) = tipul cautat
     """
     sortedList = []
     for i in range(len(List)):
@@ -147,7 +165,8 @@ def printSortedListOfATypeBySum(List, type):
 def popTransactionsByType(List, type): (se repeta cerinta)
     
     Elimină toate tranzacțiile de un anumit tip
-    
+    type(string) = tipul cautat
+
     offset = 0
     for i in range(len(List)):
         if List[i - offset]["type"] == type:
@@ -158,6 +177,8 @@ def popTransactionsByTypeAndBelowSum(List, sum, type, undoStack):
     """
     Elimină toate tranzacțiile mai mici decât o sumă dată care au tipul
     specificat
+    sum(int) = suma cautata
+    type(string) = tipul cautat
     """
     offset = 0
     undoStack.append(list())
