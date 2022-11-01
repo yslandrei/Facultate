@@ -9,9 +9,9 @@ IMAGES = {}
 
 
 def loadImages():
-    pieces = ["bP", "bR", "bH", "bB", "bQ", "bK", "wP", "wR", "wH", "wB", "wQ", "wK", "dot", "border"]
-    for piece in pieces:
-        IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
+    numbers = ["bP", "bR", "bH", "bB", "bQ", "bK", "wP", "wR", "wH", "wB", "wQ", "wK", "dot", "border"]
+    for number in numbers:
+        IMAGES[number] = p.transform.scale(p.image.load("images/" + number + ".png"), (SQ_SIZE, SQ_SIZE))
 
 def drawBoard(screen):
     colors = [p.Color("white"), p.Color("grey")]

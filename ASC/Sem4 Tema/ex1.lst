@@ -1,0 +1,32 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13 00000000 341278567698                s dw 1234h, 5678h, 9876h
+    14                                      ls equ ($ - s) / 2
+    15 00000006 0000                        a dw 0
+    16                                  
+    17                                  ; our code starts here
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 BE00000000                      mov ESI, 0
+    21                                          bucla:
+    22 00000005 668B9436[00000000]                  mov DX, [s + 2 * ESI]
+    23 0000000D 6681E2C003                          and DX, 0000001111000000b
+    24 00000012 66C1EA06                            shr DX, 6
+    25 00000016 660115[06000000]                    add [a], DX
+    26 0000001D 46                                  inc ESI
+    27 0000001E 83FE03                              cmp ESI, ls
+    28 00000021 72E2                            jb bucla
+    29                                          
+    30 00000023 A1[06000000]                    mov EAX, [a]
+    31 00000028 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    32 0000002A FF15[00000000]                  call    [exit]       ; call exit to terminate the program
