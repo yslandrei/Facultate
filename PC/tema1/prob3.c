@@ -10,5 +10,5 @@ int main(){
         if(x > maxx)
             maxx = x;
     }
-    printf("Minmul: %d\nMaximul: %d\n", minn, maxx);
+    printf("\nSmallest: %d\nLargest: %d\n", minn, maxx);
 }

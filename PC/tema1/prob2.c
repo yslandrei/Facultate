@@ -3,7 +3,7 @@
 int main(){
     int a, b;
     scanf("%d %d", &a, &b);
-    printf("%d\n", a + b);
-    printf("%f\n", (float)(a + b) / 2);
-    printf("%d\n", a * a + b * b);
+    printf("Sum of Numbers: %d\n", a + b);
+    printf("Average of Numbers: %f\n", (float)(a + b) / 2);
+    printf("Sum of Squared Numbers: %d\n", a * a + b * b);
 }
