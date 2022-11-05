@@ -16,7 +16,7 @@
     16 00000004 15000000                    d dd 21
     17 00000008 1E00000000000000            x dq 30
     18                                      
-    19                                      ;(a*b+2)/(a+7-c)+d+x (fara semn)
+    19                                      ;12) (a*b+2)/(a+7-c)+d+x (fara semn) = 53
     20                                  ; our code starts here
     21                                  segment code use32 class=code
     22                                      start:

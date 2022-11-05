@@ -10,33 +10,37 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
-    a db 2
-    c db 3
-    b dw 6
-    d dd 21
-    x dq 30
+    ;Se da un sir de worduri. Sa se salveze doar bytes superiori care sunt divizibili cu 8
     
-    ;12) (a*b+2)/(a+7-c)+d+x (fara semn) = 53
+    s dw 0808h, 0abcdh
+    ls equ ($ - s) / 2
+    d resb ls
 ; our code starts here
 segment code use32 class=code
     start:
-        movzx AX, byte[a]
-        mov DX, [b]
-        mul DX; DX:AX = a*b
-        add AX, 2
-        adc DX, 0; DX:AX = a*b+2
-        mov BL, [a]
-        add BL, 7
-        sub BL, [c]; BL = a+7-c
-        movzx BX, BL; BX = a+7-c
-        div BX; AX = (a*b+2)/(a+7-c)
-        movzx EAX, AX; EAX = (a*b+2)/(a+7-c)
-        add EAX, [d]; EAX = (a*b+2)/(a+7-c)+d
-        mov ECX, dword[x + 4]
-        mov EBX, dword[x]; ECX:EBX = d
-        add EBX, EAX
-        adc ECX, 0; ECX:EBX = (a*b+2)/(a+7-c)+d+x
-        
-        
+        mov ecx, ls
+        mov esi, 1; s
+        mov edi, 0; d
+        repeta:
+            mov al, byte[s+esi]
+            mov dl, al
+            movsx ax, al
+            mov bl 8
+            idiv bl
+            cmp ah, 0
+            je adauga
+            je next
+                adauga:
+                    mov byte[d+edi], dl
+                    inc edi
+                    add esi, 2
+                    jmp myendif:
+                next:
+                    add esi, 2
+                myendif:
+            
+        loop repeta
+    
+        ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program

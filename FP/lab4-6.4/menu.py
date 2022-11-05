@@ -51,14 +51,14 @@ def menu():
                 popTransactionsByDay(TList, day, undoStack)
             except ValueError:
                 print("Sintaxa Invalida!")
-        elif com[:5] == "delm ":
+        elif com[:5] == "delp ":
             com = com[5:]
             try:
                 st, dr = com.split()
                 popTransactionsByDate(TList, int(st), int(dr), undoStack)
             except ValueError:
                 print("Sintaxa Invalida!")
-        elif com[:5] == "delp ":
+        elif com[:5] == "delt ":
             com = com[5:]
             try:
                 type = com

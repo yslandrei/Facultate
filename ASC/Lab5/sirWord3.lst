@@ -1,0 +1,62 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; Se da un sir de worduri (+-). Sa se salveze intr un alt sir de worduri, wordurile care au
+    14                                      ; suma cifrelor in hexazecimal egala cu o const k
+    15                                  
+    16 00000000 341212342B1A                s dw 1234h, 3412h, 1a2bh
+    17                                      ls equ ($ - s) / 2
+    18                                      k equ 0Ah
+    19 00000006 <res 00000006>              d resw ls
+    20                                      
+    21                                  ; our code starts here
+    22                                  segment code use32 class=code
+    23                                      start:
+    24 00000000 B903000000                      mov ecx, ls
+    25 00000005 BE00000000                      mov esi, 0
+    26 0000000A BF00000000                      mov edi, 0
+    27                                          repeta:
+    28 0000000F 668B86[00000000]                    mov ax, [s + esi]
+    29 00000016 B200                                mov dl, 0
+    30                                              
+    31 00000018 8A9E[00000000]                      mov bl, byte[s + esi + 0]
+    32 0000001E 80E30F                              and bl, 00001111b
+    33 00000021 00DA                                add dl, bl
+    34                                              
+    35 00000023 8A9E[00000000]                      mov bl, byte[s + esi + 0]
+    36 00000029 80E3F0                              and bl, 11110000b
+    37 0000002C C0EB04                              shr bl, 4
+    38 0000002F 00DA                                add dl, bl
+    39                                              
+    40 00000031 8A9E[01000000]                      mov bl, byte[s + esi + 1]
+    41 00000037 80E30F                              and bl, 00001111b
+    42 0000003A 00DA                                add dl, bl
+    43                                              
+    44 0000003C 8A9E[01000000]                      mov bl, byte[s + esi + 1]
+    45 00000042 80E3F0                              and bl, 11110000b
+    46 00000045 C0EB04                              shr bl, 4
+    47 00000048 00DA                                add dl, bl ; dl = suma cifrelor
+    48                                         
+    49 0000004A 80FA0A                              cmp dl, k
+    50 0000004D 7402                                je salveaza
+    51 0000004F 750F                                jne next
+    52                                              salveaza:
+    53 00000051 668987[06000000]                        mov [d + edi], ax
+    54 00000058 83C702                                  add edi, 2
+    55 0000005B 83C602                                  add esi, 2
+    56 0000005E EB03                                    jmp myendif
+    57                                              next:
+    58 00000060 83C602                                  add esi, 2
+    59                                                  myendif:
+    60 00000063 E2AA                            loop repeta
+    61 00000065 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    62 00000067 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

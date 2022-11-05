@@ -10,33 +10,20 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
-    a db 2
-    c db 3
-    b dw 6
-    d dd 21
-    x dq 30
-    
-    ;12) (a*b+2)/(a+7-c)+d+x (fara semn) = 53
+    s dw 1, 2, 3
+    ls equ ($ - s) / 2
+    r resw ls
+
 ; our code starts here
 segment code use32 class=code
     start:
-        movzx AX, byte[a]
-        mov DX, [b]
-        mul DX; DX:AX = a*b
-        add AX, 2
-        adc DX, 0; DX:AX = a*b+2
-        mov BL, [a]
-        add BL, 7
-        sub BL, [c]; BL = a+7-c
-        movzx BX, BL; BX = a+7-c
-        div BX; AX = (a*b+2)/(a+7-c)
-        movzx EAX, AX; EAX = (a*b+2)/(a+7-c)
-        add EAX, [d]; EAX = (a*b+2)/(a+7-c)+d
-        mov ECX, dword[x + 4]
-        mov EBX, dword[x]; ECX:EBX = d
-        add EBX, EAX
-        adc ECX, 0; ECX:EBX = (a*b+2)/(a+7-c)+d+x
-        
-        
+        mov ecx, ls
+        mov esi, 0
+        repeta:
+            mov ax, word[s + esi]
+            add esi, 2
+        loop repeta
+    
+        ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program

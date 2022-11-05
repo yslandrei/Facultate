@@ -1,4 +1,5 @@
-from undo import createUndoStackElement, stackTop
+import copy
+from undo import createUndoStackElement, stackTop, appendUndoStack, updateUndoStack
 
 
 def createTransaction(day, sum, type):
@@ -14,6 +15,30 @@ def createTransaction(day, sum, type):
         "type": type
     }
 
+def getTransaction(List, i):
+    return List[i]
+
+def getTransactionDay(List, i):
+    return List[i]["day"]
+
+def getTransactionSum(List, i):
+    return List[i]["sum"]
+
+def getTransactionType(List, i):
+    return List[i]["type"]
+
+def setTransactionDay(List, i, newDay):
+    List[i]["day"] = newDay
+
+def setTransactionSum(List, i, newSum):
+    List[i]["sum"] = newSum
+
+def setTransactionType(List, i, newType):
+    List[i]["type"] = newType
+
+def popTransaction(List, i):
+    del List[i]
+
 def printTransaction(transaction):
     """
     Printeaza o tranzactie
@@ -21,10 +46,7 @@ def printTransaction(transaction):
     """
     day = transaction["day"]
     sum = transaction["sum"]
-    if transaction["type"] == "+":
-        type = "Depunere"
-    elif transaction["type"] == "-":
-        type = "Scoatere"
+    type = "Depunere" if transaction["type"] == "+" else "Scoatere"
     print(f"Ziua: {day} | Suma: {sum} | Tip: {type}")
 
 def printAllTransactions(List):
@@ -32,7 +54,7 @@ def printAllTransactions(List):
     Printeaza toate tranzactile
     """
     for i in range(len(List)):
-        printTransaction(List[i])
+        printTransaction(getTransaction(List, i))
 
 def appendTransaction(List, transaction, undoStack):
     """
@@ -40,8 +62,8 @@ def appendTransaction(List, transaction, undoStack):
     transaction(dictionary) = tranzactia dorita cu zi, suma si tip 
     """
     List.append(transaction)
-    undoStack.append(list())
-    undoStack[stackTop(undoStack)].append(createUndoStackElement(transaction, "+", stackTop(List)))
+    updateUndoStack(undoStack)
+    appendUndoStack(undoStack, createUndoStackElement(transaction, "+", stackTop(List)))
     
 def modifyTransaction(List, transaction, newSum, undoStack):
     """
@@ -49,12 +71,12 @@ def modifyTransaction(List, transaction, newSum, undoStack):
     transaction(dictionary) = tranzactia dorita cu zi, suma si tip 
     newSum(int) = noua suma cu care va fi actualizata cea veche
     """
-    undoStack.append(list())
+    updateUndoStack(undoStack)
     for i in range(len(List)):
-        if List[i] == transaction:
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i], "-", i))
-            List[i]["sum"] = newSum
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i], "+", i))
+        if getTransaction(List, i) == transaction:
+            transaction = copy.deepcopy(getTransaction(List, i))
+            appendUndoStack(undoStack, createUndoStackElement(transaction, "r", i))
+            setTransactionSum(List, i, newSum)
     
 def popTransactionsByDay(List, day, undoStack):
     """
@@ -62,11 +84,11 @@ def popTransactionsByDay(List, day, undoStack):
     day(int) = ziua in care vor fi sterse tranzactiile
     """
     offset = 0
-    undoStack.append(list())
+    updateUndoStack(undoStack)
     for i in range(len(List)):
-        if List[i - offset]["day"] == day:
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i - offset], "-", i - offset))
-            del List[i - offset]
+        if getTransactionDay(List, i - offset) == day:
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            popTransaction(List, i - offset)
             offset += 1
 
 def popTransactionsByDate(List, st, dr, undoStack):
@@ -78,9 +100,9 @@ def popTransactionsByDate(List, st, dr, undoStack):
     offset = 0
     undoStack.append(list())
     for i in range(len(List)):
-        if List[i - offset]["day"] >= st and List[i - offset]["day"] <= dr:
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i - offset], "-", i - offset))
-            del List[i - offset]
+        if getTransactionDay(List, i - offset) >= st and getTransactionDay(List, i - offset) <= dr:
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            popTransaction(List, i - offset)
             offset += 1
 
 def popTransactionsByType(List, type, undoStack):
@@ -91,9 +113,9 @@ def popTransactionsByType(List, type, undoStack):
     offset = 0
     undoStack.append(list())
     for i in range(len(List)):
-        if List[i - offset]["type"] == type:
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i - offset], "-", i - offset))
-            del List[i - offset]
+        if getTransactionType(List, i - offset) == type:
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            popTransaction(List, i - offset)
             offset += 1
 
 def printTransactionsHigherThanSum(List, sum):
@@ -102,8 +124,8 @@ def printTransactionsHigherThanSum(List, sum):
     sum(int) = suma care este cautata
     """
     for i in range(len(List)):
-        if List[i]["sum"] > sum:
-            printTransaction(List[i])
+        if getTransactionSum(List, i) > sum:
+            printTransaction(getTransaction(List, i))
 
 def printTransactionsHigherThanSumAndLowerThanDay(List, day, sum):
     """
@@ -113,8 +135,8 @@ def printTransactionsHigherThanSumAndLowerThanDay(List, day, sum):
     sum(int) = suma cautata
     """
     for i in range(len(List)):
-        if List[i]["sum"] > sum and List[i]["day"] < day:
-            printTransaction(List[i])
+        if getTransactionSum(List, i) > sum and getTransactionDay(List, i) < day:
+            printTransaction(getTransaction(List, i))
 
 def printTransactionsByType(List, type):
     """
@@ -122,8 +144,8 @@ def printTransactionsByType(List, type):
     type(string) = tipul cautat
     """
     for i in range(len(List)):
-        if List[i]["type"] == type:
-            printTransaction(List[i])
+        if getTransactionType(List, i) == type:
+            printTransaction(getTransaction(List, i))
 
 def sumOfTransactionsByType(List, type):
     """
@@ -132,8 +154,8 @@ def sumOfTransactionsByType(List, type):
     """
     s = 0
     for i in range(len(List)):
-        if List[i]["type"] == type:
-            s += List[i]["sum"]
+        if getTransactionType(List, i) == type:
+            s += getTransactionSum(List, i)
     print(s)
 
 def balanceOfAccountUntilDay(List, day):
@@ -143,11 +165,11 @@ def balanceOfAccountUntilDay(List, day):
     """
     s = 0
     for i in range(len(List)):
-        if List[i]["day"] <= day:
-            if List[i]["type"] == "+":
-                s += int(List[i]["sum"])
+        if getTransactionDay(List, i) <= day:
+            if getTransactionType(List, i) == "+":
+                s += int(getTransactionSum(List, i))
             else:
-                s -= int(List[i]["sum"]) 
+                s -= int(getTransactionSum((List, i))) 
     print(s)
 
 def printSortedListOfATypeBySum(List, type):
@@ -157,8 +179,8 @@ def printSortedListOfATypeBySum(List, type):
     """
     sortedList = []
     for i in range(len(List)):
-        if List[i]["type"] == type:
-            sortedList.append(List[i])
+        if getTransactionType(List, i) == type:
+            sortedList.append(getTransaction(List, i))
     sortedList = sorted(sortedList, key = lambda x: x["sum"], reverse = True)
     printAllTransactions(sortedList)
 """
@@ -169,8 +191,8 @@ def popTransactionsByType(List, type): (se repeta cerinta)
 
     offset = 0
     for i in range(len(List)):
-        if List[i - offset]["type"] == type:
-            del List[i - offset]
+        if getTransactionType(List, i - offset) == type:
+            popTransaction(List, i - offset)
             offset += 1
 """
 def popTransactionsByTypeAndBelowSum(List, sum, type, undoStack):
@@ -183,8 +205,8 @@ def popTransactionsByTypeAndBelowSum(List, sum, type, undoStack):
     offset = 0
     undoStack.append(list())
     for i in range(len(List)):
-        if List[i - offset]["type"] == type and List[i - offset]["sum"] < sum:
-            undoStack[stackTop(undoStack)].append(createUndoStackElement(List[i - offset], "-", i - offset))
-            del List[i - offset]
+        if getTransactionType(List, i - offset) == type and getTransactionSum(List, i - offset) < sum:
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            popTransaction(List, i - offset)
             offset += 1
 
