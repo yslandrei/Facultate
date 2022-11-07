@@ -1,5 +1,5 @@
 import copy
-from undo import createUndoStackElement, stackTop, appendUndoStack, updateUndoStack
+from domain.undo import createUndoStackElement, stackTop, appendUndoStack, updateUndoStack
 
 
 def createTransaction(day, sum, type):
@@ -87,7 +87,7 @@ def popTransactionsByDay(List, day, undoStack):
     updateUndoStack(undoStack)
     for i in range(len(List)):
         if getTransactionDay(List, i - offset) == day:
-            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(List, i - offset), "-", i - offset))
             popTransaction(List, i - offset)
             offset += 1
 
@@ -101,7 +101,7 @@ def popTransactionsByDate(List, st, dr, undoStack):
     undoStack.append(list())
     for i in range(len(List)):
         if getTransactionDay(List, i - offset) >= st and getTransactionDay(List, i - offset) <= dr:
-            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(List, i - offset), "-", i - offset))
             popTransaction(List, i - offset)
             offset += 1
 
@@ -114,7 +114,7 @@ def popTransactionsByType(List, type, undoStack):
     undoStack.append(list())
     for i in range(len(List)):
         if getTransactionType(List, i - offset) == type:
-            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(List, i - offset), "-", i - offset))
             popTransaction(List, i - offset)
             offset += 1
 
@@ -206,7 +206,7 @@ def popTransactionsByTypeAndBelowSum(List, sum, type, undoStack):
     undoStack.append(list())
     for i in range(len(List)):
         if getTransactionType(List, i - offset) == type and getTransactionSum(List, i - offset) < sum:
-            appendUndoStack(undoStack, createUndoStackElement(getTransaction(i - offset), "-", i - offset))
+            appendUndoStack(undoStack, createUndoStackElement(getTransaction(List, i - offset), "-", i - offset))
             popTransaction(List, i - offset)
             offset += 1
 

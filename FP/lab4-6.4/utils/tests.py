@@ -1,4 +1,4 @@
-from functions import createTransaction, popTransactionsByDay, appendTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByType, popTransactionsByTypeAndBelowSum
+from utils.functions import createTransaction, popTransactionsByDay, appendTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByType, popTransactionsByTypeAndBelowSum
 
 
 def testCT():

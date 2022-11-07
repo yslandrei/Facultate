@@ -1,6 +1,5 @@
-
-from functions import appendTransaction, balanceOfAccountUntilDay, createTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
-from undo import undoList
+from utils.functions import appendTransaction, balanceOfAccountUntilDay, createTransaction, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
+from domain.undo import undoList
 
 
 def printMenu():
@@ -29,7 +28,7 @@ def menu():
         com = input("Comanda (a = afis, u = undo, q = quit): ")
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
         if com == "q":
-            break
+            return
         elif com[:4] == "add ":
             com = com[4:]
             try:
