@@ -27,18 +27,13 @@ suma, și tipul (intrare/ieșire). Aplicația permite:
     ultima operație care a modificat lista). – Nu folosiți funcția deepCopy
 """
 
-from ui.batchMenu import batchMenu
-from ui.menu import menu
-from utils.tests import testFunctions
+from presentation.ui import runUi
+from tests.tests import testFunctions
 
 
 def main():
     testFunctions()
-    com = input("Meniul Dorit(n  = Normal, b = Batch): ")
-    if com == 'n':
-        menu()
-    elif com == 'b':
-        batchMenu()
+    runUi()
 
 if __name__ == "__main__":
     main()
