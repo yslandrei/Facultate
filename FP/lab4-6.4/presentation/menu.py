@@ -1,6 +1,6 @@
-from business.functions import appendTransaction, balanceOfAccountUntilDay, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
+from service.functions import appendTransaction, balanceOfAccountUntilDay, modifyTransaction, popTransactionsByDate, popTransactionsByDay, popTransactionsByType, popTransactionsByTypeAndBelowSum, printAllTransactions, printSortedListOfATypeBySum, printTransactionsByType, printTransactionsHigherThanSum, printTransactionsHigherThanSumAndLowerThanDay, sumOfTransactionsByType
 from domain.transaction import createTransaction
-from business.undo import undoList
+from service.undo import undoList
 
 
 def printMenu():
