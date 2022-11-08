@@ -1,4 +1,4 @@
-class personReporitory:
+class personRepository:
     def __init__(self):
         self.__pList = []
     
@@ -28,15 +28,16 @@ class personReporitory:
 
     def searchPerson(self, keyword):
         for i in range(len(self.__pList)):
-            if self.__plist[i].search(keyword):
-                print(self.__plist[i])
+            if self.__pList[i].search(keyword.lower()):
+                print(self.__pList[i])
+        print("\n")
 
     def printAll(self):
         for __person in self.__pList:
             if __person != self.__pList[-1]:
-                print(f" ┣ {__person}")
+                print(f" ├─ {__person}")
             else:
-                print(f" ┗ {__person}")
+                print(f" └─ {__person}")
 
 
 

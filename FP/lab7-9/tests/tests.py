@@ -2,7 +2,7 @@ from service.event import event
 from service.person import person
 from service.link import link
 from repositories.eventRepository import eventRepository
-from repositories.personRepository import personReporitory
+from repositories.personRepository import personRepository
 from repositories.linkRepository import linkRepository
 
 def runTests():
@@ -45,13 +45,13 @@ def testSearchEvent():
     assert event1.search(keyword)
 
 def testAddPerson():
-    pList = personReporitory()
+    pList = personRepository()
     person1 = person(1, "nume1", "adresa1")
     pList.addPerson(person1)
     assert pList.get(0) == person1
 
 def testPopPerson():
-    pList = personReporitory()
+    pList = personRepository()
     person1 = person(1, "nume1", "adresa1")
     person2 = person(2, "nume2", "adresa2")
     pList.addPerson(person1)
@@ -60,7 +60,7 @@ def testPopPerson():
     assert pList.get(0) == person2
 
 def testModPerson():
-    pList = personReporitory()
+    pList = personRepository()
     person1 = person(1, "nume1", "adresa1")
     person2 = person(2, "nume2", "adresa2")
     pList.addPerson(person1)

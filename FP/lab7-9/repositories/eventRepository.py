@@ -28,12 +28,13 @@ class eventRepository:
 
     def searchEvent(self, keyword):
         for i in range(len(self.__eList)):
-            if self.__eList[i].search(keyword):
+            if self.__eList[i].search(keyword.lower()):
                 print(self.__eList[i])
+        print("\n")
 
     def printAll(self):
         for __event in self.__eList:
             if __event != self.__eList[-1]:
-                print(f" ┣ {__event}")
+                print(f" ├─ {__event}")
             else:
-                print(f" ┗ {__event}")
+                print(f" └─ {__event}")

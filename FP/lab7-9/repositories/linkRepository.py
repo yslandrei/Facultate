@@ -1,6 +1,3 @@
-from math import ceil
-
-
 class linkRepository:
     def __init__(self):
         self.__lList = []
@@ -14,9 +11,9 @@ class linkRepository:
     def printAll(self):
         for __link in self.__lList:
             if __link != self.__lList[-1]:
-                print(f" ┣ {__link}")
+                print(f" ├─ {__link}")
             else:
-                print(f" ┗ {__link}")
+                print(f" └─ {__link}")
 
     def printPersonsEvents(self, __person):
         __pEvents = []
@@ -25,7 +22,7 @@ class linkRepository:
                 __pEvents.append(self.__lList[i].getEvent())
         __pEvents.sort()
         if len(__pEvents):
-            print(f"{len(__pEvents)} evenimente:\n") if len(__pEvents) != 1 else print(f"{len(__pEvents)} eveniment:\n")
+            print(f"{__person} ➜  {len(__pEvents)} evenimente:\n") if len(__pEvents) != 1 else print(f"{len(__pEvents)} eveniment:\n")
             for __event in __pEvents:
                 print(__event)
             print("\n")
@@ -57,7 +54,7 @@ class linkRepository:
             else:
                 __eFreq.append({"event": __link.getEvent(), "freq": 1})
         __eFreq = sorted(__eFreq, key = lambda x: x["freq"], reverse = True)
-        __lenFirstFifth = ceil(len(__eFreq) * .2)
+        __lenFirstFifth = int(len(__eFreq) * .2)
         if __lenFirstFifth:
             print(f"{__lenFirstFifth} = 20% din {len(__eFreq)} evenimente totale:\n") if len(__eFreq) != 1 else print(f"{__lenFirstFifth} = 20% din {len(__eFreq)} eveniment total:\n")
             for i in range(__lenFirstFifth):

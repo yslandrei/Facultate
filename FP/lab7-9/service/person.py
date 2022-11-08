@@ -26,11 +26,11 @@ class person:
 
     def search(self, keyword):
         __result = 0
-        if self.__name.find(keyword) != -1:
+        if self.__name.lower().find(keyword) != -1:
             __result = 1
-        elif self.__adress.find(keyword) != -1:
+        elif self.__adress.lower().find(keyword) != -1:
             __result = 1
-        elif str(self.__id).find(keyword) != -1:
+        elif str(self.__id) == keyword:
             __result = 1
         return __result
             

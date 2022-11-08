@@ -1,6 +1,6 @@
 from repositories.eventRepository import eventRepository
 from repositories.linkRepository import linkRepository
-from repositories.personRepository import personReporitory
+from repositories.personRepository import personRepository
 from service.event import event
 from service.person import person
 from service.link import link
@@ -22,22 +22,62 @@ def printMenu():
     print("• Afiseaza primele 20% din evenimente cu cei mai multi participanti - pmpe")
 
 def clearScreen():
-    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
 
 def printAllLists(pList, eList, lList):
     print("📁 Persoane:")
     pList.printAll()
     print("\n📁 Evenimente:")
     eList.printAll()
-    print("\n📁 Participare:")
+    print("\n📁 Participari:")
     lList.printAll()
     print("\n")
 
+def loadLists(pList, eList, lList):
+    andrei = person(0, "Andrei Diaconescu", "Valcea")
+    teodor = person(1, "Teodor Domnica", "Prahova")
+    ivancu = person(2, "Andrei Ivancu", "Valcea")
+    rares = person(3, "Rares Bozga", "Satu Mare")
+    pList.addPerson(andrei)
+    pList.addPerson(teodor)
+    pList.addPerson(ivancu)
+    pList.addPerson(rares)
+    untold = event(10, "Untold", "04.08.2023", "4 zile")
+    electric = event(11, "Electric Castle", "13.07.2023", "3 zile")
+    hustle = event(12, "Hustle", "01.12.2022", "2 zile")
+    neversea = event(13, "Neversea", "15.08.2023", "3 zile")
+    saga = event(14, "Saga", "28.08.2023", "2 zile")
+    eList.addEvent(untold)
+    eList.addEvent(electric)
+    eList.addEvent(hustle)
+    eList.addEvent(neversea)
+    eList.addEvent(saga)
+    link0 = link(andrei, untold)
+    link1 = link(andrei, electric)
+    link2 = link(andrei, hustle)
+    link3 = link(teodor, electric)
+    link4 = link(teodor, untold)
+    link5 = link(teodor, neversea)
+    link6 = link(ivancu, untold)
+    link7 = link(ivancu, electric)
+    link8 = link(rares, untold)
+    link9 = link(rares, saga)
+    lList.addLink(link0)
+    lList.addLink(link1)
+    lList.addLink(link2)
+    lList.addLink(link3)
+    lList.addLink(link4)
+    lList.addLink(link5)
+    lList.addLink(link6)
+    lList.addLink(link7)
+    lList.addLink(link8)
+    lList.addLink(link9)
 
 def runMenu():
-    pList = personReporitory()
+    pList = personRepository()
     eList = eventRepository()
     lList = linkRepository()
+    loadLists(pList, eList, lList)
     clearScreen()
     while(True):
         printMenu()
