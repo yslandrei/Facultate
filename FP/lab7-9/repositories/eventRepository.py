@@ -5,6 +5,9 @@ class eventRepository:
     def get(self, i):
         return self.__eList[i]
 
+    def __len__(self):
+        return len(self.__eList)
+
     def addEvent(self, event):
         self.__eList.append(event)
     

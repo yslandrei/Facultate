@@ -5,6 +5,9 @@ class personRepository:
     def get(self, i):
         return self.__pList[i]
 
+    def __len__(self):
+        return len(self.__pList)
+
     def addPerson(self, person):
         self.__pList.append(person)
 

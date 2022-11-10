@@ -1,10 +1,11 @@
-from tests.tests import runTests
-from ui.menu import runMenu
+from ui.menu import menu
+from tests.runAllTests import runAllTests
 
 
 def main():
-    runTests()
-    runMenu()
+    runAllTests()
+    Menu = menu()
+    Menu.runMenu()
 
 if __name__ == "__main__":
     main()

@@ -8,6 +8,9 @@ class linkRepository:
     def get(self, i):
         return self.__lList[i]
 
+    def __len__(self):
+        return len(self.__lList)
+
     def printAll(self):
         for __link in self.__lList:
             if __link != self.__lList[-1]:
