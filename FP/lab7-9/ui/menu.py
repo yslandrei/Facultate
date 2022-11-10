@@ -4,7 +4,8 @@ from repositories.personRepository import personRepository
 from service.event import event
 from service.person import person
 from service.link import link
-from validators.validateRepository import validateIdIsAlreadyInRepository, validateRepository, validateId, validateIdInRepository
+from validators.validateRepositories import validateEntityIsAlreadyInRepository
+from validators.validateIds import validateIdIsAlreadyInRepository, validateId, validateIdInRepository
 
 
 class menu():
@@ -103,7 +104,7 @@ class menu():
                     id, name, adress = command[5:].split(", ")
                     validateId(int(id))
                     newPerson = person(int(id), name, adress)
-                    validateRepository(self.__pRepo, newPerson)
+                    validateEntityIsAlreadyInRepository(self.__pRepo, newPerson)
                     self.__pRepo.addPerson(newPerson)
                 except ValueError as error:
                     self.printError(error.args[0])
@@ -121,7 +122,7 @@ class menu():
                     validateId(int(id))
                     validateId(int(nId))
                     validateIdInRepository(self.__pRepo, int(id))
-                    validateIdIsAlreadyInRepository(self.__pRepo, int(nId))
+                    validateIdIsAlreadyInRepository(self.__pRepo, int(nId), int(id))
                     newPerson = person(int(nId), nName, nAdress)
                     self.__pRepo.modPerson(int(id), newPerson)
                 except ValueError as error:
@@ -137,7 +138,7 @@ class menu():
                     id, name, date, time = command[5:].split(", ")
                     validateId(int(id))
                     newEvent = event(int(id), name, date, time)
-                    validateRepository(self.__eRepo, newEvent)
+                    validateEntityIsAlreadyInRepository(self.__eRepo, newEvent)
                     self.__eRepo.addEvent(newEvent)
                 except ValueError as error:
                     self.printError(error.args[0])
@@ -155,7 +156,7 @@ class menu():
                     validateId(int(id))
                     validateId(int(nId))
                     validateIdInRepository(self.__eRepo, int(id))
-                    validateIdIsAlreadyInRepository(self.__eRepo, int(nId))
+                    validateIdIsAlreadyInRepository(self.__eRepo, int(nId), int(id))
                     newEvent = event(int(nId), nName, nDate, nTime)
                     self.__eRepo.modEvent(int(id), newEvent)
                 except ValueError as error:
@@ -182,6 +183,7 @@ class menu():
             elif command[:4] == "ppes":
                 try:
                     id = command[5:]
+                    validateIdInRepository(self.__pRepo, int(id))
                     lPerson = self.__pRepo.getPersonFromId(int(id))
                     self.__lRepo.printPersonsEvents(lPerson)
                 except ValueError as error:

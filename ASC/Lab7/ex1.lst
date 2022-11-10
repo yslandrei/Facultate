@@ -1,0 +1,54 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; Se da un sir de bytes cu elem neg si pozitive
+    14                                      ; Sa se extraga elementele neg in sirul n
+    15                                      ; Sa se extraga elementele poz in sirul p
+    16                                      
+    17 00000000 01FE03FE04                  s db 1, -2, 3, -2, 4 ;=> n = -2, -2; p = 1, 3, 4 ; esi
+    18                                      ls equ $-s
+    19 00000005 <res 00000005>              n resb ls ; edi
+    20 0000000A <res 00000005>              p resb ls ; edp
+    21                                  
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          
+    26 00000000 BE[00000000]                    mov esi, s; mov esi, 0
+    27 00000005 BF[05000000]                    mov edi, n; mov edi, 0
+    28                                          mov edp, p; mov edp, 0
+    28          ******************       error: symbol `edp' undefined
+    29 0000000A B905000000                      mov ecx, ls
+    30 0000000F FC                              cld ; stabilire dir de parcurgere
+    31                                          repeta:
+    32                                              ; mov al, [s + esi]
+    33                                              ; inc esi
+    34 00000010 AC                                  lodsb
+    35 00000011 3C00                                cmp al, 0
+    36 00000013 7D02                                jge pozitiv
+    37 00000015 7C07                                jl negativ
+    38                                                  pozitiv:
+    39                                                      ; mov [p + ebp], al
+    40                                                      ;inc ebp
+    41 00000017 87FD                                        xchg edi, ebp
+    42 00000019 AA                                          stosb
+    43 0000001A 87FD                                        xchg edi, ebp
+    44 0000001C EB01                                    jmp myendif
+    45                                                  negativ:
+    46                                                      ; mov [n + edi], al
+    47                                                      ; inc edi
+    48 0000001E AA                                          stosb
+    49                                                  myendif:
+    50 0000001F E2EF                            loop repeta
+    51                                          
+    52 00000021 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    53 00000023 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

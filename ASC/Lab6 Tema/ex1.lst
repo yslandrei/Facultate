@@ -11,11 +11,11 @@
     11                                  ; our data is declared here (the variables needed by our program)
     12                                  segment data use32 class=data
     13                                  
-    14 00000000 0000                        a dw 0
-    15 00000002 FFFF                        b dw -1
+    14 00000000 FFFF                        a dw 1111111111111111b
+    15 00000002 0000                        b dw 0000000000000000b
     16 00000004 00000000                    c dd 0
-    17                                      
-    18                                  ;12) Se dau doua cuvinte A si B. Sa se obtina dublucuvantul C:
+    17                                  
+    18                                  ;12) Se dau doua cuvinte A si B. Sa se obtina dublucuvantul C: = 1111 1111 1111 1111 0000 0011 1000 0000b = FFFF0380h
     19                                  ;       bitii 0-6 ai lui C au valoarea 0
     20                                  ;       bitii 7-9 ai lui C coincid cu bitii 0-2 ai lui A
     21                                  ;       bitii 10-15 ai lui C coincid cu bitii 8-13 ai lui B
@@ -28,14 +28,14 @@
     28                                          ;2. bitii 7-9 ai lui C coincid cu bitii 0-2 ai lui A
     29 00000007 66A1[00000000]                  mov AX, [a]
     30 0000000D 6683E007                        and AX, 0000000000000111b; AX: 0000 0000 0000 0111
-    31 00000011 0FBFC0                          movsx EAX, AX; EAX: 0000 0000 0000 0000 0000 0000 0000 0111
+    31 00000011 0FB7C0                          movzx EAX, AX; EAX: 0000 0000 0000 0000 0000 0000 0000 0111
     32 00000014 C1E007                          shl EAX, 7;    EAX: 0000 0000 0000 0000 0000 0011 1000 0000
     33 00000017 0905[04000000]                  or dword[c], EAX
     34                                          
     35                                          ;3. bitii 10-15 ai lui C coincid cu bitii 8-13 ai lui B
     36 0000001D 668B1D[02000000]                mov BX, [b]
     37 00000024 6681E3003F                      and BX, 0011111100000000b; BX: 0011 1111 0000 0000
-    38 00000029 0FBFDB                          movsx EBX, BX; EBX: 0000 0000 0000 0000 0011 1111 0000 0000
+    38 00000029 0FB7DB                          movzx EBX, BX; EBX: 0000 0000 0000 0000 0011 1111 0000 0000
     39 0000002C C1E302                          shl EBX, 2;    EBX: 0000 0000 0000 0000 1111 1100 0000 0000
     40 0000002F 091D[04000000]                  or dword[c], EBX
     41                                          
@@ -43,7 +43,8 @@
     43 00000035 810D[04000000]0000-             or dword[c], 11111111111111110000000000000000b
     43 0000003D FFFF               
     44                                          
-    45 0000003F A1[04000000]                    mov EAX, [c]
-    46                                          
-    47 00000044 6A00                            push    dword 0      ; push the parameter for exit onto the stack
-    48 00000046 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+    45                                          
+    46 0000003F A1[04000000]                    mov EAX, [c]; debugging
+    47                                          
+    48 00000044 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    49 00000046 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -11,11 +11,11 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
 ; our data is declared here (the variables needed by our program)
 segment data use32 class=data
 
-    a dw 0
-    b dw -1
+    a dw 1111111111111111b
+    b dw 0000000000000000b
     c dd 0
 
-;12) Se dau doua cuvinte A si B. Sa se obtina dublucuvantul C:
+;12) Se dau doua cuvinte A si B. Sa se obtina dublucuvantul C: = 1111 1111 1111 1111 0000 0011 1000 0000b = FFFF0380h
 ;       bitii 0-6 ai lui C au valoarea 0
 ;       bitii 7-9 ai lui C coincid cu bitii 0-2 ai lui A
 ;       bitii 10-15 ai lui C coincid cu bitii 8-13 ai lui B
