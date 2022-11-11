@@ -103,6 +103,8 @@ class menu():
                 try:
                     id, name, adress = command[5:].split(", ")
                     validateId(int(id))
+                    validateIdIsAlreadyInRepository(self.__pRepo, int(id), -1)
+                    validateIdIsAlreadyInRepository(self.__eRepo, int(id), -1)
                     newPerson = person(int(id), name, adress)
                     validateEntityIsAlreadyInRepository(self.__pRepo, newPerson)
                     self.__pRepo.addPerson(newPerson)
@@ -123,6 +125,7 @@ class menu():
                     validateId(int(nId))
                     validateIdInRepository(self.__pRepo, int(id))
                     validateIdIsAlreadyInRepository(self.__pRepo, int(nId), int(id))
+                    validateIdIsAlreadyInRepository(self.__eRepo, int(nId), int(id))
                     newPerson = person(int(nId), nName, nAdress)
                     self.__pRepo.modPerson(int(id), newPerson)
                 except ValueError as error:
@@ -137,6 +140,8 @@ class menu():
                 try:
                     id, name, date, time = command[5:].split(", ")
                     validateId(int(id))
+                    validateIdIsAlreadyInRepository(self.__eRepo, int(id), -1)
+                    validateIdIsAlreadyInRepository(self.__pRepo, int(id), -1)
                     newEvent = event(int(id), name, date, time)
                     validateEntityIsAlreadyInRepository(self.__eRepo, newEvent)
                     self.__eRepo.addEvent(newEvent)
@@ -157,6 +162,7 @@ class menu():
                     validateId(int(nId))
                     validateIdInRepository(self.__eRepo, int(id))
                     validateIdIsAlreadyInRepository(self.__eRepo, int(nId), int(id))
+                    validateIdIsAlreadyInRepository(self.__pRepo, int(nId), int(id))
                     newEvent = event(int(nId), nName, nDate, nTime)
                     self.__eRepo.modEvent(int(id), newEvent)
                 except ValueError as error:
@@ -177,6 +183,7 @@ class menu():
                     lPerson = self.__pRepo.getPersonFromId(int(pId))
                     lEvent = self.__eRepo.getEventFromId(int(eId))
                     newLink = link(lPerson, lEvent)
+                    validateEntityIsAlreadyInRepository(self.__lRepo, newLink)
                     self.__lRepo.addLink(newLink)
                 except ValueError as error:
                     self.printError(error.args[0])
