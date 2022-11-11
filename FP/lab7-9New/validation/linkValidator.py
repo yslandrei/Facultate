@@ -1,0 +1,2 @@
+def validateLink(Link):
+    pass

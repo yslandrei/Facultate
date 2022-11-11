@@ -23,15 +23,3 @@ class person:
 
     def __eq__(self, other):
         return self.__id == other.__id and self.__name == other.__name and self.__adress == other.__adress 
-
-    def search(self, keyword):
-        __result = 0
-        if self.__name.lower().find(keyword) != -1:
-            __result = 1
-        elif self.__adress.lower().find(keyword) != -1:
-            __result = 1
-        elif str(self.__id) == keyword:
-            __result = 1
-        return __result
-            
-
