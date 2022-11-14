@@ -23,23 +23,25 @@ class linkService():
             else:
                 print(f" └─ {self.__lRepo.get(i)}")    
 
-    def printPersonsEvents(self, id):
+    def getPersonsEvents(self, id):
         Person = self.__pRepo.getPersonFromId(id)
         personsEvents = []
+        answear = ""
         for i in range(len(self.__lRepo)):
             if self.__lRepo.get(i).getPerson() == Person:
                 personsEvents.append(self.__lRepo.get(i).getEvent())
         personsEvents = sorted(personsEvents, key = lambda x: (x.getName(), x.getDate()))
         if len(personsEvents):
-            print(f"{Person} ➜  {len(personsEvents)} evenimente:\n") if len(personsEvents) != 1 else print(f"{len(personsEvents)} eveniment:\n")
+            answear = f"{Person} ➜  {len(personsEvents)} evenimente:\n\n" if len(personsEvents) != 1 else f"{len(personsEvents)} eveniment:\n\n"
             for _event in personsEvents:
-                print(_event)
-            print()
+                answear = answear + str(_event) + "\n"
+        return answear
 
-    def printMostEventsAPersonParticipates(self):
+    def getMostEventsAPersonParticipates(self):
         max = 0
         pFreq = [0 for _ in range(1000)]
         maxPeople = []
+        answear = ""
         for i in range(len(self.__lRepo)):
             pFreq[self.__lRepo.get(i).getPerson().getId()] += 1
             if pFreq[self.__lRepo.get(i).getPerson().getId()] > max:
@@ -50,16 +52,17 @@ class linkService():
                 maxPeople.append(self.__lRepo.get(i).getPerson())
         if max:
             for _person in maxPeople:
-                print(f"{_person} ➜  {max} evenimente") if max != 1 else print(f"{_person} ➜  {max} eveniment")
-            print()
+                answear = answear + f"{_person} ➜  {max} evenimente\n" if max != 1 else f"{_person} ➜  {max} eveniment\n"
+        return answear
 
-    def printMostParticipatedEvents(self):
+    def getMostParticipatedEvents(self):
         __dict = {
             "event": 0,
             "freq": 0
         }
         eFreq = [copy.deepcopy(__dict) for _ in range(1000)]
         eventsLen = 0
+        answear = ""
         for i in range(len(self.__lRepo)):
             if eFreq[self.__lRepo.get(i).getEvent().getId()]["freq"] == 0:
                 eventsLen += 1
@@ -68,11 +71,11 @@ class linkService():
         eFreq = sorted(eFreq, key = lambda x: x["freq"], reverse = True)
         firstFifthLen = int(eventsLen * .2)
         if firstFifthLen:
-            print(f"{firstFifthLen} = 20% din {eventsLen} evenimente totale:\n") if eventsLen != 1 else print(f"{firstFifthLen} = 20% din {len(eventsLen)} eveniment total:\n")
+            answear = f"{firstFifthLen} = 20% din {eventsLen} evenimente totale:\n\n" if eventsLen != 1 else f"{firstFifthLen} = 20% din {len(eventsLen)} eveniment total:\n\n"
             for i in range(firstFifthLen):
                 Event = eFreq[i]["event"]
                 Freq = eFreq[i]["freq"]
-                print(f"{Event.getName()}(id: {Event.getId()}, data: {Event.getDate()}, timp: {Event.getTime()}) ➜  nr participanti: {Freq}")
-            print()
+                answear = answear + f"{Event.getName()}(id: {Event.getId()}, data: {Event.getDate()}, timp: {Event.getTime()}) ➜  nr participanti: {Freq}\n"
+        return answear
         
         

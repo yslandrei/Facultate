@@ -120,17 +120,17 @@ class ui():
             elif command[:4] == "ppes":
                 try:
                     id = command[5:]
-                    self.__lService.printPersonsEvents(int(id))
+                    print(self.__lService.getPersonsEvents(int(id)))
                 except ValueError as error:
                     print(error)
             elif command[:4] == "pmep":
                 try:
-                    self.__lService.printMostEventsAPersonParticipates()
+                    print(self.__lService.getMostEventsAPersonParticipates())
                 except ValueError as error:
                     print(error)
             elif command[:4] == "pmpe":
                 try:
-                   self.__lService.printMostParticipatedEvents()
+                    print(self.__lService.getMostParticipatedEvents())
                 except ValueError as error:
                     print(error)  
             else:

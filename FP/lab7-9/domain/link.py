@@ -1,7 +1,7 @@
 class link:
-    def __init__(self, person, event):
-        self.__person = person
-        self.__event = event
+    def __init__(self, Person, Event):
+        self.__person = Person
+        self.__event = Event
     
     def getPerson(self):
         return self.__person
