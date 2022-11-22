@@ -1,3 +1,7 @@
+import random
+import string
+
+
 class ui():
     def __init__(self, pService, eService, lService):
         self.__pService = pService
@@ -50,10 +54,48 @@ class ui():
         self.__lService.addLink(2, 10)
         self.__lService.addLink(2, 11)
         self.__lService.addLink(3, 10)
-        self.__lService.addLink(3, 14)   
-        
+        self.__lService.addLink(3, 14) 
+
+    def ranString(self, length):
+        letters = string.ascii_lowercase
+        ranString = ''.join(random.choice(letters) for i in range(length))
+        return ranString
+
+    def ranInt(self, max):
+        return random.randint(0, max)
+
+    def preloadRandomData(self):
+        pRepoLen = self.ranInt(6)
+        i = 0
+        while i < pRepoLen:
+            try:
+                self.__pService.addPerson(self.ranInt(9), self.ranString(8), self.ranString(6))
+                i += 1
+            except ValueError:
+                continue
+        print(pRepoLen)
+        eRepoLen = self.ranInt(4)
+        i = 0
+        while i < eRepoLen:
+            try:
+                self.__eService.addEvent(self.ranInt(9) + 10, self.ranString(8), self.ranString(6), self.ranString(4))
+                i += 1
+            except ValueError:
+                continue   
+        print(eRepoLen)
+        lRepoLen = self.ranInt(pRepoLen * eRepoLen)
+        i = 0
+        while i < lRepoLen:
+            try:
+                self.__lService.addLink(self.ranInt(9), self.ranInt(9) + 10)
+                i += 1
+            except ValueError:
+                continue   
+        print(lRepoLen)
+ 
     def run(self):
-        self.preloadData()
+        #self.preloadData()
+        self.preloadRandomData()
         self.clearScreen()
         while(True):
             self.printMenu()
@@ -72,7 +114,7 @@ class ui():
             elif command[:4] == "popP":
                 try:
                     id = command[5:]
-                    self.__pService.popPerson(int(id))
+                    self.__lService.popPersonAndLinksRelated(int(id))
                 except ValueError as error:
                     print(error)
             elif command[:4] == "modP":
@@ -96,7 +138,7 @@ class ui():
             elif command[:4] == "popE":
                 try:
                     id = command[5:]
-                    self.__eService.popEvent(int(id))
+                    self.__lService.popEventAndLinksRelated(int(id))
                 except ValueError as error:
                     print(error)
             elif command[:4] == "modE":

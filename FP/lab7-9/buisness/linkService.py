@@ -1,20 +1,40 @@
 import copy
 from domain.link import link
-from validation.linkValidator import validateLink
 
 
 class linkService():
-    def __init__(self, pRepo, eRepo, lRepo):
+    def __init__(self, pRepo, eRepo, lRepo, v):
         self.__pRepo = pRepo
         self.__eRepo = eRepo
         self.__lRepo = lRepo
+        self.__v = v
 
     def addLink(self, pId, eId):
         Person = self.__pRepo.getPersonFromId(pId)
         Event = self.__eRepo.getEventFromId(eId)
         Link = link(Person, Event)
-        validateLink(Link)
+        self.__v.validate(Link)
         self.__lRepo.addLink(Link)
+
+    def popPersonAndLinksRelated(self, id):
+        Person = self.__pRepo.getPersonFromId(id)
+        self.__pRepo.popPerson(Person)
+        i = 0
+        while(i < len(self.__lRepo)):
+            if Person == self.__lRepo.get(i).getPerson():
+                self.__lRepo.popLink(self.__lRepo.get(i))
+            else:
+                i += 1
+
+    def popEventAndLinksRelated(self, id):
+        Event = self.__eRepo.getEventFromId(id)
+        self.__pRepo.popPerson(Event)
+        i = 0
+        while(i < len(self.__lRepo)):
+            if Event == self.__lRepo.get(i).getEvent():
+                self.__lRepo.popLink(self.__lRepo.get(i))
+            else:
+                i += 1
 
     def printAll(self):
         for i in range(len(self.__lRepo)):

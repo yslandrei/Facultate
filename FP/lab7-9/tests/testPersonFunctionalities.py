@@ -1,7 +1,7 @@
+from validation. validator import validator
 from domain.person import person
 from infrastructure.personRepository import personRepository
 from infrastructure.linkRepository import linkRepository
-from validation.personValidator import validatePerson
 from buisness.personService import personService
 
 
@@ -12,7 +12,6 @@ def testAllPersonFunctionalities():
 
 def testPersonRepository():
     testPersonRepositoryAdd()
-    testPersonRepositoryPop()
     testPersonRepositoryMod()
     testPersonRepositoryGetPersonFromId()
 
@@ -26,13 +25,6 @@ def testPersonRepositoryAdd():
         assert False
     except ValueError:
         assert True
-
-def testPersonRepositoryPop():
-    pRepo = personRepository()
-    person0 = person(10, "nume", "adresa")
-    pRepo.addPerson(person0)
-    pRepo.popPerson(person0)
-    assert len(pRepo) == 0
 
 def testPersonRepositoryMod():
     pRepo = personRepository()
@@ -64,44 +56,36 @@ def testPersonRepositoryGetPersonFromId():
 
 def testPersonValidator():
     person0 = person(10, "nume", "adresa")
-    validatePerson(person0)
+    v = validator()
+    v.validate(person0)
     person1 = person(-1, "nume", "adresa")
     try:
-        validatePerson(person1)
+        v.validate(person1)
         assert False
     except ValueError:
         assert True
     person2 = person("a", "nume", "adresa")
     try:
-        validatePerson(person2)
+        v.validate(person2)
         assert False
     except ValueError:
         assert True
 
 def testPersonService():
     testPersonServiceAdd()
-    testPersonServicePop()
     testPersonServiceMod()
 
 def testPersonServiceAdd():
     pRepo = personRepository()
-    lRepo = linkRepository()
-    pService = personService(pRepo, lRepo)
+    v = validator()
+    pService = personService(pRepo, v)
     pService.addPerson(10, "nume", "adresa")
     assert pRepo.get(0) == person(10, "nume", "adresa")
 
-def testPersonServicePop():
-    pRepo = personRepository()
-    lRepo = linkRepository()
-    pService = personService(pRepo, lRepo)
-    pService.addPerson(10, "nume", "adresa")
-    pService.popPerson(10)
-    assert len(pRepo) == 0
-
 def testPersonServiceMod():
     pRepo = personRepository()
-    lRepo = linkRepository()
-    pService = personService(pRepo, lRepo)
+    v = validator()
+    pService = personService(pRepo, v)
     pService.addPerson(10, "nume", "adresa")
     pService.modPerson(10, 11, "nume1", "adresa1")
     assert pRepo.get(0) == person(11, "nume1", "adresa1")

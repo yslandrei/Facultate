@@ -1,3 +1,4 @@
+from validation.validator import validator
 from buisness.linkService import linkService
 from domain.event import event
 from domain.person import person
@@ -39,8 +40,8 @@ def testLinkRepositoryPopPerson():
     lRepo.addLink(link0)
     link1 = link(person0, event1)
     lRepo.addLink(link1)
-    lRepo.popLinksRelatedToPerson(person0)
-    assert len(lRepo) == 0
+    lRepo.popLink(link0)
+    assert len(lRepo) == 1
 
 def testLinkRepositoryPopEvent():
     lRepo = linkRepository()
@@ -51,23 +52,53 @@ def testLinkRepositoryPopEvent():
     lRepo.addLink(link0)
     link1 = link(person1, event0)
     lRepo.addLink(link1)
-    lRepo.popLinksRelatedToEvent(event0)
-    assert len(lRepo) == 0
+    lRepo.popLink(link0)
+    assert len(lRepo) == 1
 
 def testLinkValidator():
     pass
 
 def testLinkService():
     testLinkServiceAdd()
+    testLinkServicePopPersonAndLinksRelated()
+    testLinkServicePopEventAndLinksRelated()
 
 def testLinkServiceAdd():
     pRepo = personRepository()
     eRepo = eventRepository()
     lRepo = linkRepository()
-    lService = linkService(pRepo, eRepo, lRepo)
+    v = validator()
+    lService = linkService(pRepo, eRepo, lRepo, v)
     person0 = person(0, "nume", "adresa")
     pRepo.addPerson(person0)
     event0 = event(10, "nume", "data", "timp")
     eRepo.addEvent(event0)
     lService.addLink(0, 10)
     assert len(lRepo) == 1
+
+def testLinkServicePopPersonAndLinksRelated():
+    pRepo = personRepository()
+    eRepo = eventRepository()
+    lRepo = linkRepository()
+    v = validator()
+    lService = linkService(pRepo, eRepo, lRepo, v)
+    person0 = person(0, "nume", "adresa")
+    pRepo.addPerson(person0)
+    event0 = event(10, "nume", "data", "timp")
+    eRepo.addEvent(event0)
+    lService.popPersonAndLinksRelated(0)
+    assert len(lRepo) == 0
+
+def testLinkServicePopEventAndLinksRelated():
+    pRepo = personRepository()
+    eRepo = eventRepository()
+    lRepo = linkRepository()
+    v = validator()
+    lService = linkService(pRepo, eRepo, lRepo, v)
+    person0 = person(0, "nume", "adresa")
+    pRepo.addPerson(person0)
+    event0 = event(10, "nume", "data", "timp")
+    eRepo.addEvent(event0)
+    lService.popEventAndLinksRelated(10)
+    assert len(lRepo) == 0
+    

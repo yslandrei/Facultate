@@ -1,3 +1,4 @@
+from validation.validator import validator
 from buisness.eventService import eventService
 from buisness.linkService import linkService
 from buisness.personService import personService
@@ -10,12 +11,13 @@ from tests.testAllFunctionalities import runAllTests
 
 def main():
     runAllTests()
+    v = validator()
     pRepo = personRepository()
     eRepo = eventRepository()
     lRepo = linkRepository()
-    pService = personService(pRepo, lRepo)
-    eService = eventService(eRepo, lRepo)
-    lService = linkService(pRepo, eRepo, lRepo)
+    pService = personService(pRepo, v)
+    eService = eventService(eRepo, v)
+    lService = linkService(pRepo, eRepo, lRepo, v)
     Ui = ui(pService, eService, lService)
     Ui.run()
 

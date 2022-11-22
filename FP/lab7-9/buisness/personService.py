@@ -1,25 +1,19 @@
 from domain.person import person
-from validation.personValidator import validatePerson
 
 
 class personService():
-    def __init__(self, pRepo, lRepo):
+    def __init__(self, pRepo, v):
         self.__pRepo = pRepo
-        self.__lRepo = lRepo
+        self.__v = v
 
     def addPerson(self, id, name, adress):
         Person = person(id, name, adress)
-        validatePerson(Person)
+        self.__v.validate(Person)
         self.__pRepo.addPerson(Person)
-
-    def popPerson(self, id):
-        Person = self.__pRepo.getPersonFromId(id)
-        self.__pRepo.popPerson(Person)
-        self.__lRepo.popLinksRelatedToPerson(Person)
 
     def modPerson(self, id, nId, nName, nAdress):
         newPerson = person(nId, nName, nAdress)
-        validatePerson(newPerson)
+        self.__v.validate(newPerson)
         oldPerson = self.__pRepo.getPersonFromId(id)
         self.__pRepo.modPerson(oldPerson, newPerson)
 

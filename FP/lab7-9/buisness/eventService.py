@@ -1,25 +1,19 @@
 from domain.event import event
-from validation.eventValidator import validateEvent
 
 
 class eventService():
-    def __init__(self, eRepo, lRepo):
+    def __init__(self, eRepo, v):
         self.__eRepo = eRepo
-        self.__lRepo = lRepo
+        self.__v = v
 
     def addEvent(self, id, name, date, time):
         Event = event(id, name, date, time)
-        validateEvent(Event)
+        self.__v.validate(Event)
         self.__eRepo.addEvent(Event)
-
-    def popEvent(self, id):
-        Event = self.__eRepo.getEventFromId(id)
-        self.__eRepo.popEvent(Event)
-        self.__lRepo.popLinksRelatedToEvent(Event)
 
     def modEvent(self, id, nId, nName, nDate, nTime):
         newEvent = event(nId, nName, nDate, nTime)
-        validateEvent(newEvent)
+        self.__v.validate(newEvent)
         oldEvent = self.__eRepo.getEventFromId(id)
         self.__eRepo.modEvent(oldEvent, newEvent)
 

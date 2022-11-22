@@ -1,0 +1,58 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                  
+    14                                  ;21.Se dau 2 siruri de octeti A si B. Sa se construiasca sirul R care sa contina elementele lui B in ordine inversa 
+    15                                  ;   urmate de elementele negative ale lui A.
+    16                                  ; Exemplu:
+    17                                  ;  A: 2, 1, -3, 3, -4, 2, 6
+    18                                  ;  B: 4, 5, 7, 6, 2, 1
+    19                                  ;  R: 1, 2, 6, 7, 5, 4, -3, -4
+    20                                  
+    21 00000000 0201FD03FC0206          a db 2, 1, -3, 3, -4, 2, 6
+    22                                  la equ $ - a
+    23 00000007 040507060201            b db 4, 5, 7, 6, 2, 1
+    24                                  lb equ $ - b
+    25 0000000D <res 0000000D>          r resb la + lb
+    26                                  
+    27                                  segment code use32 class=code
+    28                                      start:
+    29                                          
+    30 00000000 B906000000                      mov ecx, lb
+    31 00000005 BE[0C000000]                    mov esi, b + lb - 1
+    32 0000000A BF[0D000000]                    mov edi, r
+    33                                          
+    34 0000000F E306                            jecxz endRepeat1
+    35                                          repeat1:
+    36 00000011 FD                                  std
+    37 00000012 AC                                  lodsb ; al = b[esi], esi --
+    38 00000013 FC                                  cld
+    39 00000014 AA                                  stosb ; r[edi] = al, edi ++
+    40 00000015 E2FA                            loop repeat1
+    41                                          endRepeat1:
+    42                                          
+    43 00000017 B907000000                      mov ecx, la
+    44 0000001C BE[00000000]                    mov esi, a
+    45 00000021 FC                              cld
+    46                                          
+    47 00000022 E308                            jecxz endRepeat2
+    48                                          repeat2:
+    49 00000024 AC                                  lodsb ; al = a[esi], esi ++
+    50 00000025 3C00                                cmp al, 0
+    51 00000027 7D01                                jnl endIf1
+    52 00000029 AA                                      stosb ; r[edi] = al, edi ++
+    53                                              endIf1:
+    54 0000002A E2F8                            loop repeat2
+    55                                          endRepeat2:
+    56                                          
+    57 0000002C 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    58 0000002E FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,7 +1,7 @@
+from validation.validator import validator
 from domain.event import event
 from infrastructure.eventRepository import eventRepository
 from infrastructure.linkRepository import linkRepository
-from validation.eventValidator import validateEvent
 from buisness.eventService import eventService
 
 
@@ -12,7 +12,6 @@ def testAllEventFunctionalities():
 
 def testEventRepository():
     testEventRepositoryAdd()
-    testEventRepositoryPop()
     testEventRepositoryMod()
     testEventRepositoryGetEventFromId()
 
@@ -26,13 +25,6 @@ def testEventRepositoryAdd():
         assert False
     except ValueError:
         assert True
-
-def testEventRepositoryPop():
-    eRepo = eventRepository()
-    event0 = event(10, "nume", "data", "timp")
-    eRepo.addEvent(event0)
-    eRepo.popEvent(event0)
-    assert len(eRepo) == 0
 
 def testEventRepositoryMod():
     eRepo = eventRepository()
@@ -64,44 +56,36 @@ def testEventRepositoryGetEventFromId():
 
 def testEventValidator():
     event0 = event(10, "nume", "data", "timp")
-    validateEvent(event0)
+    v = validator()
+    v.validate(event0)
     event1 = event(-1, "nume", "data", "timp")
     try:
-        validateEvent(event1)
+        v.validate(event1)
         assert False
     except ValueError:
         assert True
     event2 = event("a", "nume", "data", "timp")
     try:
-        validateEvent(event2)
+        v.validate(event2)
         assert False
     except ValueError:
         assert True
 
 def testEventService():
     testEventServiceAdd()
-    testEventServicePop()
     testEventServiceMod()
 
 def testEventServiceAdd():
     eRepo = eventRepository()
-    lRepo = linkRepository()
-    eService = eventService(eRepo, lRepo)
+    v = validator()
+    eService = eventService(eRepo, v)
     eService.addEvent(10, "nume", "data", "timp")
     assert eRepo.get(0) == event(10, "nume", "data", "timp")
 
-def testEventServicePop():
-    eRepo = eventRepository()
-    lRepo = linkRepository()
-    eService = eventService(eRepo, lRepo)
-    eService.addEvent(10, "nume", "data", "timp")
-    eService.popEvent(10)
-    assert len(eRepo) == 0
-
 def testEventServiceMod():
     eRepo = eventRepository()
-    lRepo = linkRepository()
-    eService = eventService(eRepo, lRepo)
+    v = validator()
+    eService = eventService(eRepo, v)
     eService.addEvent(10, "nume", "data", "timp")
     eService.modEvent(10, 11, "nume1", "data1", "timp1")
     assert eRepo.get(0) == event(11, "nume1", "data1", "timp1")

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define SIZE 100
+#define SIZE 10
 
 int a[SIZE];
 

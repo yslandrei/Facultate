@@ -1,0 +1,67 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                  
+    14                                  ; 19) Se dau 2 siruri de octeti A si B. Sa se construiasca sirul R care sa contina doar elementele pare si negative din ;     cele 2 siruri.
+    15                                  ; Exemplu:
+    16                                  ;  A: 2, 1, 3, -3, -4, 2, -6
+    17                                  ;  B: 4, 5, -5, 7, -6, -2, 1
+    18                                  ;  R: -4, -6, -6, -2
+    19                                  
+    20 00000000 020103FDFC02FA          a db 2, 1, 3, -3, -4, 2, -6
+    21                                  la equ $ - a
+    22 00000007 0405FB07FAFE01          b db 4, 5, -5, 7, -6, -2, 1
+    23                                  lb equ $ - b
+    24 0000000E <res 0000000E>          r resb la + lb
+    25                                  
+    26                                  ; our code starts here
+    27                                  segment code use32 class=code
+    28                                      start:
+    29 00000000 B907000000                      mov ecx, la
+    30 00000005 BE[00000000]                    mov esi, a
+    31 0000000A BF[0E000000]                    mov edi, r
+    32                                          
+    33 0000000F E312                            jecxz endRepeta1
+    34                                          repeat1:
+    35 00000011 AC                                  lodsb
+    36 00000012 3C00                                cmp al, 0
+    37 00000014 7D0B                                jnl endif1 ; negativ - continua, pozitiv - trece la urm
+    38 00000016 88C3                                    mov bl, al
+    39 00000018 2401                                    and al, 00000001b
+    40 0000001A 3C01                                    cmp al, 1
+    41 0000001C 7403                                    je endif1 ; par - continua, par - trece la urm
+    42 0000001E 88D8                                        mov al, bl
+    43 00000020 AA                                          stosb
+    44                                              endif1:
+    45 00000021 E2EE                            loop repeat1
+    46                                          endRepeta1:
+    47                                          
+    48 00000023 B907000000                      mov ecx, lb
+    49 00000028 BE[07000000]                    mov esi, b
+    50                                          
+    51 0000002D E312                            jecxz endRepeta2
+    52                                          repeat2:
+    53 0000002F AC                                  lodsb
+    54 00000030 3C00                                cmp al, 0
+    55 00000032 7D0B                                jnl endif2 ; negativ - continua, pozitiv - trece la urm
+    56 00000034 88C3                                    mov bl, al
+    57 00000036 2401                                    and al, 00000001b
+    58 00000038 3C01                                    cmp al, 1
+    59 0000003A 7403                                    je endif2 ; par - continua, par - trece la urm
+    60 0000003C 88D8                                        mov al, bl
+    61 0000003E AA                                          stosb
+    62                                              endif2: 
+    63 0000003F E2EE                            loop repeat2
+    64                                          endRepeta2:
+    65                                          
+    66 00000041 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    67 00000043 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

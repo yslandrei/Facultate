@@ -8,21 +8,11 @@ class linkRepository:
                 raise ValueError("Persoana participa deja la acest eveniment!\n")
         self.__lList.append(link)
 
-    def popLinksRelatedToPerson(self, Person):
-        i = 0
-        while i < len(self.__lList):
-            if self.__lList[i].getPerson() == Person:
+    def popLink(self, Link):
+        for i in range(len(self.__lList)):
+            if self.__lList[i] == Link:
                 self.__lList.pop(i)
-            else:
-                i += 1
-
-    def popLinksRelatedToEvent(self, Event):
-        i = 0
-        while i < len(self.__lList):
-            if self.__lList[i].getEvent() == Event:
-                self.__lList.pop(i)
-            else:
-                i += 1
+                break
 
     def get(self, i):
         return self.__lList[i]
