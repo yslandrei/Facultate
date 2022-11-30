@@ -1,3 +1,6 @@
+from infrastructure.personFileRepository import personFileRepository
+from infrastructure.eventFileRepository import eventFileRepository
+from infrastructure.linkFileRepository import linkFileRepository
 from validation.validator import validator
 from buisness.eventService import eventService
 from buisness.linkService import linkService
@@ -12,9 +15,9 @@ from tests.testAllFunctionalities import runAllTests
 def main():
     runAllTests()
     v = validator()
-    pRepo = personRepository()
-    eRepo = eventRepository()
-    lRepo = linkRepository()
+    pRepo = personFileRepository()
+    eRepo = eventFileRepository()
+    lRepo = linkFileRepository()
     pService = personService(pRepo, v)
     eService = eventService(eRepo, v)
     lService = linkService(pRepo, eRepo, lRepo, v)

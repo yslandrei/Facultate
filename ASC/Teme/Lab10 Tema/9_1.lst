@@ -1,0 +1,74 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, printf, scanf           ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                  import scanf msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                                            
+    12                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    13                                  
+    14                                  ; our data is declared here (the variables needed by our program)
+    15                                  segment data use32 class=data
+    16                                      ;9.1) Sa se citeasca de la tastatura doua numere a si b (in baza 10) si sa se calculeze: (a+b) / (a-b). Catul impartirii se va salva in memorie in variabila "rezultat" (definita in segmentul de date). Valorile s
+    17                                  
+    18 00000000 FFFFFFFF                    a dd -1
+    19 00000004 FFFFFFFF                    b dd -1
+    20 00000008 FFFFFFFF                    rezultat dd -1
+    21 0000000C 61203D2000                  printFormat1 db 'a = ', 0
+    22 00000011 62203D2000                  printFormat2 db 'b = ', 0
+    23 00000016 256400                      scanFormat1 db '%d', 0
+    24 00000019 282564202B20256429-         printFormat3 db '(%d + %d) / (%d - %d)= %d', 0
+    24 00000022 202F20282564202D20-
+    24 0000002B 2564293D20256400   
+    25                                      
+    26 00000033 61203D2025642C2062-         testt db 'a = %d, b = %d', 0
+    26 0000003C 203D20256400       
+    27                                      
+    28                                  ; our code starts here
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                              ; apel printf(“a=”)
+    32 00000000 68[0C000000]                    push dword printFormat1
+    33 00000005 FF15[00000000]                  call [printf]
+    34 0000000B 83C404                          add esp, 4*1
+    35                                  
+    36                                          ; apel scanf(“%d”, a)
+    37 0000000E 68[00000000]                    push dword a		; se pune pe stiva offset-ul variabilei!!
+    38 00000013 68[16000000]                    push dword scanFormat1
+    39 00000018 FF15[00000000]                  call [scanf]
+    40 0000001E 83C408                          add esp, 4*2
+    41                                  
+    42                                          ; apel printf(“b=”)
+    43 00000021 68[11000000]                     push dword printFormat2
+    44 00000026 FF15[00000000]                  call [printf]
+    45 0000002C 83C404                          add esp, 4*1
+    46                                  
+    47                                          ; apel scanf(“%d”, b)
+    48 0000002F 68[04000000]                    push dword b    	; se pune pe stiva offset-ul variabilei!!
+    49 00000034 68[16000000]                    push dword scanFormat1
+    50 00000039 FF15[00000000]                  call [scanf]
+    51 0000003F 83C408                          add esp, 4*2
+    52                                          
+    53 00000042 A1[00000000]                    mov eax, [a]
+    54 00000047 0305[04000000]                  add eax, [b] 
+    55 0000004D BA00000000                      mov edx, 0 ; edx:eax = a + b
+    56 00000052 8B0D[00000000]                  mov ecx, [a]
+    57 00000058 2B0D[04000000]                  sub ecx, [b] ; ecx = a - b
+    58 0000005E F7F9                            idiv ecx ; edx:eax / ecx = eax(rest edx)
+    59 00000060 A3[08000000]                    mov [rezultat], eax
+    60                                          
+    61                                          ;printf("(%d + %d) / (%d - %d)= %d", a, b, a, b, rezultat)
+    62 00000065 FF35[08000000]                  push dword[rezultat]
+    63 0000006B FF35[04000000]                  push dword[b]
+    64 00000071 FF35[00000000]                  push dword[a]
+    65 00000077 FF35[04000000]                  push dword[b]
+    66 0000007D FF35[00000000]                  push dword[a]
+    67 00000083 68[19000000]                    push dword printFormat3
+    68 00000088 FF15[00000000]                  call [printf]
+    69 0000008E 83C418                          add esp, 4 * 6
+    70 00000091 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    71 00000093 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

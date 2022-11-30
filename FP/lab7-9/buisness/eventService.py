@@ -39,3 +39,6 @@ class eventService():
                 print(f" ├─ {self.__eRepo.get(i)}")
             else:
                 print(f" └─ {self.__eRepo.get(i)}")
+
+    def saveFile(self):
+        self.__eRepo.saveFile()

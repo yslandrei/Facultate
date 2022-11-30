@@ -1,0 +1,141 @@
+     1                                  bits 32
+     2                                  global start  
+     3                                        
+     4                                  extern exit, fread, fprintf, fopen, fclose               ; tell nasm that exit exists even if we 
+     5                                  import exit msvcrt.dll    
+     6                                  import fread msvcrt.dll
+     7                                  import fprintf msvcrt.dll
+     8                                  import fopen msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  
+    11                                  ;9) Se da un fisier text. Sa se citeasca continutul fisierului, sa se determine caracterul special (diferit de litera) cu cea mai mare frecventa si sa se afiseze acel caracter, impreuna cu frecventa acestuia. Numele
+    12                                  
+    13                                                         
+    14                                  segment data use32 class=data
+    15 00000000 256400                      scanFormat1 db '%d', 0
+    16 00000003 436172616374657275-         printFormat1 db 'Caracterul special: %c | Frecventa: %d', 0
+    16 0000000C 6C207370656369616C-
+    16 00000015 3A202563207C204672-
+    16 0000001E 656376656E74613A20-
+    16 00000027 256400             
+    17 0000002A 256400                      printFormat2 db '%d', 0
+    18 0000002D 696E2E74787400              inputFile db "in.txt", 0
+    19 00000034 6F75742E74787400            outputFile db "out.txt", 0
+    20 0000003C 7700                        writeMode db "w", 0
+    21 0000003E 7200                        readMode db "r", 0
+    22 00000040 0A00                        newLine db 10, 0
+    23 00000042 FFFFFFFF                    descInput dd -1
+    24 00000046 FFFFFFFF                    descOutput dd -1
+    25                                      
+    26                                      
+    27                                      maxLen equ 100
+    28 0000004A <res 00000065>              s resb 101
+    29 000000AF 00000000                    sLen dd 0
+    30 000000B3 <res 00000100>              freq resb 256
+    31 000001B3 616263646566676869-         letters db 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    31 000001BC 6A6B6C6D6E6F707172-
+    31 000001C5 737475767778797A41-
+    31 000001CE 42434445464748494A-
+    31 000001D7 4B4C4D4E4F50515253-
+    31 000001E0 5455565758595A     
+    32                                      lLen equ $ - letters
+    33 000001E7 00000000                    maxFreq dd 0
+    34                                      special dd ''
+    35                                      
+    36                                      
+    37                                  segment code use32 class=code
+    38                                      start:
+    39                                          ; eax = fopen(&inputFile, &readMode)
+    40 00000000 68[3E000000]                    push dword readMode
+    41 00000005 68[2D000000]                    push dword inputFile
+    42 0000000A FF15[00000000]                  call [fopen]
+    43 00000010 83C408                          add esp, 4 * 2
+    44                                          
+    45 00000013 A3[42000000]                    mov [descInput], eax
+    46 00000018 83F800                          cmp eax, 0
+    47 0000001B 0F84CB000000                    je final
+    48                                          
+    49                                          ; eax = fopen(&outputFile, &writeMode)
+    50 00000021 68[3C000000]                    push dword writeMode
+    51 00000026 68[34000000]                    push dword outputFile
+    52 0000002B FF15[00000000]                  call [fopen]
+    53 00000031 83C408                          add esp, 4 * 2
+    54                                          
+    55 00000034 A3[46000000]                    mov [descOutput], eax
+    56 00000039 83F800                          cmp eax, 0
+    57 0000003C 0F84AA000000                    je final
+    58                                          
+    59                                          
+    60                                          ; eax  = fread(&s, 1, maxLen, descInput)
+    61 00000042 FF35[42000000]                  push dword [descInput]
+    62 00000048 6A64                            push dword maxLen
+    63 0000004A 6A01                            push dword 1
+    64 0000004C 68[4A000000]                    push dword s
+    65 00000051 FF15[00000000]                  call [fread]
+    66 00000057 83C410                          add esp, 4 * 4
+    67                                          
+    68 0000005A A3[AF000000]                    mov [sLen], eax
+    69 0000005F 8B0D[AF000000]                  mov ecx, [sLen]
+    70 00000065 BE[4A000000]                    mov esi, s
+    71                                          
+    72                                          repeat1:
+    73 0000006A AC                                  lodsb
+    74 0000006B 88C4                                mov ah, al
+    75                                              
+    76 0000006D 51                                  push ecx
+    77 0000006E 56                                  push esi
+    78 0000006F B934000000                          mov ecx, lLen
+    79 00000074 BE[B3010000]                        mov esi, letters
+    80                                                  
+    81                                              checkLetter:
+    82 00000079 AC                                      lodsb
+    83 0000007A 38C4                                    cmp ah, al
+    84 0000007C 742C                                    je isLetter
+    85 0000007E E2F9                                loop checkLetter
+    86                                              
+    87                                              isNotLetter:
+    88 00000080 5E                                      pop esi
+    89 00000081 59                                      pop ecx
+    90                                                  
+    91                                                  ; freq[ [esi] ] ++
+    92 00000082 0FB61E                                  movzx ebx, byte[esi]
+    93 00000085 FE83[B3000000]                          inc byte[ebx + freq]
+    94                                                  
+    95                                                  ; maxFreq / special
+    96 0000008B 0FB69B[B3000000]                        movzx ebx, byte[ebx + freq]
+    97 00000092 3B1D[E7010000]                          cmp ebx, [maxFreq]
+    98 00000098 7C12                                    jl endIf1
+    99 0000009A 891D[E7010000]                          mov [maxFreq], ebx            
+   100 000000A0 8B1E                                    mov ebx, [esi]
+   101 000000A2 891D[EB010000]                          mov [special], ebx
+   102 000000A8 EB02                                    jmp endIf1
+   103                                              
+   104                                              isLetter:
+   105 000000AA 5E                                      pop esi
+   106 000000AB 59                                      pop ecx
+   107                                              endIf1:
+   108 000000AC E2BC                            loop repeat1
+   109                                          
+   110                                          ; fprintf(descOutput, &printFormat1, special, maxFreq)
+   111 000000AE FF35[E7010000]                  push dword [maxFreq]
+   112 000000B4 FF35[EB010000]                  push dword [special]
+   113 000000BA 68[03000000]                    push dword printFormat1
+   114 000000BF FF35[46000000]                  push dword [descOutput]
+   115 000000C5 FF15[00000000]                  call [fprintf]
+   116 000000CB 83C410                          add esp, 4 * 4
+   117                                          
+   118                                          ; fclose(descInput)
+   119 000000CE FF35[42000000]                  push dword [descInput]
+   120 000000D4 FF15[00000000]                  call [fclose]
+   121 000000DA 83C404                          add esp, 4 * 1
+   122                                          
+   123                                          
+   124                                          ; fclose(descOutput)
+   125 000000DD FF35[46000000]                  push dword [descOutput]
+   126 000000E3 FF15[00000000]                  call [fclose]
+   127 000000E9 83C404                          add esp, 4 * 1
+   128                                      
+   129                                          
+   130                                          final:
+   131 000000EC 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   132 000000EE FF15[00000000]                  call    [exit]       ; call exit to terminate the program

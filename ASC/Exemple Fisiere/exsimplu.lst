@@ -1,0 +1,55 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  extern exit, printf, scanf  
+     4                                  import exit msvcrt.dll    
+     5                                  import printf msvcrt.dll   
+     6                                  import scanf msvcrt.dll     
+     7                                                            
+     8                                  segment data use32 class=data
+     9 00000000 0000                        a dw 0
+    10 00000002 0000                        b dw 0
+    11 00000004 0000                        result dw 0
+    12 00000006 613D00                      format1 db 'a=', 0	; format este un sir C
+    13 00000009 623D00                      format2 db 'b=', 0      
+    14 0000000C 256400                      readformat db '%d', 0  
+    15 0000000F 2564202B202564203D-         printformat db '%d + %d = %d', 0  
+    15 00000018 20256400           
+    16                                  
+    17                                  segment code use32 class=code
+    18                                  start:
+    19                                      ; apel printf(“a=”)
+    20 00000000 68[06000000]                push dword format1
+    21 00000005 FF15[00000000]              call [printf]
+    22 0000000B 83C404                      add esp, 4*1
+    23                                  
+    24                                      ; apel scanf(“%d”, a)
+    25 0000000E 68[00000000]                push dword a		; se pune pe stiva offset-ul variabilei!!
+    26 00000013 68[0C000000]                push dword readformat
+    27 00000018 FF15[00000000]              call [scanf]
+    28 0000001E 83C408                      add esp, 4*2
+    29                                  
+    30                                      ; apel printf(“b=”)
+    31 00000021 68[09000000]                 push dword format2
+    32 00000026 FF15[00000000]              call [printf]
+    33 0000002C 83C404                      add esp, 4*1
+    34                                  
+    35                                      ; apel scanf(“%d”, b)
+    36 0000002F 68[02000000]                push dword b    	; se pune pe stiva offset-ul variabilei!!
+    37 00000034 68[0C000000]                push dword readformat
+    38 00000039 FF15[00000000]              call [scanf]
+    39 0000003F 83C408                      add esp, 4*2
+    40                                  
+    41 00000042 66A1[00000000]              mov ax, [a]
+    42 00000048 660305[02000000]            add ax, [b]
+    43 0000004F 66A3[04000000]              mov [result], ax
+    44                                  
+    45                                      ; apel printf(“%d + %d = %d\n”, a, b, result)
+    46 00000055 FF35[04000000]              push dword [result]     ; pune pe stiva valoarea rezultatului 
+    47 0000005B FF35[02000000]              push dword [b]          ; pune pe stiva valoarea lui b
+    48 00000061 FF35[00000000]              push dword [a]          ; pune pe stiva valoarea lui a
+    49 00000067 68[0F000000]                push dword printformat
+    50 0000006C FF15[00000000]              call [printf]
+    51 00000072 83C410                      add esp,4*4
+    52                                  
+    53 00000075 6A00                        push dword 0
+    54 00000077 FF15[00000000]              call [exit]

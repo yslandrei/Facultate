@@ -1,0 +1,108 @@
+     1                                     ; se citeste un caracter c si se citeste un sir s
+     2                                      ; sa se afiseze pe ecran nr de apaitii al carcaterului citit c in sirul s
+     3                                  
+     4                                  bits 32 ; assembling for the 32 bits architecture
+     5                                  
+     6                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     7                                  global start        
+     8                                  
+     9                                  ; declare external functions needed by our program
+    10                                  ; declare external functions needed by our program
+    11                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    12                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    13                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    14                                                            extern exit  , printf, scanf   , gets          ; tell nasm that exit exists even if we won't be defining it
+    15                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    16                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    17                                                            import printf msvcrt.dll
+    18                                                            import scanf msvcrt.dll
+    19                                                             import gets msvcrt.dll
+    20                                  segment data use32 class=data
+    21                                      ; ...
+    22                                   
+    23                                      
+    24 00000000 <res 00000014>          s resb 20
+    25 00000014 257300                  format_sir db '%s', 0
+    26 00000017 532D61206369746974-     mesaj db 'S-a citit acest sir:', 0 
+    26 00000020 206163657374207369-
+    26 00000029 723A00             
+    27 0000002C 256300                  formatcaracter db '%c', 0
+    28 0000002F 00000000                caracter dd 0
+    29 00000033 696E74726F64756365-     mesajcitirec db 'introduceti un caracter: ', 0
+    29 0000003C 746920756E20636172-
+    29 00000045 61637465723A2000   
+    30 0000004D 204361726163746572-     mesajresultat db ' Caracterul %c apare de %d', 0
+    30 00000056 756C20256320617061-
+    30 0000005F 726520646520256400 
+    31                                  
+    32                                  ; our code starts here
+    33                                  segment code use32 class=code
+    34                                      start:
+    35                                          ; ...
+    36                                         ; a
+    37                                          ;ana are mere 
+    38                                          ; a de 3 ori
+    39                                  ;citire        
+    40 00000000 68[00000000]            push dword s
+    41 00000005 FF15[00000000]          call [gets]
+    42 0000000B 83C404                  add esp, 4*1
+    43                                                  
+    44                                  ;print pe ecran mesajul
+    45                                          
+    46 0000000E 68[17000000]            push dword mesaj
+    47 00000013 FF15[00000000]          call [printf]
+    48 00000019 83C404                  add esp, 4*1
+    49                                                  
+    50                                  ; print pe ecran sirul citit
+    51                                       
+    52 0000001C 68[00000000]            push dword s
+    53 00000021 68[14000000]            push dword format_sir        
+    54 00000026 FF15[00000000]          call [printf]
+    55 0000002C 83C408                  add esp, 4*2
+    56                                  
+    57                                  ; afisare mesaj pt citire caracter
+    58 0000002F 68[33000000]            push dword mesajcitirec
+    59 00000034 FF15[00000000]          call [printf]
+    60 0000003A 83C404                  add esp, 4*1
+    61                                  
+    62                                  ; citire carcaterului
+    63 0000003D 68[2F000000]                push dword caracter
+    64 00000042 68[2C000000]                push dword formatcaracter
+    65 00000047 FF15[00000000]              call [scanf]
+    66 0000004D 83C408                      add esp, 4*2
+    67                                      
+    68                                      ; determinare nr de aparitii a lui c in s
+    69                                      
+    70 00000050 B914000000                  mov ecx, 20 ; nr max de car pe care le putem avea in s
+    71 00000055 BE00000000                  mov esi, 0 ; pentru a parcurge sirul s
+    72                                      
+    73 0000005A BB00000000                  mov ebx, 0 ; pentru a numara de cate ori apare c in s
+    74                                      
+    75                                      repeta:
+    76 0000005F 8A86[00000000]                  mov al, [s+esi] ; accesare elem din sir
+    77 00000065 3A05[2F000000]                  cmp al, [caracter]
+    78 0000006B 7402                            JE aduna
+    79 0000006D 7504                            JNE mergimaideparte
+    80                                              aduna:
+    81 0000006F 43                                      inc ebx
+    82 00000070 46                                      inc esi
+    83 00000071 EB01                                jmp end_repeta
+    84                                              mergimaideparte:
+    85 00000073 46                                      inc esi
+    86                                                  
+    87                                                  end_repeta:
+    88 00000074 E2E9                        loop repeta
+    89                                      ; afisare 
+    90                                      ; mesajresultat db ' Caracterul %c apare de %d', 0
+    91 00000076 53                          push ebx
+    92 00000077 FF35[2F000000]              push dword [caracter]
+    93 0000007D 68[4D000000]                push dword mesajresultat
+    94 00000082 FF15[00000000]              call [printf],
+    95 00000088 83C40C                      add esp, 4*3
+    96                                      
+    97                                      
+    98                                  
+    99                                  
+   100                                          ; exit(0)
+   101 0000008B 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   102 0000008D FF15[00000000]                  call    [exit]       ; call exit to terminate the program

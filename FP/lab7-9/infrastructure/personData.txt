@@ -1,0 +1,5 @@
+0, Andrei Diaconescu, Valcea
+1, Teodor Domnica, Prahova
+2, Andrei Ivancu, Valcea
+3, Rares Bozga, Satu Mare
+4, George, Bacau

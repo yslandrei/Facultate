@@ -41,7 +41,12 @@ class linkService():
             if i + 1 != len(self.__lRepo):
                 print(f" ├─ {self.__lRepo.get(i)}")
             else:
-                print(f" └─ {self.__lRepo.get(i)}")    
+                print(f" └─ {self.__lRepo.get(i)}")   
+
+    def saveFile(self):
+        self.__pRepo.saveFile()
+        self.__eRepo.saveFile()
+        self.__lRepo.saveFile()
 
     def getPersonsEvents(self, id):
         Person = self.__pRepo.getPersonFromId(id)
@@ -75,6 +80,24 @@ class linkService():
                 answear = answear + f"{_person} ➜  {max} evenimente\n" if max != 1 else f"{_person} ➜  {max} eveniment\n"
         return answear
 
+    def getLeastEventsAPersonParticipates(self):
+        max = 99999
+        pFreq = [0 for _ in range(1000)]
+        maxPeople = []
+        answear = ""
+        for i in range(len(self.__lRepo)):
+            pFreq[self.__lRepo.get(i).getPerson().getId()] += 1
+            if pFreq[self.__lRepo.get(i).getPerson().getId()] < max:
+                max = pFreq[self.__lRepo.get(i).getPerson().getId()]
+                maxPeople.clear()
+                maxPeople.append(self.__lRepo.get(i).getPerson())
+            elif pFreq[self.__lRepo.get(i).getPerson().getId()] == max:
+                maxPeople.append(self.__lRepo.get(i).getPerson())
+        if max:
+            for _person in maxPeople:
+                answear = answear + f"{_person} ➜  {max} evenimente\n" if max != 1 else f"{_person} ➜  {max} eveniment\n"
+        return answear
+
     def getMostParticipatedEvents(self):
         __dict = {
             "event": 0,
@@ -97,5 +120,6 @@ class linkService():
                 Freq = eFreq[i]["freq"]
                 answear = answear + f"{Event.getName()}(id: {Event.getId()}, data: {Event.getDate()}, timp: {Event.getTime()}) ➜  nr participanti: {Freq}\n"
         return answear
+
         
         

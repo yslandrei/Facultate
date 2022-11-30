@@ -17,9 +17,9 @@ segment data use32 class=data
    ;s dd 1234554321, 305419896, 121, 15, 9876789, 1, 123454321
     ls equ ($ - s) / 4
     
-    dbg1 db -1
+    db -1
     d resb ls
-    dbg2 db -1
+    db -1
     
     restul dd 0
     zece dd 10

@@ -37,3 +37,6 @@ class personService():
                 print(f" ├─ {self.__pRepo.get(i)}")
             else:
                 print(f" └─ {self.__pRepo.get(i)}")
+
+    def saveFile(self):
+        self.__pRepo.saveFile()

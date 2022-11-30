@@ -13,16 +13,16 @@
     13                                      ; 8) Se da un sir de dublucuvinte. Sa se obtina sirul format din octetii inferiori ai
     14                                      ;    cuvintelor superioare din elementele sirului de dublucuvinte care sunt palindrom in scrierea in baza 10.
     15                                      
-    16 00000000 D1CD95497856341279-         s dd 4995CDD1h, 12345678h, 79h, 0Fh, 96B535h, 1h, 75BC371h 
+    16 00000000 D1CD95497856341279-         s dd 4995CDD1h, 12345678h, 79h, 0Fh, 96B535h, 1h, 75BC371h ; => d db 95, 00, 96, 00, 5B
     16 00000009 0000000F00000035B5-
     16 00000012 96000100000071C35B-
     16 0000001B 07                 
     17                                     ;s dd 1234554321, 305419896, 121, 15, 9876789, 1, 123454321
     18                                      ls equ ($ - s) / 4
     19                                      
-    20 0000001C FF                          dbg1 db -1
+    20 0000001C FF                          db -1
     21 0000001D <res 00000007>              d resb ls
-    22 00000024 FF                          dbg2 db -1
+    22 00000024 FF                          db -1
     23                                      
     24 00000025 00000000                    restul dd 0
     25 00000029 0A000000                    zece dd 10

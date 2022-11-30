@@ -1,0 +1,49 @@
+     1                                  ; Codul de mai jos va crea un fisier gol, numit "ana.txt" in directorul curent.
+     2                                  ; Programul va folosi functia fopen pentru deschiderea/crearea fisierului si functia fclose pentru inchiderea fisierului creat.
+     3                                  ; Deoarece in apelul functiei fopen programul foloseste modul de acces "w", daca un fisier cu acelasi nume exista deja in directorul curent, continutul acelui fisier va fi sters. 
+     4                                  
+     5                                  bits 32 
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  ; declare external functions needed by our program
+    10                                  extern exit, fopen, fclose
+    11                                  import exit msvcrt.dll  
+    12                                  import fopen msvcrt.dll  
+    13                                  import fclose msvcrt.dll
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17 00000000 616E612E74787400            nume_fisier db "ana.txt", 0  ; numele fisierului care va fi creat
+    18 00000008 7700                        mod_acces db "w", 0          ; modul de deschidere a fisierului - 
+    19                                                                   ; w - pentru scriere. daca fiserul nu exista, se va crea                                   
+    20 0000000A FFFFFFFF                    descriptor_fis dd -1         ; variabila in care vom salva descriptorul fisierului - necesar pentru a putea face referire la fisier
+    21                                                                      
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          ; apelam fopen pentru a crea fisierul
+    26                                          ; functia va returna in EAX descriptorul fisierului sau 0 in caz de eroare
+    27                                          ; eax = fopen(nume_fisier, mod_acces)
+    28 00000000 68[08000000]                    push dword mod_acces     
+    29 00000005 68[00000000]                    push dword nume_fisier
+    30 0000000A FF15[00000000]                  call [fopen]
+    31 00000010 83C408                          add esp, 4*2                ; eliberam parametrii de pe stiva
+    32                                  
+    33 00000013 A3[0A000000]                    mov [descriptor_fis], eax   ; salvam valoarea returnata de fopen in variabila descriptor_fis
+    34                                          
+    35                                          ; verificam daca functia fopen a creat cu succes fisierul (daca EAX != 0)
+    36 00000018 83F800                          cmp eax, 0
+    37 0000001B 740F                            je final
+    38                                          
+    39                                          ; apelam functia fclose pentru a inchide fisierul
+    40                                          ; fclose(descriptor_fis)
+    41 0000001D FF35[0A000000]                  push dword [descriptor_fis]
+    42 00000023 FF15[00000000]                  call [fclose]
+    43 00000029 83C404                          add esp, 4
+    44                                          
+    45                                        final:
+    46                                          
+    47                                          ; exit(0)
+    48 0000002C 6A00                            push    dword 0      
+    49 0000002E FF15[00000000]                  call    [exit]       

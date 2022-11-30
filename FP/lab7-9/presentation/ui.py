@@ -9,19 +9,21 @@ class ui():
         self.__lService = lService
 
     def printMenu(self):
-        print("• Adauga persoana in lista                                          - addP [id], [nume], [adresa]")
-        print("• Sterge persoana din lista                                         - popP [id]")
-        print("• Modifica persoana din lista                                       - modP [id], [nId], [nNume], [nAdresa]")
-        print("• Cauta persoana in lista                                           - srcP [keyword]")
-        print("• Adauga eveniment in lista                                         - addE [id], [nume], [data], [timp]")
-        print("• Sterge eveniment din lista                                        - popE [id]")
-        print("• Modifica eveniment din lista                                      - modE [id], [nId], [nNume], [nData], [nTimp]")
-        print("• Cauta eveniment in lista                                          - srcE [keyword]")
-        print("• Inscrie persoana la eveniment                                     - link [pId], [eId]")
-        print("• Afiseaza evenimentele la care participa o persoana ordonate dupa  - ppes [pId]")
+        print("• Adauga persoana in lista                                           - addP [id], [nume], [adresa]")
+        print("• Sterge persoana din lista                                          - popP [id]")
+        print("• Modifica persoana din lista                                        - modP [id], [nId], [nNume], [nAdresa]")
+        print("• Cauta persoana in lista                                            - srcP [keyword]")
+        print("• Adauga eveniment in lista                                          - addE [id], [nume], [data], [timp]")
+        print("• Sterge eveniment din lista                                         - popE [id]")
+        print("• Modifica eveniment din lista                                       - modE [id], [nId], [nNume], [nData], [nTimp]")
+        print("• Cauta eveniment in lista                                           - srcE [keyword]")
+        print("• Inscrie persoana la eveniment                                      - link [pId], [eId]")
+        print("• Afiseaza evenimentele la care participa o persoana ordonate dupa   - ppes [pId]")
         print("  nume si data")
-        print("• Afiseaza persoanele participante la cele mai multe evenimente     - pmep")
-        print("• Afiseaza primele 20% din evenimente cu cei mai multi participanti - pmpe")
+        print("• Afiseaza persoanele participante la cele mai multe evenimente      - pmep")
+        print("• Afiseaza primele 20% din evenimente cu cei mai multi participanti  - pmpe")
+        print("• Afiseaza persoanele participante la cele mai putine evenimente     - plep")
+
 
     def clearScreen(self):
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
@@ -95,13 +97,16 @@ class ui():
  
     def run(self):
         #self.preloadData()
-        self.preloadRandomData()
+        #self.preloadRandomData()
         self.clearScreen()
         while(True):
             self.printMenu()
             command = input("\nIntroduceti Comanda(a = afisare date, q = quit):")
             self.clearScreen()
             if command == "q":
+                self.__pService.saveFile()
+                self.__pService.saveFile()
+                self.__lService.saveFile()
                 return
             elif command == "a":
                 self.printAllData()
@@ -173,6 +178,11 @@ class ui():
             elif command[:4] == "pmpe":
                 try:
                     print(self.__lService.getMostParticipatedEvents())
+                except ValueError as error:
+                    print(error)  
+            elif command[:4] == "plep":
+                try:
+                    print(self.__lService.getLeastEventsAPersonParticipates())
                 except ValueError as error:
                     print(error)  
             else:
