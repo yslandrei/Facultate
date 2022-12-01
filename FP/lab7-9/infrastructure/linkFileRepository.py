@@ -1,3 +1,5 @@
+from domain.person import person
+from domain.event import event
 from domain.link import link
 
 
@@ -29,11 +31,13 @@ class linkFileRepository:
         with open(self.__fileName, "r") as f:
             for line in f:
                 args = line.strip("\n").split(", ")
-                Link = link(int(args[0]), int(args[1]))
+                Person = person(int(args[0]), args[1], args[2])
+                Event = event(int(args[3]), args[4], args[5], args[6])
+                Link = link(Person, Event)
                 self.__lList.append(Link)
 
     def saveFile(self):
         with open(self.__fileName, "w") as f:
             for link in self.__lList:
-                line = str(link.getPerson().getId()) + ", " + link.getPerson().getId() + "/n"
+                line = str(link.getPerson().getId()) + ", " + link.getPerson().getName() + ", " + link.getPerson().getAdress() + ", " + str(link.getEvent().getId()) + ", " + link.getEvent().getName() + ", " + link.getEvent().getDate() + ", " + link.getEvent().getTime() + "\n"
                 f.write(line)
