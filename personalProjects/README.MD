@@ -1,3 +1,3 @@
 ## My personal projects outside University Work
--A chess game made in pyGame
--A minesweeper game made in pyGame
+* Chess game made in pyGame
+* Minesweeper game made in pyGame
