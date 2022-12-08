@@ -3,7 +3,7 @@ from domain.person import person
 
 class personFileRepository:
     def __init__(self):
-        self.__fileName = "lab7-9\infrastructure\personData.txt"
+        self.__fileName = "infrastructure\personData.txt"
         self.__pList = []
         self.loadFile()
 

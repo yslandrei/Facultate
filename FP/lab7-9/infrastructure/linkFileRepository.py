@@ -5,7 +5,7 @@ from domain.link import link
 
 class linkFileRepository:
     def __init__(self):
-        self.__fileName = "lab7-9\infrastructure\linkData.txt"
+        self.__fileName = "infrastructure\linkData.txt"
         self.__lList = []
         self.loadFile()
 

@@ -3,7 +3,7 @@ from domain.event import event
 
 class eventFileRepository:
     def __init__(self):
-        self.__fileName = "lab7-9\infrastructure\eventData.txt"
+        self.__fileName = "infrastructure\eventData.txt"
         self.__eList = []
         self.loadFile()
 

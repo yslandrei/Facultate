@@ -8,3 +8,5 @@
 2, Andrei Ivancu, Valcea, 11, Electric Castle, 13.07.2023, 3 zile
 3, Rares Bozga, Satu Mare, 10, Untold, 04.08.2023, 4 zile
 3, Rares Bozga, Satu Mare, 14, Saga, 28.08.2023, 2 zile
+4, George, test, 15, Test, Test, Test
+5, Razvan, test, 16, evenimentTEst, test, test

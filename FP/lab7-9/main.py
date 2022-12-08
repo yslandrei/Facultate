@@ -14,6 +14,12 @@ from tests.testAllFunctionalities import runAllTests
 
 def main():
     runAllTests()
+
+    # Tests Commands:
+    #     python -m unittest C:\Facultate\FP\lab7-9\tests\PyUnit\testPersonService.py
+    #     python -m unittest C:\Facultate\FP\lab7-9\tests\PyUnit\testEventService.py
+    #     python -m unittest C:\Facultate\FP\lab7-9\tests\PyUnit\testLinkService.py
+    
     v = validator()
     pRepo = personFileRepository()
     eRepo = eventFileRepository()
