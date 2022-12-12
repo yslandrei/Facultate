@@ -8,14 +8,24 @@ extern exit               ; tell nasm that exit exists even if we won't be defin
 import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
-; our data is declared here (the variables needed by our program)
+; our data is declared here (the variables needed by our pr,lo5ogram)
 segment data use32 class=data
-    ; ...
+    
+    a db 12h, 34h, 56h, 78h, 90h
 
 ; our code starts here
 segment code use32 class=code
     start:
-        mov al, -147
-        neg al
+    
+        mov eax, a
+        push dword[eax + 1]
+        add esp, 2
+        pop bx
+
+
+
+        
+        
+        
         push    dword 0      ; push the parameter for exit onto the stack
         call    [exit]       ; call exit to terminate the program

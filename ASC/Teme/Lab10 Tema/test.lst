@@ -8,15 +8,24 @@
      8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
      9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
     10                                  
-    11                                  ; our data is declared here (the variables needed by our program)
+    11                                  ; our data is declared here (the variables needed by our pr,lo5ogram)
     12                                  segment data use32 class=data
-    13                                      ; ...
-    14                                  
-    15                                  ; our code starts here
-    16                                  segment code use32 class=code
-    17                                      start:
-    18 00000000 B06D                            mov al, -147
-    18          ******************       warning: byte data exceeds bounds [-w+number-overflow]
-    19 00000002 F6D8                            neg al
-    20 00000004 6A00                            push    dword 0      ; push the parameter for exit onto the stack
-    21 00000006 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+    13                                      
+    14 00000000 1234567890                  a db 12h, 34h, 56h, 78h, 90h
+    15                                  
+    16                                  ; our code starts here
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                      
+    20 00000000 B8[00000000]                    mov eax, a
+    21 00000005 FF7001                          push dword[eax + 1]
+    22 00000008 83C402                          add esp, 2
+    23 0000000B 665B                            pop bx
+    24                                  
+    25                                  
+    26                                  
+    27                                          
+    28                                          
+    29                                          
+    30 0000000D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    31 0000000F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

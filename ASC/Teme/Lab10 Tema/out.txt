@@ -1,1 +1,1 @@
-Caracterul special: ' | Frecventa: 13
+Caracterul special: 5 | Frecventa: 10

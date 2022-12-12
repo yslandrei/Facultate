@@ -31,23 +31,23 @@
     28                                  ; our code starts here
     29                                  segment code use32 class=code
     30                                      start:
-    31                                              ; apel printf(“a=”)
+    31                                          ; printf(“a = ”)
     32 00000000 68[0C000000]                    push dword printFormat1
     33 00000005 FF15[00000000]                  call [printf]
     34 0000000B 83C404                          add esp, 4*1
     35                                  
-    36                                          ; apel scanf(“%d”, a)
+    36                                          ; scanf(“%d”, &a)
     37 0000000E 68[00000000]                    push dword a		; se pune pe stiva offset-ul variabilei!!
     38 00000013 68[16000000]                    push dword scanFormat1
     39 00000018 FF15[00000000]                  call [scanf]
     40 0000001E 83C408                          add esp, 4*2
     41                                  
-    42                                          ; apel printf(“b=”)
-    43 00000021 68[11000000]                     push dword printFormat2
+    42                                          ; printf(“b = ”)
+    43 00000021 68[11000000]                    push dword printFormat2
     44 00000026 FF15[00000000]                  call [printf]
     45 0000002C 83C404                          add esp, 4*1
     46                                  
-    47                                          ; apel scanf(“%d”, b)
+    47                                          ; scanf(“%d”, &b)
     48 0000002F 68[04000000]                    push dword b    	; se pune pe stiva offset-ul variabilei!!
     49 00000034 68[16000000]                    push dword scanFormat1
     50 00000039 FF15[00000000]                  call [scanf]

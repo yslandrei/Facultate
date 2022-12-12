@@ -44,7 +44,7 @@ segment code use32 class=code
         call [printf]
         add esp, 4*1
 
-        ; scanf(“%d”, b)
+        ; scanf(“%d”, &b)
         push dword b    	; se pune pe stiva offset-ul variabilei!!
         push dword scanFormat1
         call [scanf]
