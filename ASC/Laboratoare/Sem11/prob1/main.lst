@@ -1,0 +1,39 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit              
+     8                                  ;extern suma
+     9                                  ;b) global a, b, x
+    10                                  import exit msvcrt.dll   
+    11                                                           
+    12                                  
+    13                                  ; our data is declared here (the variables needed by our program)
+    14                                  segment data use32 class=data public ; PUBLIC!!!!
+    15                                      ; a) scrieti un program modular care calculeaza x = a + b cu parametrii transmisi prin registrii
+    16                                      ; b)                                                         parametrii transmisi prin var globale
+    17                                      ; c)                                                         parametrii transmisi prin stiva
+    18                                  
+    19 00000000 18                          a db 18h
+    20 00000001 E7                          b db -25
+    21 00000002 <res 00000001>              x resb 1
+    22                                      
+    23                                  ; our code starts here
+    24                                  segment code use32 class=code public ; ; PUBLIC!!!!
+    25                                      start:
+    26                                          
+    27 00000000 0FBE05[00000000]                movsx eax, byte[a]
+    28 00000007 0FBE1D[01000000]                movsx ebx, byte[b]
+    29 0000000E 0FBE0D[02000000]                movsx ecx, byte[x]
+    30                                          
+    31 00000015 50                              push eax
+    32 00000016 53                              push ebx
+    33 00000017 51                              push ecx
+    34                                          
+    35                                          
+    36                                          ;a) mov [x], cl
+    37                                          
+    38 00000018 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    39 0000001A FF15[00000000]                  call    [exit]       ; call exit to terminate the program

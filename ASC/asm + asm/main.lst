@@ -1,0 +1,110 @@
+     1                                  ;Se citesc mai multe siruri de caractere. Sa se determine daca primul apare
+     2                                  ;ca subsecventa in fiecare din celelalte si sa se dea un mesaj corespunzator
+     3                                  bits 32
+     4                                  global start
+     5                                  
+     6                                  extern exit, scanf, printf
+     7                                  ;extern strstr
+     8                                  
+     9                                  import exit msvcrt.dll    
+    10                                  import printf msvcrt.dll   
+    11                                  import scanf msvcrt.dll 
+    12                                  
+    13                                  segment data use32 class=data public
+    14                                  
+    15 00000000 00<rept>                firstString times 16 db 0
+    16 00000010 00<rept>                otherString times 16 db 0
+    17 00000020 257300                  formatString db '%s', 0
+    18 00000023 496E74726F64756365-     print1 db 'Introduceti un sir ce va fi cautat in sirurile introduse ulterior: ', 0
+    18 0000002C 746920756E20736972-
+    18 00000035 206365207661206669-
+    18 0000003E 206361757461742069-
+    18 00000047 6E207369727572696C-
+    18 00000050 6520696E74726F6475-
+    18 00000059 736520756C74657269-
+    18 00000062 6F723A2000         
+    19 00000067 496E74726F64756365-     print2 db 'Introduceti alt sir(0 pentru a iesi): ', 0
+    19 00000070 746920616C74207369-
+    19 00000079 7228302070656E7472-
+    19 00000082 752061206965736929-
+    19 0000008B 3A2000             
+    20 0000008E 5072696D756C207369-     printCorrect db 'Primul sir a fost regasit ca secventa in toate celelalte siruri', 0
+    20 00000097 72206120666F737420-
+    20 000000A0 726567617369742063-
+    20 000000A9 612073656376656E74-
+    20 000000B2 6120696E20746F6174-
+    20 000000BB 652063656C656C616C-
+    20 000000C4 746520736972757269-
+    20 000000CD 00                 
+    21 000000CE 5072696D756C207369-     printWrong db 'Primul sir nu a fost regasit ca secventa in toate celelalte siruri', 0
+    21 000000D7 72206E75206120666F-
+    21 000000E0 737420726567617369-
+    21 000000E9 742063612073656376-
+    21 000000F2 656E746120696E2074-
+    21 000000FB 6F6174652063656C65-
+    21 00000104 6C616C746520736972-
+    21 0000010D 75726900           
+    22 00000111 00000000                apearences dd 0
+    23 00000115 00000000                strings dd 0
+    24                                  
+    25                                  segment code use32 class=code public
+    26                                  
+    27                                  start:
+    28                                      ;printf("%s", &print1)
+    29 00000000 68[23000000]                push dword print1
+    30 00000005 68[20000000]                push dword formatString
+    31 0000000A FF15[00000000]              call [printf]
+    32 00000010 83C408                      add esp, 4 * 2
+    33                                      
+    34                                      ;scanf("%s", &firstString)
+    35 00000013 68[00000000]                push dword firstString
+    36 00000018 68[20000000]                push dword formatString
+    37 0000001D FF15[00000000]              call [scanf]
+    38 00000023 83C408                      add esp, 4 * 2
+    39                                      
+    40                                      repeat1:
+    41                                          ;printf("%s", &print2)
+    42 00000026 68[67000000]                    push dword print2
+    43 0000002B 68[20000000]                    push dword formatString
+    44 00000030 FF15[00000000]                  call [printf]
+    45 00000036 83C408                          add esp, 4 * 2
+    46                                          
+    47                                          ;scanf("%s", &otherString)
+    48 00000039 68[10000000]                    push dword otherString
+    49 0000003E 68[20000000]                    push dword formatString
+    50 00000043 FF15[00000000]                  call [scanf]
+    51 00000049 83C408                          add esp, 4 * 2
+    52                                          
+    53 0000004C 803D[10000000]30                cmp byte[otherString], '0'
+    54 00000053 7419                            je break
+    55                                          
+    56 00000055 68[00000000]                    push dword firstString
+    57 0000005A 68[10000000]                    push dword otherString
+    58                                          ;call strstr; returns 1 in ecx if firstString is present in otherString and 0 contrary
+    59                                          
+    60 0000005F 010D[11010000]                  add [apearences], ecx
+    61 00000065 8305[15010000]01                add dword[strings], 1
+    62                                          
+    63 0000006C EBB8                        jmp repeat1
+    64                                      break:
+    65                                      
+    66 0000006E A3[11010000]                mov [apearences], eax
+    67 00000073 40                          inc eax
+    68 00000074 3B05[15010000]              cmp eax, [strings]
+    69                                      
+    70 0000007A 7415                        je presentInAll
+    71                                          ;printf("%s", &printWrong)
+    72 0000007C 68[CE000000]                    push dword printWrong
+    73 00000081 68[20000000]                    push dword formatString
+    74 00000086 FF15[00000000]                  call [printf]
+    75 0000008C 83C408                          add esp, 4 * 2
+    76 0000008F EB13                            jmp final      
+    77                                      presentInAll:
+    78                                          ;printf("%s", &printCorrect)
+    79 00000091 68[8E000000]                    push dword printCorrect
+    80 00000096 68[20000000]                    push dword formatString
+    81 0000009B FF15[00000000]                  call [printf]
+    82 000000A1 83C408                          add esp, 4 * 2 
+    83                                      final:
+    84 000000A4 6A00                        push dword 0
+    85 000000A6 FF15[00000000]              call [exit]

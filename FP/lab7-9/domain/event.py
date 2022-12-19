@@ -31,3 +31,6 @@ class event:
 
     def __eq__(self, other):
         return self.__id == other.__id and self.__name == other.__name and self.__date == other.__date and self.__time == other.__time 
+
+    def __lt__(self, other):
+        return self.getName() < other.getName()

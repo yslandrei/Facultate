@@ -48,6 +48,46 @@ class linkService():
         self.__eRepo.saveFile()
         self.__lRepo.saveFile()
 
+    def cmpKey(self, a, b):
+        return a < b
+
+    def getMinIndexFromArray(self, arr, lft, rgt):
+        minIndex = lft
+        for i in range(lft, rgt):
+            if self.cmpKey(arr[i], arr[minIndex]):
+                minIndex = i
+        return minIndex
+
+    def selectionSortRec(self, arr, lft, rgt):
+        if lft == rgt:
+            return
+        minIndex = self.getMinIndexFromArray(arr, lft, rgt)
+        (arr[lft], arr[minIndex]) = (arr[minIndex], arr[lft])
+        self.selectionSortRec(arr, lft + 1, rgt)
+
+    def shakeSort(self, arr):
+        sorted = False
+        lft = 0
+        rgt = len(arr) - 1
+        while(sorted == False):
+            sorted = True
+            for i in range(lft, rgt):
+                if self.cmpKey(arr[i + 1], arr[i]):
+                    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                    sorted = False
+
+            if sorted == True:
+                return
+            sorted = True
+
+            rgt = rgt - 1
+            for i in range(rgt - 1, lft - 1, -1):
+                if self.cmpKey(arr[i + 1], arr[i]):
+                    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                    sorted = False
+            lft = lft + 1
+        return arr
+
     def getPersonsEvents(self, id):
         Person = self.__pRepo.getPersonFromId(id)
         personsEvents = []
@@ -55,7 +95,9 @@ class linkService():
         for i in range(len(self.__lRepo)):
             if self.__lRepo.get(i).getPerson() == Person:
                 personsEvents.append(self.__lRepo.get(i).getEvent())
-        personsEvents = sorted(personsEvents, key = lambda x: (x.getName(), x.getDate()))
+        #personsEvents = sorted(personsEvents, key = lambda x: (x.getName(), x.getDate()))
+        self.selectionSortRec(personsEvents, 0, len(personsEvents))
+        #personsEvents = self.shakeSort(personsEvents)
         if len(personsEvents):
             answear = f"{Person} ➜  {len(personsEvents)} evenimente:\n\n" if len(personsEvents) != 1 else f"{len(personsEvents)} eveniment:\n\n"
             for _event in personsEvents:

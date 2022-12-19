@@ -60,7 +60,7 @@ segment code use32 class=code
         ; eax  = fread(&s, 1, maxLen, descInput)
         push dword [descInput]
         push dword maxLen
-        push dword 1
+        push dword 1 ; sizeof
         push dword s
         call [fread]
         add esp, 4 * 4

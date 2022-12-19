@@ -21,7 +21,7 @@ class ui():
         print("• Afiseaza evenimentele la care participa o persoana ordonate dupa   - ppes [pId]")
         print("  nume si data")
         print("• Afiseaza persoanele participante la cele mai multe evenimente      - pmep")
-        print("• Afiseaza primele 20% din evenimente cu cei mai multi participanti  - pmpe")
+        #print("• Afiseaza primele 20% din evenimente cu cei mai multi participanti  - pmpe")
         print("• Afiseaza persoanele participante la cele mai putine evenimente     - plep")
 
 

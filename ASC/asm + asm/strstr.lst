@@ -1,0 +1,42 @@
+     1                                  bits 32
+     2                                  global strstr
+     3                                  
+     4                                  segment code use32 class=code public
+     5                                  
+     6                                  strstr:
+     7                                      
+     8 00000000 8B7C2408                    mov edi, [esp + 8] ;firstString
+     9 00000004 8B742404                    mov esi, [esp + 4] ;otherString (bigger one)
+    10 00000008 89F3                        mov ebx, esi
+    11                                      
+    12 0000000A FC                          cld
+    13                                      repeat1:
+    14 0000000B 8A06                            mov al, [esi]
+    15 0000000D 8A27                            mov ah, [edi]
+    16 0000000F 38E0                            cmp al, ah
+    17 00000011 740B                            je count
+    18                                          ;dontCount:
+    19 00000013 89DE                                mov esi, ebx
+    20 00000015 46                                  inc esi
+    21 00000016 8B7C2408                            mov edi, [esp + 8]
+    22 0000001A 89F3                                mov ebx, esi
+    23 0000001C EB02                                jmp myendif
+    24                                          count:
+    25 0000001E 46                                  inc esi
+    26 0000001F 47                                  inc edi
+    27                                          myendif:  
+    28 00000020 803F00                          cmp byte[edi], 0
+    29 00000023 740E                            je found
+    30                                          
+    31 00000025 803E00                          cmp byte[esi], 0
+    32 00000028 7402                            je notFound
+    33 0000002A EBDF                        jmp repeat1
+    34                                      
+    35                                      notFound:
+    36 0000002C B900000000                      mov ecx, 0
+    37 00000031 EB05                            jmp final
+    38                                      found:
+    39 00000033 B901000000                      mov ecx, 1
+    40                                      final:
+    41                                      
+    42 00000038 C20C00                  ret 4 * 3

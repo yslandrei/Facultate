@@ -17,19 +17,35 @@ class personService():
         oldPerson = self.__pRepo.getPersonFromId(id)
         self.__pRepo.modPerson(oldPerson, newPerson)
 
-    def srcPerson(self, keyword):
-        result = ""
-        for i in range(len(self.__pRepo)):
-            if str(self.__pRepo.get(i).getId()).find(keyword) != -1:
-                result = result + str(self.__pRepo.get(i)) + "\n"
-            elif self.__pRepo.get(i).getName().find(keyword) != -1:
-                result = result + str(self.__pRepo.get(i)) + "\n"
-            elif self.__pRepo.get(i).getAdress().find(keyword) != -1:
-                result = result + str(self.__pRepo.get(i)) + "\n"
-        if len(result):
-            print(result)
-        else:
-            print("Niciun rezultat gasit!\n")
+    # def srcPerson(self, keyword):
+    #     result = ""
+    #     for i in range(len(self.__pRepo)):
+    #         if str(self.__pRepo.get(i).getId()).find(keyword) != -1:
+    #             result = result + str(self.__pRepo.get(i)) + "\n"
+    #         elif self.__pRepo.get(i).getName().find(keyword) != -1:
+    #             result = result + str(self.__pRepo.get(i)) + "\n"
+    #         elif self.__pRepo.get(i).getAdress().find(keyword) != -1:
+    #             result = result + str(self.__pRepo.get(i)) + "\n"
+    #     if len(result):
+    #         print(result)
+    #     else:
+    #         print("Niciun rezultat gasit!\n")
+
+    def srcPerson(self, keyword, result = "", i = 0):
+        if i >= len(self.__pRepo):
+            if len(result):
+                print(result)
+            else:
+                print("Niciun rezultat gasit!\n")
+            return
+        if str(self.__pRepo.get(i).getId()).find(keyword) != -1:
+            result = result + str(self.__pRepo.get(i)) + "\n"
+        elif self.__pRepo.get(i).getName().find(keyword) != -1:
+            result = result + str(self.__pRepo.get(i)) + "\n"
+        elif self.__pRepo.get(i).getAdress().find(keyword) != -1:
+            result = result + str(self.__pRepo.get(i)) + "\n"
+
+        self.srcPerson(keyword, result, i + 1)
 
     def printAll(self):
         for i in range(len(self.__pRepo)):
