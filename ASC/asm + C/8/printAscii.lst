@@ -1,0 +1,24 @@
+     1                                  bits 32
+     2                                  global _printAscii
+     3                                  
+     4                                  extern printf
+     5                                  
+     6                                  segment data public data use32
+     7                                  
+     8 00000000 256300                  formatC db "%c", 0
+     9                                  
+    10                                  segment code public code use32
+    11                                  
+    12                                  _printAscii:
+    13 00000000 55                          push ebp
+    14 00000001 89E5                        mov ebp, esp
+    15                                  
+    16                                      ;printf(&formatC, [esp + 8])
+    17 00000003 FF742408                    push dword [esp + 8]
+    18 00000007 68[00000000]                push dword formatC
+    19 0000000C E8(00000000)                call printf
+    20 00000011 83C408                      add esp, 4 * 2
+    21                                  
+    22 00000014 89EC                        mov esp, ebp
+    23 00000016 5D                          pop ebp
+    24 00000017 C3                      ret
