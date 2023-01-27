@@ -1,0 +1,84 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start    
+     4                                      
+     5                                  extern exit, scanf, printf
+     6                                  
+     7                                  import exit msvcrt.dll   
+     8                                  import scanf msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12                                    
+    13 00000000 00000000                numar dd 0
+    14 00000004 257800                  format db '%x', 0
+    15 00000007 25782000                format2 db '%x ', 0
+    16                                     
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                          
+    20                                          repeta:
+    21                                              
+    22 00000000 68[00000000]                        push dword numar
+    23 00000005 68[04000000]                        push dword format
+    24 0000000A FF15[00000000]                      call [scanf]
+    25 00000010 83C408                              add esp, 4 * 2
+    26                                              
+    27 00000013 8B1D[00000000]                      mov ebx, [numar]
+    28 00000019 83FBFF                              cmp ebx, -1
+    29 0000001C 743B                                je afara
+    30                                   
+    31                                              
+    32 0000001E 81FBFFFFFF00                        cmp ebx, 0FFFFFFh
+    33 00000024 7735                                ja patruBytes
+    34                                              
+    35 00000026 81FBFFFF0000                        cmp ebx, 0FFFFh
+    36 0000002C 7734                                ja treiBytes
+    37                                              
+    38 0000002E 81FBFF000000                        cmp ebx, 0FFh
+    39 00000034 7733                                ja doiBytes
+    40                                              
+    41 00000036 EB38                                jmp unByte
+    42                                                         
+    43                                              done:
+    44                                              
+    45 00000038 B2FF                                mov dl, 0FFh ; minim
+    46                                              parcurge:
+    47 0000003A 38D3                                    cmp bl, dl
+    48 0000003C 7302                                    jnb noMax
+    49 0000003E 88DA                                        mov dl, bl
+    50                                                  noMax:
+    51 00000040 C1EB08                                  shr ebx, 8
+    52 00000043 E2F5                                loop parcurge
+    53                                              
+    54 00000045 0FB6D2                              movzx edx, dl
+    55 00000048 52                                  push dword edx
+    56 00000049 68[07000000]                        push dword format2
+    57 0000004E FF15[00000000]                      call [printf]
+    58 00000054 83C408                              add esp, 4 * 2
+    59                                              
+    60 00000057 EBA7                            jmp repeta
+    61                                          afara:
+    62                                          
+    63 00000059 EB1C                            jmp final
+    64                                              
+    65                                              patruBytes:
+    66 0000005B B904000000                              mov ecx, 4
+    67 00000060 EBD6                                    jmp done
+    68                                                  
+    69                                              treiBytes:
+    70 00000062 B903000000                              mov ecx, 3
+    71 00000067 EBCF                                    jmp done
+    72                                                  
+    73                                              doiBytes:
+    74 00000069 B902000000                              mov ecx, 2
+    75 0000006E EBC8                                    jmp done
+    76                                                  
+    77                                              unByte:
+    78 00000070 B901000000                              mov ecx, 1
+    79 00000075 EBC1                                    jmp done
+    80                                          
+    81                                          final:
+    82                                  
+    83 00000077 6A00                            push    dword 0  
+    84 00000079 FF15[00000000]                  call    [exit]    

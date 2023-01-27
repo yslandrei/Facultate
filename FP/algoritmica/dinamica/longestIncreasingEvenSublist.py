@@ -15,13 +15,12 @@ def longestIncreasingEvenSublist(arr):
                     if dp[i] > Max:
                         Max = dp[i]
                         maxIndex = i
-    n = max(dp)
     rez = []
 
     while maxIndex != -1:
         rez.append(arr[maxIndex])
         maxIndex = next[maxIndex]
-    return n, rez
+    return Max, rez
 
 l = [1,2,3,4,5,5,5,4,4,2,6,7,8,9,10]
 print(longestIncreasingEvenSublist(l))

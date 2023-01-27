@@ -25,10 +25,8 @@ def mergeSort(arr):
         return arr
 
     mid = len(arr) // 2
-    arrLeft = arr[:mid]
-    arrRight = arr[mid:]
 
-    return merge(mergeSort(arrLeft), mergeSort(arrRight))
+    return merge(mergeSort(arr[:mid]), mergeSort(arr[mid:]))
 
-l = [1,7,2,6,98,1,5]
+l = [1,7,2,4,6,6,98,1,5]
 print(mergeSort(l))

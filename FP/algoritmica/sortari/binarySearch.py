@@ -9,7 +9,7 @@ def binarySearch(arr, nr):
             rgt = mid - 1
         else:
             return mid
-    return -1
+    return lft
 
 l = [1,6,8,10,12,17,28]
 nr = 13
