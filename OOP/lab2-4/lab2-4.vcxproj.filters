@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="offersRepository.c">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="offer.c">
+      <Filter>domain</Filter>
+    </ClCompile>
+    <ClCompile Include="offersService.c">
+      <Filter>business</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="domain">
+      <UniqueIdentifier>{fe4a1018-4e74-40d1-b9d2-2ad12e1141dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infrastructure">
+      <UniqueIdentifier>{6df39a9c-a176-41fe-b6e5-27ec4ac24cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business">
+      <UniqueIdentifier>{b05586b1-e981-409a-888c-5391e0c42913}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="offer.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="offersRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="offersService.h">
+      <Filter>business</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
