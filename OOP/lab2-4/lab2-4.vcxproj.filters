@@ -11,6 +11,9 @@
     <ClCompile Include="offersService.c">
       <Filter>business</Filter>
     </ClCompile>
+    <ClCompile Include="ui.c">
+      <Filter>presentation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="domain">
@@ -21,6 +24,9 @@
     </Filter>
     <Filter Include="business">
       <UniqueIdentifier>{b05586b1-e981-409a-888c-5391e0c42913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="presentation">
+      <UniqueIdentifier>{4f944c9b-92a9-4cfe-baf3-e52972f7be11}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

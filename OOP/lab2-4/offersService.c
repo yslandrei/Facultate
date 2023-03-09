@@ -31,15 +31,12 @@ int popOfferService(offer* oList, int* oListLen, int id, char* type, int surface
 	return 0;
 }
 
-int modOfferService(offer* oList, int* oListLen, int oldId, char* oldType, int oldSurface, char* oldAdress, int oldPrice, int newId, char* newType, int newSurface, char* newAdress, int newPrice) {
+int modOfferService(offer* oList, int* oListLen, int oldId, int newId, char* newType, int newSurface, char* newAdress, int newPrice) {
 	//TODO: Validation
-	offer oldOffer = {
-		.id = oldId,
-		.type = oldType,
-		.surface = oldSurface,
-		.adress = oldAdress,
-		.price = oldPrice
-	};
+	offer oldOffer;
+	for (int i = 0; i <= *oListLen; i++)
+		if(oList[i].id == oldId)
+			oldOffer = oList[i]
 
 	offer newOffer = {
 		.id = newId,
@@ -82,10 +79,9 @@ int stringToNumber(char* string) {
 	return number;
 }
 
-offer* getFilteredListByCriteria(offer* oList, int oListLen, char* input) {
+offer* getFilteredListByCriteria(offer* oList, int* filteredOListLen, int oListLen, char* input) {
 	//TODO: Validation
 	offer filteredOList[100];
-	int filteredOListLen = 0;
 	
 	char criteria = input[0];
 	char sign = input[1];
