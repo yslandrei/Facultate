@@ -2,51 +2,49 @@
 #include <stdlib.h>
 #include "offer.h"
 #include "offersRepository.h"
+#pragma warning(disable : 4996)
 
 int addOfferService(offer* oList, int* oListLen, int id, char* type, int surface, char* adress, int price) {
 	//TODO: Validation
 	offer newOffer = {
 		.id = id,
-		.type = type,
 		.surface = surface,
-		.adress = adress,
 		.price = price
 	};
+	strcpy(newOffer.type, type);
+	strcpy(newOffer.adress, adress);
 
-	addOffer(oList, &oListLen, newOffer);
+	addOffer(oList, oListLen, newOffer);
 	return 0;
 }
 
-int popOfferService(offer* oList, int* oListLen, int id, char* type, int surface, char* adress, int price) {
-	//TODO: Validation
-	offer oldOffer = {
-		.id = id,
-		.type = type,
-		.surface = surface,
-		.adress = adress,
-		.price = price
-	};
-
-	addOffer(oList, &oListLen, oldOffer);
-	return 0;
-}
-
-int modOfferService(offer* oList, int* oListLen, int oldId, int newId, char* newType, int newSurface, char* newAdress, int newPrice) {
+int popOfferService(offer* oList, int* oListLen, int oldId) {
 	//TODO: Validation
 	offer oldOffer;
 	for (int i = 0; i <= *oListLen; i++)
-		if(oList[i].id == oldId)
-			oldOffer = oList[i]
+		if (oList[i].id == oldId)
+			oldOffer = oList[i];
+
+	popOffer(oList, oListLen, oldOffer);
+	return 0;
+}
+
+int modOfferService(offer* oList, int* oListLen, int oldId, int id, char* type, int surface, char* adress, int price) {
+	//TODO: Validation
+	offer oldOffer;
+	for (int i = 0; i <= *oListLen; i++)
+		if (oList[i].id == oldId)
+			oldOffer = oList[i];
 
 	offer newOffer = {
-		.id = newId,
-		.type = newType,
-		.surface = newSurface,
-		.adress = newAdress,
-		.price = newPrice
+		.id = id,
+		.surface = surface,
+		.price = price
 	};
+	strcpy(newOffer.type, type);
+	strcpy(newOffer.adress, adress);
 
-	modOffer(oList, &oListLen, oldOffer, newOffer);
+	modOffer(oList, oListLen, oldOffer, newOffer);
 	return 0;
 }
 
@@ -73,16 +71,16 @@ int stringToNumber(char* string) {
 	int stringLen = strlen(string);
 	int number = 0;
 
-	for (int i = 0; i < stringLen; i++) {
+	for (int i = 0; i < stringLen; i++)
 		number = number * 10 + (int)(string[i] - '0');
-	}
+
 	return number;
 }
 
-offer* getFilteredListByCriteria(offer* oList, int* filteredOListLen, int oListLen, char* input) {
+offer* getFilteredListByCriteria(offer* oList, int oListLen, char* input, int* filteredOListLen) {
 	//TODO: Validation
 	offer filteredOList[100];
-	
+
 	char criteria = input[0];
 	char sign = input[1];
 
@@ -91,10 +89,10 @@ offer* getFilteredListByCriteria(offer* oList, int* filteredOListLen, int oListL
 		int number = stringToNumber(input + 2);
 		for (int i = 0; i < oListLen; i++) {
 			if (sign == '>' && oList[i].surface > number) 
-				filteredOList[filteredOListLen++] = oList[i];
+				filteredOList[(*filteredOListLen)++] = oList[i];
 
 			else if (sign == '<' && oList[i].surface < number)
-				filteredOList[filteredOListLen++] = oList[i];
+				filteredOList[(*filteredOListLen)++] = oList[i];
 		}
 	}
 
@@ -103,10 +101,10 @@ offer* getFilteredListByCriteria(offer* oList, int* filteredOListLen, int oListL
 		int number = stringToNumber(input + 2);
 		for (int i = 0; i < oListLen; i++) {
 			if (sign == '>' && oList[i].price > number)
-				filteredOList[filteredOListLen++] = oList[i];
+				filteredOList[(*filteredOListLen)++] = oList[i];
 
 			else if (sign == '<' && oList[i].price < number)
-				filteredOList[filteredOListLen++] = oList[i];
+				filteredOList[(*filteredOListLen)++] = oList[i];
 		}
 	}
 
@@ -114,8 +112,8 @@ offer* getFilteredListByCriteria(offer* oList, int* filteredOListLen, int oListL
 	else if (criteria == 't') {
 		char* type = input + 2;
 		for (int i = 0; i < oListLen; i++) {
-			if (sign == '=' && strcmp(type, oList[i].type))
-				filteredOList[filteredOListLen++] = oList[i];
+			if (sign == '=' && strcmp(type, oList[i].type) == 0)
+				filteredOList[(*filteredOListLen)++] = oList[i];
 		}
 	}
 
