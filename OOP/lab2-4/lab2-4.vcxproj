@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,13 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="offer.c" />
-    <ClCompile Include="offersRepository.c" />
-    <ClCompile Include="offersService.c" />
-    <ClCompile Include="testOffersRepo.c" />
-    <ClCompile Include="testOffersService.c" />
-    <ClCompile Include="ui.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="offersRepository.cpp" />
+    <ClCompile Include="offersService.cpp" />
+    <ClCompile Include="testOffersRepo.cpp" />
+    <ClCompile Include="testOffersService.cpp" />
+    <ClCompile Include="ui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h" />

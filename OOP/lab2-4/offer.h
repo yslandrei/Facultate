@@ -1,7 +1,9 @@
+#include <string>
+
 typedef struct {
 	int id;
-	char type[20];
+	std::string type;
 	int surface;
-	char adress[100];
+	std::string adress;
 	int price;
 }offer;

@@ -1,23 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="offersRepository.c">
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="offersRepository.cpp">
       <Filter>infrastructure</Filter>
     </ClCompile>
-    <ClCompile Include="offer.c">
-      <Filter>domain</Filter>
-    </ClCompile>
-    <ClCompile Include="offersService.c">
+    <ClCompile Include="offersService.cpp">
       <Filter>business</Filter>
     </ClCompile>
-    <ClCompile Include="ui.c">
+    <ClCompile Include="ui.cpp">
       <Filter>presentation</Filter>
     </ClCompile>
-    <ClCompile Include="testOffersRepo.c">
+    <ClCompile Include="testOffersRepo.cpp">
       <Filter>tests</Filter>
     </ClCompile>
-    <ClCompile Include="testOffersService.c">
+    <ClCompile Include="testOffersService.cpp">
       <Filter>tests</Filter>
     </ClCompile>
   </ItemGroup>
