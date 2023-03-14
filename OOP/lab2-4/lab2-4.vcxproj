@@ -131,12 +131,16 @@
     <ClCompile Include="offer.c" />
     <ClCompile Include="offersRepository.c" />
     <ClCompile Include="offersService.c" />
+    <ClCompile Include="testOffersRepo.c" />
+    <ClCompile Include="testOffersService.c" />
     <ClCompile Include="ui.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />
+    <ClInclude Include="testOffersRepo.h" />
+    <ClInclude Include="testOffersService.h" />
     <ClInclude Include="ui.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

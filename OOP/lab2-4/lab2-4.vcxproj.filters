@@ -14,6 +14,12 @@
     <ClCompile Include="ui.c">
       <Filter>presentation</Filter>
     </ClCompile>
+    <ClCompile Include="testOffersRepo.c">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testOffersService.c">
+      <Filter>tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="domain">
@@ -28,6 +34,9 @@
     <Filter Include="presentation">
       <UniqueIdentifier>{4f944c9b-92a9-4cfe-baf3-e52972f7be11}</UniqueIdentifier>
     </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{8ae272b3-8ef8-4b85-8556-89de734a7475}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h">
@@ -41,6 +50,12 @@
     </ClInclude>
     <ClInclude Include="ui.h">
       <Filter>presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="testOffersRepo.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testOffersService.h">
+      <Filter>tests</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

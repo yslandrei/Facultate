@@ -10,4 +10,4 @@ offer* getSortedListByPriceAndType(offer* oList, int oListLen);
 
 int stringToNumber(char* string);
 
-offer* getFilteredListByCriteria(offer* oList, int oListLen, char* input, int* filteredOListLen);
+offer* getFilteredListByCriteria(offer* oList, int oListLen, char* criteria, int* filteredOListLen);

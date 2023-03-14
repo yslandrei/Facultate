@@ -1,3 +1,0 @@
-C:/Facultate/OOP/lab1/out/build/x64-debug/CMakeFiles/lab1.dir
-C:/Facultate/OOP/lab1/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Facultate/OOP/lab1/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

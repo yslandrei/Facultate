@@ -82,8 +82,8 @@ void ui(offer* oList, int oListLen) {
 		}
 
 		else if (strncmp(com, "fil", sizeof(char) * 3) == 0) {
-			parseCommand(com + 4, args);
-			strcpy(criteria, args[0]);
+			strcpy(criteria, com + 4);
+			criteria[strlen(criteria) - 1] = NULL;
 			int filteredOListLen = 0;
 			offer* filteredOList = getFilteredListByCriteria(oList, oListLen, criteria, &filteredOListLen);
 			printOffers(filteredOList, filteredOListLen);

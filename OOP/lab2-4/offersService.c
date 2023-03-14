@@ -49,11 +49,9 @@ int modOfferService(offer* oList, int* oListLen, int oldId, int id, char* type, 
 }
 
 int cmpByPriceAndType(const offer* offer1, const offer* offer2) {
-	if ((*offer1).price == (*offer2).price) {
-		if (strcmp((*offer1).type, (*offer2).type) > 0)
-			return 0;
-		return 1;
-	}
+	if ((*offer1).price == (*offer2).price)
+		return strcmp((*offer1).type, (*offer2).type) < 0;
+	
 	return (*offer1).price > (*offer2).price;
 }
 
@@ -77,45 +75,52 @@ int stringToNumber(char* string) {
 	return number;
 }
 
-offer* getFilteredListByCriteria(offer* oList, int oListLen, char* input, int* filteredOListLen) {
+offer* getFilteredListByCriteria(offer* oList, int oListLen, char* criteria, int* filteredOListLen) {
 	//TODO: Validation
 	offer filteredOList[100];
+	int correctOList[100];
+	for (int i = 0; i < oListLen; i++)
+		correctOList[i] = 1;
 
-	char criteria = input[0];
-	char sign = input[1];
+	char* parser = strtok(criteria, " ");
+	while (parser != NULL) {
+		for (int i = 0; i < oListLen; i ++) {
+			if (strncmp(parser + 1, ">=", 2) == 0) {
+				if (parser[0] == 's' && !(oList[i].surface >= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(oList[i].price >= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(oList[i].type, parser + 3) >= 0)) correctOList[i] = 0;
+			}
+			
+			else if (strncmp(parser + 1, "<=", 2) == 0) {
+				if (parser[0] == 's' && !(oList[i].surface <= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(oList[i].price <= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(oList[i].type, parser + 3) <= 0)) correctOList[i] = 0;
+			}
 
-	//Filter by Surface
-	if (criteria == 's') {
-		int number = stringToNumber(input + 2);
-		for (int i = 0; i < oListLen; i++) {
-			if (sign == '>' && oList[i].surface > number) 
-				filteredOList[(*filteredOListLen)++] = oList[i];
+			else if (parser[1] == '>') {
+				if (parser[0] == 's' && !(oList[i].surface > stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(oList[i].price > stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(oList[i].type, parser + 2) > 0)) correctOList[i] = 0;
+			}
 
-			else if (sign == '<' && oList[i].surface < number)
-				filteredOList[(*filteredOListLen)++] = oList[i];
+			else if (parser[1] == '<') {
+				if (parser[0] == 's' && !(oList[i].surface < stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(oList[i].price < stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(oList[i].type, parser + 2) < 0)) correctOList[i] = 0;
+			}
+
+			else if (parser[1] == '=') {
+				if (parser[0] == 's' && !(oList[i].surface == stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(oList[i].price == stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(oList[i].type, parser + 2) == 0)) correctOList[i] = 0;
+			}
 		}
+		parser = strtok(NULL, " ");
 	}
 
-	//Filter by Price
-	else if (criteria == 'p') {
-		int number = stringToNumber(input + 2);
-		for (int i = 0; i < oListLen; i++) {
-			if (sign == '>' && oList[i].price > number)
-				filteredOList[(*filteredOListLen)++] = oList[i];
-
-			else if (sign == '<' && oList[i].price < number)
-				filteredOList[(*filteredOListLen)++] = oList[i];
-		}
-	}
-
-	//Filter by Type
-	else if (criteria == 't') {
-		char* type = input + 2;
-		for (int i = 0; i < oListLen; i++) {
-			if (sign == '=' && strcmp(type, oList[i].type) == 0)
-				filteredOList[(*filteredOListLen)++] = oList[i];
-		}
-	}
+	for (int i = 0; i < oListLen; i++)
+		if (correctOList[i])
+			filteredOList[(*filteredOListLen)++] = oList[i];
 
 	return filteredOList;
 }
