@@ -2,16 +2,17 @@
 #include <stdio.h>
 #include <string.h>
 #include "offer.h"
+#include "offersList.h"
 #include "offersRepository.h"
 #include "offersService.h"
 #pragma warning(disable : 4996)
 
 void printMenu() {	
-	printf("* Adaugarea de noi oferte				      - add [id], [tip], [suprafata], [adresa], [pret]\n");
-	printf("* Actualizare oferte				 	      - pop [id]\n");
-	printf("* Stergere oferta					      - mod [oldId], [id], [tip], [suprafata], [adresa], [pret]\n");
-	printf("* Vizualizare oferete ordonat dupa pret, tip (cresc/descresc) - srt\n");
-	printf("* Vizualizare oferta filtrate dupa un criteriu		      - fil [criteriu]\n\n");
+	std::cout << "* Adaugarea de noi oferte                                     - add [id], [tip], [suprafata], [adresa], [pret]\n";
+	std::cout << "* Stergere oferte                                             - pop [id]\n";
+	std::cout << "* Actualizare oferte                                          - mod [oldId], [id], [tip], [suprafata], [adresa], [pret]\n";
+	std::cout << "* Vizualizare oferete ordonat dupa pret, tip (cresc/descresc) - srt\n";
+	std::cout << "* Vizualizare oferta filtrate dupa un criteriu                - fil [criteriu]\n\n";
 }
 
 void clearScreen() {
@@ -24,18 +25,18 @@ void parseCommand(std::string com, std::string* args) {
 	char* comCStr = strdup(com.c_str());
 	parser = strtok(comCStr, ", ");
 	while (parser != NULL) {
-		args[argsLen++] = parser;
+		args[argsLen++] = std::string(parser);
 		parser = strtok(NULL, ", ");
 	}
 }
 
-void printOffers(offer* oList, int oListLen) {
-	for (int i = 0; i < oListLen; i++)
-		std::cout << "id: " << oList[i].id << ", tip: " << oList[i].type << ", suprafata: " << oList[i].surface << ", adresa: " << oList[i].adress << ", pret: " << oList[i].price << "\n";
+void printOffers(offersList* o) {
+	for (int i = 0; i < o->size; i++)
+		std::cout << "id: " << o->List[i].id << ", tip: " << o->List[i].type << ", suprafata: " << o->List[i].surface << ", adresa: " << o->List[i].adress << ", pret: " << o->List[i].price << "\n";
 	std::cout << "\n";
 }
 
-void ui(offer* oList, int oListLen) {
+void ui(offersList* o) {
 	std::string com;
 	std::string args[10];
 
@@ -55,15 +56,15 @@ void ui(offer* oList, int oListLen) {
 			surface = stringToNumber(args[2]);
 			adress = args[3];
 			price = stringToNumber(args[4]);
-			addOfferService(oList, &oListLen, id, type, surface, adress, price);
-			printOffers(oList, oListLen);
+			addOfferService(o, id, type, surface, adress, price);
+			printOffers(o);
 		}
 
 		else if (com.substr(0, 3) == "pop") {
 			parseCommand(com.substr(4, com.npos), args);
 			id = stringToNumber(args[0]);
-			popOfferService(oList, &oListLen, id);
-			printOffers(oList, oListLen);
+			popOfferService(o, id);
+			printOffers(o);
 		}
 
 		else if (com.substr(0, 3) == "mod") {
@@ -74,27 +75,29 @@ void ui(offer* oList, int oListLen) {
 			surface = stringToNumber(args[3]);
 			adress = args[4];
 			price = stringToNumber(args[5]);
-			modOfferService(oList, &oListLen, oldId, id, type, surface, adress, price);
-			printOffers(oList, oListLen);
+			modOfferService(o, oldId, id, type, surface, adress, price);
+			printOffers(o);
 		}
 
 		else if (com.substr(0, 3) == "srt") {
-			offer sortedOList[100];
-			sortListByPriceAndType(oList, oListLen, sortedOList);
-			printOffers(sortedOList, oListLen);
+			offersList sortedO;
+			sortListByPriceAndType(o, &sortedO);
+			printOffers(&sortedO);
+			//free(sortedO.List);
 		}
 
 		else if (com.substr(0, 3) == "fil") {
+			offersList filteredO;
 			criteria = com.substr(4, com.npos);
-			int filteredOListLen = 0;
-			offer filteredOList[100];
-			filterListByCriteria(oList, oListLen, criteria, filteredOList, &filteredOListLen);
-			printOffers(filteredOList, filteredOListLen);
+			filterListByCriteria(o, &filteredO, criteria);
+			printOffers(&filteredO);
+			//free(filteredO.List);
 		}
 
-		else if (com[0] == 'q')
+		else if (com[0] == 'q') {
+			//free(o->List);
 			return;
-
+		}
 	}
 
 }

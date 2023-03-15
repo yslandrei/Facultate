@@ -1,9 +1,11 @@
+#pragma once
+
 void printMenu();
 
 void clearScreen();
 
-void printOffers(offer* oList, int oListLen);
+void printOffers(offersList* o);
 
 void parseCommand(std::string com, std::string* args);
 
-void ui(offer* oList, int oListLen);
+void ui(offersList* o);

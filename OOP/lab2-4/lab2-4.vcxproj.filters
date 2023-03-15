@@ -54,5 +54,8 @@
     <ClInclude Include="testOffersService.h">
       <Filter>tests</Filter>
     </ClInclude>
+    <ClInclude Include="offersList.h">
+      <Filter>domain</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

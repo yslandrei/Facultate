@@ -1,4 +1,5 @@
 #include <string>
+#pragma once
 
 typedef struct {
 	int id;

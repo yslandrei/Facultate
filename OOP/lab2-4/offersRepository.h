@@ -1,5 +1,8 @@
-int addOffer(offer* oList, int* oListLen, offer newOffer);
+#include "offersList.h"
+#pragma once
 
-int popOffer(offer* oList, int* oListLen, offer oldOffer);
+int addOffer(offersList* o, offer newOffer);
 
-int modOffer(offer* oList, int* oListLen, offer oldOffer, offer newOffer);
+int popOffer(offersList* o, offer oldOffer);
+
+int modOffer(offersList* o, offer oldOffer, offer newOffer);

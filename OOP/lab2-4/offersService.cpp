@@ -1,10 +1,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include "offer.h"
+#include "offersList.h"
 #include "offersRepository.h"
 #pragma warning(disable : 4996)
 
-int addOfferService(offer* oList, int* oListLen, int id, std::string type, int surface, std::string adress, int price) {
+int addOfferService(offersList* o, int id, const std::string type, int surface, const std::string adress, int price) {
 	//TODO: Validation
 	offer newOffer = {
 		.id = id,
@@ -14,27 +15,27 @@ int addOfferService(offer* oList, int* oListLen, int id, std::string type, int s
 		.price = price
 	};
 
-	addOffer(oList, oListLen, newOffer);
+	addOffer(o, newOffer);
 	return 0;
 }
 
-int popOfferService(offer* oList, int* oListLen, int oldId) {
+int popOfferService(offersList* o, int oldId) {
 	//TODO: Validation
 	offer oldOffer;
-	for (int i = 0; i <= *oListLen; i++)
-		if (oList[i].id == oldId)
-			oldOffer = oList[i];
+	for (int i = 0; i <= o->size; i++)
+		if (o->List[i].id == oldId)
+			oldOffer = o->List[i];
 
-	popOffer(oList, oListLen, oldOffer);
+	popOffer(o, oldOffer);
 	return 0;
 }
 
-int modOfferService(offer* oList, int* oListLen, int oldId, int id, std::string type, int surface, std::string adress, int price) {
+int modOfferService(offersList* o, int oldId, int id, std::string type, int surface, std::string adress, int price) {
 	//TODO: Validation
 	offer oldOffer;
-	for (int i = 0; i <= *oListLen; i++)
-		if (oList[i].id == oldId)
-			oldOffer = oList[i];
+	for (int i = 0; i <= o->size; i++)
+		if (o->List[i].id == oldId)
+			oldOffer = o->List[i];
 
 	offer newOffer = {
 		.id = id,
@@ -44,7 +45,7 @@ int modOfferService(offer* oList, int* oListLen, int oldId, int id, std::string 
 		.price = price
 	};
 
-	modOffer(oList, oListLen, oldOffer, newOffer);
+	modOffer(o, oldOffer, newOffer);
 	return 0;
 }
 
@@ -57,12 +58,11 @@ int cmpByPriceAndType(const void* o1, const void* o2) {
 	return (*offer1).price > (*offer2).price;
 }
 
-void sortListByPriceAndType(offer* oList, int oListLen, offer* sortedOList) {
-	for (int i = 0; i < oListLen; i++) {
-		sortedOList[i] = oList[i];
-	}
+void sortListByPriceAndType(offersList* o, offersList* sortedO) {
+	for (int i = 0; i < o->size; i++)
+		addOffer(sortedO, o->List[i]);
 
-	qsort(sortedOList, oListLen, sizeof(offer), cmpByPriceAndType);
+	qsort(sortedO->List, sortedO->size, sizeof(offer), cmpByPriceAndType);
 }
 
 int stringToNumber(std::string str) {
@@ -73,52 +73,51 @@ int stringToNumber(std::string str) {
 	return number;
 }
 
-void filterListByCriteria(offer* oList, int oListLen, std::string criteria, offer* filteredOList, int* filteredOListLen) {
+void filterListByCriteria(offersList* o, offersList* filteredO, std::string criteria) {
 	//TODO: Validation
 	int correctOList[100];
-
-	for (int i = 0; i < oListLen; i++)
+	for (int i = 0; i < o->size; i++)
 		correctOList[i] = 1;
 
 	char* criteriaCStr = strdup(criteria.c_str());
 	char* parser = strtok(criteriaCStr, " ");
 	while (parser != NULL) {
-		for (int i = 0; i < oListLen; i ++) {
+		for (int i = 0; i < o->size; i ++) {
 			if (strncmp(parser + 1, ">=", 2) == 0) {
-				if (parser[0] == 's' && !(oList[i].surface >= stringToNumber(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 'p' && !(oList[i].price >= stringToNumber(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(oList[i].type >= parser + 3)) correctOList[i] = 0;
+				if (parser[0] == 's' && !(o->List[i].surface >= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(o->List[i].price >= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(o->List[i].type >= parser + 3)) correctOList[i] = 0;
 			}
 			
 			else if (strncmp(parser + 1, "<=", 2) == 0) {
-				if (parser[0] == 's' && !(oList[i].surface <= stringToNumber(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 'p' && !(oList[i].price <= stringToNumber(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(oList[i].type <= parser + 3)) correctOList[i] = 0;
+				if (parser[0] == 's' && !(o->List[i].surface <= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(o->List[i].price <= stringToNumber(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(o->List[i].type <= parser + 3)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '>') {
-				if (parser[0] == 's' && !(oList[i].surface > stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'p' && !(oList[i].price > stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(oList[i].type > parser + 2)) correctOList[i] = 0;
+				if (parser[0] == 's' && !(o->List[i].surface > stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(o->List[i].price > stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(o->List[i].type > parser + 2)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '<') {
-				if (parser[0] == 's' && !(oList[i].surface < stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'p' && !(oList[i].price < stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(oList[i].type < parser)) correctOList[i] = 0;
+				if (parser[0] == 's' && !(o->List[i].surface < stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(o->List[i].price < stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(o->List[i].type < parser)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '=') {
-				if (parser[0] == 's' && !(oList[i].surface == stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'p' && !(oList[i].price == stringToNumber(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 't' && (oList[i].type != parser + 2)) correctOList[i] = 0;
+				if (parser[0] == 's' && !(o->List[i].surface == stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'p' && !(o->List[i].price == stringToNumber(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 't' && (o->List[i].type != parser + 2)) correctOList[i] = 0;
 			}
 		}
 		parser = strtok(NULL, " ");
 	}
 
-	for (int i = 0; i < oListLen; i++)
+	for (int i = 0; i < o->size; i++)
 		if (correctOList[i])
-			filteredOList[(*filteredOListLen)++] = oList[i];
+			addOffer(filteredO, o->List[i]);
 }
 

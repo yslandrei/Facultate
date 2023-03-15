@@ -1,13 +1,15 @@
-int addOfferService(offer* oList, int* oListLen, int id, std::string type, int surface, std::string adress, int price);
+#pragma once
 
-int popOfferService(offer* oList, int* oListLen, int oId);
+int addOfferService(offersList* o, int id, const std::string type, int surface, const std::string adress, int price);
 
-int modOfferService(offer* oList, int* oListLen, int oldId, int id, std::string type, int surface, std::string adress, int price);
+int popOfferService(offersList* o, int oId);
 
-int cmpByPriceAndType(const offer offer1, const offer offer2);
+int modOfferService(offersList* o, int oldId, int id, std::string type, int surface, std::string adress, int price);
 
-void sortListByPriceAndType(offer* oList, int oListLen, offer* sortedOList);
+int cmpByPriceAndType(const void* o1, const void* o2);
+
+void sortListByPriceAndType(offersList* o, offersList* sortedO);
 
 int stringToNumber(std::string string);
 
-void filterListByCriteria(offer* oList, int oListLen, std::string criteria, offer* filteredOList, int* filteredOListLen);
+void filterListByCriteria(offersList* o, offersList* filteredO, std::string criteria);

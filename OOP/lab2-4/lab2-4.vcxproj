@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h" />
+    <ClInclude Include="offersList.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />
     <ClInclude Include="testOffersRepo.h" />

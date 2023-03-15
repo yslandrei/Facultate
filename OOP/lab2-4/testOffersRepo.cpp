@@ -5,8 +5,7 @@
 #pragma warning(disable:4996)
 
 void testAddOffer() {
-	int oListLen = 0;
-	offer oList[100];
+	offersList o;
 
 	offer newOffer;
 	newOffer.id = 1;
@@ -15,20 +14,17 @@ void testAddOffer() {
 	newOffer.adress = "adresa";
 	newOffer.price = 100;
 	
-	assert(addOffer(oList, &oListLen, newOffer) == 0);
-
-	assert(oList[0].id == newOffer.id);
-	assert(oList[0].type == newOffer.type);
-	assert(oList[0].surface == newOffer.surface);
-	assert(oList[0].adress == newOffer.adress);
-	assert(oList[0].price == newOffer.price);
-
-	assert(addOffer(oList, &oListLen, newOffer) == -1);
+	assert(addOffer(&o, newOffer) == 0);
+	assert(o.List[0].id == newOffer.id);
+	assert(o.List[0].type == newOffer.type);
+	assert(o.List[0].surface == newOffer.surface);
+	assert(o.List[0].adress == newOffer.adress);
+	assert(o.List[0].price == newOffer.price);
+	assert(addOffer(&o, newOffer) == -1);
 }
 
 void testPopOffer() {
-	int oListLen = 0;
-	offer oList[100];
+	offersList o;
 
 	offer newOffer;
 	newOffer.id = 1;
@@ -37,18 +33,17 @@ void testPopOffer() {
 	newOffer.adress = "adresa";
 	newOffer.price = 100;
 
-	addOffer(oList, &oListLen, newOffer);
+	addOffer(&o, newOffer);
 	newOffer.id = 2;
-	addOffer(oList, &oListLen, newOffer);
+	addOffer(&o, newOffer);
 	newOffer.id = 1;
-	assert(popOffer(oList, &oListLen, newOffer) == 0);
-	assert(oListLen == 1);
-	assert(popOffer(oList, &oListLen, newOffer) == -1);
+	assert(popOffer(&o, newOffer) == 0);
+	assert(o.size == 1);
+	assert(popOffer(&o, newOffer) == -1);
 }
 
 void testModOffer() {
-	int oListLen = 0;
-	offer oList[100];
+	offersList o;
 
 	offer newOffer;
 	newOffer.id = 1;
@@ -60,8 +55,8 @@ void testModOffer() {
 	offer moddedOffer = newOffer;
 	moddedOffer.id = 2;
 
-	addOffer(oList, &oListLen, newOffer);
-	assert(modOffer(oList, &oListLen, newOffer, moddedOffer) == 0);
-	assert(oList[0].id == 2);
-	assert(modOffer(oList, &oListLen, newOffer, moddedOffer) == -1);
+	addOffer(&o, newOffer);
+	assert(modOffer(&o, newOffer, moddedOffer) == 0);
+	assert(o.List[0].id == 2);
+	assert(modOffer(&o, newOffer, moddedOffer) == -1);
 }

@@ -1,4 +1,4 @@
-[2023-03-14 18:23:11] [info] Start Program:
+[2023-03-15 20:16:25] [info] Start Program:
 Path:"C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe"
 Arguments:
 Working directory: "C:\Facultate\OOP\lab2-4\"
@@ -9,13 +9,13 @@ Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: Binary C:\Users\andre\AppData\Local\Temp\p4bc3m20.z5x 
+Export: Binary C:\Users\andre\AppData\Local\Temp\2m0zjzx5.wlr 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2023-03-14 18:23:11] [info] Module: C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe
-[2023-03-14 18:23:11] [info] ----------------------------------------------------
-[2023-03-14 18:23:11] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\p4bc3m20.z5x
-[2023-03-14 18:23:11] [info] ----------------------------------------------------
+[2023-03-15 20:16:25] [info] Module: C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe
+[2023-03-15 20:16:25] [info] ----------------------------------------------------
+[2023-03-15 20:16:25] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\2m0zjzx5.wlr
+[2023-03-15 20:16:25] [info] ----------------------------------------------------
