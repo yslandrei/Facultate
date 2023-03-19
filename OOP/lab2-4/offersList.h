@@ -2,10 +2,12 @@
 #include "offer.h"
 #pragma once
 
-typedef struct temp{
-	int size = 0;
-	int maxSize = 2;
-	offer* List = new offer[maxSize];
+typedef struct {
+	int size;
+	int maxSize;
+	offer* List;
+	// = (offer*)malloc(o.maxSize, sizeof(offer))
+	//offer* List = new offer[maxSize];
 	//offer List[100];
-	//o.List = (offer*) calloc(o.maxSize, sizeof(offer));
+	
 }offersList;

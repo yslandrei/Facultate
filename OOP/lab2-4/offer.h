@@ -1,10 +1,9 @@
-#include <string>
 #pragma once
 
 typedef struct {
 	int id;
-	std::string type;
+	char type[25];
 	int surface;
-	std::string adress;
+	char adress[25];
 	int price;
 }offer;

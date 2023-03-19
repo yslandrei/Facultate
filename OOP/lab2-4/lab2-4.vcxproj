@@ -128,12 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="offersRepository.cpp" />
-    <ClCompile Include="offersService.cpp" />
-    <ClCompile Include="testOffersRepo.cpp" />
-    <ClCompile Include="testOffersService.cpp" />
-    <ClCompile Include="ui.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="offersRepository.c" />
+    <ClCompile Include="offersService.c" />
+    <ClCompile Include="testOffersRepo.c" />
+    <ClCompile Include="testOffersService.c" />
+    <ClCompile Include="ui.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h" />

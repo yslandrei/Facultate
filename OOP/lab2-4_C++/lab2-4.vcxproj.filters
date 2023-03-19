@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="offersRepository.cpp">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="offersService.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="testOffersRepo.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testOffersService.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="domain">
+      <UniqueIdentifier>{fe4a1018-4e74-40d1-b9d2-2ad12e1141dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infrastructure">
+      <UniqueIdentifier>{6df39a9c-a176-41fe-b6e5-27ec4ac24cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business">
+      <UniqueIdentifier>{b05586b1-e981-409a-888c-5391e0c42913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="presentation">
+      <UniqueIdentifier>{4f944c9b-92a9-4cfe-baf3-e52972f7be11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{8ae272b3-8ef8-4b85-8556-89de734a7475}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="offer.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="offersRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="offersService.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="testOffersRepo.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testOffersService.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="offersList.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
