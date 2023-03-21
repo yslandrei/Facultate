@@ -11,7 +11,7 @@ void printMenu() {
 	printf("* Adaugarea de noi oferte                                     - add [id], [tip], [suprafata], [adresa], [pret]\n");
 	printf("* Stergere oferte                                             - pop [id]\n");
 	printf("* Actualizare oferte                                          - mod [oldId], [id], [tip], [suprafata], [adresa], [pret]\n");
-	printf("* Vizualizare oferete ordonat dupa pret, tip (cresc/descresc) - srt\n");
+	printf("* Vizualizare oferete ordonat dupa un criteriu                - srt [p/s/t]\n");
 	printf("* Vizualizare oferta filtrate dupa un criteriu                - fil [criteriu]\n\n");
 }
 
@@ -50,7 +50,7 @@ void ui(offersList* o) {
 	char args[10][25];
 
 	int oldId, id, surface, price;
-	char type[25], adress[25], criteria[25];
+	char type[25], adress[25], criteria[25], cmp='p';
 
 	while (1) {
 		printMenu();
@@ -89,8 +89,9 @@ void ui(offersList* o) {
 		}
 
 		else if (strncmp(com, "srt", sizeof(char) * 3) == 0) {
+			cmp = com[4];
 			offersList sortedO = createOList();
-			sortListByPriceAndType(o, &sortedO);
+			sortListByCmp(o, &sortedO, cmp);
 			printOffers(&sortedO);
 			//delete(sortedO.List);
 			free(sortedO.List);

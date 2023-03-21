@@ -49,20 +49,37 @@ int modOfferService(offersList* o, int oldId, int id, char* type, int surface, c
 	return 0;
 }
 
-int cmpByPriceAndType(const void* o1, const void* o2) {
-	offer* offer1 = (offer*)o1;
+int cmpDescByPrice(const void* o1, const void* o2) {
+	offer* offer1 = (offer*) o1;
 	offer* offer2 = (offer*) o2;
 
-	if ((*offer1).price == (*offer2).price)
-		return (*offer1).type < (*offer2).type;
 	return (*offer1).price > (*offer2).price;
 }
 
-void sortListByPriceAndType(offersList* o, offersList* sortedO) {
+int cmpAscBySurface(const void* o1, const void* o2) {
+	offer* offer1 = (offer*)o1;
+	offer* offer2 = (offer*)o2;
+
+	return (*offer1).surface < (*offer2).surface;
+}
+
+int cmpAscByType(const void* o1, const void* o2) {
+	offer* offer1 = (offer*)o1;
+	offer* offer2 = (offer*)o2;
+
+	return (strcmp((*offer1).type, (*offer2).type) < 0);
+}
+
+void sortListByCmp(offersList* o, offersList* sortedO, char cmp) {
 	for (int i = 0; i < o->size; i++)
 		addOffer(sortedO, o->List[i]);
 
-	qsort(sortedO->List, sortedO->size, sizeof(offer), cmpByPriceAndType);
+	if (cmp == 'p')
+		qsort(sortedO->List, sortedO->size, sizeof(offer), cmpDescByPrice);
+	else if (cmp == 's')
+		qsort(sortedO->List, sortedO->size, sizeof(offer), cmpAscBySurface);
+	else if (cmp == 't')
+		qsort(sortedO->List, sortedO->size, sizeof(offer), cmpAscByType);
 }
 
 int stringToNumber(char* string) {

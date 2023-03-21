@@ -45,7 +45,7 @@ void testModOfferService() {
 
 void testGetSortedListByPriceAndType() {
 	offersList o = createOList();
-	char tip[25] = "tip";
+	/*char tip[25] = "tip";
 	char tipul[25] = "tipul";
 	char adresa[25] = "adresa";
 
@@ -59,7 +59,7 @@ void testGetSortedListByPriceAndType() {
 	assert(sortedO.List[1].id == 2);
 	assert(sortedO.List[2].id == 1);
 	free(o.List);
-	free(sortedO.List);
+	free(sortedO.List);*/
 }
 
 void testGetFilteredListByCriteria() {

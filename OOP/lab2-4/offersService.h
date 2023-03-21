@@ -6,9 +6,13 @@ int popOfferService(offersList* o, int oId);
 
 int modOfferService(offersList* o, int oldId, int id, char* type, int surface, char* adress, int price);
 
-int cmpByPriceAndType(const void* o1, const void* o2);
+int cmpDescByPrice(const void* o1, const void* o2);
 
-void sortListByPriceAndType(offersList* o, offersList* sortedO);
+int cmpAscBySurface(const void* o1, const void* o2);
+
+int cmpAscByType(const void* o1, const void* o2);
+
+void sortListByCmp(offersList* o, offersList* sortedO, char cmp);
 
 int stringToNumber(char* string);
 
