@@ -21,7 +21,11 @@ int addOfferService(offersList* o, int id, char* type, int surface, char* adress
 
 int popOfferService(offersList* o, int oldId) {
 	//TODO: Validation
-	offer oldOffer;
+	offer oldOffer = {0};
+
+	strcpy(oldOffer.type, "");
+	strcpy(oldOffer.adress, "");
+
 	for (int i = 0; i <= o->size; i++)
 		if (o->List[i].id == oldId)
 			oldOffer = o->List[i];
@@ -32,7 +36,7 @@ int popOfferService(offersList* o, int oldId) {
 
 int modOfferService(offersList* o, int oldId, int id, char* type, int surface, char* adress, int price) {
 	//TODO: Validation
-	offer oldOffer;
+	offer oldOffer = { 0 };
 	for (int i = 0; i <= o->size; i++)
 		if (o->List[i].id == oldId)
 			oldOffer = o->List[i];
@@ -53,21 +57,21 @@ int cmpDescByPrice(const void* o1, const void* o2) {
 	offer* offer1 = (offer*) o1;
 	offer* offer2 = (offer*) o2;
 
-	return (*offer1).price > (*offer2).price;
+	return (*offer1).price < (*offer2).price;
 }
 
 int cmpAscBySurface(const void* o1, const void* o2) {
 	offer* offer1 = (offer*)o1;
 	offer* offer2 = (offer*)o2;
 
-	return (*offer1).surface < (*offer2).surface;
+	return (*offer1).surface > (*offer2).surface;
 }
 
 int cmpAscByType(const void* o1, const void* o2) {
 	offer* offer1 = (offer*)o1;
 	offer* offer2 = (offer*)o2;
 
-	return (strcmp((*offer1).type, (*offer2).type) < 0);
+	return (strcmp((*offer1).type, (*offer2).type) > 0);
 }
 
 void sortListByCmp(offersList* o, offersList* sortedO, char cmp) {
@@ -82,8 +86,9 @@ void sortListByCmp(offersList* o, offersList* sortedO, char cmp) {
 		qsort(sortedO->List, sortedO->size, sizeof(offer), cmpAscByType);
 }
 
+
 int stringToNumber(char* string) {
-	int stringLen = strlen(string);
+	size_t stringLen = strlen(string);
 	int number = 0;
 
 	for (int i = 0; i < stringLen; i++)

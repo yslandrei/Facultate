@@ -45,21 +45,34 @@ void testModOfferService() {
 
 void testGetSortedListByPriceAndType() {
 	offersList o = createOList();
-	/*char tip[25] = "tip";
-	char tipul[25] = "tipul";
+	char tip1[25] = "tip1";
+	char tip2[25] = "tip2";
+	char tip3[25] = "tip3";
+	char tip4[25] = "tip4";
 	char adresa[25] = "adresa";
+	char p = 'p', s = 's', t = 't';
 
-	addOfferService(&o, 1, tip, 1000, adresa, 100);
-	addOfferService(&o, 2, tipul, 1000, adresa, 100);
-	addOfferService(&o, 3, tip, 1000, adresa, 50);
+	addOfferService(&o, 1, tip1, 1000, adresa, 100);
+	addOfferService(&o, 2, tip2, 2000, adresa, 200);
+	addOfferService(&o, 3, tip3, 1500, adresa, 350);
+	addOfferService(&o, 4, tip4, 500, adresa, 50);
 
-	offersList sortedO = createOList();
-	sortListByPriceAndType(&o, &sortedO);
-	assert(sortedO.List[0].id == 3);
-	assert(sortedO.List[1].id == 2);
-	assert(sortedO.List[2].id == 1);
+	offersList sortedO1 = createOList();
+	sortListByCmp(&o, &sortedO1, p);
+	assert(sortedO1.List[0].id == 3);
+	free(sortedO1.List);
+
+	offersList sortedO2 = createOList();
+	sortListByCmp(&o, &sortedO2, s);
+	assert(sortedO2.List[0].id == 4);
+	free(sortedO2.List);
+
+	offersList sortedO3 = createOList();
+	sortListByCmp(&o, &sortedO3, t);
+	assert(sortedO3.List[0].id == 1);
+	free(sortedO3.List);
+
 	free(o.List);
-	free(sortedO.List);*/
 }
 
 void testGetFilteredListByCriteria() {

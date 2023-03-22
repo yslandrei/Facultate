@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <crtdbg.h>
 #include "offer.h"
 #include "offersList.h"
 #include "offersRepository.h"
@@ -23,10 +24,10 @@ void testAll() {
 
 int main() {
 	testAll();
-
+	
 	offersList o = createOList();
 	ui(&o);
-
+	
 	_CrtDumpMemoryLeaks();
 	return 0;
 }
