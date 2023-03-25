@@ -2,30 +2,19 @@
 #include <stdlib.h>
 #include "offer.h"
 #include "offersList.h"
+#include "utils.h"
 #include "offersRepository.h"
 #pragma warning(disable : 4996)
 
 int addOfferService(offersList* o, int id, char* type, int surface, char* adress, int price) {
-	//TODO: Validation
-	offer newOffer = {
-		.id = id,
-		.surface = surface,
-		.price = price
-	};
-	strcpy(newOffer.type, type);
-	strcpy(newOffer.adress, adress);
+	offer newOffer = createOffer(id, type, surface, adress, price);
 
 	addOffer(o, newOffer);
 	return 0;
 }
 
 int popOfferService(offersList* o, int oldId) {
-	//TODO: Validation
 	offer oldOffer = {0};
-
-	strcpy(oldOffer.type, "");
-	strcpy(oldOffer.adress, "");
-
 	for (int i = 0; i <= o->size; i++)
 		if (o->List[i].id == oldId)
 			oldOffer = o->List[i];
@@ -35,20 +24,12 @@ int popOfferService(offersList* o, int oldId) {
 }
 
 int modOfferService(offersList* o, int oldId, int id, char* type, int surface, char* adress, int price) {
-	//TODO: Validation
 	offer oldOffer = { 0 };
 	for (int i = 0; i <= o->size; i++)
 		if (o->List[i].id == oldId)
 			oldOffer = o->List[i];
 
-	offer newOffer = {
-		.id = id,
-		.surface = surface,
-		.price = price
-	};
-	strcpy(newOffer.type, type);
-	strcpy(newOffer.adress, adress);
-
+	offer newOffer = createOffer(id, type, surface, adress, price);
 	modOffer(o, oldOffer, newOffer);
 	return 0;
 }
@@ -100,7 +81,7 @@ int stringToNumber(char* string) {
 
 void filterListByCriteria(offersList* o, offersList* filteredO, char* criteria) {
 	//TODO: Validation
-	int correctOList[100];
+	int correctOList[100] = {0};
 	for (int i = 0; i < o->size; i++)
 		correctOList[i] = 1;
 

@@ -4,6 +4,7 @@
 #include <crtdbg.h>
 #include "offer.h"
 #include "offersList.h"
+#include "utils.h"
 #include "offersRepository.h"
 #include "offersService.h"
 #include "ui.h"

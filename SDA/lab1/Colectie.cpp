@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 Colectie::Colectie() {
 	maxSize = 16;
 	vFreq = new TPair[maxSize];
@@ -84,6 +85,51 @@ int Colectie::dim() const {
 
 bool Colectie::vida() const {
 	return vFreqLen ? false : true;
+}
+
+
+/*
+Subalgoritm eliminaAparitii(nr, elem)
+{pre: c o colectie, nr este un numar pozitiv, elem este un TElement}
+{post: c' = c - {(nr, elem)} - colectia din care s-a elimina nr aparitii ale TElementului elem}
+
+Daca nr < 0
+	{Aruncam exceptie}
+SfDaca
+
+Pentru i=0, c.lungime - 1
+	Daca c.vFreq[i].elem = elem
+		Daca c.vFreq[i].frecventa > nr
+			c.vFreq[i].frecventa -= nr
+			return nr
+		SfDaca
+
+		Altfel
+			sterge(c[i].elem)
+			return c[i].elem
+		SfAltfel
+	
+	SfDaca
+SfPentru
+*/
+int Colectie::eliminaAparitii(int nr, TElem elem) {
+	if (nr < 0)
+		throw std::invalid_argument("Numar negativ");
+
+	for (int i = 0; i < vFreqLen; i++)
+		if (vFreq[i].e == elem) {
+			if (vFreq[i].freq > nr) {
+				vFreq[i].freq -= nr;
+				return nr;
+			}
+			else {
+				int deletedFreq = vFreq[i].freq;
+				sterge(vFreq[i].e);
+				return deletedFreq;
+			}
+		}
+
+	return 0;
 }
 
 IteratorColectie Colectie::iterator() const {

@@ -1,5 +1,2 @@
-﻿  offersService.c
-  ui.c
-  Generating Code...
-C:\Facultate\OOP\lab2-4\offersService.c(52): error C2220: the following warning is treated as an error
-C:\Facultate\OOP\lab2-4\offersService.c(52): warning C4701: potentially uninitialized local variable 'oldOffer' used
+﻿  main.c
+  lab2-4.vcxproj -> C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe

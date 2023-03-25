@@ -17,6 +17,9 @@
     <ClCompile Include="testOffersService.c">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>domain</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="domain">
@@ -55,6 +58,9 @@
       <Filter>tests</Filter>
     </ClInclude>
     <ClInclude Include="offersList.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
       <Filter>domain</Filter>
     </ClInclude>
   </ItemGroup>

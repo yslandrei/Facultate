@@ -2,8 +2,8 @@
 
 typedef struct {
 	int id;
-	char type[25];
+	char* type;
 	int surface;
-	char adress[25];
+	char* adress;
 	int price;
 }offer;

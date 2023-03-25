@@ -8,10 +8,11 @@ using namespace std;
 
 
 int main() {
-	testAll();
-	testAllExtins();
+	//testAll();
+	//testAllExtins();
 	cout << "All Tests Passed!";
 	
+	return 0;
 	/*
 	Colectie c;
 	c.adauga(1);

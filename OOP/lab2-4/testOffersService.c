@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "offer.h"
 #include "offersList.h"
+#include "utils.h"
 #include "offersRepository.h"
 #include "offersService.h"
 #pragma warning(disable:4996)
@@ -18,7 +19,8 @@ void testAddOfferService() {
 	assert(o.List[0].surface == 1000);
 	assert(strcmp(o.List[0].adress, "adresa") == 0);
 	assert(o.List[0].price == 100);
-	free(o.List);
+
+	freeOList(&o);
 }
 
 void testPopOfferService() {
@@ -29,7 +31,8 @@ void testPopOfferService() {
 	addOfferService(&o, 1, tip, 1000, adresa, 100);
 	assert(popOfferService(&o, 1) == 0);
 	assert(o.size == 0);
-	free(o.List);
+
+	freeOList(&o);
 }
 
 void testModOfferService() {
@@ -40,7 +43,8 @@ void testModOfferService() {
 	addOfferService(&o, 1, tip, 1000, adresa, 100);
 	assert(modOfferService(&o, 1, 2, tip, 1000, adresa, 100) == 0);
 	assert(o.List[0].id == 2);
-	free(o.List);
+
+	freeOList(&o);
 }
 
 void testGetSortedListByPriceAndType() {
@@ -72,7 +76,7 @@ void testGetSortedListByPriceAndType() {
 	assert(sortedO3.List[0].id == 1);
 	free(sortedO3.List);
 
-	free(o.List);
+	freeOList(&o);
 }
 
 void testGetFilteredListByCriteria() {
@@ -90,12 +94,14 @@ void testGetFilteredListByCriteria() {
 	char input1[25] = "s<=2000 p>=150 t>=tip";
 	filterListByCriteria(&o, &filteredO1, input1);
 	assert(filteredO1.size == 2);
+	free(filteredO1.List);
+
 
 	offersList filteredO2 = createOList();
 	char input2[25] = "s>900 p<300 t=tip1";
 	filterListByCriteria(&o, &filteredO2, input2);
 	assert(filteredO2.size == 1);
-	free(o.List);
-	free(filteredO1.List);
 	free(filteredO2.List);
+
+	freeOList(&o);
 }

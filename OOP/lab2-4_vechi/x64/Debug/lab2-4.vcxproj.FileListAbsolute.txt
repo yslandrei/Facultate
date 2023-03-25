@@ -1,2 +1,0 @@
-C:\Facultate\OOP\lab2-4\x64\Debug\lab2-4.exe
-C:\Facultate\OOP\lab2-4_vechi\x64\Debug\lab2-4.exe

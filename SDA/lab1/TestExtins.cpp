@@ -313,6 +313,31 @@ void testQuantity() {//scopul e sa adaugam multe date
 	assert(c.dim() == 0);
 }
 
+void testEliminaAparitii() {
+	Colectie c;
+	for (int i = 0; i < 100; i++) {
+		if (i % 2 == 0) {
+			c.adauga(i);
+			c.adauga(i);
+		}
+		else if (i % 2 == 1)
+			c.adauga(i);
+	}
+
+	try {
+		c.eliminaAparitii(-1, 0);
+		assert(false);
+	}
+	catch (std::invalid_argument) {
+		assert(true);
+	}
+
+	c.eliminaAparitii(1, 1);
+	assert(c.cauta(1) == false);
+
+	c.eliminaAparitii(1, 0);
+	assert(c.nrAparitii(0) == 1);
+}
 
 void testAllExtins() {
 	testCreeaza();
@@ -320,4 +345,5 @@ void testAllExtins() {
 	testSterge();
 	testIterator();
 	testQuantity();
+	testEliminaAparitii();
 }

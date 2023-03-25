@@ -1,4 +1,10 @@
-﻿  Colectie.cpp
+﻿  App.cpp
+  Colectie.cpp
   IteratorColectie.cpp
+  TestExtins.cpp
+C:\Facultate\SDA\lab1\TestExtins.cpp(217,9): error C2220: the following warning is treated as an error
+C:\Facultate\SDA\lab1\TestExtins.cpp(217,9): warning C4189: 'e1': local variable is initialized but not referenced
+  TestScurt.cpp
+C:\Facultate\SDA\lab1\TestScurt.cpp(30,9): error C2220: the following warning is treated as an error
+C:\Facultate\SDA\lab1\TestScurt.cpp(30,9): warning C4189: 'e': local variable is initialized but not referenced
   Generating Code...
-  lab1.vcxproj -> C:\Facultate\SDA\lab1\x64\Debug\lab1.exe

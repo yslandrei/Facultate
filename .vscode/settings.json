@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./FP/lab4-6.4/ui",
-        "./FP/lab4-6.1"
-    ]
-}
