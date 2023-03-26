@@ -1,10 +1,10 @@
-#include "offersList.h"
+#include "List.h"
 #pragma warning(disable:4996)
 
-offer createOffer(int id, char* type, int surface, char* adress, int price);
+offer* createOffer(int id, char* type, int surface, char* adress, int price);
 
-offersList createOList();
+List createList();
 
 void freeOffer(offer* Offer);
 
-void freeOList(offersList* o);
+void freeOList(List* o);

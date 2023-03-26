@@ -4,8 +4,8 @@ void printMenu();
 
 void clearScreen();
 
-void printOffers(offersList* o);
+void printOffers(List* o);
 
 void parseCommand(char* com, char args[10][25]);
 
-void ui(offersList* o);
+void ui(List* o);

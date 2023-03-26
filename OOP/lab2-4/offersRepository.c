@@ -1,52 +1,52 @@
 #include <stdlib.h>
 #include "offer.h"
-#include "offersList.h"
+#include "List.h"
 #include "utils.h"
 
-int addOffer(offersList* o, offer newOffer) {
+int addOffer(List* o, offer* newOffer) {
 	for (int i = 0; i < o->size; i++)
-		if (o->List[i].id == newOffer.id) {
-			freeOffer(&newOffer);
+		if ((*(offer*) o->arr[i]).id == (*newOffer).id) {
+			freeOffer(newOffer);
 			return -1; // Offer already exists
 		}
 	
 	if (o->size == o->maxSize) { // Resizing dynamic array
 		o->maxSize = o->maxSize * 2;
-		offer* auxO = malloc(o->maxSize * sizeof(offer));
+		void** auxO = malloc(o->maxSize * sizeof(void*));
 
 		for (int i = 0; i < o->size; i++)
-			auxO[i] = o->List[i];
+			auxO[i] = o->arr[i];
 
-		free(o->List);
-		o->List = auxO;
+		free(o->arr);
+		o->arr = auxO;
 	}
 	
-	o->List[o->size] = newOffer;
+	o->arr[o->size] = newOffer;
 	o->size++;
 	return 0;
 }
 
-int popOffer(offersList* o, offer oldOffer) {
+int popOffer(List* o, offer* oldOffer) {
 	for (int i = 0; i < o->size; i++)
-		if (o->List[i].id == oldOffer.id) {
+		if ((*(offer*) o->arr[i]).id == (*oldOffer).id) {
 			for (int j = i; j < o->size - 1; j++)
-				o->List[j] = o->List[j + 1];
+				o->arr[j] = o->arr[j + 1];
 			o->size--;
-			freeOffer(&oldOffer);
+			freeOffer(oldOffer);
 			return 0;
 		}
 
 	return -1; // Offer doesn't exist
 }
 
-int modOffer(offersList* o, offer oldOffer, offer newOffer) {
+int modOffer(List* o, offer* oldOffer, offer* newOffer) {
 	for (int i = 0; i < o->size; i++)
-		if (o->List[i].id == oldOffer.id) {
-			o->List[i] = newOffer;
-			freeOffer(&oldOffer);
+		if ((*(offer*) o->arr[i]).id == (*oldOffer).id) {
+			o->arr[i] = newOffer;
+			freeOffer(oldOffer);
 			return 0;
 		}
 
-	freeOffer(&newOffer);
+	freeOffer(newOffer);
 	return -1; // Offer doesn't exist
 }

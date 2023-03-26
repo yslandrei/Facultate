@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "offer.h"
-#include "offersList.h"
+#include "List.h"
 #include "utils.h"
 #include "offersRepository.h"
 #include "offersService.h"
@@ -31,13 +31,20 @@ void parseCommand(char* com, char args[10][25]) {
 	}
 }
 
-void printOffers(offersList* o) {
+void printOffers(List* o) {
 	for (int i = 0; i < o->size; i++)
-		printf("id: %d, tip: %s, suprafata: %d, adresa: %s, pret: %d\n", o->List[i].id, o->List[i].type, o->List[i].surface, o->List[i].adress, o->List[i].price);
+		printf(
+			"id: %d, tip: %s, suprafata: %d, adresa: %s, pret: %d\n", 
+			(*(offer*) o->arr[i]).id, 
+			(*(offer*) o->arr[i]).type, 
+			(*(offer*) o->arr[i]).surface, 
+			(*(offer*) o->arr[i]).adress, 
+			(*(offer*) o->arr[i]).price);
+
 	printf("\n");
 }
 
-void ui(offersList* o) {
+void ui(List* o) {
 	char com[100];
 	char args[10][25];
 
@@ -82,19 +89,19 @@ void ui(offersList* o) {
 
 		else if (strncmp(com, "srt", sizeof(char) * 3) == 0) {
 			cmp = com[4];
-			offersList sortedO = createOList();
+			List sortedO = createList();
 			sortListByCmp(o, &sortedO, cmp);
 			printOffers(&sortedO);
-			free(sortedO.List);
+			free(sortedO.arr);
 		}
 
 		else if (strncmp(com, "fil", sizeof(char) * 3) == 0) {
-			offersList filteredO = createOList();
+			List filteredO = createList();
 			strcpy(criteria, com + 4);
 			criteria[strlen(criteria) - 1] = '\0';
 			filterListByCriteria(o, &filteredO, criteria);
 			printOffers(&filteredO);
-			free(filteredO.List);
+			free(filteredO.arr);
 		}
 
 		else if (strncmp(com, "q", sizeof(char) * 1) == 0) {

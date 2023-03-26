@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <crtdbg.h>
 #include "offer.h"
-#include "offersList.h"
+#include "List.h"
 #include "utils.h"
 #include "offersRepository.h"
 #include "offersService.h"
@@ -26,7 +26,7 @@ void testAll() {
 int main() {
 	testAll();
 	
-	offersList o = createOList();
+	List o = createList();
 	ui(&o);
 	
 	_CrtDumpMemoryLeaks();

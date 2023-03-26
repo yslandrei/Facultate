@@ -57,7 +57,7 @@
     <ClInclude Include="testOffersService.h">
       <Filter>tests</Filter>
     </ClInclude>
-    <ClInclude Include="offersList.h">
+    <ClInclude Include="List.h">
       <Filter>domain</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
