@@ -1,21 +1,25 @@
-[2023-03-21 10:56:12] [info] Start Program:
-Path:"D:\Laboratoare\OOP\lab2_4\x64\Debug\lab2_4.exe"
+[2023-03-26 02:35:37] [info] Start Program:
+Path:"C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe"
 Arguments:
-Working directory: "D:\Laboratoare\OOP\lab2_4\lab2_4\"
-Modules: Selected: D:\Laboratoare\OOP\lab2_4\x64\Debug\lab2_4.exe Excluded: 
-Sources: Selected: D:\Laboratoare\OOP\lab2_4\lab2_4 Excluded: 
+Working directory: "C:\Facultate\OOP\lab2-4_Flipi\lab2_4\"
+Modules: Selected: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe Excluded: 
+Sources: Selected: C:\Facultate\OOP\lab2-4_Flipi\lab2_4 Excluded: 
 Log Level: Normal
 Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: Binary C:\Users\Filip Stefan\AppData\Local\Temp\kvnaxlih.pkg 
+Export: Binary C:\Users\andre\AppData\Local\Temp\hgs2bylb.yas 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2023-03-21 10:56:12] [info] Module: D:\Laboratoare\OOP\lab2_4\x64\Debug\lab2_4.exe is selected because it matches selected pattern: D:\Laboratoare\OOP\lab2_4\x64\Debug\lab2_4.exe
-[2023-03-21 10:56:12] [info] ----------------------------------------------------
-[2023-03-21 10:56:12] [info] Coverage binary generated in file: C:\Users\Filip Stefan\AppData\Local\Temp\kvnaxlih.pkg
-[2023-03-21 10:56:12] [info] ----------------------------------------------------
+[2023-03-26 02:35:37] [info] Module: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe
+[2023-03-26 02:35:37] [warning] ----------------------------------------------------
+[2023-03-26 02:35:37] [warning] It seems there is an assertion failure or you call DebugBreak() in your program.
+[2023-03-26 02:35:37] [warning] ----------------------------------------------------
+[2023-03-26 02:35:37] [info] ----------------------------------------------------
+[2023-03-26 02:35:37] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\hgs2bylb.yas
+[2023-03-26 02:35:37] [info] ----------------------------------------------------
+[2023-03-26 02:35:37] [error] Your program stop with error code: -2147483645

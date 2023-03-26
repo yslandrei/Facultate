@@ -9,8 +9,7 @@
 int addOfferService(List* o, int id, char* type, int surface, char* adress, int price) {
 	offer* newOffer = createOffer(id, type, surface, adress, price);
 
-	addOffer(o, newOffer);
-	return 0;
+	return addOffer(o, newOffer);
 }
 
 int popOfferService(List* o, int oldId) {
@@ -19,8 +18,7 @@ int popOfferService(List* o, int oldId) {
 		if ((*(offer*) o->arr[i]).id == oldId)
 			oldOffer = (offer*) o->arr[i];
 
-	popOffer(o, oldOffer);
-	return 0;
+	return popOffer(o, oldOffer);
 }
 
 int modOfferService(List* o, int oldId, int id, char* type, int surface, char* adress, int price) {
@@ -30,8 +28,7 @@ int modOfferService(List* o, int oldId, int id, char* type, int surface, char* a
 			oldOffer = (offer*) o->arr[i];
 
 	offer* newOffer = createOffer(id, type, surface, adress, price);
-	modOffer(o, oldOffer, newOffer);
-	return 0;
+	return modOffer(o, oldOffer, newOffer);
 }
 
 int cmpDescByPrice(const void* a, const void* b) {
