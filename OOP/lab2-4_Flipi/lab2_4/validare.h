@@ -1,4 +1,4 @@
 #pragma once
 #include "domain.h"
 
-int validare(Masina masina);
+int validare(Masina* masina);

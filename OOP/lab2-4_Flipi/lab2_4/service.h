@@ -17,7 +17,9 @@ int serv_inchiriaza(Lista* lista, char* nr_inmatr);
 
 int serv_returnare(Lista* lista, char* nr_inmatr);
 
-Lista serv_filtrare(Lista* lista, char* categ);
+Lista* serv_filtrare_categorie(Lista* lista, char* categ);
+
+Lista* serv_filtrare_judet(Lista* lista, char* judet);
 
 void serv_sortare(Lista* lista, FunctieComparare cmpF);
 

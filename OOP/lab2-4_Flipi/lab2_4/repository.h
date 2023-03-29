@@ -4,7 +4,7 @@
 #include <crtdbg.h>
 #include "domain.h"
 
-typedef Masina ElemType;
+typedef void* ElemType;
 
 typedef struct
 {
@@ -13,7 +13,7 @@ typedef struct
 	int capacitate;
 }Lista;
 
-Lista creaza_lista();
+Lista* creaza_lista();
 
 void distruge_lista(Lista* lista);
 
@@ -25,4 +25,8 @@ int size(Lista* lista);
 
 void adauga_masina(Lista* lista, ElemType element);
 
-Lista copy_list(Lista* lista);
+Lista* copy_list(Lista* lista);
+
+void adauga_pas_undo(Lista* undo_stiva, Lista* lista);
+
+Lista* executa_pas_undo(Lista* undo_stiva, Lista* lista);

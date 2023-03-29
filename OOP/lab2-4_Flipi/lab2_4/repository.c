@@ -4,13 +4,13 @@
 #include <string.h>
 #include <string.h>
 
-Lista creaza_lista() 
+Lista* creaza_lista() 
 {
 	//Functia creaza o lista goala
-	Lista lista;
-	lista.capacitate = 2;
-	lista.lungime = 0;
-	lista.elemente = malloc(sizeof(ElemType) * lista.capacitate);
+	Lista* lista = malloc(sizeof(Lista));
+	(*lista).capacitate = 2;
+	(*lista).lungime = 0;
+	(*lista).elemente = malloc(sizeof(ElemType) * (*lista).capacitate);
 	return lista;
 }
 
@@ -20,10 +20,11 @@ void distruge_lista(Lista* lista)
 	for (int i = 0; i < lista->lungime; i++)
 	{
 		ElemType element = get(lista, i);
-		distruge_masina(&element);
+		distruge_masina(element);
 	}
 	lista->lungime = 0;
 	free(lista->elemente);
+	free(lista);
 }
 
 ElemType get(Lista* lista, int poz)
@@ -35,6 +36,7 @@ ElemType get(Lista* lista, int poz)
 void seteaza_element(Lista* lista, int pozitie, ElemType element)
 {
 	//Adauaga un anumit element la o anumita pozitie din lista
+	distruge_masina(lista->elemente[pozitie]);
 	lista->elemente[pozitie] = element;
 }
 
@@ -63,14 +65,31 @@ void adauga_masina(Lista* lista, ElemType element)
 	lista->lungime++;
 }
 
-Lista copy_list(Lista* lista)
+Lista* copy_list(Lista* lista)
 {
 	//Functia creaza o copie la lista transmisa ca parametru
-	Lista copie_lista = creaza_lista();
+	Lista* copie_lista = creaza_lista();
 	for (int i = 0; i < lista->lungime; i++)
 	{
 		ElemType element = get(lista, i);
-		adauga_masina(&copie_lista, copiaza_masina(element));
+		adauga_masina(copie_lista, copiaza_masina(element));
 	}
 	return copie_lista;
+}
+
+void adauga_pas_undo(Lista* undo_stiva, Lista* lista) 
+{
+	if (undo_stiva->lungime == undo_stiva->capacitate) resize(undo_stiva);
+
+	undo_stiva->elemente[undo_stiva->lungime] = copy_list(lista);
+	undo_stiva->lungime++;
+}
+
+Lista* executa_pas_undo(Lista* undo_stiva, Lista* lista) 
+{
+	if (undo_stiva->lungime)
+	{
+		distruge_lista(lista);
+		undo_stiva->lungime--;
+		return undo_stiva->elemente[undo_stiva->lungime];}return lista;
 }

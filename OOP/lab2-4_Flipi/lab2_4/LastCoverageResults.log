@@ -1,4 +1,4 @@
-[2023-03-26 02:35:37] [info] Start Program:
+[2023-03-28 12:59:18] [info] Start Program:
 Path:"C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe"
 Arguments:
 Working directory: "C:\Facultate\OOP\lab2-4_Flipi\lab2_4\"
@@ -9,17 +9,17 @@ Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: Binary C:\Users\andre\AppData\Local\Temp\hgs2bylb.yas 
+Export: Binary C:\Users\andre\AppData\Local\Temp\k2xmyxl3.bhk 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2023-03-26 02:35:37] [info] Module: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe
-[2023-03-26 02:35:37] [warning] ----------------------------------------------------
-[2023-03-26 02:35:37] [warning] It seems there is an assertion failure or you call DebugBreak() in your program.
-[2023-03-26 02:35:37] [warning] ----------------------------------------------------
-[2023-03-26 02:35:37] [info] ----------------------------------------------------
-[2023-03-26 02:35:37] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\hgs2bylb.yas
-[2023-03-26 02:35:37] [info] ----------------------------------------------------
-[2023-03-26 02:35:37] [error] Your program stop with error code: -2147483645
+[2023-03-28 12:59:18] [info] Module: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab2-4_Flipi\x64\Debug\lab2_4.exe
+[2023-03-28 12:59:19] [warning] ----------------------------------------------------
+[2023-03-28 12:59:19] [warning] It seems there is an assertion failure or you call DebugBreak() in your program.
+[2023-03-28 12:59:19] [warning] ----------------------------------------------------
+[2023-03-28 12:59:19] [info] ----------------------------------------------------
+[2023-03-28 12:59:19] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\k2xmyxl3.bhk
+[2023-03-28 12:59:19] [info] ----------------------------------------------------
+[2023-03-28 12:59:19] [error] Your program stop with error code: -2147483645

@@ -11,10 +11,10 @@ typedef struct
 	int inchiriere;
 }Masina;
 
-Masina creaza_masina(char* nr_inmatr, char* modelul, char* categoria);
+Masina* creaza_masina(char* nr_inmatr, char* modelul, char* categoria);
 
 void distruge_masina(Masina* masina);
 
-Masina copiaza_masina(Masina masina);
+Masina* copiaza_masina(Masina* masina);
 
-void modifica_masina(Masina masina_veche, Masina masina_noua);
+void modifica_masina(Masina* masina_veche, Masina* masina_noua);
