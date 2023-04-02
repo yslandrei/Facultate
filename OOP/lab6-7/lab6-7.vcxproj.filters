@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="infrastructure">
+      <UniqueIdentifier>{a8d3cf0d-adb0-4199-9948-b2f91915cd1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{1d36c9df-7805-4d9d-8d96-8cdb5f966792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="domain">
+      <UniqueIdentifier>{8cc4d34c-43bc-49d7-979e-fce8c4788347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{ac8b80c2-5744-42df-9b8d-2613f6af43df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{a0daa1f0-ea82-4c03-aa95-0141bb08007d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="validation">
+      <UniqueIdentifier>{da7e9f48-fba1-44e5-8037-f095f7f8cb87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="offer.cpp">
+      <Filter>domain</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testDomain.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="offersRepository.cpp">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="testInfrastructure.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="offersService.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="testService.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testValidate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="offer.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="testDomain.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="offersRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="testInfrastructure.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="offersService.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="validate.h">
+      <Filter>validation</Filter>
+    </ClInclude>
+    <ClInclude Include="testValidate.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testService.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

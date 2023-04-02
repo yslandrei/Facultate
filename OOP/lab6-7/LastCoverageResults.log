@@ -1,0 +1,21 @@
+[2023-04-02 21:41:58] [info] Start Program:
+Path:"C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe"
+Arguments:
+Working directory: "C:\Facultate\OOP\lab6-7\"
+Modules: Selected: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe Excluded: 
+Sources: Selected: C:\Facultate\OOP\lab6-7 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\andre\AppData\Local\Temp\o5c0dsvl.olu 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2023-04-02 21:41:58] [info] Module: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
+[2023-04-02 21:41:59] [info] ----------------------------------------------------
+[2023-04-02 21:41:59] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\o5c0dsvl.olu
+[2023-04-02 21:41:59] [info] ----------------------------------------------------
