@@ -22,13 +22,13 @@ void offersService::modOffer(const int oldId, const int id, const string name, c
 	oRepo.modOffer(oldId, newOffer);
 }
 
-const bool offersService::findOffer(const string name) const {
+const offer& offersService::findOffer(const string name) const {
 	validate::name(name);
 	for (const auto& Offer : oRepo.getAll())
 		if (Offer.getName() == name)
-			return true;
+			return Offer;
 
-	return false;
+	throw exception("Nume inexistent!\n");
 }
 
 bool cmpByName(const offer& a, const offer& b)  {

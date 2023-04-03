@@ -33,7 +33,7 @@ void testFindOfferService() {
 	oService.addOffer(0, "nume0", "dest0", "tip0", 100);
 	oService.addOffer(1, "nume1", "dest1", "tip1", 100);
 	oService.addOffer(2, "nume2", "dest2", "tip2", 100);
-	assert(oService.findOffer("nume1") == true);
+	assert(oService.findOffer("nume1").getId() == 1);
 }
 
 void testSortOffersService() {

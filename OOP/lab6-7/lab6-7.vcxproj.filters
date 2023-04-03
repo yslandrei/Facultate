@@ -43,6 +43,9 @@
     <ClCompile Include="testValidate.cpp">
       <Filter>tests</Filter>
     </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="testService.h">
       <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>ui</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

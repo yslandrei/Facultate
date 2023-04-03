@@ -2,6 +2,7 @@
 #include "testInfrastructure.h"
 #include "testValidate.h"
 #include "testService.h"
+#include "ui.h"
 
 void testAll() {
 	testOffer();
@@ -19,6 +20,11 @@ void testAll() {
 
 int main() {
 	testAll();
+
+	offersRepository oRepo;
+	offersService oService(oRepo);
+	ui UI(oService);
+	UI.run();
 
 	_CrtDumpMemoryLeaks();
 }

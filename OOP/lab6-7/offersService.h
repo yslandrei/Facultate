@@ -25,7 +25,7 @@ public:
 	
 	void modOffer(const int oldId, const int id, const string name, const string dest, const string type, const int price);
 
-	const bool findOffer(const string name) const;
+	const offer& findOffer(const string name) const;
 
 	vector<offer> sortOffers(const char cmp) const;
 

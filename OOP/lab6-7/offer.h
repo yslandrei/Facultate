@@ -18,7 +18,7 @@ public:
 		dest{ dest },
 		type{ type },
 		price{ price }
-	{};
+	{}
 	
 	int getId() const;
 
