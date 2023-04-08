@@ -6,7 +6,7 @@ using std::exception;
 
 class validate {
 public:
-	static const void offer(const offer Offer) {
+	static const void offer(const offer& Offer) {
 		char msg[100] = "";
 		if (Offer.getId() < 0)
 			strcat_s(msg, "ID invalid!\n");
@@ -23,23 +23,23 @@ public:
 			throw exception(msg);
 	}
 
-	static const void id(const int id) {
+	static const void id(const int& id) {
 		if (id < 0)
 			throw exception("ID invalid!\n"); }
 
-	static const void name(const string name) {
+	static const void name(const string& name) {
 		if (name.size() == 0)
 			throw exception("Nume invalid!\n"); }
 
-	static const void dest(const string dest) {
+	static const void dest(const string& dest) {
 		if (dest.size() == 0)
 			throw exception("Destinatie invalida!\n"); }
 
-	static const void type(const string type) {
+	static const void type(const string& type) {
 		if (type.size() == 0)
 			throw exception("Tip invalid!\n"); }
 
-	static const void price(const int price) {
+	static const void price(const int& price) {
 		if (price < 0)
 			throw exception("Pret invalid!\n"); }
 };

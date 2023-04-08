@@ -14,17 +14,17 @@ void testAll() {
 	testModOfferService();
 	testPopOfferService();
 	testFindOfferService();
-	testFilterOffersService();
 	testSortOffersService();
+	testFilterOffersService();
 }
 
 int main() {
 	testAll();
-
+	
 	offersRepository oRepo;
 	offersService oService(oRepo);
 	ui UI(oService);
 	UI.run();
-
+	
 	_CrtDumpMemoryLeaks();
 }

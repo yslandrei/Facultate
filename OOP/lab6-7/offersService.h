@@ -18,14 +18,14 @@ public:
 	offersService(const offersService& ot) = delete;
 
 	const vector<offer>& getAll() const;
-
+	
 	void addOffer(const int id, const string name, const string dest, const string type, const int price);
 
 	void popOffer(const int id);
 	
 	void modOffer(const int oldId, const int id, const string name, const string dest, const string type, const int price);
 
-	const offer& findOffer(const string name) const;
+	const offer findOffer(const string name) const;
 
 	vector<offer> sortOffers(const char cmp) const;
 

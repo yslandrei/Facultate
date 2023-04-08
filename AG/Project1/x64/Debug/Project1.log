@@ -1,0 +1,5 @@
+﻿  p1.cpp
+C:\Facultate\AG\Project1\p1.cpp(28,6): warning C4101: 'a': unreferenced local variable
+C:\Facultate\AG\Project1\p1.cpp(28,12): warning C4101: 'cost': unreferenced local variable
+C:\Facultate\AG\Project1\p1.cpp(28,9): warning C4101: 'b': unreferenced local variable
+  Project1.vcxproj -> C:\Facultate\AG\Project1\x64\Debug\Project1.exe

@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
+#include <iostream>
 
+using std::ostream;
 using std::string;
 
 class offer {
@@ -19,7 +21,24 @@ public:
 		type{ type },
 		price{ price }
 	{}
-	
+
+	offer() :
+		id{ -1 },
+		name{ "" },
+		dest{ "" },
+		type{ "" },
+		price{ -1 }
+	{} 
+
+	offer(const offer& ot) :
+		id{ ot.id },
+		name{ ot.name },
+		dest{ ot.dest },
+		type{ ot.type },
+		price{ ot.price } {
+		std::cout << "copy\n";
+	}
+
 	int getId() const;
 
 	string getName() const;
@@ -29,5 +48,13 @@ public:
 	string getType() const;
 
 	int getPrice() const;
+
+	offer& operator=(const offer& other);
+
+	bool operator==(const offer& other) const;
+
+	bool operator!=(const offer& other) const;
+
+	friend ostream& operator<<(ostream& os, const offer& Offer);
 };
 

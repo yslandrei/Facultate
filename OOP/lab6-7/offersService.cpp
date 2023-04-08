@@ -22,11 +22,13 @@ void offersService::modOffer(const int oldId, const int id, const string name, c
 	oRepo.modOffer(oldId, newOffer);
 }
 
-const offer& offersService::findOffer(const string name) const {
+const offer offersService::findOffer(const string name) const {
 	validate::name(name);
-	for (const auto& Offer : oRepo.getAll())
-		if (Offer.getName() == name)
-			return Offer;
+	const vector<offer>& oList = oRepo.getAll();
+	for (int i = 0; i < oList.size(); i++)
+		if (oList[i].getName() == name) {
+			return oList[i];
+		}
 
 	throw exception("Nume inexistent!\n");
 }
@@ -46,10 +48,10 @@ bool cmpByPriceAndType(const offer& a, const offer& b)  {
 }
 
 vector<offer> offersService::sortOffers(const char cmp) const {
-	const vector<offer> oList = oRepo.getAll();
+	const vector<offer>& oList = oRepo.getAll();
 	vector<offer> oSortedList;
-	for (const auto& Offer : oList)
-		oSortedList.push_back(Offer);
+	for (int i = 0; i < oList.size(); i++)
+		oSortedList.push_back(oList[i]);
 
 	if (cmp == 'n')
 		sort(oSortedList.begin(), oSortedList.end(), cmpByName);
@@ -62,7 +64,7 @@ vector<offer> offersService::sortOffers(const char cmp) const {
 }
 
 vector<offer> offersService::filterOffers(char* criteria) const {
-	const vector<offer> oList = oRepo.getAll();
+	const vector<offer>& oList = oRepo.getAll();
 	bool correctOList[100] = {0};
 	for (int i = 0; i < oList.size(); i++)
 		correctOList[i] = 1;
