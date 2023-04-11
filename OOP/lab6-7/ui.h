@@ -32,9 +32,9 @@ private:
 		}
 	}
 
-	static void printOffers(vector<offer> oList) {
-		for (const auto& Offer : oList)
-			cout << "id: " << Offer.getId() << ", nume: " << Offer.getName() << ", destinatie: " << Offer.getDest() << ", tip: " << Offer.getType() << ", pret: " << Offer.getPrice() << "\n";
+	static void printOffers(const vector<offer>& oList) {
+		for (int i = 0; i < oList.size(); i++)
+			cout << "id: " << oList[i].getId() << ", nume: " << oList[i].getName() << ", destinatie: " << oList[i].getDest() << ", tip: " << oList[i].getType() << ", pret: " << oList[i].getPrice() << "\n";
 		cout << "\n";
 	}
 

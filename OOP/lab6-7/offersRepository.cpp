@@ -6,8 +6,9 @@ const vector<offer>& offersRepository::getAll() const {
 
 void offersRepository::addOffer(const offer& newOffer) {
 	for (const auto& Offer : oList)
-		if (Offer.getId() == newOffer.getId())
+		if (Offer.getId() == newOffer.getId()) {
 			throw exception("ID deja existent!\n");
+		}
 
 	oList.push_back(newOffer);
 }

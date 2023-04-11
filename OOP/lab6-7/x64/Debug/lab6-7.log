@@ -1,11 +1,2 @@
-﻿  main.cpp
-  offer.cpp
-  offersRepository.cpp
-  offersService.cpp
-  testDomain.cpp
-  testInfrastructure.cpp
-  testService.cpp
-  testValidate.cpp
-  ui.cpp
-  Generating Code...
+﻿  ui.cpp
   lab6-7.vcxproj -> C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
