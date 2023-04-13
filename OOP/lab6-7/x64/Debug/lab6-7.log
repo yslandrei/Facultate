@@ -1,2 +1,199 @@
-﻿  ui.cpp
+﻿  main.cpp
+  offer.cpp
+  offersRepository.cpp
+  offersService.cpp
+  testDomain.cpp
+  testInfrastructure.cpp
+  testService.cpp
+  testValidate.cpp
+  ui.cpp
+  Running Code Analysis for C/C++...
+  Generating Code...
   lab6-7.vcxproj -> C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
+C:\Facultate\OOP\lab6-7\offer.h(27): warning C26432: If you define or delete any default operation in the type 'class offer', define or delete them all (c.21).
+C:\Facultate\OOP\lab6-7\validate.h(22): warning C26485: Expression 'msg': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\validate.h(23): warning C26485: Expression 'msg': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\offersService.h(14): warning C26440: Function 'offersService::offersService' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\ui.h(25): warning C26440: Function 'ui::parseCommand' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\ui.h(25): warning C26429: Symbol 'args' is never tested for nullness, it can be marked as not_null (f.23).
+c:\facultate\oop\lab6-7\ui.h(25): warning C26485: Expression 'args': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.h(30): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.h(30): warning C26485: Expression 'args[argsLen++]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.h(26): warning C26494: Variable 'parser' is uninitialized. Always initialize an object (type.5).
+C:\Facultate\OOP\lab6-7\ui.h(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\ui.h(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\ui.h(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\ui.h(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\ui.h(37): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\ui.h(42): warning C26440: Function 'ui::ui' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\offersRepository.h(14): warning C26455: Default constructor should not throw. Declare it 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\vector.h(49): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(40): warning C26440: Function 'vector<offer>::size' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\vector.h(26): warning C26432: If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21).
+C:\Facultate\OOP\lab6-7\vector.h(20): warning C26455: Default constructor should not throw. Declare it 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\vector.h(21): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Facultate\OOP\lab6-7\offer.h(25): warning C26495: Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6).
+C:\Facultate\OOP\lab6-7\offer.cpp(3): warning C26440: Function 'offer::getId' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\offer.cpp(19): warning C26440: Function 'offer::getPrice' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\offer.cpp(34): warning C26440: Function 'offer::operator==' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\offersRepository.cpp(3): warning C26440: Function 'offersRepository::getAll' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\offersRepository.cpp(20): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(75): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(77): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(68): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(37): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(12): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Facultate\OOP\lab6-7\vector.h(12): warning C26400: Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11).
+C:\Facultate\OOP\lab6-7\vector.h(14): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(29): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(30): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(51): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(67): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(88): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(88): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(89): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(89): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(95): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(95): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(96): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(96): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(102): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(102): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(103): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(103): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(81): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(81): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(82): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(82): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(73): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(73): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(74): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(74): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(75): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(75): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(113): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(114): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\offersService.cpp(67): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(72): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(79): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(86): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(88): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(88): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(88): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(89): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(89): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(89): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(93): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(95): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(95): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(95): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(96): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(96): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(96): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(100): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(102): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(102): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(102): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(103): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(103): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(103): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(81): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(81): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(81): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(82): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(82): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(82): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(73): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(73): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(73): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(74): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(74): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(74): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(75): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(75): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(75): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\offersService.cpp(113): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(31): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(40): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(41): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(42): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(43): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testInfrastructure.cpp(44): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testService.cpp(8): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testService.cpp(26): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Facultate\OOP\lab6-7\testService.cpp(68): warning C26485: Expression 'criteria': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\vector.h(59): warning C6385: Reading invalid data from 'arr'.
+C:\Facultate\OOP\lab6-7\vector.h(52): warning C26432: If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21).
+C:\Facultate\OOP\lab6-7\vector.h(57): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
+C:\Facultate\OOP\lab6-7\vector.h(59): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\vector.h(44): warning C26440: Function 'vector<offer>::operator[]' can be declared 'noexcept' (f.6).
+C:\Facultate\OOP\lab6-7\vector.h(45): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(12): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(15): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(26): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(37): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(48): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(60): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(71): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(82): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(74): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(74): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(50): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(50): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(39): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(39): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(40): warning C26485: Expression 'args[5]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(40): warning C26485: Expression 'args[1]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(40): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(28): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(28): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(29): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(17): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(17): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Facultate\OOP\lab6-7\ui.cpp(18): warning C26485: Expression 'args[4]': No array to pointer decay (bounds.3).
+C:\Facultate\OOP\lab6-7\ui.cpp(18): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).

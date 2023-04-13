@@ -22,13 +22,7 @@ public:
 		price{ price }
 	{}
 
-	offer() :
-		id{ -1 },
-		name{ "" },
-		dest{ "" },
-		type{ "" },
-		price{ -1 }
-	{} 
+	offer() = default;
 
 	offer(const offer& ot) :
 		id{ ot.id },

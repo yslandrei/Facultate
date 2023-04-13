@@ -38,18 +38,3 @@ bool offer::operator==(const offer& other) const {
 		type == other.type &&
 		price == other.price;
 }
-
-bool offer::operator!=(const offer& other) const {
-	return !(id == other.id &&
-		name == other.name &&
-		dest == other.dest &&
-		type == other.type &&
-		price == other.price);
-}
-
-
-ostream& operator<<(ostream& os, const offer& Offer) {
-	os << "id: " << Offer.getId() << ", nume: " << Offer.getName() << ", destinatie: " << Offer.getDest() << ", tip: " << Offer.getType() << ", pret: " << Offer.getPrice();
-	return os;
-}
-

@@ -1,4 +1,4 @@
-[2023-04-04 12:44:26] [info] Start Program:
+[2023-04-11 12:38:55] [info] Start Program:
 Path:"C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe"
 Arguments:
 Working directory: "C:\Facultate\OOP\lab6-7\"
@@ -9,13 +9,13 @@ Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: Binary C:\Users\andre\AppData\Local\Temp\4aldh3z1.jsy 
+Export: Binary C:\Users\andre\AppData\Local\Temp\byodwhys.n0j 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2023-04-04 12:44:26] [info] Module: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
-[2023-04-04 12:44:26] [info] ----------------------------------------------------
-[2023-04-04 12:44:26] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\4aldh3z1.jsy
-[2023-04-04 12:44:26] [info] ----------------------------------------------------
+[2023-04-11 12:38:55] [info] Module: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe is selected because it matches selected pattern: C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
+[2023-04-11 12:38:55] [info] ----------------------------------------------------
+[2023-04-11 12:38:55] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\byodwhys.n0j
+[2023-04-11 12:38:55] [info] ----------------------------------------------------

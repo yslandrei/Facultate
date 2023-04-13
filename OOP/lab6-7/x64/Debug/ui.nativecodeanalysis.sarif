@@ -1,0 +1,1997 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class offer', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 2,
+                  "endLine": 27,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'msg': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 6,
+                  "endLine": 22,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "validate::offer",
+                  "decoratedName": "?offer@validate@@SAXAEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'msg': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 19,
+                  "endLine": 23,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "validate::offer",
+                  "decoratedName": "?offer@validate@@SAXAEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'offersService::offersService' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::{ctor}",
+                  "decoratedName": "??0offersService@@QEAA@AEAVoffersRepository@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'ui::parseCommand' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 14,
+                  "endLine": 25,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26429",
+          "message": {
+            "text": "Symbol 'args' is never tested for nullness, it can be marked as not_null (f.23)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 14,
+                  "endLine": 25,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///c:/facultate/oop/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 14,
+                  "endLine": 25,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 4,
+                  "endLine": 30,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[argsLen++]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 4,
+                  "endLine": 30,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26494",
+          "message": {
+            "text": "Variable 'parser' is uninitialized. Always initialize an object (type.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 9,
+                  "endLine": 26,
+                  "endColumn": 9
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::parseCommand",
+                  "decoratedName": "?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "parser"
+          }
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 169,
+                  "endLine": 37,
+                  "endColumn": 176
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::printOffers",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 133,
+                  "endLine": 37,
+                  "endColumn": 140
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::printOffers",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 98,
+                  "endLine": 37,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::printOffers",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 56,
+                  "endLine": 37,
+                  "endColumn": 63
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::printOffers",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 22,
+                  "endLine": 37,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::printOffers",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'ui::ui' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2,
+                  "endLine": 42,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::{ctor}",
+                  "decoratedName": "??0ui@@QEAA@AEAVoffersService@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 3,
+                  "endLine": 12,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 7,
+                  "endLine": 15,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 12,
+                  "endLine": 26,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 12,
+                  "endLine": 37,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 12,
+                  "endLine": 48,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 12,
+                  "endLine": 60,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 12,
+                  "endLine": 71,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 12,
+                  "endLine": 82,
+                  "endColumn": 45
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 21,
+                  "endLine": 74,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 21,
+                  "endLine": 74,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 9,
+                  "endLine": 50,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 9,
+                  "endLine": 50,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 9,
+                  "endLine": 50,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 9,
+                  "endLine": 39,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 9,
+                  "endLine": 39,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 9,
+                  "endLine": 39,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[5]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 80,
+                  "endLine": 40,
+                  "endColumn": 91
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[1]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 38,
+                  "endLine": 40,
+                  "endColumn": 49
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[0]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 23,
+                  "endLine": 40,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[0]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 23,
+                  "endLine": 29,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 9,
+                  "endLine": 17,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 9,
+                  "endLine": 17,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 9,
+                  "endLine": 17,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[4]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 65,
+                  "endLine": 18,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[0]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 23,
+                  "endLine": 18,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 9,
+                  "endLine": 68,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::push_back",
+                  "decoratedName": "?push_back@?$vector@Voffer@@@@QEAAXAEBVoffer@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'arr'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 17,
+                  "endLine": 59,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::=",
+                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 53,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'this!=&other')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 56,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 57,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 58,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 58,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<currSize')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 58,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "'i' may equal 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 58,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'i<currSize')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'i' is an Output from 'offer::=' (declared at c:\\facultate\\oop\\lab6-7\\offer.h:46)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                          },
+                          "region": {
+                            "startLine": 59,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'arr[1]', (readable range is 0 to 0)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 13,
+                  "endLine": 52,
+                  "endColumn": 13
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::=",
+                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 19
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::=",
+                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 17,
+                  "endLine": 59,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::=",
+                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 17,
+                  "endLine": 59,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::=",
+                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 9,
+                  "endLine": 49,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::[]",
+                  "decoratedName": "??A?$vector@Voffer@@@@QEBAAEBVoffer@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'vector<offer>::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 15,
+                  "endLine": 40,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::size",
+                  "decoratedName": "?size@?$vector@Voffer@@@@QEBA?BHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 5,
+                  "endLine": 20,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::{ctor}",
+                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::{ctor}",
+                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::price"
+          }
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21,
+                  "endLine": 12,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "913f7a3ab1d81c269c0b491025cd7db858295f715d8ab7ffddfa9ccc58b50e6d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "06635ea16475b3d50ebf5a6b5c04c20998329de6ba22163b7a72a981b600df9e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/ui.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "605d2feeb65e789e7d84a424d6be3780810b9dcf617c9eefa033eb51de9082da"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/ui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3264ca0a26c3117e156a0ad9a1463403004d7d431c833ad2f0de06f5198e51b4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/facultate/oop/lab6-7/offersrepository.h"
+          },
+          "hashes": {
+            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+          }
+        }
+      ]
+    }
+  ]
+}

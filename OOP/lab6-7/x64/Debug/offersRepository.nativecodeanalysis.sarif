@@ -1,0 +1,463 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class offer', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 2,
+                  "endLine": 27,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'offersRepository::getAll' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 40,
+                  "endLine": 3,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersRepository::getAll",
+                  "decoratedName": "?getAll@offersRepository@@QEBAAEBV?$vector@Voffer@@@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 4,
+                  "endLine": 20,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersRepository::popOffer",
+                  "decoratedName": "?popOffer@offersRepository@@QEAAXH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 17,
+                  "endLine": 75,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::erase",
+                  "decoratedName": "?erase@?$vector@Voffer@@@@QEAAXPEBVoffer@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 13,
+                  "endLine": 77,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::erase",
+                  "decoratedName": "?erase@?$vector@Voffer@@@@QEAAXPEBVoffer@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 13,
+                  "endLine": 77,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::erase",
+                  "decoratedName": "?erase@?$vector@Voffer@@@@QEAAXPEBVoffer@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 9,
+                  "endLine": 68,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::push_back",
+                  "decoratedName": "?push_back@?$vector@Voffer@@@@QEAAXAEBVoffer@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 9,
+                  "endLine": 37,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::end",
+                  "decoratedName": "?end@?$vector@Voffer@@@@QEAAPEAVoffer@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26400",
+          "message": {
+            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21,
+                  "endLine": 12,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::extend",
+                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::price"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "dae31e7cb7f17ea745397aeacb240bf6d5d66e3e15b8b710767d8d193ad53796"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/facultate/oop/lab6-7/offersrepository.h"
+          },
+          "hashes": {
+            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+          }
+        }
+      ]
+    }
+  ]
+}

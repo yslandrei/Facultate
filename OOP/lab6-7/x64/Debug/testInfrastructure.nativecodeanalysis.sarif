@@ -1,0 +1,502 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class offer', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 2,
+                  "endLine": 27,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@AEBV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersRepository::{ctor}",
+                  "decoratedName": "??0offersRepository@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 2,
+                  "endLine": 31,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testPopOfferRepo",
+                  "decoratedName": "?testPopOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 2,
+                  "endLine": 40,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testModOfferRepo",
+                  "decoratedName": "?testModOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 2,
+                  "endLine": 41,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testModOfferRepo",
+                  "decoratedName": "?testModOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 2,
+                  "endLine": 42,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testModOfferRepo",
+                  "decoratedName": "?testModOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 2,
+                  "endLine": 43,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testModOfferRepo",
+                  "decoratedName": "?testModOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 2,
+                  "endLine": 44,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testModOfferRepo",
+                  "decoratedName": "?testModOfferRepo@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 9,
+                  "endLine": 49,
+                  "endColumn": 25
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::[]",
+                  "decoratedName": "??A?$vector@Voffer@@@@QEBAAEBVoffer@@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'vector<offer>::size' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 15,
+                  "endLine": 40,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::size",
+                  "decoratedName": "?size@?$vector@Voffer@@@@QEBA?BHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 6,
+                  "endLine": 26,
+                  "endColumn": 6
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::{dtor}",
+                  "decoratedName": "??1?$vector@Voffer@@@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 5,
+                  "endLine": 20,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::{ctor}",
+                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26409",
+          "message": {
+            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "vector<offer>::{ctor}",
+                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::price"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/testInfrastructure.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "e022218dafbf6efae2568b31dad6835076edbfa81166ce27ddc1e6685a90468b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/facultate/oop/lab6-7/testinfrastructure.h"
+          },
+          "hashes": {
+            "sha-256": "485ae940f262ef838ed5f3caae8489cb80c870ca28edc1e4cdef7b31422189ce"
+          }
+        }
+      ]
+    }
+  ]
+}

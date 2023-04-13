@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offer.h</FILENAME>
+      <LINE>27</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class offer', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>offer::{ctor}</FUNCTION>
+    <DECORATED>??0offer@@QEAA@AEBV0@@Z</DECORATED>
+    <FUNCLINE>27</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

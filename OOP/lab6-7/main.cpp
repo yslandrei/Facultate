@@ -20,11 +20,11 @@ void testAll() {
 
 int main() {
 	testAll();
-	
-	offersRepository oRepo;
-	offersService oService(oRepo);
-	ui UI(oService);
-	UI.run();
-	
+	{
+		offersRepository oRepo;
+		offersService oService(oRepo);
+		ui UI(oService);
+		UI.run();
+	}
 	_CrtDumpMemoryLeaks();
 }

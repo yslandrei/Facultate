@@ -1,8 +1,5 @@
 #include <stdlib.h>
-#include <iostream>
 #include "offer.h"
-
-using std::cout;
 
 template <typename T> class vector {
 private:
@@ -79,13 +76,6 @@ public:
                 offset++;
             arr[i] = arr[i + offset];
         }
-    }
-
-    void print() {
-        for (int i = 0; i < currSize; i++) {
-            cout << arr[i] << "\n";
-        }
-        cout << "\n";
     }
 
 };
