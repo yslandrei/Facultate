@@ -1,3 +1,6 @@
 C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
 C:\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe.lastcodeanalysissucceeded
 C:\Facultate\OOP\lab6-7\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe.lastcodeanalysissucceeded
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\NativeCodeAnalysis.read.1.tlog
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe

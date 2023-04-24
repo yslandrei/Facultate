@@ -13,7 +13,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 27,
@@ -41,7 +41,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 22,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 23,
@@ -105,18 +105,18 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+            "sha-256": "5de981a7bd7b569cf758676818308698b43f3789cf8ac00479e98d7d8efac28a"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
           },
           "roles": [
             "resultFile"
@@ -127,7 +127,7 @@
         },
         {
           "location": {
-            "uri": "file:///c:/facultate/oop/lab6-7/testvalidate.cpp"
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/testvalidate.cpp"
           },
           "roles": [
             "analysisTarget"
@@ -138,7 +138,7 @@
         },
         {
           "location": {
-            "uri": "file:///c:/facultate/oop/lab6-7/testvalidate.h"
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/testvalidate.h"
           },
           "hashes": {
             "sha-256": "6f1325d2012e402856718b142eb4319d5feb124e1ce540cb257294febf156930"

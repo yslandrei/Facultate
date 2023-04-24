@@ -13,7 +13,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 27,
@@ -41,7 +41,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.cpp"
                 },
                 "region": {
                   "startLine": 3,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.cpp"
                 },
                 "region": {
                   "startLine": 19,
@@ -97,7 +97,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.cpp"
                 },
                 "region": {
                   "startLine": 34,
@@ -133,18 +133,18 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+            "sha-256": "5de981a7bd7b569cf758676818308698b43f3789cf8ac00479e98d7d8efac28a"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.cpp"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.cpp"
           },
           "roles": [
             "analysisTarget",

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "offersService.h"
+#include "cartService.h"
 
 using std::cin;
 using std::cout;
@@ -8,6 +9,7 @@ using std::cout;
 class ui {
 private:
 	offersService& oService;
+	cartService& cService;
 
 	static void printMenu() {
 		cout << "Adaugare oferta                                - add [id], [nume], [dest], [tip], [pret]\n";
@@ -15,7 +17,12 @@ private:
 		cout << "Modificare oferta                              - mod [oldId], [id], [nume], [dest], [tip], [pret]\n";
 		cout << "Cautare oferta                                 - src [nume]\n";
 		cout << "Sortare oferte                                 - srt [n/d/p]\n";
-		cout << "Filtrare oferte                                - fil [criteriu]\n\n";
+		cout << "Filtrare oferte                                - fil [criteriu]\n";
+		cout << "Adaugare oferta in cos                         - adc [nume]\n";
+		cout << "Golire cos                                     - emp\n";
+		cout << "Genereaza cos                                  - gen [nr]\n";
+		cout << "Exporta cos                                    - exp [nume]\n";
+		cout << "\n";
 	}
 
 	static void clearScreen() {
@@ -39,8 +46,9 @@ private:
 	}
 
 public:
-	ui(offersService& oService) :
-		oService{ oService }
+	ui(offersService& oService, cartService& cService) :
+		oService{ oService },
+		cService{ cService }
 	{}
 
 	ui(const ui& ot) = delete;

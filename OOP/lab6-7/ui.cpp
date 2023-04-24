@@ -79,6 +79,61 @@ void ui::run() {
 			}
 		}
 
+		else if (strncmp(com, "adc", sizeof(char) * 3) == 0) {
+			try {
+				ui::parseCommand(com + 4, args);
+				cService.addOffer(args[0]);
+				cout << "Oferte:\n";
+				ui::printOffers(oService.getAll());
+				cout << "Cos:\n";
+				ui::printOffers(cService.getAll());
+			}
+			catch (exception e) {
+				cout << e.what() << "\n";
+			}
+		}
+
+		else if (strncmp(com, "emp", sizeof(char) * 3) == 0) {
+			try {
+				cService.emptyCart();
+				cout << "Oferte:\n";
+				ui::printOffers(oService.getAll());
+				cout << "Cos:\n";
+				ui::printOffers(cService.getAll());
+			}
+			catch (exception e) {
+				cout << e.what() << "\n";
+			}
+		}
+
+		else if (strncmp(com, "gen", sizeof(char) * 3) == 0) {
+			try {
+				ui::parseCommand(com + 4, args);
+				cService.generateCart(atoi(args[0]));
+				cout << "Oferte:\n";
+				ui::printOffers(oService.getAll());
+				cout << "Cos:\n";
+				ui::printOffers(cService.getAll());
+			}
+			catch (exception e) {
+				cout << e.what() << "\n";
+			}
+		}
+
+		else if (strncmp(com, "exp", sizeof(char) * 3) == 0) {
+			try {
+				ui::parseCommand(com + 4, args);
+				cService.exportCart(args[0]);
+				cout << "Oferte:\n";
+				ui::printOffers(oService.getAll());
+				cout << "Cos:\n";
+				ui::printOffers(cService.getAll());
+			}
+			catch (exception e) {
+				cout << e.what() << "\n";
+			}
+		}
+
 		else if (strncmp(com, "q", sizeof(char) * 1) == 0) {
 			return;
 		}

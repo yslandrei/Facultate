@@ -25,10 +25,20 @@ void offersService::modOffer(const int oldId, const int id, const string name, c
 const offer offersService::findOffer(const string name) const {
 	validate::name(name);
 	const vector<offer>& oList = oRepo.getAll();
+	const auto& found = std::find_if(oList.begin(), oList.end(), [&](const offer& Offer) {
+		return Offer.getName() == name;
+	});
+	
+	if (found != oList.end())
+		return *found;
+	throw exception("Nume inexistent!\n");
+	/*
 	for (int i = 0; i < oList.size(); i++)
 		if (oList[i].getName() == name) {
 			return oList[i];
-		} throw exception("Nume inexistent!\n"); }
+	} throw exception("Nume inexistent!\n");
+	*/
+}
 
 bool cmpByName(const offer& a, const offer& b)  {
 	return a.getName() < b.getName();
@@ -47,8 +57,8 @@ bool cmpByPriceAndType(const offer& a, const offer& b)  {
 vector<offer> offersService::sortOffers(const char cmp) const {
 	const vector<offer>& oList = oRepo.getAll();
 	vector<offer> oSortedList;
-	for (int i = 0; i < oList.size(); i++)
-		oSortedList.push_back(oList[i]);
+	for (const auto& Offer : oList)
+		oSortedList.push_back(Offer);
 
 	if (cmp == 'n')
 		sort(oSortedList.begin(), oSortedList.end(), cmpByName);
@@ -66,52 +76,61 @@ vector<offer> offersService::filterOffers(char* criteria) const {
 	for (int i = 0; i < oList.size(); i++)
 		correctOList[i] = 1;
 
+	int i;
 	char* parser = strtok(criteria, " ");
 	while (parser != NULL) {
-		for (int i = 0; i < oList.size(); i++) {
+		i = 0;
+		for (const auto& Offer : oList) {
 			if (strncmp(parser + 1, ">=", 2) == 0) {
-				if (parser[0] == 'p' && !(oList[i].getPrice() >= atoi(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 'n' && !(strcmp(oList[i].getName().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
-				else if (parser[0] == 'd' && !(strcmp(oList[i].getDest().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(strcmp(oList[i].getType().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
+				if (parser[0] == 'p' && !(Offer.getPrice() >= atoi(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'n' && !(strcmp(Offer.getName().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
+				else if (parser[0] == 'd' && !(strcmp(Offer.getDest().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(Offer.getType().c_str(), parser + 3) >= 0)) correctOList[i] = 0;
 			}
 
 			else if (strncmp(parser + 1, "<=", 2) == 0) {
-				if (parser[0] == 'p' && !(oList[i].getPrice() <= atoi(parser + 3))) correctOList[i] = 0;
-				else if (parser[0] == 'n' && !(strcmp(oList[i].getName().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
-				else if (parser[0] == 'd' && !(strcmp(oList[i].getDest().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(strcmp(oList[i].getType().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
+				if (parser[0] == 'p' && !(Offer.getPrice() <= atoi(parser + 3))) correctOList[i] = 0;
+				else if (parser[0] == 'n' && !(strcmp(Offer.getName().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
+				else if (parser[0] == 'd' && !(strcmp(Offer.getDest().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(Offer.getType().c_str(), parser + 3) <= 0)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '>') {
-				if (parser[0] == 'p' && !(oList[i].getPrice() > atoi(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'n' && !(strcmp(oList[i].getName().c_str(), parser + 2) > 0)) correctOList[i] = 0;
-				else if (parser[0] == 'd' && !(strcmp(oList[i].getDest().c_str(), parser + 2) > 0)) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(strcmp(oList[i].getType().c_str(), parser + 2) > 0)) correctOList[i] = 0;
+				if (parser[0] == 'p' && !(Offer.getPrice() > atoi(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'n' && !(strcmp(Offer.getName().c_str(), parser + 2) > 0)) correctOList[i] = 0;
+				else if (parser[0] == 'd' && !(strcmp(Offer.getDest().c_str(), parser + 2) > 0)) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(Offer.getType().c_str(), parser + 2) > 0)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '<') {
-				if (parser[0] == 'p' && !(oList[i].getPrice() < atoi(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'n' && !(strcmp(oList[i].getName().c_str(), parser + 2) < 0)) correctOList[i] = 0;
-				else if (parser[0] == 'd' && !(strcmp(oList[i].getDest().c_str(), parser + 2) < 0)) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(strcmp(oList[i].getType().c_str(), parser + 2) < 0)) correctOList[i] = 0;
+				if (parser[0] == 'p' && !(Offer.getPrice() < atoi(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'n' && !(strcmp(Offer.getName().c_str(), parser + 2) < 0)) correctOList[i] = 0;
+				else if (parser[0] == 'd' && !(strcmp(Offer.getDest().c_str(), parser + 2) < 0)) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(Offer.getType().c_str(), parser + 2) < 0)) correctOList[i] = 0;
 			}
 
 			else if (parser[1] == '=') {
-				if (parser[0] == 'p' && !(oList[i].getPrice() == atoi(parser + 2))) correctOList[i] = 0;
-				else if (parser[0] == 'n' && !(strcmp(oList[i].getName().c_str(), parser + 2) == 0)) correctOList[i] = 0;
-				else if (parser[0] == 'd' && !(strcmp(oList[i].getDest().c_str(), parser + 2) == 0)) correctOList[i] = 0;
-				else if (parser[0] == 't' && !(strcmp(oList[i].getType().c_str(), parser + 2) == 0)) correctOList[i] = 0;
+				if (parser[0] == 'p' && !(Offer.getPrice() == atoi(parser + 2))) correctOList[i] = 0;
+				else if (parser[0] == 'n' && !(strcmp(Offer.getName().c_str(), parser + 2) == 0)) correctOList[i] = 0;
+				else if (parser[0] == 'd' && !(strcmp(Offer.getDest().c_str(), parser + 2) == 0)) correctOList[i] = 0;
+				else if (parser[0] == 't' && !(strcmp(Offer.getType().c_str(), parser + 2) == 0)) correctOList[i] = 0;
 			}
-		}
-		parser = strtok(NULL, " ");
 
+			i++;
+		}
+		
+		parser = strtok(NULL, " ");
 	}
 
+	i = 0;
 	vector<offer> oListFiltered;
-	for (int i = 0; i < oList.size(); i++)
-		if (correctOList[i])
-			oListFiltered.push_back(oList[i]);
+	
+	for (const auto& Offer : oList) {
+		if (correctOList[i]) {
+			oListFiltered.push_back(Offer);
+		}
+		i++;
+	}
 
 	return oListFiltered;
 }

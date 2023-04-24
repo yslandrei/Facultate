@@ -46,6 +46,12 @@
     <ClCompile Include="ui.cpp">
       <Filter>ui</Filter>
     </ClCompile>
+    <ClCompile Include="cartRepository.cpp">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="cartService.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="offer.h">
@@ -77,6 +83,12 @@
     </ClInclude>
     <ClInclude Include="vector.h">
       <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="cartRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="cartService.h">
+      <Filter>service</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

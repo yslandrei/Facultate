@@ -68,3 +68,51 @@ void testFilterOffersService() {
 	vector<offer> oFilteredList = oService.filterOffers(criteria);
 	assert(oFilteredList.size() == 1);
 }
+
+void testAddOfferCartService() {
+	offersRepository oRepo;
+	cartRepository cRepo;
+	cartService cService(oRepo, cRepo);
+	
+	oRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	oRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 200));
+	cService.addOffer("nume1");
+	assert(cService.getAll()[0] == offer(1, "nume1", "dest1", "tip1", 200));
+}
+
+void testEmptyCartService() {
+	offersRepository oRepo;
+	cartRepository cRepo;
+	cartService cService(oRepo, cRepo);
+
+	oRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	oRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 200));
+	cService.addOffer("nume0");
+	cService.addOffer("nume1");
+	cService.emptyCart();
+	assert(cService.getAll().size() == 0);
+}
+
+void testExportCartService() {
+	offersRepository oRepo;
+	cartRepository cRepo;
+	cartService cService(oRepo, cRepo);
+
+	oRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	oRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 200));
+	cService.addOffer("nume0");
+	cService.addOffer("nume1");
+	cService.exportCart("test");
+}
+
+void testGenerateCartService() {
+	offersRepository oRepo;
+	cartRepository cRepo;
+	cartService cService(oRepo, cRepo);
+
+	oRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	oRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 200));
+	oRepo.addOffer(offer(2, "nume2", "dest2", "tip2", 300));
+	cService.generateCart(2);
+	assert(cService.getAll().size() == 2);
+}

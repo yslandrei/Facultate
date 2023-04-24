@@ -30,7 +30,7 @@ public:
 		dest{ ot.dest },
 		type{ ot.type },
 		price{ ot.price } {
-		std::cout << "copy\n";
+		//std::cout << "copy\n";
 	}
 
 	int getId() const;

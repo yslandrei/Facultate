@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cartRepository.h" />
+    <ClInclude Include="cartService.h" />
     <ClInclude Include="offer.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />
@@ -31,6 +33,8 @@
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cartRepository.cpp" />
+    <ClCompile Include="cartService.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="offer.cpp" />
     <ClCompile Include="offersRepository.cpp" />
@@ -132,6 +136,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <TreatWarningAsError>true</TreatWarningAsError>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

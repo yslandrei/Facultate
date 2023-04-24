@@ -9,6 +9,9 @@ void testAll() {
 	testAddOfferRepo();
 	testPopOfferRepo();
 	testModOfferRepo();
+	testAddOfferCartRepo();
+	testEmptyCartRepo();
+	testExportCartRepo();
 	testValidate();
 	testAddOfferService();
 	testModOfferService();
@@ -16,14 +19,20 @@ void testAll() {
 	testFindOfferService();
 	testSortOffersService();
 	testFilterOffersService();
+	testAddOfferCartService();
+	testEmptyCartService();
+	testExportCartService();
+	testGenerateCartService();
 }
 
 int main() {
 	testAll();
 	{
 		offersRepository oRepo;
+		cartRepository cRepo;
 		offersService oService(oRepo);
-		ui UI(oService);
+		cartService cService(oRepo, cRepo);
+		ui UI(oService, cService);
 		UI.run();
 	}
 	_CrtDumpMemoryLeaks();

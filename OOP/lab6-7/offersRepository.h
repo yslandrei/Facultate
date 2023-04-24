@@ -1,10 +1,12 @@
 #pragma once
 #include "vector.h"
 //#include <vector>
+#include <iterator>
 #include "offer.h"
 
 using std::exception;
 //using std::vector;
+using std::iterator;
 
 class offersRepository {
 private:

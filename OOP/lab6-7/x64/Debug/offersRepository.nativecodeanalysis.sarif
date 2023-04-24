@@ -13,7 +13,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 27,
@@ -41,7 +41,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.cpp"
                 },
                 "region": {
                   "startLine": 3,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.cpp"
                 },
                 "region": {
                   "startLine": 20,
@@ -97,7 +97,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 75,
@@ -125,7 +125,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 77,
@@ -153,7 +153,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 77,
@@ -181,7 +181,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 68,
@@ -209,7 +209,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 37,
@@ -237,7 +237,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 12,
@@ -263,7 +263,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 12,
@@ -291,7 +291,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 14,
@@ -319,7 +319,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 14,
@@ -347,7 +347,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 25,
@@ -378,7 +378,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 25,
@@ -417,18 +417,18 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+            "sha-256": "5de981a7bd7b569cf758676818308698b43f3789cf8ac00479e98d7d8efac28a"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.cpp"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.cpp"
           },
           "roles": [
             "analysisTarget",
@@ -440,7 +440,7 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
           },
           "roles": [
             "resultFile"
@@ -451,10 +451,10 @@
         },
         {
           "location": {
-            "uri": "file:///c:/facultate/oop/lab6-7/offersrepository.h"
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+            "sha-256": "6f91bd32265705b542a11a4b5241d7ac4de923348cc769fa84e29b2c08929684"
           }
         }
       ]

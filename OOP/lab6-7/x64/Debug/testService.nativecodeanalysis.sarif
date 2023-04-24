@@ -13,7 +13,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 27,
@@ -41,7 +41,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 22,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 23,
@@ -97,7 +97,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
                 },
                 "region": {
                   "startLine": 14,
@@ -117,6 +117,34 @@
           ]
         },
         {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'cartService::cartService' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 2,
+                  "endLine": 16,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cartService::{ctor}",
+                  "decoratedName": "??0cartService@@QEAA@AEAVoffersRepository@@AEAVcartRepository@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "ruleId": "C26446",
           "message": {
             "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
@@ -125,7 +153,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/testService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
                   "startLine": 8,
@@ -153,12 +181,12 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.h"
                 },
                 "region": {
-                  "startLine": 14,
+                  "startLine": 16,
                   "startColumn": 2,
-                  "endLine": 14,
+                  "endLine": 16,
                   "endColumn": 2
                 }
               },
@@ -181,7 +209,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/testService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
                   "startLine": 26,
@@ -209,7 +237,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/testService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
                   "startLine": 68,
@@ -229,6 +257,62 @@
           ]
         },
         {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 2,
+                  "endLine": 80,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testAddOfferCartService",
+                  "decoratedName": "?testAddOfferCartService@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.h"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 2,
+                  "endLine": 9,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "cartRepository::{ctor}",
+                  "decoratedName": "??0cartRepository@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "ruleId": "C6385",
           "message": {
             "text": "Reading invalid data from 'arr'."
@@ -237,7 +321,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 59,
@@ -264,7 +348,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 53,
@@ -284,7 +368,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 54,
@@ -298,7 +382,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 55,
@@ -312,7 +396,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 56,
@@ -326,7 +410,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 57,
@@ -340,7 +424,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 58,
@@ -354,7 +438,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 58,
@@ -374,7 +458,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 59,
@@ -388,7 +472,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 58,
@@ -408,7 +492,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 58,
@@ -428,7 +512,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 59,
@@ -436,7 +520,7 @@
                           }
                         },
                         "message": {
-                          "text": "'i' is an Output from 'offer::=' (declared at c:\\facultate\\oop\\lab6-7\\offer.h:46)"
+                          "text": "'i' is an Output from 'offer::=' (declared at c:\\users\\andre\\documents\\github\\facultate\\oop\\lab6-7\\offer.h:46)"
                         }
                       },
                       "kinds": [
@@ -448,7 +532,7 @@
                       "location": {
                         "physicalLocation": {
                           "artifactLocation": {
-                            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                           },
                           "region": {
                             "startLine": 59,
@@ -479,7 +563,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 52,
@@ -507,7 +591,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 57,
@@ -533,7 +617,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 59,
@@ -561,7 +645,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 59,
@@ -589,7 +673,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 49,
@@ -617,7 +701,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 44,
@@ -645,7 +729,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 45,
@@ -673,7 +757,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 40,
@@ -701,7 +785,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 20,
@@ -729,7 +813,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
                 },
                 "region": {
                   "startLine": 21,
@@ -755,7 +839,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 25,
@@ -786,7 +870,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 25,
@@ -825,18 +909,18 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+            "sha-256": "5de981a7bd7b569cf758676818308698b43f3789cf8ac00479e98d7d8efac28a"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
           },
           "roles": [
             "resultFile"
@@ -847,7 +931,7 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
           },
           "roles": [
             "resultFile"
@@ -858,30 +942,52 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/testService.cpp"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "70f8b410d187ec8ddab50db21e997b8858a0b87cde4b997183edd340cb5a9bb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
           },
           "roles": [
             "analysisTarget",
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "2c11a60581f4e10df2811014b595ee97afe4cf6755bee029886c74cf6187c1c3"
+            "sha-256": "a0121e5f53a8f5f6fe8e60e1a0c16925527f1904b07f3acb0e48a7994d937196"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offersRepository.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+            "sha-256": "6f91bd32265705b542a11a4b5241d7ac4de923348cc769fa84e29b2c08929684"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "50ad71f612b13ff3ecb3fcabb45758b832668a13bf024d394d9dd2e7e388b963"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
           },
           "roles": [
             "resultFile"
@@ -892,10 +998,10 @@
         },
         {
           "location": {
-            "uri": "file:///c:/facultate/oop/lab6-7/testservice.h"
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/testservice.h"
           },
           "hashes": {
-            "sha-256": "80a307fee5615af157a654880a8eaa6803b7d43f4ae1d435aeb9ad1a07dd40d4"
+            "sha-256": "49573000fb79a12347d8cbb591a7a83b1d709b2fd47e70e485054dd5532e77a3"
           }
         }
       ]

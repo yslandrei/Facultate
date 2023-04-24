@@ -13,7 +13,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
                 },
                 "region": {
                   "startLine": 27,
@@ -41,7 +41,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 22,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
                   "startLine": 23,
@@ -97,7 +97,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
                 },
                 "region": {
                   "startLine": 14,
@@ -125,103 +125,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 29,
-                  "startColumn": 7,
-                  "endLine": 29,
-                  "endColumn": 14
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::findOffer",
-                  "decoratedName": "?findOffer@offersService@@QEBA?BVoffer@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 11,
-                  "endLine": 30,
-                  "endColumn": 18
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::findOffer",
-                  "decoratedName": "?findOffer@offersService@@QEBA?BVoffer@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 25,
-                  "endLine": 51,
-                  "endColumn": 32
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::sortOffers",
-                  "decoratedName": "?sortOffers@offersService@@QEBA?AV?$vector@Voffer@@@@D@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 67,
+                  "startLine": 77,
                   "startColumn": 3,
-                  "endLine": 67,
+                  "endLine": 77,
                   "endColumn": 17
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -237,19 +153,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 31,
-                  "endLine": 87,
-                  "endColumn": 38
+                  "startLine": 99,
+                  "startColumn": 69,
+                  "endLine": 99,
+                  "endColumn": 83
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -265,19 +181,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 72,
-                  "endLine": 87,
-                  "endColumn": 86
+                  "startLine": 100,
+                  "startColumn": 86,
+                  "endLine": 100,
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -293,411 +209,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 43,
-                  "endLine": 88,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 89,
-                  "endLine": 88,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 43,
-                  "endLine": 89,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 89,
-                  "endLine": 89,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 43,
-                  "endLine": 90,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 89,
-                  "endLine": 90,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 31,
-                  "endLine": 94,
-                  "endColumn": 38
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 72,
-                  "endLine": 94,
-                  "endColumn": 86
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 43,
-                  "endLine": 95,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 89,
-                  "endLine": 95,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 43,
-                  "endLine": 96,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 89,
-                  "endLine": 96,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 43,
-                  "endLine": 97,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 89,
-                  "endLine": 97,
-                  "endColumn": 103
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
                   "startLine": 101,
-                  "startColumn": 31,
+                  "startColumn": 86,
                   "endLine": 101,
-                  "endColumn": 38
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -713,47 +237,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 101,
-                  "startColumn": 73,
-                  "endLine": 101,
-                  "endColumn": 87
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
                   "startLine": 102,
-                  "startColumn": 43,
+                  "startColumn": 86,
                   "endLine": 102,
-                  "endColumn": 50
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -769,19 +265,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 102,
-                  "startColumn": 90,
-                  "endLine": 102,
-                  "endColumn": 104
+                  "startLine": 106,
+                  "startColumn": 69,
+                  "endLine": 106,
+                  "endColumn": 83
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -797,19 +293,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 103,
-                  "startColumn": 43,
-                  "endLine": 103,
-                  "endColumn": 50
+                  "startLine": 107,
+                  "startColumn": 86,
+                  "endLine": 107,
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -825,19 +321,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 103,
-                  "startColumn": 90,
-                  "endLine": 103,
-                  "endColumn": 104
+                  "startLine": 108,
+                  "startColumn": 86,
+                  "endLine": 108,
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -853,19 +349,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 104,
-                  "startColumn": 43,
-                  "endLine": 104,
-                  "endColumn": 50
+                  "startLine": 109,
+                  "startColumn": 86,
+                  "endLine": 109,
+                  "endColumn": 100
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -881,523 +377,355 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 104,
-                  "startColumn": 90,
-                  "endLine": 104,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 31,
-                  "endLine": 80,
-                  "endColumn": 38
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 73,
-                  "endLine": 80,
-                  "endColumn": 87
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 43,
-                  "endLine": 81,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 90,
-                  "endLine": 81,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 43,
-                  "endLine": 82,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 90,
-                  "endLine": 82,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 43,
-                  "endLine": 83,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 90,
-                  "endLine": 83,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 31,
-                  "endLine": 73,
-                  "endColumn": 38
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 73,
-                  "endLine": 73,
-                  "endColumn": 87
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 43,
-                  "endLine": 74,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 90,
-                  "endLine": 74,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 43,
-                  "endLine": 75,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 90,
-                  "endLine": 75,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 43,
-                  "endLine": 76,
-                  "endColumn": 50
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 90,
-                  "endLine": 76,
-                  "endColumn": 104
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
                   "startLine": 113,
-                  "startColumn": 7,
+                  "startColumn": 70,
                   "endLine": 113,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 87,
+                  "endLine": 114,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 87,
+                  "endLine": 115,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 87,
+                  "endLine": 116,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 70,
+                  "endLine": 92,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 87,
+                  "endLine": 93,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 87,
+                  "endLine": 94,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 87,
+                  "endLine": 95,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 70,
+                  "endLine": 85,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 87,
+                  "endLine": 86,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 87,
+                  "endLine": 87,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 87,
+                  "endLine": 88,
+                  "endColumn": 101
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 7,
+                  "endLine": 129,
                   "endColumn": 21
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 114,
-                  "startColumn": 28,
-                  "endLine": 114,
-                  "endColumn": 35
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1413,19 +741,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 67,
+                  "startLine": 77,
                   "startColumn": 3,
-                  "endLine": 67,
+                  "endLine": 77,
                   "endColumn": 21
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1441,19 +769,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 72,
+                  "startLine": 84,
                   "startColumn": 8,
-                  "endLine": 72,
+                  "endLine": 84,
                   "endColumn": 34
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1469,19 +797,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 79,
+                  "startLine": 91,
                   "startColumn": 13,
-                  "endLine": 79,
+                  "endLine": 91,
                   "endColumn": 39
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1497,19 +825,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 86,
+                  "startLine": 98,
                   "startColumn": 13,
-                  "endLine": 86,
+                  "endLine": 98,
                   "endColumn": 26
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1525,19 +853,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 87,
+                  "startLine": 99,
                   "startColumn": 9,
-                  "endLine": 87,
+                  "endLine": 99,
                   "endColumn": 22
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1553,19 +881,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 53,
-                  "endLine": 87,
-                  "endColumn": 67
+                  "startLine": 99,
+                  "startColumn": 50,
+                  "endLine": 99,
+                  "endColumn": 64
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1581,19 +909,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 72,
-                  "endLine": 87,
-                  "endColumn": 90
+                  "startLine": 99,
+                  "startColumn": 69,
+                  "endLine": 99,
+                  "endColumn": 87
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -1609,635 +937,271 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 14,
-                  "endLine": 88,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 36,
-                  "endLine": 88,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 89,
-                  "endLine": 88,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 14,
-                  "endLine": 89,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 36,
-                  "endLine": 89,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 89,
-                  "startColumn": 89,
-                  "endLine": 89,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 14,
-                  "endLine": 90,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 36,
-                  "endLine": 90,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 89,
-                  "endLine": 90,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 13,
-                  "endLine": 93,
-                  "endColumn": 26
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 9,
-                  "endLine": 94,
-                  "endColumn": 22
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 53,
-                  "endLine": 94,
-                  "endColumn": 67
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 94,
-                  "startColumn": 72,
-                  "endLine": 94,
-                  "endColumn": 90
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 14,
-                  "endLine": 95,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 36,
-                  "endLine": 95,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 89,
-                  "endLine": 95,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 14,
-                  "endLine": 96,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 36,
-                  "endLine": 96,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 89,
-                  "endLine": 96,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 14,
-                  "endLine": 97,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 36,
-                  "endLine": 97,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 89,
-                  "endLine": 97,
-                  "endColumn": 107
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
                   "startLine": 100,
-                  "startColumn": 13,
+                  "startColumn": 14,
                   "endLine": 100,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 36,
+                  "endLine": 100,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 86,
+                  "endLine": 100,
+                  "endColumn": 104
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 14,
+                  "endLine": 101,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 36,
+                  "endLine": 101,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 86,
+                  "endLine": 101,
+                  "endColumn": 104
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 14,
+                  "endLine": 102,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 36,
+                  "endLine": 102,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 86,
+                  "endLine": 102,
+                  "endColumn": 104
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 13,
+                  "endLine": 105,
                   "endColumn": 26
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2253,19 +1217,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 101,
+                  "startLine": 106,
                   "startColumn": 9,
-                  "endLine": 101,
+                  "endLine": 106,
                   "endColumn": 22
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2281,19 +1245,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 101,
-                  "startColumn": 54,
-                  "endLine": 101,
-                  "endColumn": 68
+                  "startLine": 106,
+                  "startColumn": 50,
+                  "endLine": 106,
+                  "endColumn": 64
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2309,19 +1273,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 101,
-                  "startColumn": 73,
-                  "endLine": 101,
-                  "endColumn": 91
+                  "startLine": 106,
+                  "startColumn": 69,
+                  "endLine": 106,
+                  "endColumn": 87
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2337,19 +1301,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 102,
+                  "startLine": 107,
                   "startColumn": 14,
-                  "endLine": 102,
+                  "endLine": 107,
                   "endColumn": 27
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2365,19 +1329,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 102,
+                  "startLine": 107,
                   "startColumn": 36,
-                  "endLine": 102,
-                  "endColumn": 80
+                  "endLine": 107,
+                  "endColumn": 77
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2393,19 +1357,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 102,
-                  "startColumn": 90,
-                  "endLine": 102,
-                  "endColumn": 108
+                  "startLine": 107,
+                  "startColumn": 86,
+                  "endLine": 107,
+                  "endColumn": 104
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2421,19 +1385,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 103,
+                  "startLine": 108,
                   "startColumn": 14,
-                  "endLine": 103,
+                  "endLine": 108,
                   "endColumn": 27
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2449,19 +1413,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 103,
+                  "startLine": 108,
                   "startColumn": 36,
-                  "endLine": 103,
-                  "endColumn": 80
+                  "endLine": 108,
+                  "endColumn": 77
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2477,19 +1441,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 103,
-                  "startColumn": 90,
-                  "endLine": 103,
-                  "endColumn": 108
+                  "startLine": 108,
+                  "startColumn": 86,
+                  "endLine": 108,
+                  "endColumn": 104
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2505,19 +1469,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 104,
+                  "startLine": 109,
                   "startColumn": 14,
-                  "endLine": 104,
+                  "endLine": 109,
                   "endColumn": 27
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2533,19 +1497,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 104,
+                  "startLine": 109,
                   "startColumn": 36,
-                  "endLine": 104,
-                  "endColumn": 80
+                  "endLine": 109,
+                  "endColumn": 77
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2561,19 +1525,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 104,
-                  "startColumn": 90,
-                  "endLine": 104,
-                  "endColumn": 108
+                  "startLine": 109,
+                  "startColumn": 86,
+                  "endLine": 109,
+                  "endColumn": 104
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2589,19 +1553,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 80,
-                  "startColumn": 9,
-                  "endLine": 80,
-                  "endColumn": 22
+                  "startLine": 112,
+                  "startColumn": 13,
+                  "endLine": 112,
+                  "endColumn": 26
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -2617,663 +1581,1027 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 54,
-                  "endLine": 80,
-                  "endColumn": 68
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 73,
-                  "endLine": 80,
-                  "endColumn": 91
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 14,
-                  "endLine": 81,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 36,
-                  "endLine": 81,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 90,
-                  "endLine": 81,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 14,
-                  "endLine": 82,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 36,
-                  "endLine": 82,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 90,
-                  "endLine": 82,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 14,
-                  "endLine": 83,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 36,
-                  "endLine": 83,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 90,
-                  "endLine": 83,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 9,
-                  "endLine": 73,
-                  "endColumn": 22
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 54,
-                  "endLine": 73,
-                  "endColumn": 68
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 73,
-                  "endLine": 73,
-                  "endColumn": 91
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 14,
-                  "endLine": 74,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 36,
-                  "endLine": 74,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 90,
-                  "endLine": 74,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 14,
-                  "endLine": 75,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 36,
-                  "endLine": 75,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 90,
-                  "endLine": 75,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 14,
-                  "endLine": 76,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 36,
-                  "endLine": 76,
-                  "endColumn": 80
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
-                },
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 90,
-                  "endLine": 76,
-                  "endColumn": 108
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26482",
-          "message": {
-            "text": "Only index into arrays using constant expressions (bounds.2)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
                   "startLine": 113,
-                  "startColumn": 7,
+                  "startColumn": 9,
                   "endLine": 113,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 51,
+                  "endLine": 113,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 70,
+                  "endLine": 113,
+                  "endColumn": 88
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 14,
+                  "endLine": 114,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 36,
+                  "endLine": 114,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 87,
+                  "endLine": 114,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 14,
+                  "endLine": 115,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 36,
+                  "endLine": 115,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 87,
+                  "endLine": 115,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 14,
+                  "endLine": 116,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 36,
+                  "endLine": 116,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 87,
+                  "endLine": 116,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 9,
+                  "endLine": 92,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 51,
+                  "endLine": 92,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 70,
+                  "endLine": 92,
+                  "endColumn": 88
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 14,
+                  "endLine": 93,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 36,
+                  "endLine": 93,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 87,
+                  "endLine": 93,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 14,
+                  "endLine": 94,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 36,
+                  "endLine": 94,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 87,
+                  "endLine": 94,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 14,
+                  "endLine": 95,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 36,
+                  "endLine": 95,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 87,
+                  "endLine": 95,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 9,
+                  "endLine": 85,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 51,
+                  "endLine": 85,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 70,
+                  "endLine": 85,
+                  "endColumn": 88
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 14,
+                  "endLine": 86,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 36,
+                  "endLine": 86,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 87,
+                  "endLine": 86,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 14,
+                  "endLine": 87,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 36,
+                  "endLine": 87,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 87,
+                  "endLine": 87,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 14,
+                  "endLine": 88,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 36,
+                  "endLine": 88,
+                  "endColumn": 77
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 87,
+                  "endLine": 88,
+                  "endColumn": 105
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26482",
+          "message": {
+            "text": "Only index into arrays using constant expressions (bounds.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
+                },
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 7,
+                  "endLine": 129,
                   "endColumn": 21
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "offersService::filterOffers",
-                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@@@PEAD@Z",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
@@ -3281,370 +2609,35 @@
           ]
         },
         {
-          "ruleId": "C26481",
+          "ruleId": "C26494",
           "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+            "text": "Variable 'i' is uninitialized. Always initialize an object (type.5)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
                 },
                 "region": {
-                  "startLine": 68,
-                  "startColumn": 9,
-                  "endLine": 68,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::push_back",
-                  "decoratedName": "?push_back@?$vector@Voffer@@@@QEAAXAEBVoffer@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 9,
-                  "endLine": 49,
-                  "endColumn": 25
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::[]",
-                  "decoratedName": "??A?$vector@Voffer@@@@QEBAAEBVoffer@@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'vector<offer>::size' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 15,
-                  "endLine": 40,
-                  "endColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::size",
-                  "decoratedName": "?size@?$vector@Voffer@@@@QEBA?BHXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 9,
-                  "endLine": 37,
-                  "endColumn": 22
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::end",
-                  "decoratedName": "?end@?$vector@Voffer@@@@QEAAPEAVoffer@@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26432",
-          "message": {
-            "text": "If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 26,
+                  "startLine": 79,
                   "startColumn": 6,
-                  "endLine": 26,
+                  "endLine": 79,
                   "endColumn": 6
                 }
               },
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "vector<offer>::{dtor}",
-                  "decoratedName": "??1?$vector@Voffer@@@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26455",
-          "message": {
-            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 5,
-                  "endLine": 20,
-                  "endColumn": 5
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "fullyQualifiedName": "offersService::filterOffers",
+                  "decoratedName": "?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z",
                   "kind": "function"
                 }
               ]
             }
           ],
           "properties": {
-            "targetSymbol": "offer::id"
+            "targetSymbol": "i"
           }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "targetSymbol": "offer::price"
-          }
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 21
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26400",
-          "message": {
-            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 21,
-                  "endLine": 12,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
         }
       ],
       "tool": {
@@ -3663,18 +2656,18 @@
       "artifacts": [
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offer.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
           },
           "roles": [
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "3fab5601477309b48f006f474764dec9df44ed69606ac6416547517ce08700f8"
+            "sha-256": "5de981a7bd7b569cf758676818308698b43f3789cf8ac00479e98d7d8efac28a"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/validate.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
           },
           "roles": [
             "resultFile"
@@ -3685,7 +2678,7 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.h"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
           },
           "roles": [
             "resultFile"
@@ -3696,33 +2689,22 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/offersService.cpp"
+            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.cpp"
           },
           "roles": [
             "analysisTarget",
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "6b89a047de62cdc1dae87d7d837d4c968dc0938159c5ff190841b6558f64bdff"
+            "sha-256": "fd6bfbfd53cbfdeb655a1c177a53a6d2b317b63eca47f49bda08a0afd60a7ed8"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Facultate/OOP/lab6-7/vector.h"
-          },
-          "roles": [
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///c:/facultate/oop/lab6-7/offersrepository.h"
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "db3133ce193c2531afd8324f1e182cc841e3ce31213ae2923b608086a94d7c9b"
+            "sha-256": "a254ec05131971711ede99321c2a34e68a2d96a3d34dfd7558580b7fc3ecb51b"
           }
         }
       ]

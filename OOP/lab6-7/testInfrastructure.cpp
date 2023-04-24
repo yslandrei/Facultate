@@ -49,3 +49,36 @@ void testModOfferRepo() {
 		assert(true);
 	}
 }
+
+
+void testAddOfferCartRepo() {
+	cartRepository cRepo;
+
+	cRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	assert(cRepo.getAll().size() == 1);
+	try {
+		cRepo.addOffer(offer(0, "nume1", "dest1", "tip1", 100)); assert(false);
+	}
+	catch (exception e) {
+		assert(true);
+	}
+	cRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 100));
+	assert(cRepo.getAll().size() == 2);
+}
+
+void testEmptyCartRepo() {
+	cartRepository cRepo;
+
+	cRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	cRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 100));
+	cRepo.emptyCart();
+	assert(cRepo.getAll().size() == 0);
+}
+
+void testExportCartRepo() {
+	cartRepository cRepo;
+
+	cRepo.addOffer(offer(0, "nume0", "dest0", "tip0", 100));
+	cRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 100));
+	cRepo.exportCart("test");
+}
