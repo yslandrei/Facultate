@@ -1,5 +1,4 @@
 #include "cartRepository.h"
-#include <fstream>
 
 const vector<offer>& cartRepository::getAll() const {
 	return cList;
@@ -8,7 +7,7 @@ const vector<offer>& cartRepository::getAll() const {
 void cartRepository::addOffer(const offer& newOffer) {
 	for (const auto& Offer : cList)
 		if (Offer.getId() == newOffer.getId()) {
-			throw exception("ID deja existent!\n");
+			throw repositoryException("ID deja existent!\n");
 		}
 
 	cList.push_back(newOffer);

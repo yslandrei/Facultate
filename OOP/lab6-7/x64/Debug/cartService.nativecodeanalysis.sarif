@@ -44,38 +44,10 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
-                  "startLine": 22,
+                  "startLine": 20,
                   "startColumn": 6,
-                  "endLine": 22,
+                  "endLine": 20,
                   "endColumn": 13
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "validate::offer",
-                  "decoratedName": "?offer@validate@@SAXAEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26485",
-          "message": {
-            "text": "Expression 'msg': No array to pointer decay (bounds.3)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 19,
-                  "endLine": 23,
-                  "endColumn": 20
                 }
               },
               "logicalLocations": [
@@ -100,9 +72,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
                 },
                 "region": {
-                  "startLine": 16,
+                  "startLine": 18,
                   "startColumn": 2,
-                  "endLine": 16,
+                  "endLine": 18,
                   "endColumn": 2
                 }
               },
@@ -150,7 +122,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "913f7a3ab1d81c269c0b491025cd7db858295f715d8ab7ffddfa9ccc58b50e6d"
+            "sha-256": "d606f749a31f9e862214f33f04b461f8eb3897206b21a48716b7bb7837d46cf4"
           }
         },
         {
@@ -161,7 +133,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "70f8b410d187ec8ddab50db21e997b8858a0b87cde4b997183edd340cb5a9bb5"
+            "sha-256": "1470b7ad728418af520b9fa8d100e59dc5912a54932716eb503586db10d4e113"
           }
         },
         {
@@ -172,7 +144,7 @@
             "analysisTarget"
           ],
           "hashes": {
-            "sha-256": "c8ae862d87d29594d8644ebbb3c25a05dd26cb0ef0015003f715e04e23917cb3"
+            "sha-256": "830417c21d9bf3f5e7398cb2311d46329fae08b72d3b217b543cf4045774f268"
           }
         },
         {
@@ -180,7 +152,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/cartrepository.h"
           },
           "hashes": {
-            "sha-256": "50ad71f612b13ff3ecb3fcabb45758b832668a13bf024d394d9dd2e7e388b963"
+            "sha-256": "2d63ac1076c4905c27a14b36013856d13c3deef41a4813e9bdbf0477756c30c4"
           }
         },
         {
@@ -188,7 +160,15 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "a254ec05131971711ede99321c2a34e68a2d96a3d34dfd7558580b7fc3ecb51b"
+            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/exceptions.h"
+          },
+          "hashes": {
+            "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
           }
         }
       ]

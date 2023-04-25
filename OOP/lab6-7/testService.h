@@ -23,5 +23,8 @@ void testExportCartService();
 
 void testGenerateCartService();
 
+void testTypeOfCartService();
+
+
 
 

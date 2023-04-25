@@ -23,6 +23,7 @@ void testAll() {
 	testEmptyCartService();
 	testExportCartService();
 	testGenerateCartService();
+	testTypeOfCartService();
 }
 
 int main() {

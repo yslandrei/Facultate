@@ -8,7 +8,7 @@ void testAddOfferRepo() {
 	try {
 		oRepo.addOffer(offer(0, "nume1", "dest1", "tip1", 100)); assert(false);
 	}
-	catch (exception e){
+	catch (repositoryException e){
 		assert(true);
 	}
 	oRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 100));
@@ -25,7 +25,7 @@ void testPopOfferRepo() {
 	try {
 		oRepo.popOffer(0); assert(false);
 	}
-	catch (exception e) {
+	catch (repositoryException e) {
 		assert(true);
 	}
 	assert(oRepo.getAll()[0].getId() == 1);
@@ -45,7 +45,7 @@ void testModOfferRepo() {
 	try {
 		oRepo.modOffer(1, offer(2, "nume2", "dest2", "tip2", 100)); assert(false);
 	}
-	catch (exception e) {
+	catch (repositoryException e) {
 		assert(true);
 	}
 }
@@ -59,7 +59,7 @@ void testAddOfferCartRepo() {
 	try {
 		cRepo.addOffer(offer(0, "nume1", "dest1", "tip1", 100)); assert(false);
 	}
-	catch (exception e) {
+	catch (repositoryException e) {
 		assert(true);
 	}
 	cRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 100));

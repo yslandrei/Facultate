@@ -1,11 +1,12 @@
 #pragma once
-#include "vector.h"
-//#include <vector>
+//#include "vector.h"
+#include <vector>
 #include <iterator>
 #include "offer.h"
+#include "exceptions.h"
 
 using std::exception;
-//using std::vector;
+using std::vector;
 using std::iterator;
 
 class offersRepository {

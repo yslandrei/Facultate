@@ -44,9 +44,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.cpp"
                 },
                 "region": {
-                  "startLine": 4,
+                  "startLine": 3,
                   "startColumn": 38,
-                  "endLine": 4,
+                  "endLine": 3,
                   "endColumn": 38
                 }
               },
@@ -72,9 +72,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.cpp"
                 },
                 "region": {
-                  "startLine": 17,
+                  "startLine": 16,
                   "startColumn": 22,
-                  "endLine": 17,
+                  "endLine": 16,
                   "endColumn": 22
                 }
               },
@@ -123,7 +123,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "188f72e659ff877241af661837b8f42ba80a67435250a6baeeda9d7bfdea95a7"
+            "sha-256": "696617ca402e791395ec1a739252f0ea50dc2787ff50f62ed35357f756e5dc17"
           }
         },
         {
@@ -131,7 +131,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/cartrepository.h"
           },
           "hashes": {
-            "sha-256": "50ad71f612b13ff3ecb3fcabb45758b832668a13bf024d394d9dd2e7e388b963"
+            "sha-256": "2d63ac1076c4905c27a14b36013856d13c3deef41a4813e9bdbf0477756c30c4"
           }
         },
         {
@@ -139,7 +139,15 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "a254ec05131971711ede99321c2a34e68a2d96a3d34dfd7558580b7fc3ecb51b"
+            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/exceptions.h"
+          },
+          "hashes": {
+            "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
           }
         }
       ]

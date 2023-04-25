@@ -30,15 +30,7 @@ const offer offersService::findOffer(const string name) const {
 	});
 	
 	if (found != oList.end())
-		return *found;
-	throw exception("Nume inexistent!\n");
-	/*
-	for (int i = 0; i < oList.size(); i++)
-		if (oList[i].getName() == name) {
-			return oList[i];
-	} throw exception("Nume inexistent!\n");
-	*/
-}
+		return *found; throw exception("Nume inexistent!\n"); }
 
 bool cmpByName(const offer& a, const offer& b)  {
 	return a.getName() < b.getName();

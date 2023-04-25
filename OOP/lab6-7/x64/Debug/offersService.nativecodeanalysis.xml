@@ -18,28 +18,14 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>validate.h</FILENAME>
-      <LINE>22</LINE>
+      <LINE>20</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
     <DEFECTCODE>26485</DEFECTCODE>
     <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
     <FUNCTION>validate::offer</FUNCTION>
     <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>validate.h</FILENAME>
-      <LINE>23</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26485</DEFECTCODE>
-    <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
-    <FUNCTION>validate::offer</FUNCTION>
-    <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
+    <FUNCLINE>7</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -60,336 +46,14 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
-      <LINE>77</LINE>
+      <LINE>69</LINE>
       <COLUMN>16</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>99</LINE>
-      <COLUMN>82</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>100</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>101</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>102</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>106</LINE>
-      <COLUMN>82</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>107</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>108</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>109</LINE>
-      <COLUMN>99</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>113</LINE>
-      <COLUMN>83</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>114</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>115</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>116</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>92</LINE>
-      <COLUMN>83</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>93</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>94</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>95</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>85</LINE>
-      <COLUMN>83</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>86</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>87</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>88</LINE>
-      <COLUMN>100</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>129</LINE>
-      <COLUMN>20</COLUMN>
-    </SFA>
-    <DEFECTCODE>26446</DEFECTCODE>
-    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>77</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>84</LINE>
-      <COLUMN>14</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -397,13 +61,55 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>91</LINE>
-      <COLUMN>19</COLUMN>
+      <COLUMN>82</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>99</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>99</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>99</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -411,13 +117,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>98</LINE>
-      <COLUMN>22</COLUMN>
+      <COLUMN>82</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -425,41 +131,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>99</LINE>
-      <COLUMN>18</COLUMN>
+      <COLUMN>99</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>99</LINE>
-      <COLUMN>53</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>99</LINE>
-      <COLUMN>84</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -467,41 +145,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>100</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>99</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>100</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>100</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -509,83 +159,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>101</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>99</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>101</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>101</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>102</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>102</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>102</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -593,13 +173,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>105</LINE>
-      <COLUMN>22</COLUMN>
+      <COLUMN>83</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -607,41 +187,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>106</LINE>
-      <COLUMN>18</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>106</LINE>
-      <COLUMN>53</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>106</LINE>
-      <COLUMN>84</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -649,41 +201,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>107</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>107</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>107</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -691,433 +215,27 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>108</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
-      <LINE>108</LINE>
-      <COLUMN>41</COLUMN>
+      <LINE>84</LINE>
+      <COLUMN>83</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>108</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>109</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>109</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>109</LINE>
-      <COLUMN>101</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>112</LINE>
-      <COLUMN>22</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>113</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>113</LINE>
-      <COLUMN>54</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>113</LINE>
-      <COLUMN>85</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>114</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>114</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>114</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>115</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>115</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>115</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>116</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>116</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>116</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>92</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>92</LINE>
-      <COLUMN>54</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>92</LINE>
-      <COLUMN>85</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>93</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>93</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>93</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>94</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>94</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>94</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>95</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>95</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>95</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1125,41 +243,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>85</LINE>
-      <COLUMN>18</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>85</LINE>
-      <COLUMN>54</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>85</LINE>
-      <COLUMN>85</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1167,41 +257,13 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>86</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>86</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>86</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1209,97 +271,41 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>87</LINE>
-      <COLUMN>23</COLUMN>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
-      <LINE>87</LINE>
-      <COLUMN>41</COLUMN>
+      <LINE>77</LINE>
+      <COLUMN>83</COLUMN>
     </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
-      <LINE>87</LINE>
-      <COLUMN>102</COLUMN>
+      <LINE>78</LINE>
+      <COLUMN>100</COLUMN>
     </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>88</LINE>
-      <COLUMN>23</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>88</LINE>
-      <COLUMN>41</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>88</LINE>
-      <COLUMN>102</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>offersService.cpp</FILENAME>
-      <LINE>129</LINE>
-      <COLUMN>20</COLUMN>
-    </SFA>
-    <DEFECTCODE>26482</DEFECTCODE>
-    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
-    <FUNCTION>offersService::filterOffers</FUNCTION>
-    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -1307,13 +313,993 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.cpp</FILENAME>
       <LINE>79</LINE>
+      <COLUMN>100</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>100</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>121</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26446</DEFECTCODE>
+    <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>69</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>76</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>83</LINE>
+      <COLUMN>19</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>90</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>91</LINE>
+      <COLUMN>84</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>92</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>93</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>97</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>53</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>84</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>99</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>100</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>101</LINE>
+      <COLUMN>101</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>104</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>105</LINE>
+      <COLUMN>85</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>106</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>107</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>84</LINE>
+      <COLUMN>85</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>85</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>86</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>86</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>86</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>54</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>85</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>78</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>78</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>78</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>79</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>79</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>79</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>23</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>80</LINE>
+      <COLUMN>102</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>121</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26482</DEFECTCODE>
+    <DESCRIPTION>Only index into arrays using constant expressions (bounds.2).</DESCRIPTION>
+    <FUNCTION>offersService::filterOffers</FUNCTION>
+    <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
+    <FUNCLINE>65</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>offersService.cpp</FILENAME>
+      <LINE>71</LINE>
       <COLUMN>5</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
     <DESCRIPTION>Variable 'i' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>offersService::filterOffers</FUNCTION>
     <DECORATED>?filterOffers@offersService@@QEBA?AV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@PEAD@Z</DECORATED>
-    <FUNCLINE>73</FUNCLINE>
+    <FUNCLINE>65</FUNCLINE>
     <ADDITIONALINFO>
       <targetSymbol>i</targetSymbol>
     </ADDITIONALINFO>

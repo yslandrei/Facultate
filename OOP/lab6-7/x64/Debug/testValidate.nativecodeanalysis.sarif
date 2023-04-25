@@ -44,38 +44,10 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
-                  "startLine": 22,
+                  "startLine": 20,
                   "startColumn": 6,
-                  "endLine": 22,
+                  "endLine": 20,
                   "endColumn": 13
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "validate::offer",
-                  "decoratedName": "?offer@validate@@SAXAEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26485",
-          "message": {
-            "text": "Expression 'msg': No array to pointer decay (bounds.3)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 19,
-                  "endLine": 23,
-                  "endColumn": 20
                 }
               },
               "logicalLocations": [
@@ -122,7 +94,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "913f7a3ab1d81c269c0b491025cd7db858295f715d8ab7ffddfa9ccc58b50e6d"
+            "sha-256": "d606f749a31f9e862214f33f04b461f8eb3897206b21a48716b7bb7837d46cf4"
           }
         },
         {
@@ -133,7 +105,7 @@
             "analysisTarget"
           ],
           "hashes": {
-            "sha-256": "6c5bad41c2be93f9626250b0515e01d5015934cd87f13903d2d36f002b590b28"
+            "sha-256": "7f309a7e004fb502e811ceae0811e5652d1346da9999dac05395416e3845c984"
           }
         },
         {
@@ -142,6 +114,14 @@
           },
           "hashes": {
             "sha-256": "6f1325d2012e402856718b142eb4319d5feb124e1ce540cb257294febf156930"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/exceptions.h"
+          },
+          "hashes": {
+            "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
           }
         }
       ]

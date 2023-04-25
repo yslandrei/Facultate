@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "offersRepository.h"
 #include "cartRepository.h"
+#include "exceptions.h"
 
 void testAddOfferRepo();
 

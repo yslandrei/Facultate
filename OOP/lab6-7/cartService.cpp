@@ -11,11 +11,9 @@ void cartService::addOffer(const string name) {
 		return Offer.getName() == name;
 	});
 	
-	if (found != oList.end())
+	if (found != oList.end()) {
 		cRepo.addOffer(*found);
-	else
-		throw exception("Nume inexistent!\n");
-}
+		return; } throw exception("Nume inexistent!\n"); }
 
 void cartService::emptyCart() {
 	cRepo.emptyCart();
@@ -42,4 +40,15 @@ void cartService::generateCart(const int n) {
 		i += 1;
 	}
 }
+
+const int cartService::typeOfCart(const string type) const {
+	validate::type(type);
+	map<string, int> typeMap;
+	const vector<offer>& cList = cRepo.getAll();
+	for (const auto& Offer : cList) {
+		typeMap[Offer.getType()]++;
+	}
+	return typeMap[type];
+}
+
 

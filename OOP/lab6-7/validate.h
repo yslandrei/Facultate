@@ -1,8 +1,6 @@
 #pragma once
-#include <exception>
+#include "exceptions.h"
 #include "offer.h"
-
-using std::exception;
 
 class validate {
 public:
@@ -20,27 +18,27 @@ public:
 			strcat_s(msg, "Pret invalid!\n");
 
 		if(strlen(msg))
-			throw exception(msg);
+			throw validationException(msg);
 	}
 
 	static const void id(const int& id) {
 		if (id < 0)
-			throw exception("ID invalid!\n"); }
+			throw validationException("ID invalid!\n"); }
 
 	static const void name(const string& name) {
 		if (name.size() == 0)
-			throw exception("Nume invalid!\n"); }
+			throw validationException("Nume invalid!\n"); }
 
 	static const void dest(const string& dest) {
 		if (dest.size() == 0)
-			throw exception("Destinatie invalida!\n"); }
+			throw validationException("Destinatie invalida!\n"); }
 
 	static const void type(const string& type) {
 		if (type.size() == 0)
-			throw exception("Tip invalid!\n"); }
+			throw validationException("Tip invalid!\n"); }
 
 	static const void price(const int& price) {
 		if (price < 0)
-			throw exception("Pret invalid!\n"); }
+			throw validationException("Pret invalid!\n"); }
 };
 

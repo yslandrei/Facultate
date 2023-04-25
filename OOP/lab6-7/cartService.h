@@ -3,9 +3,11 @@
 #include <iostream>
 #include <random>
 #include <vector>
+#include <map>
 #include "cartRepository.h"
 #include "validate.h"
 
+using std::map;
 
 class cartService {
 private:
@@ -29,4 +31,6 @@ public:
 	void exportCart(const string& fileName) const;
 
 	void generateCart(const int n);
+
+	const int typeOfCart(const string type) const;
 };

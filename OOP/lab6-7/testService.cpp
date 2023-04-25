@@ -116,3 +116,14 @@ void testGenerateCartService() {
 	cService.generateCart(2);
 	assert(cService.getAll().size() == 2);
 }
+
+void testTypeOfCartService() {
+	offersRepository oRepo;
+	cartRepository cRepo;
+	cartService cService(oRepo, cRepo);
+
+	cRepo.addOffer(offer(0, "nume0", "dest0", "tip1", 100));
+	cRepo.addOffer(offer(1, "nume1", "dest1", "tip1", 200));
+	cRepo.addOffer(offer(2, "nume2", "dest2", "tip2", 300));
+	assert(cService.typeOfCart("tip1") == 2);
+}

@@ -18,28 +18,14 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>validate.h</FILENAME>
-      <LINE>22</LINE>
+      <LINE>20</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
     <DEFECTCODE>26485</DEFECTCODE>
     <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
     <FUNCTION>validate::offer</FUNCTION>
     <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>validate.h</FILENAME>
-      <LINE>23</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26485</DEFECTCODE>
-    <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
-    <FUNCTION>validate::offer</FUNCTION>
-    <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
+    <FUNCLINE>7</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

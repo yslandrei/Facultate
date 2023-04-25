@@ -19,6 +19,9 @@
     <Filter Include="validation">
       <UniqueIdentifier>{da7e9f48-fba1-44e5-8037-f095f7f8cb87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="exceptions">
+      <UniqueIdentifier>{5b59a23f-d75a-4fd6-8192-4efb1c3553a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="offer.cpp">
@@ -51,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="cartService.cpp">
       <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptions.cpp">
+      <Filter>exceptions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +95,9 @@
     </ClInclude>
     <ClInclude Include="cartService.h">
       <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>exceptions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

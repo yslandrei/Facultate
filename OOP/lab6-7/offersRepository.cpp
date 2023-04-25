@@ -7,7 +7,7 @@ const vector<offer>& offersRepository::getAll() const {
 void offersRepository::addOffer(const offer& newOffer) {
 	for (const auto& Offer : oList)
 		if (Offer.getId() == newOffer.getId()) {
-			throw exception("ID deja existent!\n");
+			throw repositoryException("ID deja existent!\n");
 		}
 
 	oList.push_back(newOffer);
@@ -23,7 +23,7 @@ void offersRepository::popOffer(const int oldId) {
 		i++;
 	}
 
-	throw exception("ID inexistent!\n");
+	throw repositoryException("ID inexistent!\n");
 }
 
 void offersRepository::modOffer(const int oldId, const offer& newOffer) {
@@ -33,5 +33,5 @@ void offersRepository::modOffer(const int oldId, const offer& newOffer) {
 			return;
 		}
 
-	throw exception("ID inexistent!\n");
+	throw repositoryException("ID inexistent!\n");
 }

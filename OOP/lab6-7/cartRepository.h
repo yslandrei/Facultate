@@ -1,5 +1,7 @@
 #pragma once
+#include <fstream>
 #include "offersRepository.h"
+#include "exceptions.h"
 
 class cartRepository {
 private:

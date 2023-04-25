@@ -18,42 +18,28 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>validate.h</FILENAME>
-      <LINE>22</LINE>
+      <LINE>20</LINE>
       <COLUMN>11</COLUMN>
     </SFA>
     <DEFECTCODE>26485</DEFECTCODE>
     <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
     <FUNCTION>validate::offer</FUNCTION>
     <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>validate.h</FILENAME>
-      <LINE>23</LINE>
-      <COLUMN>18</COLUMN>
-    </SFA>
-    <DEFECTCODE>26485</DEFECTCODE>
-    <DESCRIPTION>Expression 'msg': No array to pointer decay (bounds.3).</DESCRIPTION>
-    <FUNCTION>validate::offer</FUNCTION>
-    <DECORATED>?offer@validate@@SAXAEBV0@@Z</DECORATED>
-    <FUNCLINE>9</FUNCLINE>
+    <FUNCLINE>7</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>cartService.h</FILENAME>
-      <LINE>16</LINE>
+      <LINE>18</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'cartService::cartService' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>cartService::{ctor}</FUNCTION>
     <DECORATED>??0cartService@@QEAA@AEAVoffersRepository@@AEAVcartRepository@@@Z</DECORATED>
-    <FUNCLINE>16</FUNCLINE>
+    <FUNCLINE>18</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

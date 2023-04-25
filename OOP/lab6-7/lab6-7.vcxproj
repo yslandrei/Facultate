@@ -24,6 +24,7 @@
     <ClInclude Include="offer.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />
+    <ClInclude Include="exceptions.h" />
     <ClInclude Include="testDomain.h" />
     <ClInclude Include="testInfrastructure.h" />
     <ClInclude Include="testService.h" />
@@ -39,6 +40,7 @@
     <ClCompile Include="offer.cpp" />
     <ClCompile Include="offersRepository.cpp" />
     <ClCompile Include="offersService.cpp" />
+    <ClCompile Include="exceptions.cpp" />
     <ClCompile Include="testDomain.cpp" />
     <ClCompile Include="testInfrastructure.cpp" />
     <ClCompile Include="testService.cpp" />

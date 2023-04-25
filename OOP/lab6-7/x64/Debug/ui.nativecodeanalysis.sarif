@@ -44,38 +44,10 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
                 },
                 "region": {
-                  "startLine": 22,
+                  "startLine": 20,
                   "startColumn": 6,
-                  "endLine": 22,
+                  "endLine": 20,
                   "endColumn": 13
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "validate::offer",
-                  "decoratedName": "?offer@validate@@SAXAEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26485",
-          "message": {
-            "text": "Expression 'msg': No array to pointer decay (bounds.3)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/validate.h"
-                },
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 19,
-                  "endLine": 23,
-                  "endColumn": 20
                 }
               },
               "logicalLocations": [
@@ -128,9 +100,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
                 },
                 "region": {
-                  "startLine": 16,
+                  "startLine": 18,
                   "startColumn": 2,
-                  "endLine": 16,
+                  "endLine": 18,
                   "endColumn": 2
                 }
               },
@@ -156,9 +128,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 32,
+                  "startLine": 33,
                   "startColumn": 14,
-                  "endLine": 32,
+                  "endLine": 33,
                   "endColumn": 14
                 }
               },
@@ -184,9 +156,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 32,
+                  "startLine": 33,
                   "startColumn": 14,
-                  "endLine": 32,
+                  "endLine": 33,
                   "endColumn": 14
                 }
               },
@@ -212,9 +184,9 @@
                   "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 32,
+                  "startLine": 33,
                   "startColumn": 14,
-                  "endLine": 32,
+                  "endLine": 33,
                   "endColumn": 14
                 }
               },
@@ -240,9 +212,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 37,
+                  "startLine": 38,
                   "startColumn": 4,
-                  "endLine": 37,
+                  "endLine": 38,
                   "endColumn": 28
                 }
               },
@@ -268,9 +240,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 37,
+                  "startLine": 38,
                   "startColumn": 4,
-                  "endLine": 37,
+                  "endLine": 38,
                   "endColumn": 28
                 }
               },
@@ -296,9 +268,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 33,
+                  "startLine": 34,
                   "startColumn": 9,
-                  "endLine": 33,
+                  "endLine": 34,
                   "endColumn": 9
                 }
               },
@@ -327,16 +299,16 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 44,
+                  "startLine": 45,
                   "startColumn": 169,
-                  "endLine": 44,
+                  "endLine": 45,
                   "endColumn": 176
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ui::printOffers",
-                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z",
                   "kind": "function"
                 }
               ]
@@ -355,16 +327,16 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 44,
+                  "startLine": 45,
                   "startColumn": 133,
-                  "endLine": 44,
+                  "endLine": 45,
                   "endColumn": 140
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ui::printOffers",
-                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z",
                   "kind": "function"
                 }
               ]
@@ -383,16 +355,16 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 44,
+                  "startLine": 45,
                   "startColumn": 98,
-                  "endLine": 44,
+                  "endLine": 45,
                   "endColumn": 105
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ui::printOffers",
-                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z",
                   "kind": "function"
                 }
               ]
@@ -411,16 +383,16 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 44,
+                  "startLine": 45,
                   "startColumn": 56,
-                  "endLine": 44,
+                  "endLine": 45,
                   "endColumn": 63
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ui::printOffers",
-                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z",
                   "kind": "function"
                 }
               ]
@@ -439,16 +411,16 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 44,
+                  "startLine": 45,
                   "startColumn": 22,
-                  "endLine": 44,
+                  "endLine": 45,
                   "endColumn": 29
                 }
               },
               "logicalLocations": [
                 {
                   "fullyQualifiedName": "ui::printOffers",
-                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@@@@Z",
+                  "decoratedName": "?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z",
                   "kind": "function"
                 }
               ]
@@ -467,9 +439,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 49,
+                  "startLine": 50,
                   "startColumn": 2,
-                  "endLine": 49,
+                  "endLine": 50,
                   "endColumn": 2
                 }
               },
@@ -551,9 +523,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 26,
+                  "startLine": 28,
                   "startColumn": 12,
-                  "endLine": 26,
+                  "endLine": 28,
                   "endColumn": 47
                 }
               },
@@ -579,9 +551,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 37,
+                  "startLine": 41,
                   "startColumn": 12,
-                  "endLine": 37,
+                  "endLine": 41,
                   "endColumn": 47
                 }
               },
@@ -607,9 +579,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 48,
+                  "startLine": 54,
                   "startColumn": 12,
-                  "endLine": 48,
+                  "endLine": 54,
                   "endColumn": 47
                 }
               },
@@ -635,9 +607,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 60,
+                  "startLine": 65,
                   "startColumn": 12,
-                  "endLine": 60,
+                  "endLine": 65,
                   "endColumn": 47
                 }
               },
@@ -663,9 +635,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 71,
+                  "startLine": 76,
                   "startColumn": 12,
-                  "endLine": 71,
+                  "endLine": 76,
                   "endColumn": 47
                 }
               },
@@ -691,9 +663,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 82,
+                  "startLine": 87,
                   "startColumn": 12,
-                  "endLine": 82,
+                  "endLine": 87,
                   "endColumn": 47
                 }
               },
@@ -719,9 +691,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 96,
+                  "startLine": 100,
                   "startColumn": 12,
-                  "endLine": 96,
+                  "endLine": 100,
                   "endColumn": 47
                 }
               },
@@ -747,9 +719,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 109,
+                  "startLine": 112,
                   "startColumn": 12,
-                  "endLine": 109,
+                  "endLine": 112,
                   "endColumn": 47
                 }
               },
@@ -775,9 +747,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 123,
+                  "startLine": 125,
                   "startColumn": 12,
-                  "endLine": 123,
+                  "endLine": 125,
                   "endColumn": 47
                 }
               },
@@ -803,9 +775,37 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 137,
+                  "startLine": 138,
                   "startColumn": 12,
-                  "endLine": 137,
+                  "endLine": 138,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 12,
+                  "endLine": 151,
                   "endColumn": 45
                 }
               },
@@ -831,9 +831,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 125,
+                  "startLine": 140,
                   "startColumn": 9,
-                  "endLine": 125,
+                  "endLine": 140,
                   "endColumn": 31
                 }
               },
@@ -859,9 +859,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 125,
+                  "startLine": 140,
                   "startColumn": 9,
-                  "endLine": 125,
+                  "endLine": 140,
                   "endColumn": 31
                 }
               },
@@ -887,37 +887,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 125,
+                  "startLine": 140,
                   "startColumn": 9,
-                  "endLine": 125,
-                  "endColumn": 31
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ui::run",
-                  "decoratedName": "?run@ui@@QEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26485",
-          "message": {
-            "text": "Expression 'args[0]': No array to pointer decay (bounds.3)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
-                },
-                "region": {
-                  "startLine": 126,
-                  "startColumn": 25,
-                  "endLine": 126,
+                  "endLine": 140,
                   "endColumn": 31
                 }
               },
@@ -943,9 +915,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 111,
+                  "startLine": 127,
                   "startColumn": 9,
-                  "endLine": 111,
+                  "endLine": 127,
                   "endColumn": 31
                 }
               },
@@ -971,9 +943,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 111,
+                  "startLine": 127,
                   "startColumn": 9,
-                  "endLine": 111,
+                  "endLine": 127,
                   "endColumn": 31
                 }
               },
@@ -999,9 +971,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 111,
+                  "startLine": 127,
                   "startColumn": 9,
-                  "endLine": 111,
+                  "endLine": 127,
                   "endColumn": 31
                 }
               },
@@ -1027,9 +999,121 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 112,
+                  "startLine": 128,
+                  "startColumn": 25,
+                  "endLine": 128,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'com': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 9,
+                  "endLine": 114,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26481",
+          "message": {
+            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 9,
+                  "endLine": 114,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 9,
+                  "endLine": 114,
+                  "endColumn": 31
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ui::run",
+                  "decoratedName": "?run@ui@@QEAAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26485",
+          "message": {
+            "text": "Expression 'args[0]': No array to pointer decay (bounds.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
+                },
+                "region": {
+                  "startLine": 115,
                   "startColumn": 27,
-                  "endLine": 112,
+                  "endLine": 115,
                   "endColumn": 38
                 }
               },
@@ -1055,9 +1139,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 84,
+                  "startLine": 89,
                   "startColumn": 9,
-                  "endLine": 84,
+                  "endLine": 89,
                   "endColumn": 31
                 }
               },
@@ -1083,9 +1167,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 84,
+                  "startLine": 89,
                   "startColumn": 9,
-                  "endLine": 84,
+                  "endLine": 89,
                   "endColumn": 31
                 }
               },
@@ -1111,9 +1195,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 84,
+                  "startLine": 89,
                   "startColumn": 9,
-                  "endLine": 84,
+                  "endLine": 89,
                   "endColumn": 31
                 }
               },
@@ -1139,9 +1223,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 74,
+                  "startLine": 79,
                   "startColumn": 21,
-                  "endLine": 74,
+                  "endLine": 79,
                   "endColumn": 49
                 }
               },
@@ -1167,9 +1251,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 74,
+                  "startLine": 79,
                   "startColumn": 21,
-                  "endLine": 74,
+                  "endLine": 79,
                   "endColumn": 49
                 }
               },
@@ -1195,9 +1279,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 50,
+                  "startLine": 56,
                   "startColumn": 9,
-                  "endLine": 50,
+                  "endLine": 56,
                   "endColumn": 31
                 }
               },
@@ -1223,9 +1307,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 50,
+                  "startLine": 56,
                   "startColumn": 9,
-                  "endLine": 50,
+                  "endLine": 56,
                   "endColumn": 31
                 }
               },
@@ -1251,9 +1335,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 50,
+                  "startLine": 56,
                   "startColumn": 9,
-                  "endLine": 50,
+                  "endLine": 56,
                   "endColumn": 31
                 }
               },
@@ -1279,9 +1363,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 39,
+                  "startLine": 43,
                   "startColumn": 9,
-                  "endLine": 39,
+                  "endLine": 43,
                   "endColumn": 31
                 }
               },
@@ -1307,9 +1391,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 39,
+                  "startLine": 43,
                   "startColumn": 9,
-                  "endLine": 39,
+                  "endLine": 43,
                   "endColumn": 31
                 }
               },
@@ -1335,9 +1419,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 39,
+                  "startLine": 43,
                   "startColumn": 9,
-                  "endLine": 39,
+                  "endLine": 43,
                   "endColumn": 31
                 }
               },
@@ -1363,9 +1447,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 40,
+                  "startLine": 44,
                   "startColumn": 80,
-                  "endLine": 40,
+                  "endLine": 44,
                   "endColumn": 91
                 }
               },
@@ -1391,9 +1475,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 40,
+                  "startLine": 44,
                   "startColumn": 38,
-                  "endLine": 40,
+                  "endLine": 44,
                   "endColumn": 49
                 }
               },
@@ -1419,9 +1503,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 40,
+                  "startLine": 44,
                   "startColumn": 23,
-                  "endLine": 40,
+                  "endLine": 44,
                   "endColumn": 34
                 }
               },
@@ -1447,9 +1531,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 28,
+                  "startLine": 30,
                   "startColumn": 9,
-                  "endLine": 28,
+                  "endLine": 30,
                   "endColumn": 31
                 }
               },
@@ -1475,9 +1559,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 28,
+                  "startLine": 30,
                   "startColumn": 9,
-                  "endLine": 28,
+                  "endLine": 30,
                   "endColumn": 31
                 }
               },
@@ -1503,9 +1587,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 28,
+                  "startLine": 30,
                   "startColumn": 9,
-                  "endLine": 28,
+                  "endLine": 30,
                   "endColumn": 31
                 }
               },
@@ -1531,9 +1615,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.cpp"
                 },
                 "region": {
-                  "startLine": 29,
+                  "startLine": 31,
                   "startColumn": 23,
-                  "endLine": 29,
+                  "endLine": 31,
                   "endColumn": 34
                 }
               },
@@ -1686,668 +1770,6 @@
               ]
             }
           ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 68,
-                  "startColumn": 9,
-                  "endLine": 68,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::push_back",
-                  "decoratedName": "?push_back@?$vector@Voffer@@@@QEAAXAEBVoffer@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C6385",
-          "message": {
-            "text": "Reading invalid data from 'arr'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 17,
-                  "endLine": 59,
-                  "endColumn": 37
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::=",
-                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 53,
-                            "startColumn": 18
-                          }
-                        },
-                        "message": {
-                          "text": "Enter this branch, (assume 'this!=&other')"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 54,
-                            "startColumn": 13
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 55,
-                            "startColumn": 22
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 56,
-                            "startColumn": 21
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 57,
-                            "startColumn": 17
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 58,
-                            "startColumn": 22
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 58,
-                            "startColumn": 31
-                          }
-                        },
-                        "message": {
-                          "text": "Enter this loop, (assume 'i<currSize')"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 59,
-                            "startColumn": 24
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 58,
-                            "startColumn": 44
-                          }
-                        },
-                        "message": {
-                          "text": "'i' may equal 1"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "essential"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 58,
-                            "startColumn": 31
-                          }
-                        },
-                        "message": {
-                          "text": "Continue this loop, (assume 'i<currSize')"
-                        }
-                      },
-                      "kinds": [
-                        "branch"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 59,
-                            "startColumn": 24
-                          }
-                        },
-                        "message": {
-                          "text": "'i' is an Output from 'offer::=' (declared at c:\\users\\andre\\documents\\github\\facultate\\oop\\lab6-7\\offer.h:46)"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                          },
-                          "region": {
-                            "startLine": 59,
-                            "startColumn": 24
-                          }
-                        },
-                        "message": {
-                          "text": "Invalid read from 'arr[1]', (readable range is 0 to 0)"
-                        }
-                      },
-                      "kinds": [
-                        "usage"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26432",
-          "message": {
-            "text": "If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 13,
-                  "endLine": 52,
-                  "endColumn": 13
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::=",
-                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 19
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::=",
-                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 17,
-                  "endLine": 59,
-                  "endColumn": 37
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::=",
-                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 17,
-                  "endLine": 59,
-                  "endColumn": 37
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::=",
-                  "decoratedName": "??4?$vector@Voffer@@@@QEAAAEAV0@AEBV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 9,
-                  "endLine": 49,
-                  "endColumn": 25
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::[]",
-                  "decoratedName": "??A?$vector@Voffer@@@@QEBAAEBVoffer@@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'vector<offer>::size' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 15,
-                  "endLine": 40,
-                  "endColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::size",
-                  "decoratedName": "?size@?$vector@Voffer@@@@QEBA?BHXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26455",
-          "message": {
-            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 5,
-                  "endLine": 20,
-                  "endColumn": 5
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "targetSymbol": "offer::id"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "targetSymbol": "offer::price"
-          }
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 21
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26400",
-          "message": {
-            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 21,
-                  "endLine": 12,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 30
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::extend",
-                  "decoratedName": "?extend@?$vector@Voffer@@@@AEAAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
         }
       ],
       "tool": {
@@ -2383,7 +1805,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "913f7a3ab1d81c269c0b491025cd7db858295f715d8ab7ffddfa9ccc58b50e6d"
+            "sha-256": "d606f749a31f9e862214f33f04b461f8eb3897206b21a48716b7bb7837d46cf4"
           }
         },
         {
@@ -2405,7 +1827,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "70f8b410d187ec8ddab50db21e997b8858a0b87cde4b997183edd340cb5a9bb5"
+            "sha-256": "1470b7ad728418af520b9fa8d100e59dc5912a54932716eb503586db10d4e113"
           }
         },
         {
@@ -2416,7 +1838,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "eab9afae74ba5792b27a8e92199840385c2212a081267596b3f3ff7accb081d0"
+            "sha-256": "0961e4561f2bc4b624190b1756cae5835d47f6fae2ac88814443952f75f3b2ed"
           }
         },
         {
@@ -2428,18 +1850,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "e2241bd2e79a80dbf977eec3bdecd298b08cde54c22c9c6c85d1fd3d9165e622"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-          },
-          "roles": [
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
+            "sha-256": "8b247892e19817493e24343ff759785f80e51e2dd29b3e6f5db4b9d5bb07696a"
           }
         },
         {
@@ -2447,7 +1858,15 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "6f91bd32265705b542a11a4b5241d7ac4de923348cc769fa84e29b2c08929684"
+            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/exceptions.h"
+          },
+          "hashes": {
+            "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
           }
         },
         {
@@ -2455,7 +1874,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/cartrepository.h"
           },
           "hashes": {
-            "sha-256": "50ad71f612b13ff3ecb3fcabb45758b832668a13bf024d394d9dd2e7e388b963"
+            "sha-256": "2d63ac1076c4905c27a14b36013856d13c3deef41a4813e9bdbf0477756c30c4"
           }
         }
       ]

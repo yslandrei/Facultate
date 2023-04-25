@@ -33,34 +33,6 @@
           ]
         },
         {
-          "ruleId": "C26455",
-          "message": {
-            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.h"
-                },
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 2,
-                  "endLine": 16,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offersRepository::{ctor}",
-                  "decoratedName": "??0offersRepository@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "ruleId": "C26446",
           "message": {
             "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
@@ -227,234 +199,6 @@
               ]
             }
           ]
-        },
-        {
-          "ruleId": "C26455",
-          "message": {
-            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.h"
-                },
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 2,
-                  "endLine": 9,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "cartRepository::{ctor}",
-                  "decoratedName": "??0cartRepository@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26481",
-          "message": {
-            "text": "Don't use pointer arithmetic. Use span instead (bounds.1)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 9,
-                  "endLine": 49,
-                  "endColumn": 25
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::[]",
-                  "decoratedName": "??A?$vector@Voffer@@@@QEBAAEBVoffer@@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'vector<offer>::size' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 15,
-                  "endLine": 40,
-                  "endColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::size",
-                  "decoratedName": "?size@?$vector@Voffer@@@@QEBA?BHXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26432",
-          "message": {
-            "text": "If you define or delete any default operation in the type 'class vector<class offer>', define or delete them all (c.21)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 6,
-                  "endLine": 26,
-                  "endColumn": 6
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{dtor}",
-                  "decoratedName": "??1?$vector@Voffer@@@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26455",
-          "message": {
-            "text": "Default constructor should not throw. Declare it 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 5,
-                  "endLine": 20,
-                  "endColumn": 5
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26409",
-          "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-                },
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 15
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "vector<offer>::{ctor}",
-                  "decoratedName": "??0?$vector@Voffer@@@@QEAA@H@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "targetSymbol": "offer::id"
-          }
-        },
-        {
-          "ruleId": "C26495",
-          "message": {
-            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
-                },
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 2,
-                  "endLine": 25,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "offer::{ctor}",
-                  "decoratedName": "??0offer@@QEAA@XZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "targetSymbol": "offer::price"
-          }
         }
       ],
       "tool": {
@@ -484,17 +228,6 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersRepository.h"
-          },
-          "roles": [
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "6f91bd32265705b542a11a4b5241d7ac4de923348cc769fa84e29b2c08929684"
-          }
-        },
-        {
-          "location": {
             "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testInfrastructure.cpp"
           },
           "roles": [
@@ -502,29 +235,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "d667ad722679a20a438238530c2593936eaa721bad60ce7cff31ae6c798df922"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartRepository.h"
-          },
-          "roles": [
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "50ad71f612b13ff3ecb3fcabb45758b832668a13bf024d394d9dd2e7e388b963"
-          }
-        },
-        {
-          "location": {
-            "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/vector.h"
-          },
-          "roles": [
-            "resultFile"
-          ],
-          "hashes": {
-            "sha-256": "5d3ec9a31a4a82e13712bfd6fe53e61d1ae902f7cc34e1db85375e1fcf939b16"
+            "sha-256": "2ed858af269285176405596b76a99c0012bb1b18ca3a2d70fcd5b7f4731458e2"
           }
         },
         {
@@ -532,7 +243,31 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/testinfrastructure.h"
           },
           "hashes": {
-            "sha-256": "e16caa3931dcbadf661d160977538e092b47ab005cfdcb88f90c7f5bcc33fa27"
+            "sha-256": "fcae0e8ea2fa84f63069f61ded4a742d0f6950c76bbdcedd35af947e95264518"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
+          },
+          "hashes": {
+            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/exceptions.h"
+          },
+          "hashes": {
+            "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/cartrepository.h"
+          },
+          "hashes": {
+            "sha-256": "2d63ac1076c4905c27a14b36013856d13c3deef41a4813e9bdbf0477756c30c4"
           }
         }
       ]

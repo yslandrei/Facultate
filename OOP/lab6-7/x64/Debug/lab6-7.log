@@ -1,190 +1,170 @@
-﻿  cartRepository.cpp
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(18,8): error C2039: 'clear': is not a member of 'vector<offer>'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersRepository.h(13,2): message : see declaration of 'vector<offer>'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(26,3): error C3536: '<begin>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(26,3): error C3536: '<end>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(25,32): error C2100: illegal indirection
-  cartService.cpp
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,40): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,35): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,40): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,55): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,50): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,55): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,27): error C2672: 'std::find_if': no matching overloaded function found
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xutility(5594,31): message : could be '_InIt std::find_if(_InIt,const _InIt,_Pr)'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,27): message : '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(10,20): error C2530: 'found': references must be initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(14,5): error C3536: 'found': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(14,20): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(14,15): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(14,20): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(15,18): error C2100: illegal indirection
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,30): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,25): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,30): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,45): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,40): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.cpp(30,45): message : while trying to match the argument list '()'
-  main.cpp
-  offersRepository.cpp
-  offersService.cpp
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,40): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,35): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,40): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,55): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,50): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,55): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,27): error C2672: 'std::find_if': no matching overloaded function found
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xutility(5594,31): message : could be '_InIt std::find_if(_InIt,const _InIt,_Pr)'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,27): message : '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(28,20): error C2530: 'found': references must be initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(32,5): error C3536: 'found': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(32,20): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(32,15): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(32,20): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(33,10): error C2100: illegal indirection
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,3): error C3536: '<begin>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,3): error C3536: '<end>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(60,32): error C2100: illegal indirection
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,14): error C2664: 'void vector<offer>::push_back(const T &)': cannot convert argument 1 from 'const int' to 'const T &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,25): message : Reason: cannot convert from 'const int' to 'const T'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,25): message : No constructor could take the source type, or constructor overload resolution was ambiguous
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(65,10): message : see declaration of 'vector<offer>::push_back'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(61,14): message : while trying to match the argument list '(const int)'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,28): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,35): error C3536: '<begin>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,35): error C3536: '<end>$L0': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83,33): error C2100: illegal indirection
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): error C2662: 'T *vector<T>::begin(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(32,8): message : see declaration of 'vector<offer>::begin'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): error C2662: 'T *vector<T>::end(void) noexcept': cannot convert 'this' pointer from 'const vector<offer>' to 'vector<offer> &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): message : Conversion loses qualifiers
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(36,8): message : see declaration of 'vector<offer>::end'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,27): message : while trying to match the argument list '()'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,34): error C3536: '<begin>$L1': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,34): error C3536: '<end>$L1': cannot be used before it is initialized
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(128,32): error C2100: illegal indirection
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(130,17): error C2664: 'void vector<offer>::push_back(const T &)': cannot convert argument 1 from 'const int' to 'const T &'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(130,28): message : Reason: cannot convert from 'const int' to 'const T'
-          with
-          [
-              T=offer
-          ]
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(130,28): message : No constructor could take the source type, or constructor overload resolution was ambiguous
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\vector.h(65,10): message : see declaration of 'vector<offer>::push_back'
-C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(130,17): message : while trying to match the argument list '(const int)'
-  testInfrastructure.cpp
-  testService.cpp
-  ui.cpp
-  Running Code Analysis for C/C++...
-  Generating Code...
+﻿  ui.cpp
+  lab6-7.vcxproj -> C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offer.h(27): warning C26432: If you define or delete any default operation in the type 'class offer', define or delete them all (c.21).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(3): warning C26440: Function 'cartRepository::getAll' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartRepository.cpp(16): warning C26440: Function 'cartRepository::emptyCart' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\validate.h(20): warning C26485: Expression 'msg': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\cartService.h(18): warning C26440: Function 'cartService::cartService' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.h(14): warning C26440: Function 'offersService::offersService' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(33): warning C26440: Function 'ui::parseCommand' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(33): warning C26429: Symbol 'args' is never tested for nullness, it can be marked as not_null (f.23).
+c:\users\andre\documents\github\facultate\oop\lab6-7\ui.h(33): warning C26485: Expression 'args': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(38): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(38): warning C26485: Expression 'args[argsLen++]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(34): warning C26494: Variable 'parser' is uninitialized. Always initialize an object (type.5).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(45): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(45): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(45): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(45): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(45): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.h(50): warning C26440: Function 'ui::ui' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offer.cpp(3): warning C26440: Function 'offer::getId' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offer.cpp(19): warning C26440: Function 'offer::getPrice' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offer.cpp(34): warning C26440: Function 'offer::operator==' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersRepository.cpp(3): warning C26440: Function 'offersRepository::getAll' can be declared 'noexcept' (f.6).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(69): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(91): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(92): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(93): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(98): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(99): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(100): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(105): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(106): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(107): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(108): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(84): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(85): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(86): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(77): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(78): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(79): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(121): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(69): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(76): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(83): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(90): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(91): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(91): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(91): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(92): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(92): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(92): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(93): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(93): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(93): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(94): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(97): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(98): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(98): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(98): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(99): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(99): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(99): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(100): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(100): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(100): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(101): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(104): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(105): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(105): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(105): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(106): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(106): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(106): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(107): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(107): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(107): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(108): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(108): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(108): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(84): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(84): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(84): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(85): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(85): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(85): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(86): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(86): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(86): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(87): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(77): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(77): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(77): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(78): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(78): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(78): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(79): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(79): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(79): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(80): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(121): warning C26482: Only index into arrays using constant expressions (bounds.2).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\offersService.cpp(71): warning C26494: Variable 'i' is uninitialized. Always initialize an object (type.5).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(31): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(40): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(41): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(42): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(43): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testInfrastructure.cpp(44): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(8): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(26): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(49): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(50): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(52): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(53): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(55): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(56): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(68): warning C26485: Expression 'criteria': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(80): warning C26446: Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\testService.cpp(123): warning C26496: The variable 'cService' does not change after construction, mark it as const (con.4).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(12): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(15): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(28): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(41): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(54): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(65): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(76): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(87): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(100): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(112): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(125): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(138): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(151): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(140): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(140): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(127): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(127): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(128): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(114): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(114): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(115): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(89): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(89): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(79): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(79): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(56): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(56): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(43): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(43): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(44): warning C26485: Expression 'args[5]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(44): warning C26485: Expression 'args[1]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(44): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(30): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(30): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(31): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(17): warning C26485: Expression 'com': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(17): warning C26481: Don't use pointer arithmetic. Use span instead (bounds.1).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(18): warning C26485: Expression 'args[4]': No array to pointer decay (bounds.3).
+C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\ui.cpp(18): warning C26485: Expression 'args[0]': No array to pointer decay (bounds.3).
