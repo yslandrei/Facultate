@@ -23,6 +23,7 @@ private:
 		cout << "Genereaza cos                                  - gen [nr]\n";
 		cout << "Exporta cos                                    - exp [nume]\n";
 		cout << "Frecventa unui tip din cos                     - tip [nume]\n";
+		cout << "Undo operatie                                  - und\n";
 		cout << "\n";
 	}
 

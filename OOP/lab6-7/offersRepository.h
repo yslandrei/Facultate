@@ -22,8 +22,8 @@ public:
 	
 	void addOffer(const offer& newOffer);
 	
-	void popOffer(const int oldId);
+	offer popOffer(const int oldId);
 
-	void modOffer(const int oldId, const offer& newOffer);
+	offer modOffer(const int oldId, const offer& newOffer);
 };
 

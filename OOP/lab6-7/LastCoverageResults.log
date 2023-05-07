@@ -1,4 +1,4 @@
-[2023-04-25 12:22:00] [info] Start Program:
+[2023-05-05 15:13:27] [info] Start Program:
 Path:"C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe"
 Arguments:
 Working directory: "C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7"
@@ -9,13 +9,13 @@ Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: Binary C:\Users\andre\AppData\Local\Temp\0axf2u0j.pcw 
+Export: Binary C:\Users\andre\AppData\Local\Temp\cua4qacr.jse 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2023-04-25 12:22:01] [info] Module: C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe is selected because it matches selected pattern: C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
-[2023-04-25 12:22:01] [info] ----------------------------------------------------
-[2023-04-25 12:22:01] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\0axf2u0j.pcw
-[2023-04-25 12:22:01] [info] ----------------------------------------------------
+[2023-05-05 15:13:27] [info] Module: C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe is selected because it matches selected pattern: C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\x64\Debug\lab6-7.exe
+[2023-05-05 15:13:27] [info] ----------------------------------------------------
+[2023-05-05 15:13:27] [info] Coverage binary generated in file: C:\Users\andre\AppData\Local\Temp\cua4qacr.jse
+[2023-05-05 15:13:27] [info] ----------------------------------------------------

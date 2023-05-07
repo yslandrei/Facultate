@@ -13,7 +13,7 @@ void cartService::addOffer(const string name) {
 	
 	if (found != oList.end()) {
 		cRepo.addOffer(*found);
-		return; } throw exception("Nume inexistent!\n"); }
+		return; } throw repositoryException("Nume inexistent!\n"); }
 
 void cartService::emptyCart() {
 	cRepo.emptyCart();

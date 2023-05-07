@@ -59,6 +59,68 @@
               ]
             }
           ]
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'offer::price' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offer.h"
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "offer::{ctor}",
+                  "decoratedName": "??0offer@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "offer::price"
+          }
         }
       ],
       "tool": {
@@ -95,7 +157,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "c5b7427dd244f2cbfb564affcf7cfa77db429e7fca2907e912f3582b24f8434a"
+            "sha-256": "896fa32a8dafad338ed7703650ebd0b668ee0e2d6a0fb241f7f8d1d55cb784c5"
           }
         },
         {
@@ -103,7 +165,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+            "sha-256": "934aba73eb0ea0525c855b98caca52c0f863019bc88c7a1fd3275f0d9c48aad2"
           }
         },
         {

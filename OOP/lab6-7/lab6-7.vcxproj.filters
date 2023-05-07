@@ -99,5 +99,8 @@
     <ClInclude Include="exceptions.h">
       <Filter>exceptions</Filter>
     </ClInclude>
+    <ClInclude Include="undo.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

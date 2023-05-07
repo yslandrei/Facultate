@@ -32,98 +32,28 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>offersService.h</FILENAME>
-      <LINE>14</LINE>
+      <LINE>18</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'offersService::offersService' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>offersService::{ctor}</FUNCTION>
     <DECORATED>??0offersService@@QEAA@AEAVoffersRepository@@@Z</DECORATED>
-    <FUNCLINE>14</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>cartService.h</FILENAME>
-      <LINE>18</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'cartService::cartService' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>cartService::{ctor}</FUNCTION>
-    <DECORATED>??0cartService@@QEAA@AEAVoffersRepository@@AEAVcartRepository@@@Z</DECORATED>
     <FUNCLINE>18</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>ui.h</FILENAME>
-      <LINE>33</LINE>
-      <COLUMN>13</COLUMN>
+      <FILENAME>cartService.h</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'ui::parseCommand' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>ui::parseCommand</FUNCTION>
-    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>ui.h</FILENAME>
-      <LINE>33</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>26429</DEFECTCODE>
-    <DESCRIPTION>Symbol 'args' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
-    <FUNCTION>ui::parseCommand</FUNCTION>
-    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>c:\users\andre\documents\github\facultate\oop\lab6-7\</FILEPATH>
-      <FILENAME>ui.h</FILENAME>
-      <LINE>33</LINE>
-      <COLUMN>13</COLUMN>
-    </SFA>
-    <DEFECTCODE>26485</DEFECTCODE>
-    <DESCRIPTION>Expression 'args': No array to pointer decay (bounds.3).</DESCRIPTION>
-    <FUNCTION>ui::parseCommand</FUNCTION>
-    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>ui.h</FILENAME>
-      <LINE>38</LINE>
-      <COLUMN>9</COLUMN>
-    </SFA>
-    <DEFECTCODE>26481</DEFECTCODE>
-    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
-    <FUNCTION>ui::parseCommand</FUNCTION>
-    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT>
-  <DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
-      <FILENAME>ui.h</FILENAME>
-      <LINE>38</LINE>
-      <COLUMN>9</COLUMN>
-    </SFA>
-    <DEFECTCODE>26485</DEFECTCODE>
-    <DESCRIPTION>Expression 'args[argsLen++]': No array to pointer decay (bounds.3).</DESCRIPTION>
-    <FUNCTION>ui::parseCommand</FUNCTION>
-    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
+    <DESCRIPTION>Function 'cartService::cartService' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>cartService::{ctor}</FUNCTION>
+    <DECORATED>??0cartService@@QEAA@AEAVoffersRepository@@AEAVcartRepository@@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -131,13 +61,83 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
       <LINE>34</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'ui::parseCommand' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>ui::parseCommand</FUNCTION>
+    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>ui.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'args' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>ui::parseCommand</FUNCTION>
+    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\documents\github\facultate\oop\lab6-7\</FILEPATH>
+      <FILENAME>ui.h</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'args': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>ui::parseCommand</FUNCTION>
+    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>ui.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26481</DEFECTCODE>
+    <DESCRIPTION>Don't use pointer arithmetic. Use span instead (bounds.1).</DESCRIPTION>
+    <FUNCTION>ui::parseCommand</FUNCTION>
+    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>ui.h</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>9</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'args[argsLen++]': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>ui::parseCommand</FUNCTION>
+    <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
+    <FUNCLINE>34</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>ui.h</FILENAME>
+      <LINE>35</LINE>
       <COLUMN>8</COLUMN>
     </SFA>
     <DEFECTCODE>26494</DEFECTCODE>
     <DESCRIPTION>Variable 'parser' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
     <FUNCTION>ui::parseCommand</FUNCTION>
     <DECORATED>?parseCommand@ui@@CAXPEADQEAY0BJ@D@Z</DECORATED>
-    <FUNCLINE>33</FUNCLINE>
+    <FUNCLINE>34</FUNCLINE>
     <ADDITIONALINFO>
       <targetSymbol>parser</targetSymbol>
     </ADDITIONALINFO>
@@ -147,84 +147,84 @@
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>45</LINE>
+      <LINE>46</LINE>
       <COLUMN>175</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>ui::printOffers</FUNCTION>
     <DECORATED>?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z</DECORATED>
-    <FUNCLINE>43</FUNCLINE>
+    <FUNCLINE>44</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>45</LINE>
+      <LINE>46</LINE>
       <COLUMN>139</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>ui::printOffers</FUNCTION>
     <DECORATED>?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z</DECORATED>
-    <FUNCLINE>43</FUNCLINE>
+    <FUNCLINE>44</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>45</LINE>
+      <LINE>46</LINE>
       <COLUMN>104</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>ui::printOffers</FUNCTION>
     <DECORATED>?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z</DECORATED>
-    <FUNCLINE>43</FUNCLINE>
+    <FUNCLINE>44</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>45</LINE>
+      <LINE>46</LINE>
       <COLUMN>62</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>ui::printOffers</FUNCTION>
     <DECORATED>?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z</DECORATED>
-    <FUNCLINE>43</FUNCLINE>
+    <FUNCLINE>44</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>45</LINE>
+      <LINE>46</LINE>
       <COLUMN>28</COLUMN>
     </SFA>
     <DEFECTCODE>26446</DEFECTCODE>
     <DESCRIPTION>Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4).</DESCRIPTION>
     <FUNCTION>ui::printOffers</FUNCTION>
     <DECORATED>?printOffers@ui@@CAXAEBV?$vector@Voffer@@V?$allocator@Voffer@@@std@@@std@@@Z</DECORATED>
-    <FUNCLINE>43</FUNCLINE>
+    <FUNCLINE>44</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.h</FILENAME>
-      <LINE>50</LINE>
+      <LINE>51</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'ui::ui' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>ui::{ctor}</FUNCTION>
     <DECORATED>??0ui@@QEAA@AEAVoffersService@@AEAVcartService@@@Z</DECORATED>
-    <FUNCLINE>50</FUNCLINE>
+    <FUNCLINE>51</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -400,6 +400,20 @@
       <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
       <FILENAME>ui.cpp</FILENAME>
       <LINE>151</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26485</DEFECTCODE>
+    <DESCRIPTION>Expression 'com': No array to pointer decay (bounds.3).</DESCRIPTION>
+    <FUNCTION>ui::run</FUNCTION>
+    <DECORATED>?run@ui@@QEAAXXZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\andre\Documents\GitHub\Facultate\OOP\lab6-7\</FILEPATH>
+      <FILENAME>ui.cpp</FILENAME>
+      <LINE>163</LINE>
       <COLUMN>18</COLUMN>
     </SFA>
     <DEFECTCODE>26485</DEFECTCODE>

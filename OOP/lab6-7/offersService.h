@@ -2,13 +2,17 @@
 #include <algorithm>
 #include "offersRepository.h"
 #include "validate.h"
+#include "undo.h"
 #pragma warning(disable : 4996)
 
 using std::sort;
+using std::unique_ptr;
+using std::make_unique;
 
 class offersService {
 private:
 	offersRepository& oRepo;
+	vector<unique_ptr<undoAction>> undoActions;
 
 public:
 	offersService(offersRepository& oRepo) :
@@ -30,5 +34,7 @@ public:
 	vector<offer> sortOffers(const char cmp) const;
 
 	vector<offer> filterOffers(char* criteria) const;
+
+	void doUndo();
 };
 

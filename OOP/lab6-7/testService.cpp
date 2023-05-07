@@ -6,6 +6,7 @@ void testAddOfferService() {
 	
 	oService.addOffer(0, "nume0", "dest0", "tip0", 100);
 	assert(oService.getAll()[0].getId() == 0);
+	oService.doUndo();
 }
 
 void testPopOfferService() {
@@ -15,6 +16,8 @@ void testPopOfferService() {
 	oService.addOffer(0, "nume0", "dest0", "tip0", 100);
 	oService.popOffer(0);
 	assert(oService.getAll().size() == 0);
+	oService.doUndo();
+	oService.doUndo();
 }
 
 void testModOfferService() {
@@ -24,6 +27,7 @@ void testModOfferService() {
 	oService.addOffer(0, "nume0", "dest0", "tip0", 100);
 	oService.modOffer(0, 1, "nume1", "dest1", "tip1", 100);
 	assert(oService.getAll()[0].getId() == 1);
+	oService.doUndo();
 }
 
 void testFindOfferService() {

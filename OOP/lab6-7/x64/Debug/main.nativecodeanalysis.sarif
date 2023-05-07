@@ -72,9 +72,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
                 },
                 "region": {
-                  "startLine": 14,
+                  "startLine": 18,
                   "startColumn": 2,
-                  "endLine": 14,
+                  "endLine": 18,
                   "endColumn": 2
                 }
               },
@@ -100,9 +100,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
                 },
                 "region": {
-                  "startLine": 18,
+                  "startLine": 19,
                   "startColumn": 2,
-                  "endLine": 18,
+                  "endLine": 19,
                   "endColumn": 2
                 }
               },
@@ -128,9 +128,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 33,
+                  "startLine": 34,
                   "startColumn": 14,
-                  "endLine": 33,
+                  "endLine": 34,
                   "endColumn": 14
                 }
               },
@@ -156,9 +156,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 33,
+                  "startLine": 34,
                   "startColumn": 14,
-                  "endLine": 33,
+                  "endLine": 34,
                   "endColumn": 14
                 }
               },
@@ -184,9 +184,9 @@
                   "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 33,
+                  "startLine": 34,
                   "startColumn": 14,
-                  "endLine": 33,
+                  "endLine": 34,
                   "endColumn": 14
                 }
               },
@@ -212,9 +212,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 38,
+                  "startLine": 39,
                   "startColumn": 4,
-                  "endLine": 38,
+                  "endLine": 39,
                   "endColumn": 28
                 }
               },
@@ -240,9 +240,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 38,
+                  "startLine": 39,
                   "startColumn": 4,
-                  "endLine": 38,
+                  "endLine": 39,
                   "endColumn": 28
                 }
               },
@@ -268,9 +268,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 34,
+                  "startLine": 35,
                   "startColumn": 9,
-                  "endLine": 34,
+                  "endLine": 35,
                   "endColumn": 9
                 }
               },
@@ -299,9 +299,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 45,
+                  "startLine": 46,
                   "startColumn": 169,
-                  "endLine": 45,
+                  "endLine": 46,
                   "endColumn": 176
                 }
               },
@@ -327,9 +327,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 45,
+                  "startLine": 46,
                   "startColumn": 133,
-                  "endLine": 45,
+                  "endLine": 46,
                   "endColumn": 140
                 }
               },
@@ -355,9 +355,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 45,
+                  "startLine": 46,
                   "startColumn": 98,
-                  "endLine": 45,
+                  "endLine": 46,
                   "endColumn": 105
                 }
               },
@@ -383,9 +383,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 45,
+                  "startLine": 46,
                   "startColumn": 56,
-                  "endLine": 45,
+                  "endLine": 46,
                   "endColumn": 63
                 }
               },
@@ -411,9 +411,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 45,
+                  "startLine": 46,
                   "startColumn": 22,
-                  "endLine": 45,
+                  "endLine": 46,
                   "endColumn": 29
                 }
               },
@@ -439,9 +439,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/ui.h"
                 },
                 "region": {
-                  "startLine": 50,
+                  "startLine": 51,
                   "startColumn": 2,
-                  "endLine": 50,
+                  "endLine": 51,
                   "endColumn": 2
                 }
               },
@@ -500,7 +500,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "06635ea16475b3d50ebf5a6b5c04c20998329de6ba22163b7a72a981b600df9e"
+            "sha-256": "60c898a5f2be1a03172847a42395c968604692c999557c135f1d786f4ddc3bfa"
           }
         },
         {
@@ -511,7 +511,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "1470b7ad728418af520b9fa8d100e59dc5912a54932716eb503586db10d4e113"
+            "sha-256": "dd01ff41047b028646e1186383014f6e3e2909e71e1035689c2e166cd453a727"
           }
         },
         {
@@ -522,7 +522,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "0961e4561f2bc4b624190b1756cae5835d47f6fae2ac88814443952f75f3b2ed"
+            "sha-256": "a8723fe4406f6d2e57ff0b5eeaf85afd21b3d87c676a21f4d158757ec975cf73"
           }
         },
         {
@@ -533,7 +533,7 @@
             "analysisTarget"
           ],
           "hashes": {
-            "sha-256": "476f86d1beeca3ad7bc882e2c8f823ed09d946b1900f84675bfd61c36cfd8412"
+            "sha-256": "b350fb428578d0fe34e66b7e599b2586182e910723deaa98e49cfbc9c6e46166"
           }
         },
         {
@@ -557,7 +557,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+            "sha-256": "934aba73eb0ea0525c855b98caca52c0f863019bc88c7a1fd3275f0d9c48aad2"
           }
         },
         {
@@ -590,6 +590,14 @@
           },
           "hashes": {
             "sha-256": "8ba12cfb378df9e05cc57aa8fbacb2f268f77635732d5a60012f9a7c6150175b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/undo.h"
+          },
+          "hashes": {
+            "sha-256": "9b19dc12cf02c35c0be9cef9eb27d4a5e3d4191d09786ce2717af3848b136845"
           }
         }
       ]

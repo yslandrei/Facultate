@@ -148,6 +148,18 @@ void ui::run() {
 			catch (repositoryException e) { cout << e << "\n"; }
 		}
 
+		else if (strncmp(com, "und", sizeof(char) * 3) == 0) {
+			try {
+				oService.doUndo();
+				cout << "Oferte:\n";
+				ui::printOffers(oService.getAll());
+				cout << "Cos:\n";
+				ui::printOffers(cService.getAll());
+			}
+			catch (validationException e) { cout << e << "\n"; }
+			catch (repositoryException e) { cout << e << "\n"; }
+		}
+
 		else if (strncmp(com, "q", sizeof(char) * 1) == 0) {
 			return;
 		}

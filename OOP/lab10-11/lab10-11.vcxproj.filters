@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="domain">
+      <UniqueIdentifier>{1fec0096-0f07-451a-80f4-9a08d122a82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infrastructure">
+      <UniqueIdentifier>{4f3c02c2-152d-4166-be4d-65463c039ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exceptions">
+      <UniqueIdentifier>{2b1f4b9a-8554-47f7-9c97-a35d18b5a37b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{d9e1d263-63de-48ed-aa20-447bc3b6f032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{417ca8f9-2f5c-460a-a56c-8c19372d28d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="validation">
+      <UniqueIdentifier>{56d9a51e-f879-4afa-a801-6e9ea6f43ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{ddb3d3ac-b9a6-4b24-9c17-a2deb18fe9e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="gui.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="gui.qrc">
+      <Filter>Form Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="offer.cpp">
+      <Filter>domain</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptions.cpp">
+      <Filter>exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="cartRepository.cpp">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="offersRepository.cpp">
+      <Filter>infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="cartService.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="offersService.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="testDomain.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testInfrastructure.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testService.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="testValidate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="gui.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="offer.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="cartRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="offersRepository.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="undo.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="cartService.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="offersService.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="testDomain.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testInfrastructure.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testService.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="testValidate.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+    <ClInclude Include="validate.h">
+      <Filter>validation</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

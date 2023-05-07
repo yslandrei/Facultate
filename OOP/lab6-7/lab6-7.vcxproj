@@ -30,6 +30,7 @@
     <ClInclude Include="testService.h" />
     <ClInclude Include="testValidate.h" />
     <ClInclude Include="ui.h" />
+    <ClInclude Include="undo.h" />
     <ClInclude Include="validate.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>

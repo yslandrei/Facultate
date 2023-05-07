@@ -8,18 +8,21 @@ void offersService::addOffer(const int id, const string name, const string dest,
 	offer newOffer(id, name, dest, type, price);
 	validate::offer(newOffer);
 	oRepo.addOffer(newOffer);
+	undoActions.push_back(make_unique<undoAdd>(newOffer, oRepo));
 }
 
 void offersService::popOffer(const int oldId) {
 	validate::id(oldId);
-	oRepo.popOffer(oldId);
+	offer oldOffer = oRepo.popOffer(oldId);
+	undoActions.push_back(make_unique<undoPop>(oldOffer, oRepo));
 }
 
 void offersService::modOffer(const int oldId, const int id, const string name, const string dest, const string type, const int price) {
 	validate::id(oldId);
 	offer newOffer(id, name, dest, type, price);
 	validate::offer(newOffer);
-	oRepo.modOffer(oldId, newOffer);
+	offer oldOffer = oRepo.modOffer(oldId, newOffer);
+	undoActions.push_back(make_unique<undoMod>(oldOffer, newOffer, oRepo));
 }
 
 const offer offersService::findOffer(const string name) const {
@@ -125,5 +128,13 @@ vector<offer> offersService::filterOffers(char* criteria) const {
 	}
 
 	return oListFiltered;
+}
+
+void offersService::doUndo() {
+	if (undoActions.size() == 0)
+		throw repositoryException("Nicio actiune pentru undo!\n");
+
+	undoActions.back()->doUndo();
+	undoActions.pop_back();
 }
 

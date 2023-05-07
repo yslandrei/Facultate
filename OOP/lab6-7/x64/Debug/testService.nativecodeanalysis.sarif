@@ -72,9 +72,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/offersService.h"
                 },
                 "region": {
-                  "startLine": 14,
+                  "startLine": 18,
                   "startColumn": 2,
-                  "endLine": 14,
+                  "endLine": 18,
                   "endColumn": 2
                 }
               },
@@ -100,9 +100,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
                 },
                 "region": {
-                  "startLine": 18,
+                  "startLine": 19,
                   "startColumn": 2,
-                  "endLine": 18,
+                  "endLine": 19,
                   "endColumn": 2
                 }
               },
@@ -156,9 +156,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
-                  "startLine": 26,
+                  "startLine": 29,
                   "startColumn": 2,
-                  "endLine": 26,
+                  "endLine": 29,
                   "endColumn": 2
                 }
               },
@@ -166,90 +166,6 @@
                 {
                   "fullyQualifiedName": "testModOfferService",
                   "decoratedName": "?testModOfferService@@YAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 2,
-                  "endLine": 49,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "testSortOffersService",
-                  "decoratedName": "?testSortOffersService@@YAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
-                },
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 2,
-                  "endLine": 50,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "testSortOffersService",
-                  "decoratedName": "?testSortOffersService@@YAXXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "ruleId": "C26446",
-          "message": {
-            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
-                },
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 2,
-                  "endLine": 52,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "testSortOffersService",
-                  "decoratedName": "?testSortOffersService@@YAXXZ",
                   "kind": "function"
                 }
               ]
@@ -296,9 +212,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
-                  "startLine": 55,
+                  "startLine": 54,
                   "startColumn": 2,
-                  "endLine": 55,
+                  "endLine": 54,
                   "endColumn": 2
                 }
               },
@@ -341,6 +257,90 @@
           ]
         },
         {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 2,
+                  "endLine": 57,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testSortOffersService",
+                  "decoratedName": "?testSortOffersService@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 2,
+                  "endLine": 59,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testSortOffersService",
+                  "decoratedName": "?testSortOffersService@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26446",
+          "message": {
+            "text": "Prefer to use gsl::at() instead of unchecked subscript operator (bounds.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 2,
+                  "endLine": 60,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "testSortOffersService",
+                  "decoratedName": "?testSortOffersService@@YAXXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "ruleId": "C26485",
           "message": {
             "text": "Expression 'criteria': No array to pointer decay (bounds.3)."
@@ -352,9 +352,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
-                  "startLine": 68,
+                  "startLine": 72,
                   "startColumn": 32,
-                  "endLine": 68,
+                  "endLine": 72,
                   "endColumn": 54
                 }
               },
@@ -380,9 +380,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
-                  "startLine": 80,
+                  "startLine": 84,
                   "startColumn": 2,
-                  "endLine": 80,
+                  "endLine": 84,
                   "endColumn": 2
                 }
               },
@@ -408,9 +408,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/testService.cpp"
                 },
                 "region": {
-                  "startLine": 123,
+                  "startLine": 127,
                   "startColumn": 14,
-                  "endLine": 123,
+                  "endLine": 127,
                   "endColumn": 30
                 }
               },
@@ -469,7 +469,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "06635ea16475b3d50ebf5a6b5c04c20998329de6ba22163b7a72a981b600df9e"
+            "sha-256": "60c898a5f2be1a03172847a42395c968604692c999557c135f1d786f4ddc3bfa"
           }
         },
         {
@@ -480,7 +480,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "1470b7ad728418af520b9fa8d100e59dc5912a54932716eb503586db10d4e113"
+            "sha-256": "dd01ff41047b028646e1186383014f6e3e2909e71e1035689c2e166cd453a727"
           }
         },
         {
@@ -492,7 +492,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "bce5068ee2f1f08ecee83bc1d1ef47bd6f470edb0846a0af2a0ef9ea410e844a"
+            "sha-256": "5217fc887632873cc0be873bbf265559274dbcb3db9f2f005e7fc4f8c3504df9"
           }
         },
         {
@@ -508,7 +508,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+            "sha-256": "934aba73eb0ea0525c855b98caca52c0f863019bc88c7a1fd3275f0d9c48aad2"
           }
         },
         {
@@ -517,6 +517,14 @@
           },
           "hashes": {
             "sha-256": "c50366372af90d8dd6b66f60404845372dc7afe82f96c2aa301be76849bcefdd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/undo.h"
+          },
+          "hashes": {
+            "sha-256": "9b19dc12cf02c35c0be9cef9eb27d4a5e3d4191d09786ce2717af3848b136845"
           }
         },
         {

@@ -72,9 +72,9 @@
                   "uri": "file:///C:/Users/andre/Documents/GitHub/Facultate/OOP/lab6-7/cartService.h"
                 },
                 "region": {
-                  "startLine": 18,
+                  "startLine": 19,
                   "startColumn": 2,
-                  "endLine": 18,
+                  "endLine": 19,
                   "endColumn": 2
                 }
               },
@@ -133,7 +133,7 @@
             "resultFile"
           ],
           "hashes": {
-            "sha-256": "1470b7ad728418af520b9fa8d100e59dc5912a54932716eb503586db10d4e113"
+            "sha-256": "dd01ff41047b028646e1186383014f6e3e2909e71e1035689c2e166cd453a727"
           }
         },
         {
@@ -144,7 +144,7 @@
             "analysisTarget"
           ],
           "hashes": {
-            "sha-256": "830417c21d9bf3f5e7398cb2311d46329fae08b72d3b217b543cf4045774f268"
+            "sha-256": "0703865056d9bb9b81d471707135ac721c727fb7a8aa23434c4c57fb0bf0e748"
           }
         },
         {
@@ -160,7 +160,7 @@
             "uri": "file:///c:/users/andre/documents/github/facultate/oop/lab6-7/offersrepository.h"
           },
           "hashes": {
-            "sha-256": "9b9df70698154d0adb9566d22ddfc9bd1b63bfefc9b79a34b2d265661e63f674"
+            "sha-256": "934aba73eb0ea0525c855b98caca52c0f863019bc88c7a1fd3275f0d9c48aad2"
           }
         },
         {
