@@ -320,10 +320,27 @@ void testCantitativ() {
 	assert(lo.vida());
 }
 
+void testEliminaToate() {
+	LO lo = LO(cresc);
+	lo.adauga(1);
+	lo.adauga(2);
+	lo.adauga(3);
+	lo.adauga(4);
+
+	LO sterse = LO(cresc);
+	sterse.adauga(2);
+	sterse.adauga(3);
+
+	assert(lo.eliminaToate(sterse) == 2);
+	assert(lo.dim() == 2);
+}
+
+
 void testAllExtins() {
 	testCreeaza();
 	testAdaugaSiCauta();
 	testStergeCauta();
 	testCantitativ();
+	testEliminaToate();
 }
 

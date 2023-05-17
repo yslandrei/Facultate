@@ -43,7 +43,7 @@ void cartService::generateCart(const int n) {
 	}
 }
 
-const int cartService::typeOfCart(const string type) const {
+const int cartService::countTypes(const string type) const {
 	validate::type(type);
 	map<string, int> typeMap;
 	const vector<offer>& cList = cRepo.getAll();

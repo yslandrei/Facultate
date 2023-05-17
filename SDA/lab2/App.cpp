@@ -4,10 +4,6 @@
 #include "TestScurt.h"
 #include "TestExtins.h"
 
-bool rel(TElement a, TElement b) {
-    return a < b;
-}
-
 int main() {
     testAll();
     testAllExtins();

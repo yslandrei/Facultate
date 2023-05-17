@@ -131,6 +131,16 @@ vector<offer> offersService::filterOffers(char* criteria) const {
 	return oListFiltered;
 }
 
+const int offersService::countTypes(const string type) const {
+	validate::type(type);
+	map<string, int> typeMap;
+	const vector<offer>& oList = oRepo.getAll();
+	for (const auto& Offer : oList) {
+		typeMap[Offer.getType()]++;
+	}
+	return typeMap[type];
+}
+
 void offersService::doUndo() {
 	if (undoActions.size() == 0)
 		throw repositoryException("Nicio actiune pentru undo!\n");

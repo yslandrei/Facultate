@@ -33,5 +33,5 @@ public:
 
 	void generateCart(const int n);
 
-	const int typeOfCart(const string type) const;
+	const int countTypes(const string type) const;
 };

@@ -90,8 +90,13 @@ void gui::initGUI() {
 	rgtBoxLayout->addStretch();
 	rgtBox->setLayout(rgtBoxLayout);
 
+	dynBtns = new QWidget();
+	dynBtnsLayout = new QVBoxLayout();
+	dynBtns->setLayout(dynBtnsLayout);
+
 	windowLayout->addWidget(lftBox);
 	windowLayout->addWidget(rgtBox);
+	windowLayout->addWidget(dynBtns);
 
 	window->setLayout(windowLayout);
 
@@ -159,6 +164,26 @@ void gui::initConnections() {
 			const int price = atoi(txtPrice->text().toStdString().c_str());
 			oService.addOffer(id, name, dest, type, price);
 			loadList(list, oService.getAll());
+			
+			const vector<offer>& oList = oService.getAll();
+			for (const auto& Offer : oList) {
+				bool isPresent = false;
+				for (const auto& Button : dynBtnsList)
+					if (Offer.getType() == Button->text().toStdString()) {
+						isPresent = true;
+						break;
+					}
+				if (isPresent == false) {
+					dynBtnsList.push_back(new QPushButton(QString::fromStdString(Offer.getType())));
+					dynBtnsLayout->addWidget(dynBtnsList.back());
+				}
+			}
+			for (const auto& Button : dynBtnsList) {
+				Button->disconnect();
+				QObject::connect(Button, &QPushButton::clicked, [&]() {
+					QMessageBox::information(nullptr, Button->text(), QString::fromStdString(to_string(oService.countTypes(Button->text().toStdString()))));
+				});
+			}
 		}
 		catch (validationException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
 		catch (repositoryException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
@@ -175,6 +200,25 @@ void gui::initConnections() {
 			const vector<offer>& oList = oService.getAll();
 			oService.modOffer(oList[index].getId(), id, name, dest, type, price);
 			loadList(list, oService.getAll());
+
+			for (const auto& Offer : oList) {
+				bool isPresent = false;
+				for (const auto& Button : dynBtnsList)
+					if (Offer.getType() == Button->text().toStdString()) {
+						isPresent = true;
+						break;
+					}
+				if (isPresent == false) {
+					dynBtnsList.push_back(new QPushButton(QString::fromStdString(Offer.getType())));
+					dynBtnsLayout->addWidget(dynBtnsList.back());
+				}
+			}
+			for (const auto& Button : dynBtnsList) {
+				Button->disconnect();
+				QObject::connect(Button, &QPushButton::clicked, [&]() {
+					QMessageBox::information(nullptr, Button->text(), QString::fromStdString(to_string(oService.countTypes(Button->text().toStdString()))));
+				});
+			}
 		}
 		catch (validationException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
 		catch (repositoryException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
@@ -189,7 +233,29 @@ void gui::initConnections() {
 			txtDest->clear();
 			txtType->clear();
 			txtPrice->clear();
-			loadList(list, oService.getAll());
+			loadList(list, oService.getAll()); 
+			
+			const vector<offer>& oList = oService.getAll();
+			int i = 0;
+			for (const auto& Button : dynBtnsList) {
+				bool isPresent = false;
+				for (const auto& Offer : oList)
+					if (Offer.getType() == Button->text().toStdString()) {
+						isPresent = true;
+						break;
+					}
+				if (isPresent == false) {
+					dynBtnsList.erase(dynBtnsList.begin() + i);
+					//dynBtnsLayout->removeWidget(Button); #doesn't work
+				}
+				i++;
+			}
+			for (const auto& Button : dynBtnsList) {
+				Button->disconnect();
+				QObject::connect(Button, &QPushButton::clicked, [&]() {
+					QMessageBox::information(nullptr, Button->text(), QString::fromStdString(to_string(oService.countTypes(Button->text().toStdString()))));
+				});
+			}
 		}
 		catch (validationException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
 		catch (repositoryException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
@@ -236,6 +302,9 @@ void gui::initConnections() {
 				criteriaCStr[i] = criteria[i];
 			loadList(list, oService.filterOffers(criteriaCStr));
 		}
+		else
+			loadList(list, oService.getAll());
+
 	});
 
 	QObject::connect(btnCAdd, &QPushButton::clicked, [&]() {

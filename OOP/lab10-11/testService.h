@@ -15,6 +15,8 @@ void testSortOffersService();
 
 void testFilterOffersService();
 
+void testCountTypesOffersService();
+
 void testAddOfferCartService();
 
 void testEmptyCartService();
@@ -23,7 +25,7 @@ void testExportCartService();
 
 void testGenerateCartService();
 
-void testTypeOfCartService();
+void testCountTypesCartService();
 
 
 

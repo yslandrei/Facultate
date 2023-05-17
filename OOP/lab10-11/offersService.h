@@ -1,5 +1,6 @@
 #pragma once
 #include <algorithm>
+#include <map>
 #include "offersRepository.h"
 #include "validate.h"
 #include "undo.h"
@@ -8,6 +9,7 @@
 using std::sort;
 using std::unique_ptr;
 using std::make_unique;
+using std::map;
 
 class offersService {
 private:
@@ -34,6 +36,8 @@ public:
 	vector<offer> sortOffers(const char cmp) const;
 
 	vector<offer> filterOffers(char* criteria) const;
+
+	const int countTypes(const string type) const;
 
 	void doUndo();
 };

@@ -58,23 +58,22 @@ TElement LO::sterge(Iterator& poz) {
 	}
 
 	Node* curr = head;
-	Node* lftNode = NULL;
+	Node* prev = NULL;
 	while (curr != NULL && curr->elem != e) {
-		lftNode = curr;
+		prev = curr;
 		curr = curr->next;
 	}
 
-	//ultimul element;
+	// elementul sters e ultimul element
 	if (curr == NULL) {
-		int elemSters = lftNode->elem;
-		free(lftNode);
-		lftNode = NULL;
+		int elemSters = prev->elem;
+		free(prev);
+		prev = NULL;
 		return elemSters;
 	}
-
-
+	// caz general
 	int elemSters = curr->elem;
-	lftNode->next = curr->next;
+	prev->next = curr->next;
 	free(curr);
 	return elemSters;
 }
@@ -136,4 +135,32 @@ void LO::printeaza() {
 		std::cout << curr->elem << "\n";
 		curr = curr->next;
 	}
+}
+
+/*
+{pre: lo - Lista Ordonata}
+{pre: sterse - Lista Ordonata (cu elementele care vor fi sterse)}
+{post: lo are 0 elemente, returnam numarul de elemente eliminate}
+
+iter - Iterator(sterse)
+iter <- lo.prim
+dim <- 0
+
+cat timp(lo.valid)
+	sterge(iter)
+	dim <- dim + 1
+
+return dim
+*/
+
+int LO::eliminaToate(LO& sterse) {
+	Iterator it = Iterator(sterse);
+	int dim = 0;
+
+	it.prim();
+	while (it.valid()) {
+		sterge(it);
+		dim++;
+	}
+	return dim;
 }

@@ -17,8 +17,8 @@ private:
 	offersService& oService;
 	cartService& cService;
 
-	QWidget* window, * cartWindow, * lftBox, * rgtBox, * forms, * filters, * btns, * btns2, * btnsSort, * formsCart, * btnsCart, * rgtCBox;
-	QVBoxLayout* lftBoxLayout, * rgtBoxLayout, * btnsCartLayout, * rgtCBoxLayout;
+	QWidget* window, * cartWindow, * lftBox, * rgtBox, * forms, * filters, * btns, * btns2, * btnsSort, * formsCart, * btnsCart, * rgtCBox, * dynBtns;
+	QVBoxLayout* lftBoxLayout, * rgtBoxLayout, * btnsCartLayout, * rgtCBoxLayout, * dynBtnsLayout;
 	QHBoxLayout* windowLayout, * cartWindowLayout, * btnsSortLayout;
 	QGridLayout* gridBtnsLayout, * filtersLayout;
 	QFormLayout* formsLayout, * formsCartLayout;
@@ -26,6 +26,7 @@ private:
 	QLabel* lblId, * lblName, * lblDest, * lblType, * lblPrice, * lblFPrice, * lblFName, * lblFDest, * lblFType, * lblCName;
 	QLineEdit* txtId, * txtName, * txtDest, * txtType, * txtPrice, * txtFPrice, * txtFName, * txtFDest, * txtFType, * txtCName;
 	QPushButton* btnAdd, * btnMod, * btnPop, * btnUndo, * btnCart, * btnFilter, * btnSortN, * btnSortD, * btnSortPT, * btnCAdd, * btnCGen, * btnCEmp, * btnCExp;
+	vector<QPushButton*> dynBtnsList;
 
 public:
 	gui(offersService& oService, cartService& cService) : oService{ oService }, cService{ cService } {

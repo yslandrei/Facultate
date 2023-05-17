@@ -4,14 +4,6 @@
 #include "testService.h"
 #include "gui.h"
 
-#include <QtWidgets/QApplication>
-#include <QListWidget>
-#include <qboxlayout.h>
-#include <qformlayout.h>
-#include <qlabel.h>
-#include <qlineedit.h>
-#include <qpushbutton.h>
-
 
 void testAll() {
 	testOffer();
@@ -32,7 +24,8 @@ void testAll() {
 	testEmptyCartService();
 	testExportCartService();
 	testGenerateCartService();
-	testTypeOfCartService();
+	testCountTypesOffersService();
+	testCountTypesCartService();
 }
 
 int main(int argc, char *argv[])
