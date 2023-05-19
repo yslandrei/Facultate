@@ -213,6 +213,22 @@ void gui::initConnections() {
 					dynBtnsLayout->addWidget(dynBtnsList.back());
 				}
 			}
+			int i = 0;
+			for (const auto& Button : dynBtnsList) {
+				bool wasDeleted = true;
+				for (const auto& Offer : oList) {
+					if (Button->text().toStdString() == Offer.getType()) {
+						wasDeleted = false;
+						break;
+					}
+				}
+				if (wasDeleted == true) {
+					dynBtnsList.erase(dynBtnsList.begin() + i);
+					i--;
+					delete Button;
+				}
+				i++;
+			}
 			for (const auto& Button : dynBtnsList) {
 				Button->disconnect();
 				QObject::connect(Button, &QPushButton::clicked, [&]() {
@@ -238,15 +254,15 @@ void gui::initConnections() {
 			const vector<offer>& oList = oService.getAll();
 			int i = 0;
 			for (const auto& Button : dynBtnsList) {
-				bool isPresent = false;
+				bool wasDeleted = false;
 				for (const auto& Offer : oList)
 					if (Offer.getType() == Button->text().toStdString()) {
-						isPresent = true;
+						wasDeleted = true;
 						break;
 					}
-				if (isPresent == false) {
+				if (wasDeleted == false) {
 					dynBtnsList.erase(dynBtnsList.begin() + i);
-					//dynBtnsLayout->removeWidget(Button); #doesn't work
+					delete Button;
 				}
 				i++;
 			}
