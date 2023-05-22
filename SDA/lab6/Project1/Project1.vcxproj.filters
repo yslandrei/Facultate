@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="IteratorMultime.cpp" />
+    <ClCompile Include="Multime.cpp" />
+    <ClCompile Include="TestExtins.cpp" />
+    <ClCompile Include="TestScurt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IteratorMultime.h" />
+    <ClInclude Include="Multime.h" />
+    <ClInclude Include="TestExtins.h" />
+    <ClInclude Include="TestScurt.h" />
+  </ItemGroup>
+</Project>
