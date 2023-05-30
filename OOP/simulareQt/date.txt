@@ -1,0 +1,10 @@
+0 Diaconescu Andrei 0770123123 Valcea email@email.ro andreidiaconescu
+1 Domncica Teodor 0770123456 Ploiesti email@email.ro teodomnica
+2 Robert Dragomir 0231987231 Braila email@email.ro robertdragomir
+3 Filip Stefan 0123415123 Ciuc email@email.ro filipstefan
+4 Danila Catalin 0441213562 Cluj email@email.ro danilacatalin
+5 Dragota Robert 0562123456 Sibiu email@email.ro dragotarobert
+6 Ovidiu Stefan 0214325124 Ciuc email@email.ro ovidiustefan
+7 Bogdan Dusceac 0213532124 Cluj email@email.ro bogdandusceac
+8 Decea Cezara 0125136236 Cluj email@email.ro deceacezara
+9 Ion Dragos 0856124564 Cluj email@email.ro iondragos 

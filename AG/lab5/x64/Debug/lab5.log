@@ -1,0 +1,7 @@
+﻿  prob2.cpp
+C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\prob2.cpp(80,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\prob2.cpp(95,42): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\prob2.cpp(96,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\prob2.cpp(116,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\prob2.cpp(133,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  lab5.vcxproj -> C:\Users\andre\Documents\GitHub\Facultate\AG\lab5\x64\Debug\lab5.exe

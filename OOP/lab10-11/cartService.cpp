@@ -13,12 +13,14 @@ void cartService::addOffer(const string name) {
 
 	if (found != oList.end()) {
 		cRepo.addOffer(*found);
+		notify();
 		return;
 	} throw repositoryException("Nume inexistent!\n");
 }
 
 void cartService::emptyCart() {
 	cRepo.emptyCart();
+	notify();
 }
 
 void cartService::exportCart(const string& fileName) const {
@@ -41,6 +43,7 @@ void cartService::generateCart(const int n) {
 		cRepo.addOffer(Offer);
 		i += 1;
 	}
+	notify();
 }
 
 const int cartService::countTypes(const string type) const {

@@ -31,8 +31,6 @@ Iterator LO::prim() const {
 // returnare element de pe pozitia curenta
 //arunca exceptie daca poz nu e valid
 TElement LO::element(Iterator poz) const {
-	if (poz.valid() == false)
-		throw std::exception();
 	return poz.element();
 }
 
@@ -122,18 +120,36 @@ void LO::resize() {
 	nodes = resizedNodes;
 }
 
+/*
+{pre: lo - Lista Ordonata}
+{pre: sterse - Lista Ordonata (cu elementele care vor fi sterse)}
+{post: lo are 0 elemente, returnam numarul de elemente eliminate}
+
+iter - Iterator(sterse)
+iter <- lo.prim
+dim <- 0
+
+cat timp(lo.valid)
+	sterge(iter)
+	dim <- dim + 1
+
+return dim
+*/
+
+int LO::eliminaToate(LO& listaDeSters) {
+	Iterator it = Iterator(listaDeSters);
+	int dim = 0;
+
+	it.prim();
+	while (it.valid()) {
+		sterge(it);
+		dim++;
+	}
+	return dim;
+}
+
 
 //destructor
 LO::~LO() {
 	delete nodes;
-}
-
-void LO::printeaza() {
-	Iterator it = Iterator(*this);
-
-	it.prim();
-	while (it.valid()) {
-		std::cout << it.element() << " ";
-		it.urmator();
-	}
 }

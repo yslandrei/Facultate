@@ -320,6 +320,8 @@ void testCantitativ() {
 	assert(lo.vida());
 }
 
+
+
 void testEliminaToate() {
 	LO lo = LO(cresc);
 	lo.adauga(1);
@@ -341,5 +343,6 @@ void testAllExtins() {
 	testAdaugaSiCauta();
 	testStergeCauta();
 	testCantitativ();
+	testEliminaToate();
 }
 

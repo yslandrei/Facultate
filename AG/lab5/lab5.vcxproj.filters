@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="p2">
+      <UniqueIdentifier>{ea3a9b49-567b-40aa-b4d4-453e39ea9600}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="prob2.cpp">
+      <Filter>p2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="output.txt" />
+    <Text Include="1-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="1-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="2-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="2-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="3-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="3-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="4-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="4-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="5-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="5-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="6-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="6-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="7-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="7-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="8-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="8-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="9-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="9-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="10-in.txt">
+      <Filter>p2</Filter>
+    </Text>
+    <Text Include="10-out.txt">
+      <Filter>p2</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

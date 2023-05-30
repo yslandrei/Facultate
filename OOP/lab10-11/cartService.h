@@ -7,10 +7,11 @@
 #include "cartRepository.h"
 #include "validate.h"
 #include "exceptions.h"
+#include "observer.h"
 
 using std::map;
 
-class cartService {
+class cartService : public observable {
 private:
 	offersRepository& oRepo;
 	cartRepository& cRepo;

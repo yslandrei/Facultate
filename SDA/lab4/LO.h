@@ -26,45 +26,47 @@ private:
 	int size, maxSize;
 	Relatie r;
 public:
-		// constructor
-		// complexitate: Θ(1)
-		LO (Relatie r);
+	// constructor
+	// complexitate: Θ(1)
+	LO(Relatie r);
 
-		// returnare dimensiune
-		// complexitate: Θ(1)
-		int dim() const;
+	// returnare dimensiune
+	// complexitate: Θ(1)
+	int dim() const;
 
-		// verifica daca LO e vida
-		// complexitate: Θ(1)
-		bool vida() const;
+	// verifica daca LO e vida
+	// complexitate: Θ(1)
+	bool vida() const;
 
-		// prima pozitie din LO
-		// complexitate: Θ(1)
-		Iterator prim() const;
+	// prima pozitie din LO
+	// complexitate: Θ(1)
+	Iterator prim() const;
 
-		// returnare element de pe pozitia curenta
-		//arunca exceptie daca poz nu e valid
-		// complexitate: Θ(1)
-		TElement element(Iterator poz) const;
+	// returnare element de pe pozitia curenta
+	//arunca exceptie daca poz nu e valid
+	// complexitate: Θ(1)
+	TElement element(Iterator poz) const;
 
-		// adaugare element in LO a.i. sa se pastreze ordinea intre elemente
-		// complexitate: O(n)
-		void adauga(TElement e);
+	// adaugare element in LO a.i. sa se pastreze ordinea intre elemente
+	// complexitate: O(n)
+	void adauga(TElement e);
 
-		void resize();
+	void resize();
 
-		// sterge element de pe o pozitie poz si returneaza elementul sters
-		//dupa stergere poz e pozitionat pe elementul de dupa cel sters
-		//arunca exceptie daca poz nu e valid
-		// complexitate: O(n)
-		TElement sterge(Iterator& poz);
+	// sterge element de pe o pozitie poz si returneaza elementul sters
+	// dupa stergere poz e pozitionat pe elementul de dupa cel sters
+	// arunca exceptie daca poz nu e valid
+	// complexitate: O(n)
+	TElement sterge(Iterator& poz);
 
-		// cauta element si returneaza prima pozitie pe care apare (sau iterator invalid)
-		// complexitate: O(n)
-		Iterator cauta(TElement e) const;
+	// cauta element si returneaza prima pozitie pe care apare (sau iterator invalid)
+	// complexitate: O(n)
+	Iterator cauta(TElement e) const;
 
-		//destructor
-		~LO();
+	//destructor
+	~LO();
 
-		void printeaza();
+	// elimină din lista curentă toate elementele care apar în lista (lista argument) 
+	// returnează numărul de elemente eliminate 
+	int eliminaToate(LO& lista);
 };

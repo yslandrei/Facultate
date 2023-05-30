@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="domain">
+      <UniqueIdentifier>{cdf136af-4abe-4498-ba78-a5cea1342b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="infrastrucutre">
+      <UniqueIdentifier>{c4396649-44b7-4065-ba81-98f98ab25d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{b5f38114-562b-4c1f-b109-4ab69539a6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buisness">
+      <UniqueIdentifier>{8ff21b5c-c82a-49bb-aae9-79de25acb8bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{e24c5da5-aaac-4f52-b645-e6e8c4b39753}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="contact.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="contactRepo.h">
+      <Filter>infrastrucutre</Filter>
+    </ClInclude>
+    <ClInclude Include="contactService.h">
+      <Filter>buisness</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

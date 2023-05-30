@@ -85,6 +85,7 @@
     <ClCompile Include="cartService.cpp" />
     <ClCompile Include="exceptions.cpp" />
     <ClCompile Include="gui.cpp" />
+    <ClCompile Include="guiCartCRUD.cpp" />
     <ClCompile Include="offer.cpp" />
     <ClCompile Include="offersRepository.cpp" />
     <ClCompile Include="offersService.cpp" />
@@ -92,8 +93,6 @@
     <ClCompile Include="testInfrastructure.cpp" />
     <ClCompile Include="testService.cpp" />
     <ClCompile Include="testValidate.cpp" />
-    <QtRcc Include="gui.qrc" />
-    <QtUic Include="gui.ui" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +100,9 @@
     <ClInclude Include="cartService.h" />
     <ClInclude Include="exceptions.h" />
     <ClInclude Include="gui.h" />
+    <ClInclude Include="guiCartCRUD.h" />
+    <ClInclude Include="guiCartReadOnly.h" />
+    <ClInclude Include="observer.h" />
     <ClInclude Include="offer.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />

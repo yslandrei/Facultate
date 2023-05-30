@@ -42,8 +42,8 @@ int main(int argc, char *argv[])
 	oService.addOffer(2, "Havana", "Cuba, Havana", "Litoral", 3000);
 	oService.addOffer(3, "Paltinis", "Romania, Sibiu", "Munte", 2000);
 	cartService cService(oRepo, cRepo);
-	gui GUI(oService, cService);
-	GUI.run();
+	gui GUI = gui(oService, cService);
+	GUI.show();
 
     return app.exec();
 }

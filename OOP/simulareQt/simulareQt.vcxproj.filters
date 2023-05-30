@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="domain">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="infrastructure">
+      <UniqueIdentifier>{347439b0-1ab4-45f8-af80-9683b25790a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buisness">
+      <UniqueIdentifier>{ce4c5a6a-4faa-43a6-99a0-c7a6fa04011f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{7cb4632d-65fa-408e-873a-503e115c973c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="contact.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="contactRepo.h">
+      <Filter>infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="contactService.h">
+      <Filter>buisness</Filter>
+    </ClInclude>
+    <ClInclude Include="gui.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="date.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="apeluri.csv" />
+    <None Include="mesaje.csv" />
+  </ItemGroup>
+</Project>

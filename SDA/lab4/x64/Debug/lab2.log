@@ -1,9 +1,6 @@
-﻿  TestExtins.cpp
+﻿  Iterator.cpp
 C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\LO.h(17,2): warning C4091: 'typedef ': ignored on left of 'Node' when no variable is declared
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(86,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(101,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(115,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(125,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(223,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\TestExtins.cpp(274,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  LO.cpp
+C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\LO.h(17,2): warning C4091: 'typedef ': ignored on left of 'Node' when no variable is declared
+  Generating Code...
   lab2.vcxproj -> C:\Users\andre\Documents\GitHub\Facultate\SDA\lab4\x64\Debug\lab2.exe

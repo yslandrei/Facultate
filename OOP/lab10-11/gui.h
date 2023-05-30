@@ -11,21 +11,24 @@
 
 #include "offersService.h"
 #include "cartService.h"
+#include "guiCartCRUD.h"
+#include "guiCartReadOnly.h"
 
 class gui {
 private:
 	offersService& oService;
 	cartService& cService;
 
-	QWidget* window, * cartWindow, * lftBox, * rgtBox, * forms, * filters, * btns, * btns2, * btnsSort, * formsCart, * btnsCart, * rgtCBox, * dynBtns;
-	QVBoxLayout* lftBoxLayout, * rgtBoxLayout, * btnsCartLayout, * rgtCBoxLayout, * dynBtnsLayout;
-	QHBoxLayout* windowLayout, * cartWindowLayout, * btnsSortLayout;
+	QWidget* window, * lftBox, * rgtBox, * forms, * filters, * btns, * btns2, * btnsSort, * dynBtns;
+	QVBoxLayout* lftBoxLayout, * rgtBoxLayout, * dynBtnsLayout;
+	QHBoxLayout* windowLayout, * btnsSortLayout;
 	QGridLayout* gridBtnsLayout, * filtersLayout;
-	QFormLayout* formsLayout, * formsCartLayout;
-	QListWidget* list, * cartList;
-	QLabel* lblId, * lblName, * lblDest, * lblType, * lblPrice, * lblFPrice, * lblFName, * lblFDest, * lblFType, * lblCName;
-	QLineEdit* txtId, * txtName, * txtDest, * txtType, * txtPrice, * txtFPrice, * txtFName, * txtFDest, * txtFType, * txtCName;
-	QPushButton* btnAdd, * btnMod, * btnPop, * btnUndo, * btnCart, * btnFilter, * btnSortN, * btnSortD, * btnSortPT, * btnCAdd, * btnCGen, * btnCEmp, * btnCExp;
+	QFormLayout* formsLayout;
+	//QListWidget* list;
+	QTableWidget* list;
+	QLabel* lblId, * lblName, * lblDest, * lblType, * lblPrice, * lblFPrice, * lblFName, * lblFDest, * lblFType;
+	QLineEdit* txtId, * txtName, * txtDest, * txtType, * txtPrice, * txtFPrice, * txtFName, * txtFDest, * txtFType;
+	QPushButton* btnAdd, * btnMod, * btnPop, * btnUndo, * btnCartCrud, * btnCartRead, * btnFilter, * btnSortN, * btnSortD, * btnSortPT;
 	vector<QPushButton*> dynBtnsList;
 
 public:
@@ -33,7 +36,6 @@ public:
 		initGUI();
 		initConnections();
 		loadList(list, oService.getAll());
-		loadList(cartList, cService.getAll());
 	}
 
 	gui(const gui& ot) = delete;
@@ -42,7 +44,7 @@ public:
 
 	void initConnections();
 
-	void run();
+	void show();
 
-	void loadList(QListWidget* list, const vector<offer>& oList);
+	void loadList(QTableWidget* list, const vector<offer>& oList);
 };

@@ -22,6 +22,8 @@ bool Iterator::valid() const {
 }
 
 TElement Iterator::element() const {
+	if (valid() == false)
+		throw std::exception();
 	return it->elem;
 }
 
