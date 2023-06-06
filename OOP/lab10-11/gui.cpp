@@ -8,9 +8,11 @@ void gui::initGUI() {
 	lftBox = new QWidget();
 	lftBoxLayout = new QVBoxLayout();
 
-	list = new QTableWidget;
+	list = new QTableView;
+	model = new MyTableModel(oService.getAll());
+	//list->setModel(model);
 
-	btnsSort = new QWidget();
+	btnsSort = new QWidget;
 	btnsSortLayout = new QHBoxLayout();
 	btnSortN = new QPushButton("&Sort By Name");
 	btnsSortLayout->addWidget(btnSortN);
@@ -104,14 +106,22 @@ void gui::initGUI() {
 }
 
 void gui::initConnections() {
-	QObject::connect(list, &QTableWidget::itemClicked, [&]() {
-		const string name = list->item(list->currentRow(), 1)->text().toStdString();
-		const offer selectedOffer = oService.findOffer(name);
-		txtId->setText(QString::fromStdString(to_string(selectedOffer.getId())));
-		txtName->setText(QString::fromStdString(selectedOffer.getName()));
-		txtDest->setText(QString::fromStdString(selectedOffer.getDest()));
-		txtType->setText(QString::fromStdString(selectedOffer.getType()));
-		txtPrice->setText(QString::fromStdString(to_string(selectedOffer.getPrice())));
+	QObject::connect(list, &QTableView::clicked, [this]() {
+		if (list->selectionModel()->selectedIndexes().isEmpty()) {
+			txtId->setText("");
+			txtName->setText("");
+			txtDest->setText("");
+			txtType->setText("");
+			txtPrice->setText("");
+			return;
+		}
+		int selRow = list->selectionModel()->selectedIndexes().at(0).row();
+		qDebug() << selRow;
+		txtId->setText(list->model()->data(list->model()->index(selRow, 0), Qt::DisplayRole).toString());
+		txtName->setText(list->model()->data(list->model()->index(selRow, 1), Qt::DisplayRole).toString());
+		txtDest->setText(list->model()->data(list->model()->index(selRow, 2), Qt::DisplayRole).toString());
+		txtType->setText(list->model()->data(list->model()->index(selRow, 3), Qt::DisplayRole).toString());
+		txtPrice->setText(list->model()->data(list->model()->index(selRow, 4), Qt::DisplayRole).toString());
 	});
 
 	QObject::connect(btnAdd, &QPushButton::clicked, [&]() {
@@ -122,7 +132,7 @@ void gui::initConnections() {
 			const string type = txtType->text().toStdString();
 			const int price = atoi(txtPrice->text().toStdString().c_str());
 			oService.addOffer(id, name, dest, type, price);
-			loadList(list, oService.getAll());
+			loadList(oService.getAll());
 			
 			const vector<offer>& oList = oService.getAll();
 			for (const auto& Offer : oList) {
@@ -150,7 +160,7 @@ void gui::initConnections() {
 
 	QObject::connect(btnMod, &QPushButton::clicked, [&]() {
 		try {
-			const int index = list->currentRow();
+			const int index = list->selectionModel()->selectedIndexes().at(0).row();
 			const int id = atoi(txtId->text().toStdString().c_str());
 			const string name = txtName->text().toStdString();
 			const string dest = txtDest->text().toStdString();
@@ -158,7 +168,7 @@ void gui::initConnections() {
 			const int price = atoi(txtPrice->text().toStdString().c_str());
 			const vector<offer>& oList = oService.getAll();
 			oService.modOffer(oList[index].getId(), id, name, dest, type, price);
-			loadList(list, oService.getAll());
+			loadList(oService.getAll());
 
 			for (const auto& Offer : oList) {
 				bool isPresent = false;
@@ -208,7 +218,7 @@ void gui::initConnections() {
 			txtDest->clear();
 			txtType->clear();
 			txtPrice->clear();
-			loadList(list, oService.getAll()); 
+			loadList(oService.getAll()); 
 			
 			const vector<offer>& oList = oService.getAll();
 			int i = 0;
@@ -237,21 +247,21 @@ void gui::initConnections() {
 	});
 
 	QObject::connect(btnSortN, &QPushButton::clicked, [&]() {
-		loadList(list, oService.sortOffers('n'));
+		loadList(oService.sortOffers('n'));
 	});
 
 	QObject::connect(btnSortD, &QPushButton::clicked, [&]() {
-		loadList(list, oService.sortOffers('d'));
+		loadList(oService.sortOffers('d'));
 	});
 
 	QObject::connect(btnSortPT, &QPushButton::clicked, [&]() {
-		loadList(list, oService.sortOffers('p'));
+		loadList(oService.sortOffers('p'));
 	});
 
 	QObject::connect(btnUndo, &QPushButton::clicked, [&]() {
 		try {
 			oService.doUndo();
-			loadList(list, oService.getAll());
+			loadList(oService.getAll());
 		}
 		catch (validationException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
 		catch (repositoryException e) { QMessageBox::warning(nullptr, "Warning", e.what().c_str()); }
@@ -279,10 +289,10 @@ void gui::initConnections() {
 			char criteriaCStr[100] = "";
 			for (int i = 0; i < criteria.size() - 1; i++)
 				criteriaCStr[i] = criteria[i];
-			loadList(list, oService.filterOffers(criteriaCStr));
+			loadList(oService.filterOffers(criteriaCStr));
 		}
 		else
-			loadList(list, oService.getAll());
+			loadList(oService.getAll());
 
 	});
 }
@@ -291,17 +301,6 @@ void gui::show() {
 	window->show();
 }
 
-void gui::loadList(QTableWidget* list, const vector<offer>& oList) {
-	int rowCount = 0;
-	list->clear();
-	list->setRowCount(oService.getAll().size());
-	list->setColumnCount(5);
-	for (const auto& Offer : oList) {
-		list->setItem(rowCount, 0, new QTableWidgetItem(QString::number(Offer.getId())));
-		list->setItem(rowCount, 1, new QTableWidgetItem(Offer.getName().c_str()));
-		list->setItem(rowCount, 2, new QTableWidgetItem(Offer.getDest().c_str()));
-		list->setItem(rowCount, 3, new QTableWidgetItem(Offer.getType().c_str()));
-		list->setItem(rowCount, 4, new QTableWidgetItem(QString::number(Offer.getPrice())));
-		rowCount++;
-	}
+void gui::loadList(const vector<offer>& oList) {
+	model->setOffers(oList);
 }

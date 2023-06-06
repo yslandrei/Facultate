@@ -13,6 +13,7 @@
 #include "cartService.h"
 #include "guiCartCRUD.h"
 #include "guiCartReadOnly.h"
+#include "tabel.h"
 
 class gui {
 private:
@@ -25,7 +26,8 @@ private:
 	QGridLayout* gridBtnsLayout, * filtersLayout;
 	QFormLayout* formsLayout;
 	//QListWidget* list;
-	QTableWidget* list;
+	MyTableModel* model;
+	QTableView* list;
 	QLabel* lblId, * lblName, * lblDest, * lblType, * lblPrice, * lblFPrice, * lblFName, * lblFDest, * lblFType;
 	QLineEdit* txtId, * txtName, * txtDest, * txtType, * txtPrice, * txtFPrice, * txtFName, * txtFDest, * txtFType;
 	QPushButton* btnAdd, * btnMod, * btnPop, * btnUndo, * btnCartCrud, * btnCartRead, * btnFilter, * btnSortN, * btnSortD, * btnSortPT;
@@ -35,7 +37,8 @@ public:
 	gui(offersService& oService, cartService& cService) : oService{ oService }, cService{ cService } {
 		initGUI();
 		initConnections();
-		loadList(list, oService.getAll());
+		list->setModel(model);
+		loadList(oService.getAll());
 	}
 
 	gui(const gui& ot) = delete;
@@ -46,5 +49,5 @@ public:
 
 	void show();
 
-	void loadList(QTableWidget* list, const vector<offer>& oList);
+	void loadList(const vector<offer>& oList);
 };

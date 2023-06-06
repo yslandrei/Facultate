@@ -1,14 +1,2 @@
-﻿  cartRepository.cpp
-  cartService.cpp
-  exceptions.cpp
-  gui.cpp
-  guiCartCRUD.cpp
-  offer.cpp
-  offersRepository.cpp
-  offersService.cpp
-  testDomain.cpp
-  testInfrastructure.cpp
-  testService.cpp
-  testValidate.cpp
-  main.cpp
+﻿  gui.cpp
   lab10-11.vcxproj -> C:\Users\andre\Documents\GitHub\Facultate\OOP\lab10-11\x64\Debug\lab10-11.exe

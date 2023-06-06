@@ -111,5 +111,8 @@
     <ClInclude Include="guiCartReadOnly.h">
       <Filter>gui</Filter>
     </ClInclude>
+    <ClInclude Include="tabel.h">
+      <Filter>service</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

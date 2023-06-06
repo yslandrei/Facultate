@@ -8,11 +8,11 @@
 #include <qpushbutton.h>
 #include <qdebug.h>
 #include <qmessagebox.h>
+#include <qpainter.h>
+#include <qwidget.h>
 
 #include "offersService.h"
-#include <qwidget.h>
-#include <qpainter.h>
-
+#include <random>
 #include "cartService.h"
 
 class guiCartReadOnly : public QWidget, public observer {
@@ -32,10 +32,14 @@ public:
 	void paintEvent(QPaintEvent* ev) override {
 		QPainter p{ this };
 		const vector<offer>& oList = cService.getAll();
-		int i = 0;
+		
+		std::mt19937 mt{ std::random_device{}() };
+		std::uniform_int_distribution<> x_coord{ 0, width() - 100 };
+		std::uniform_int_distribution<> y_coord{ 0, height() - 100 };
+		std::uniform_int_distribution<> width_coord{ 15, 256 };
+		std::uniform_int_distribution<> height_coord{ 15, 256 };
 		for (const auto& Offer : oList) {
-			p.drawRect(0, i, 240, 40);
-			i += 80;
+			p.drawEllipse(x_coord(mt), y_coord(mt), width_coord(mt), height_coord(mt));
 		}
 	}
 };

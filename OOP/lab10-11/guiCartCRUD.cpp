@@ -77,6 +77,7 @@ void guiCartCRUD::show() {
 
 void guiCartCRUD::loadList(QListWidget* list, const vector<offer>& oList) {
 	int rowCount = 0;
+
 	list->clear();
 	for (const auto& Offer : oList)
 		list->addItem(Offer.getName().c_str());
