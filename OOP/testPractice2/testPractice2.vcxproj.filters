@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="songRepository.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="song.h" />
+    <ClInclude Include="songService.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="observer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="songs.csv" />
+  </ItemGroup>
+</Project>

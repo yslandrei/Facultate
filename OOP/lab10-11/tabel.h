@@ -14,8 +14,11 @@
 
 using std::vector;
 
-class MyTableModel :public QAbstractTableModel {
+class MyTableModel : public QAbstractTableModel {
 private:
+    Q_PROPERTY(int count READ count NOTIFY countChanged)
+    Q_DISABLE_COPY(MyTableModel)
+    Q_OBJECT
     vector<offer> oList;
 
 public:
@@ -42,10 +45,14 @@ public:
             else if (index.column() == 3)
                 return QString::fromStdString(Offer.getType());
             else if (index.column() == 4)
-                return QString::number(Offer.getId());
+                return QString::number(Offer.getPrice());
         }
 
         return QVariant();
+    }
+
+    int count() const {
+        return oList.size();
     }
 
     void setOffers(const vector<offer> oList) {
@@ -54,5 +61,8 @@ public:
         auto bottomR = createIndex(rowCount(), columnCount());
         //emit countChanged();
         emit dataChanged(topLeft, bottomR);
+        emit layoutChanged();
     }
+signals:
+    void countChanged();
 };

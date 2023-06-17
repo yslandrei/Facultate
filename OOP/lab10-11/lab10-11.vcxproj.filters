@@ -102,17 +102,19 @@
     <ClInclude Include="gui.h">
       <Filter>gui</Filter>
     </ClInclude>
-    <ClInclude Include="observer.h">
-      <Filter>service</Filter>
-    </ClInclude>
     <ClInclude Include="guiCartCRUD.h">
       <Filter>gui</Filter>
     </ClInclude>
     <ClInclude Include="guiCartReadOnly.h">
       <Filter>gui</Filter>
     </ClInclude>
-    <ClInclude Include="tabel.h">
-      <Filter>service</Filter>
+    <ClInclude Include="observer.h">
+      <Filter>gui</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="tabel.h">
+      <Filter>service</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

@@ -1,2 +1,7 @@
-﻿  gui.cpp
+﻿  cartService.cpp
+  gui.cpp
+  guiCartCRUD.cpp
+  main.cpp
+  testService.cpp
+  moc_tabel.cpp
   lab10-11.vcxproj -> C:\Users\andre\Documents\GitHub\Facultate\OOP\lab10-11\x64\Debug\lab10-11.exe
