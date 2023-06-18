@@ -37,7 +37,6 @@ public:
 	gui(offersService& oService, cartService& cService) : oService{ oService }, cService{ cService } {
 		initGUI();
 		initConnections();
-		list->setModel(model);
 		loadList(oService.getAll());
 	}
 

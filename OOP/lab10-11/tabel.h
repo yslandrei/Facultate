@@ -16,9 +16,6 @@ using std::vector;
 
 class MyTableModel : public QAbstractTableModel {
 private:
-    Q_PROPERTY(int count READ count NOTIFY countChanged)
-    Q_DISABLE_COPY(MyTableModel)
-    Q_OBJECT
     vector<offer> oList;
 
 public:
@@ -51,18 +48,11 @@ public:
         return QVariant();
     }
 
-    int count() const {
-        return oList.size();
-    }
-
     void setOffers(const vector<offer> oList) {
         this->oList = oList;
         auto topLeft = createIndex(0, 0);
         auto bottomR = createIndex(rowCount(), columnCount());
-        //emit countChanged();
         emit dataChanged(topLeft, bottomR);
         emit layoutChanged();
     }
-signals:
-    void countChanged();
 };

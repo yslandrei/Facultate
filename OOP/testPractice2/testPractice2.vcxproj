@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClInclude Include="gui.h" />
     <ClInclude Include="observer.h" />
+    <ClInclude Include="rankGui.h" />
     <ClInclude Include="song.h" />
     <ClInclude Include="songService.h" />
   </ItemGroup>

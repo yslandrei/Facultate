@@ -10,7 +10,7 @@ void gui::initGUI() {
 
 	list = new QTableView;
 	model = new MyTableModel(oService.getAll());
-	//list->setModel(model);
+	list->setModel(model);
 
 	btnsSort = new QWidget;
 	btnsSortLayout = new QHBoxLayout();

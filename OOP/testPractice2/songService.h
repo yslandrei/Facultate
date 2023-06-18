@@ -1,7 +1,8 @@
 #pragma once
 #include "songRepository.h"
+#include "observer.h"
 
-class songService {
+class songService : public observable {
 private:
 	songRepository& sRepo;
 
@@ -27,6 +28,7 @@ public:
 		song s(id, title, artist, rank);
 		validateSong(s);
 		sRepo.addSong(s);
+		notify();
 	}
 
 	void popSong(int id) {
@@ -42,8 +44,10 @@ public:
 			if (sList[i].getArtist() == artist)
 				k++;
 
-		if(k > 1)
+		if(k > 1) {
 			sRepo.popSong(id);
+			notify();
+		}
 		else
 			throw exception("Nu se poate sterge ultima melodie a unui artist!");
 	}
@@ -53,5 +57,6 @@ public:
 		song s(id, title, artist, rank);
 		validateSong(s);
 		sRepo.modSong(s);
+		notify();
 	}
 };

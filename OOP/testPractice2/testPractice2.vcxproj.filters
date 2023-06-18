@@ -9,6 +9,7 @@
     <ClInclude Include="songService.h" />
     <ClInclude Include="gui.h" />
     <ClInclude Include="observer.h" />
+    <ClInclude Include="rankGui.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="songs.csv" />

@@ -28,6 +28,7 @@ private:
 
 public:
 	gui(songService& sService) : sService{ sService } {
+		sService.addObserver(this);
 		initGui();
 		initConnections();
 		loadData(sService.getAll());

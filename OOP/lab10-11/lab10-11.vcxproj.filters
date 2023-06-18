@@ -111,10 +111,8 @@
     <ClInclude Include="observer.h">
       <Filter>gui</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="tabel.h">
+    <ClInclude Include="tabel.h">
       <Filter>service</Filter>
-    </QtMoc>
+    </ClInclude>
   </ItemGroup>
 </Project>

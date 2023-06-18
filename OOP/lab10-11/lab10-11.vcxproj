@@ -106,7 +106,7 @@
     <ClInclude Include="offer.h" />
     <ClInclude Include="offersRepository.h" />
     <ClInclude Include="offersService.h" />
-    <QtMoc Include="tabel.h" />
+    <ClInclude Include="tabel.h" />
     <ClInclude Include="testDomain.h" />
     <ClInclude Include="testInfrastructure.h" />
     <ClInclude Include="testService.h" />
