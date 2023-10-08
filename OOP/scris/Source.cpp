@@ -1,43 +1,77 @@
-#include <string>
 #include <vector>
+#include <string>
 #include <iostream>
 
 using namespace std;
 
-template<typename t>
-class Geanta {
+class Wiskey {
 private:
-	string owner;
-	vector<t> obiecte;
+	int ice;
+	vector<string> flavs;
+	int size;
 
 public:
-	Geanta(string nume) : owner{ nume } {}
+	Wiskey(int ice, vector<string> flavs, int size) :
+		ice{ice},
+		flavs{flavs},
+		size{size}
+	{}
 
-	Geanta operator+(const t& o) {
-		Geanta temp = *this;
-        temp.obiecte.push_back(o);
-        return temp;
-
-		/*obiecte.push_back(o);
-		return *this;*/
+	Wiskey& operator>>(ostream& os) {
+		os << (size == 1 ? "small " : "large ") << "with " << ice << " ice and ";
+		os << flavs.size() << " flavours\n";
+		return *this;
 	}
 
-	typename vector<t>::iterator begin() {
-		return obiecte.begin();
+	vector<string>::iterator begin() {
+		return flavs.begin();
 	}
 
-	typename vector<t>::iterator end() {
-		return obiecte.end();
+	vector<string>::iterator end() {
+		return flavs.end();
 	}
 };
 
+class Builder {
+private:
+	int ice;
+	vector<string> flavs;
+	int size;
+
+public:
+	Builder(int size) : size{size}, ice{0} {}
+
+	Builder& addFlavour(string flavour) {
+		flavs.push_back(flavour);
+		return *this;
+	}
+
+	Builder& addIce() {
+		ice++;
+		return *this;
+	}
+
+	Wiskey build() {
+		return Wiskey(ice, flavs, size);
+	}
+};
 
 int main() {
-	Geanta<string> ganta{ "Ion" };//creaza geanta pentru Ion
-	ganta = (ganta + string{ "haine" }); //adauga obiect in ganta
-	ganta = (ganta + string{ "pahar" }); //adauga obiect in ganta
-	ganta + string{ "pahar" };
-	for (auto o : ganta) {//itereaza obiectele din geanta
-		cout << o << "\n";
+	Builder b{ 1 };
+	Wiskey w1 = b.addFlavour("persica").build();
+	b.addIce().addIce();
+	Wiskey w2 = b.addFlavour("gin").build();
+
+	w1 >> cout;
+	for (auto& f : w1) {
+		cout << f << ", ";
 	}
+	cout << "\n";
+	w2 >> cout;
+
+	for (auto& f : w2) {
+		cout << f << ", ";
+	}
+	cout << "\n";
 }
+
