@@ -1,5 +1,7 @@
-import factory.ExpressionFactory;
-import parser.ExpressionParser;
+package lab1;
+
+import lab1.factory.ExpressionFactory;
+import lab1.parser.ExpressionParser;
 import model.Complex;
 
 import java.util.Scanner;
@@ -10,7 +12,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System. in);
         String input = scanner.nextLine();
-
+        // ex:
+        // + +4+2i -3+1i -4-5i
         ExpressionParser expressionParser = new ExpressionParser(input);
         try {
             Complex result = expressionParser.getResult();

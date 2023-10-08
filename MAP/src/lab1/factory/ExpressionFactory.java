@@ -1,4 +1,4 @@
-package factory;
+package lab1.factory;
 
 import model.Complex;
 import model.Operation;
