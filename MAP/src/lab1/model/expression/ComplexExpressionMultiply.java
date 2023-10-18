@@ -1,7 +1,8 @@
-package model.expression;
+package lab1.model.expression;
 
-import model.Complex;
-import model.Operation;
+
+import lab1.model.Complex;
+import lab1.model.Operation;
 
 import java.util.ArrayList;
 

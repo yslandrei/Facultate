@@ -1,4 +1,7 @@
-package model;
+package lab1.model;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Complex {
 
@@ -46,8 +49,25 @@ public class Complex {
         return result;
     }
 
+    public static Complex fromString(String complexInput) {
+        Pattern p = Pattern.compile("-?[0-9]+");
+        Matcher m = p.matcher(complexInput);
+        String real = "0";
+        String imag = "0";
+        if(m.find()){
+            real = m.group(0);
+            if(m.find()){
+                imag = m.group(0);
+            }
+        }
+        Float realNum = Float.parseFloat(real);
+        Float imagNum = Float.parseFloat(imag);
+
+        return new Complex(realNum, imagNum);
+    }
+
     @Override
     public String toString() {
-        return "%s + %si".formatted(this.re, this.im);
+        return String.format("%.2f%s%.2fi", re, (im >= 0 ? "+" : ""), im);
     }
 }

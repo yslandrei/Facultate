@@ -1,8 +1,8 @@
 package lab1.factory;
 
-import model.Complex;
-import model.Operation;
-import model.expression.*;
+import lab1.model.Complex;
+import lab1.model.Operation;
+import lab1.model.expression.*;
 
 import java.util.ArrayList;
 

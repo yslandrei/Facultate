@@ -1,8 +1,8 @@
 package lab1;
 
 import lab1.factory.ExpressionFactory;
+import lab1.model.Complex;
 import lab1.parser.ExpressionParser;
-import model.Complex;
 
 import java.util.Scanner;
 

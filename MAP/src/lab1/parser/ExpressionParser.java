@@ -1,11 +1,15 @@
 package lab1.parser;
 
+
 import lab1.factory.ExpressionFactory;
-import model.Complex;
-import model.expression.ComplexExpression;
+import lab1.model.Complex;
+import lab1.model.expression.ComplexExpression;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.StringTokenizer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ExpressionParser {
 
@@ -18,6 +22,14 @@ public class ExpressionParser {
     }
 
     public boolean isValid() {
+        ArrayList<String> signs = new ArrayList<>();
+        String[] inputs = input.split(" ");
+
+        for (int i = 1; i < inputs.length; i += 2) {
+            if (i > 1 && ! inputs[i - 2].equals(inputs[i]))
+                return false;
+        }
+
         return true;
     }
 
@@ -25,29 +37,16 @@ public class ExpressionParser {
         if (! isValid())
             throw new Exception("Expression not Valid");
 
-        StringTokenizer numbers = new StringTokenizer(input, " \n");
-        String op = numbers.nextToken();
-
         ArrayList<Complex> args = new ArrayList<>();
-        while(numbers.hasMoreTokens()) {
-            String number = numbers.nextToken();
-            Float re = 0F, im = 0F;
 
-            if (number.charAt(0) == '+')
-                re = Float.parseFloat(number.substring(1, 2));
-            else if (number.charAt(0) == '-')
-                re = - Float.parseFloat(number.substring(1, 2));
-
-            if (number.charAt(2) == '+')
-                im = Float.parseFloat(number.substring(3, 4));
-            else if (number.charAt(2) == '-')
-                im = - Float.parseFloat(number.substring(3, 4));
-
-            args.add(new Complex(re, im));
-        }
+        Arrays.stream(input.split(" ")).forEach(i -> {
+            if (! i.equals("+")) {
+                args.add(Complex.fromString(i));
+            }
+        });
 
         ComplexExpression complexExpression = expressionFactory
-                .createExpression(op, args);
+                .createExpression("+", args);
 
         return complexExpression.execute();
     }
