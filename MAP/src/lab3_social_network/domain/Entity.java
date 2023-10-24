@@ -6,16 +6,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public abstract class Entity<ID> implements Serializable {
+public class Entity<ID> implements Serializable {
 
     protected ID id;
 
     public Entity(ID id) {
         this.id = id;
-    }
-
-    public Entity() {
-
     }
 
     public ID getId() {
@@ -42,7 +38,5 @@ public abstract class Entity<ID> implements Serializable {
     public String toString() {
         return id.toString();
     }
-
-    public abstract void fromString(String input);
 
 }

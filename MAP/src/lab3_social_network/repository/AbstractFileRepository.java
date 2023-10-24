@@ -5,14 +5,15 @@ import lab3_social_network.domain.Entity;
 import lab3_social_network.domain.validators.Validator;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.List;
 
 
-public class EntityFileRepository<ID, E extends Entity<ID>> extends InMemoryRepository<ID,E> {
+public abstract class AbstractFileRepository<ID, E extends Entity<ID>> extends InMemoryRepository<ID,E> {
 
     String fileName;
 
-    public EntityFileRepository(String fileName, Validator<E> validator) {
+    public AbstractFileRepository(String fileName, Validator<E> validator) {
         super(validator);
         this.fileName = fileName;
         readData();
@@ -33,8 +34,7 @@ public class EntityFileRepository<ID, E extends Entity<ID>> extends InMemoryRepo
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String newLine;
             while ((newLine = reader.readLine()) != null) {
-                System.out.println(newLine);
-                E entity = extractEntity(data);
+                E entity = extractEntity(Arrays.asList(newLine.split(",")));
                 super.save(entity);
             }
 
