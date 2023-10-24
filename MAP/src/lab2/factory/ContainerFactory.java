@@ -5,10 +5,21 @@ import lab2.model.container.Container;
 import lab2.model.container.QueContainer;
 import lab2.model.container.StackContainer;
 
-public class ContainerFactory implements Factory{
+public class ContainerFactory implements Factory {
+
+    private static ContainerFactory instance = null;
+
+    private ContainerFactory() {
+
+    }
 
     public static ContainerFactory getInstance() {
-        return new ContainerFactory();
+        if (instance == null) {
+            instance = new ContainerFactory();
+            return instance;
+        }
+
+        return instance;
     }
 
     @Override
