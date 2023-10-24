@@ -10,7 +10,7 @@ import java.util.List;
 
 public class FriendshipFileRepository extends AbstractFileRepository<Tuple<Long, Long>, Friendship> {
 
-    public FriendshipFileRepository(String fileName, Validator<Friendship> validator) {
+    public FriendshipFileRepository(String fileName, Validator<Tuple<Long, Long>, Friendship> validator) {
         super(fileName, validator);
     }
 

@@ -9,15 +9,15 @@ public class User extends Entity<Long> {
 
     private String lastName;
 
-    private String user;
+    private String username;
 
     private String password;
 
-    public User(Long id, String firstName, String lastName, String user, String password) {
+    public User(Long id, String firstName, String lastName, String username, String password) {
         super(id);
         this.firstName = firstName;
         this.lastName = lastName;
-        this.user = user;
+        this.username = username;
         this.password = password;
     }
 
@@ -37,12 +37,12 @@ public class User extends Entity<Long> {
         this.lastName = lastName;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -59,7 +59,7 @@ public class User extends Entity<Long> {
                 "id=" + id + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", user='" + user + '\'' +
+                ", user='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
@@ -70,12 +70,12 @@ public class User extends Entity<Long> {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         User that = (User) o;
-        return Objects.equals(firstName, that.firstName) && Objects.equals(lastName, that.lastName) && Objects.equals(user, that.user) && Objects.equals(password, that.password);
+        return Objects.equals(firstName, that.firstName) && Objects.equals(lastName, that.lastName) && Objects.equals(username, that.username) && Objects.equals(password, that.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), firstName, lastName, user, password);
+        return Objects.hash(super.hashCode(), firstName, lastName, username, password);
     }
 
 }

@@ -32,6 +32,7 @@ public class GraphAlgorithmsExecuter<T> {
     }
 
     public void computeComponents() {
+        components.clear();
         Map<T, Boolean> visited = new HashMap<>();
         for (T vertex : graph.getAllVertices()) {
             if (!visited.getOrDefault(vertex, false)) {

@@ -7,13 +7,14 @@ import lab3_social_network.domain.validators.Validator;
 import java.io.*;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 
 public abstract class AbstractFileRepository<ID, E extends Entity<ID>> extends InMemoryRepository<ID,E> {
 
     String fileName;
 
-    public AbstractFileRepository(String fileName, Validator<E> validator) {
+    public AbstractFileRepository(String fileName, Validator<ID, E> validator) {
         super(validator);
         this.fileName = fileName;
         readData();
@@ -45,7 +46,7 @@ public abstract class AbstractFileRepository<ID, E extends Entity<ID>> extends I
         }
     }
 
-    protected void writeData() {
+    private void writeData() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             super.findAll().forEach(entity -> {
                 try {
@@ -65,27 +66,27 @@ public abstract class AbstractFileRepository<ID, E extends Entity<ID>> extends I
     }
 
     @Override
-    public E save(E entity) {
-        E result = super.save(entity);
-        if (result == null)
+    public Optional<E> save(E entity) {
+        Optional<E> result = super.save(entity);
+        if (result.isEmpty())
             writeData();
 
         return result;
     }
 
     @Override
-    public E delete(ID id) {
-        E result = super.delete(id);
-        if (result != null)
+    public Optional<E> delete(ID id) {
+        Optional<E> result = super.delete(id);
+        if (result.isPresent())
             writeData();
 
         return result;
     }
 
     @Override
-    public E update(E entity) {
-        E result = super.update(entity);
-        if (result == null)
+    public Optional<E> update(E entity) {
+        Optional<E> result = super.update(entity);
+        if (result.isEmpty())
             writeData();
 
         return result;

@@ -29,27 +29,28 @@ public class UserService {
         this.friendshipFileRepository = friendshipFileRepository;
         this.communityGraph = new BidirectedGraph<>();
         this.graphAlgorithmsExecuter = new GraphAlgorithmsExecuter<>(communityGraph);
+
         userFileRepository.findAll().forEach(communityGraph::addVertex);
         friendshipFileRepository.findAll().forEach(friendship -> {
-            User user1 = userFileRepository.findOne(friendship.getId().getLeft());
-            User user2 = userFileRepository.findOne(friendship.getId().getRight());
+            User user1 = userFileRepository.findOne(friendship.getId().getLeft())
+                    .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getLeft()));
+            User user2 = userFileRepository.findOne(friendship.getId().getRight())
+                    .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getRight()));
             communityGraph.addEdge(user1, user2);
         });
     }
 
     public void addUser(User user) {
-        if (userFileRepository.save(user) != null)
+        if (userFileRepository.save(user).isPresent())
             throw new EntityAlreadyExistsException(user);
 
         communityGraph.addVertex(user);
     }
 
     public void removeUser(Long id) {
-        User deletedUser = userFileRepository.delete(id);
-        if (deletedUser == null)
-            throw new EntityDoesNotExistException(id);
+        User deletedUser = userFileRepository.delete(id)
+                .orElseThrow(() -> new EntityDoesNotExistException(id));
 
-        communityGraph.removeVertex(deletedUser);
         friendshipFileRepository.findAll().forEach(friendship -> {
             if (Objects.equals(friendship.getId().getLeft(), id)) {
                 friendshipFileRepository.delete(new Tuple<>(friendship.getId().getLeft(), id));
@@ -58,10 +59,12 @@ public class UserService {
                 friendshipFileRepository.delete(new Tuple<>(id, friendship.getId().getRight()));
             }
         });
+
+        communityGraph.removeVertex(deletedUser);
     }
 
     public void updateUser(User user) {
-        if (userFileRepository.update(user) != null)
+        if (userFileRepository.update(user).isPresent())
             throw new EntityDoesNotExistException(user.getId());
     }
 
@@ -76,45 +79,45 @@ public class UserService {
     }
 
     public void addFriendToUser(Long userId, Long friendId) {
-        User user = userFileRepository.findOne(userId);
-        if (user == null)
-            throw new EntityDoesNotExistException(userId);
-        User friend = userFileRepository.findOne(friendId);
-        if (friend == null)
-            throw new EntityDoesNotExistException(friendId);
+        User user = userFileRepository.findOne(userId)
+                .orElseThrow(() -> new EntityDoesNotExistException(userId));
+        User friend = userFileRepository.findOne(friendId)
+                .orElseThrow(() -> new EntityDoesNotExistException(friendId));
+
+        Friendship newFriendship = new Friendship(new Tuple<>(userId, friendId));
+        if (friendshipFileRepository.save(newFriendship).isPresent())
+            throw new EntityAlreadyExistsException(newFriendship);
 
         communityGraph.addEdge(user, friend);
-        Friendship newFriendship = new Friendship(new Tuple<>(userId, friendId));
-        if (friendshipFileRepository.save(newFriendship) != null)
-            throw new EntityAlreadyExistsException(newFriendship);
     }
 
     public void removeFriendFromUser(Long userId, Long friendId) {
-        User user = userFileRepository.findOne(userId);
-        if (user == null)
-            throw new EntityDoesNotExistException(userId);
-        User friend = userFileRepository.findOne(friendId);
-        if (friend == null)
-            throw new EntityDoesNotExistException(friendId);
+        User user = userFileRepository.findOne(userId)
+                .orElseThrow(() -> new EntityDoesNotExistException(userId));
+        User friend = userFileRepository.findOne(friendId)
+                .orElseThrow(() -> new EntityDoesNotExistException(friendId));
 
-        communityGraph.removeEdge(user, friend);
-        if (friendshipFileRepository.delete(new Tuple<>(userId, friendId)) == null &&
-                friendshipFileRepository.delete(new Tuple<>(friendId, userId)) == null) {
+        if (friendshipFileRepository.delete(new Tuple<>(userId, friendId)).isEmpty() &&
+                friendshipFileRepository.delete(new Tuple<>(friendId, userId)).isEmpty()) {
             throw new EntityDoesNotExistException(new Friendship(new Tuple<>(userId, friendId)));
         }
+
+        communityGraph.removeEdge(user, friend);
     }
 
     public List<User> getFriendsOfUser(User user) {
-        if (userFileRepository.findOne(user.getId()) == null)
-            throw new EntityDoesNotExistException(user);
+        userFileRepository.findOne(user.getId())
+                .orElseThrow(() -> new EntityDoesNotExistException(user));
 
         List<User> friends = new ArrayList<>();
         friendshipFileRepository.findAll().forEach(friendship -> {
             if (Objects.equals(friendship.getId().getLeft(), user.getId())) {
-                friends.add(userFileRepository.findOne(friendship.getId().getRight()));
+                friends.add(userFileRepository.findOne(friendship.getId().getRight())
+                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getRight())));
             }
             else if (Objects.equals(friendship.getId().getRight(), user.getId())) {
-                friends.add(userFileRepository.findOne(friendship.getId().getLeft()));
+                friends.add(userFileRepository.findOne(friendship.getId().getLeft())
+                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getLeft())));
             }
         });
         return friends;

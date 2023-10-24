@@ -10,7 +10,7 @@ import java.util.List;
 
 public class UserFileRepository extends AbstractFileRepository<Long, User> {
 
-    public UserFileRepository(String fileName, Validator<User> validator) {
+    public UserFileRepository(String fileName, Validator<Long, User> validator) {
         super(fileName, validator);
     }
 
@@ -28,7 +28,7 @@ public class UserFileRepository extends AbstractFileRepository<Long, User> {
         return entity.getId() + "," +
                 entity.getFirstName() + "," +
                 entity.getLastName() + "," +
-                entity.getUser() + "," +
+                entity.getUsername() + "," +
                 entity.getPassword();
     }
 }

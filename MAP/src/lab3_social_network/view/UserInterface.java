@@ -12,9 +12,9 @@ import java.util.List;
 
 public class UserInterface {
 
-    private UserService userService;
+    private final UserService userService;
 
-    private BufferedReader reader;
+    private final BufferedReader reader;
 
     public UserInterface(UserService userService) {
         this.userService = userService;
@@ -35,17 +35,20 @@ public class UserInterface {
     }
 
     private void printCommands() {
-        System.out.println("Add User                            - addUsr [id],[fName],[lName],[user],[pass]");
-        System.out.println("Remove User                         - popUsr [id]");
-        System.out.println("Add Friendship                      - addFrd [id1],[id2]");
-        System.out.println("Remove Friendship                   - popFrd [id1],[id2]");
-        System.out.println("Print All Users and Friends         - wrtUsr");
-        System.out.println("Number of Communities               - nofCom");
-        System.out.println("Largest Communities                 - larCom");
+        System.out.println("Add User                            - addUser [id],[fName],[lName],[user],[pass]");
+        System.out.println("Remove User                         - delUser [id]");
+        System.out.println("Add Friendship                      - addFriendship [id1],[id2]");
+        System.out.println("Remove Friendship                   - delFriendship [id1],[id2]");
+        System.out.println("Print All Users and Friends         - printUsers");
+        System.out.println("Number of Communities               - numbOfCommunities");
+        System.out.println("Largest Communities                 - largestCommunity");
+        System.out.println("Quit                                - quit");
     }
 
     public void run() {
-        while (true) {
+        boolean active = true;
+
+        while (active) {
             printCommands();
             System.out.println();
 
@@ -62,31 +65,34 @@ public class UserInterface {
 
             try {
                 switch (inputCommand) {
-                    case "addUsr" -> {
+                    case "addUser" -> {
                         User newUser = userService.extractUser(inputArgs);
                         userService.addUser(newUser);
                     }
-                    case "addusr" -> {
+                    case "popUser" -> {
                         userService.removeUser(Long.parseLong(inputArgs.get(0)));
                     }
-                    case "addFrd" -> {
+                    case "addFriendship" -> {
                         userService.addFriendToUser(Long.parseLong(inputArgs.get(0)),
                                 Long.parseLong(inputArgs.get(1)));
                     }
-                    case "popFrd" -> {
+                    case "popFriendship" -> {
                         userService.removeFriendFromUser(Long.parseLong(inputArgs.get(0)),
                                 Long.parseLong(inputArgs.get(1)));
                     }
-                    case "nofCom" -> {
+                    case "numOfCommunities" -> {
                         System.out.println("There are " + userService.getNumberOfCommunities() + " communities\n");
                     }
-                    case "larCom" -> {
+                    case "largestCommunity" -> {
                         System.out.println("The largest community is comprised of the users: ");
                         userService.getLargestCommunity().forEach(System.out::println);
                         System.out.println();
                     }
-                    case "wrtUsr" -> {
+                    case "printUsers" -> {
                         printAllUsersWithFriends();
+                    }
+                    case "quit" -> {
+                         active = false;
                     }
                 }
 
