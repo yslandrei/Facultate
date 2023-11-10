@@ -32,14 +32,14 @@ int main() {
 
   printf("character = ");
   scanf("%c", &ch);
-  printf("string = ");
+  printf("string = ");    printf("%hu \n", posList[i]);
   scanf("%s", string);
 
   lenString = htons(strlen(string));
   
   send(c, &ch, sizeof(ch), 0);
   send(c, &lenString, sizeof(lenString), 0);
-  send(c, string, sizeof(uint8_t) * strlen(string), 0);
+  send(c, string, sizeof(string) * strlen(string), 0);
   
   recv(c, &lenPosList, sizeof(lenPosList), MSG_WAITALL);
   lenPosList = ntohs(lenPosList);
@@ -48,6 +48,7 @@ int main() {
 
   printf("Aparitile sunt: ");
   for (int i = 0; i < lenPosList; i ++) { 
+    printf("%hu \n", posList[i]);
     posList[i] = ntohs(posList[i]);
     printf("%hu \n", posList[i]);
   }

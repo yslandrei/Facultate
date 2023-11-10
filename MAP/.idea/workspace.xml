@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9bdfd20d-8001-4f3e-97ee-f0b598a5898c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/factory/ExpressionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/Complex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/expression/ComplexExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/expression/ComplexExpressionAddition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/expression/ComplexExpressionDivide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/expression/ComplexExpressionMultiply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/model/expression/ComplexExpressionSubtract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab1/parser/ExpressionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/decorator/AbstractTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/decorator/DelayTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/decorator/PrinterTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/decorator/StrategyTaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/decorator/TaskRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/factory/ContainerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/factory/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/container/AbstractContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/container/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/container/QueContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/container/StackContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/sorter/AbstractSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/sorter/BubbleSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/sorter/QuickSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/task/MessageTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/task/SortingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab2/model/task/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/Friendship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/exceptions/EntityAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/exceptions/EntityDoesNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/exceptions/ValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/graph/BidirectedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/graph/GraphAlgorithmsExecuter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/validators/FriendshipValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/validators/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/domain/validators/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/database/AbstractDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/database/FriendshipDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/database/UserDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/file/AbstractFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/file/FriendshipFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/file/UserFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/repository/in_memory/InMemoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab3_social_network/view/UserInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MAP_gradle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB/lab1/ebay_db_manual_create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../DB/lab1/ebay_db_manual_create_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/friendships.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/factory/ExpressionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/Complex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/expression/ComplexExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/expression/ComplexExpressionAddition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/expression/ComplexExpressionDivide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/expression/ComplexExpressionMultiply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/model/expression/ComplexExpressionSubtract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab1/parser/ExpressionParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/decorator/AbstractTaskRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/decorator/DelayTaskRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/decorator/PrinterTaskRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/decorator/StrategyTaskRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/decorator/TaskRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/factory/ContainerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/factory/Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/factory/Strategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/container/AbstractContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/container/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/container/QueContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/container/StackContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/sorter/AbstractSorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/sorter/BubbleSorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/sorter/QuickSorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/task/MessageTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/task/SortingTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab2/model/task/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/Friendship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/Tuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/exceptions/EntityAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/exceptions/EntityDoesNotExistException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/exceptions/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/graph/BidirectedGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/graph/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/graph/GraphAlgorithmsExecuter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/validators/FriendshipValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/validators/UserValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/domain/validators/Validator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/repository/AbstractFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/repository/FriendshipFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/repository/InMemoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/repository/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/repository/UserFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab3_social_network/view/UserInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../RC/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RC/client.c" beforeDir="false" afterPath="$PROJECT_DIR$/../RC/client.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MAP" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MAP" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Xwq6JSzgglEmrb4Ceb0NB2kjoH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab3_social_network.Main" />
+      <module name="MAP.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab3_social_network.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bdfd20d-8001-4f3e-97ee-f0b598a5898c" name="Changes" comment="" />
+      <created>1699550314184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699550314184</updated>
+      <workItem from="1699550315515" duration="596000" />
+      <workItem from="1699620934403" duration="2671000" />
+      <workItem from="1699623621422" duration="632000" />
+      <workItem from="1699624478737" duration="873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

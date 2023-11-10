@@ -6,6 +6,7 @@ create table address (
 	id bigint identity,
 	constraint pk_address primary key(id),
 	country varchar(50) not null,
+	city varchar(50) not null,
 	street varchar(50) not null,
 	postal_code varchar(50) not null,
 )
@@ -37,6 +38,7 @@ create table product (
 	constraint pk_product primary key(id),
 	name varchar(50) not null,
 	created_date datetime not null,
+	price money not null,
 	seller_id bigint foreign key references seller(id),
 	category_id bigint foreign key references category(id),
 )
