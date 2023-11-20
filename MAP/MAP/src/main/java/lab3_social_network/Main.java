@@ -1,13 +1,11 @@
 package lab3_social_network;
 
-import lab3_social_network.domain.Friendship;
 import lab3_social_network.domain.validators.FriendshipValidator;
 import lab3_social_network.domain.validators.UserValidator;
 import lab3_social_network.repository.database.FriendshipDatabaseRepository;
-import lab3_social_network.repository.file.FriendshipFileRepository;
 import lab3_social_network.repository.database.UserDatabaseRepository;
 import lab3_social_network.service.UserService;
-import lab3_social_network.view.UserInterface;
+import lab3_social_network.view.ConsoleUserInterface;
 
 public class Main {
 
@@ -26,7 +24,7 @@ public class Main {
 
         UserService userService = new UserService(userDatabaseRepository, friendshipDatabaseRepository);
 
-        UserInterface userInterface = new UserInterface(userService);
+        ConsoleUserInterface userInterface = new ConsoleUserInterface(userService);
         userInterface.run();
     }
 }

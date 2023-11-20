@@ -11,13 +11,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UserInterface {
+public class ConsoleUserInterface {
 
     private final UserService userService;
 
     private final BufferedReader reader;
 
-    public UserInterface(UserService userService) {
+    public ConsoleUserInterface(UserService userService) {
         this.userService = userService;
         this.reader = new BufferedReader(
                 new InputStreamReader(System.in));;
