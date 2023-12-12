@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class Friendship extends Entity<Tuple<Long,Long>> {
 
-    LocalDateTime createdDate;
+    private LocalDateTime createdDate;
 
     public Friendship(Tuple<Long, Long> id) {
         super(id);
@@ -22,10 +22,6 @@ public class Friendship extends Entity<Tuple<Long,Long>> {
         this.createdDate = createdDate;
     }
 
-    /**
-     *
-     * @return the date when the friendship was created
-     */
     public LocalDateTime getCreatedDate() {
         return createdDate;
     }

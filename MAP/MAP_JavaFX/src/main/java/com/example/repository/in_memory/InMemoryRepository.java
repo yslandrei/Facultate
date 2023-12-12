@@ -25,7 +25,6 @@ public class InMemoryRepository<ID, E extends Entity<ID>> implements Repository<
         if (id == null)
             throw new IllegalArgumentException("id must be not null");
 
-        validator.validateId(id);
         return Optional.ofNullable(entities.get(id));
     }
 
@@ -52,7 +51,6 @@ public class InMemoryRepository<ID, E extends Entity<ID>> implements Repository<
         if (id == null)
             throw new IllegalArgumentException("id must not be null");
 
-        validator.validateId(id);
         if (entities.get(id) == null) {
             return Optional.empty();
         }

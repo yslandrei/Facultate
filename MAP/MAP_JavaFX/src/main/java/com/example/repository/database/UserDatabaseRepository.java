@@ -29,11 +29,10 @@ public class UserDatabaseRepository extends AbstractDatabaseRepository<Long, Use
 
     @Override
     protected void setSaveParameters(PreparedStatement statement, User entity) throws SQLException {
-        statement.setInt(1, toIntExact(entity.getId()));
-        statement.setString(2, entity.getFirstName());
-        statement.setString(3, entity.getLastName());
-        statement.setString(4, entity.getUsername());
-        statement.setString(5, entity.getPassword());
+        statement.setString(1, entity.getFirstName());
+        statement.setString(2, entity.getLastName());
+        statement.setString(3, entity.getUsername());
+        statement.setString(4, entity.getPassword());
     }
 
     @Override
@@ -62,7 +61,7 @@ public class UserDatabaseRepository extends AbstractDatabaseRepository<Long, Use
 
     @Override
     protected String getSaveQuery() {
-        return "insert into users (id, first_name, last_name, username, password) values (?, ?, ?, ?, ?)";
+        return "insert into users (first_name, last_name, username, password) values (?, ?, ?, ?)";
     }
 
     @Override

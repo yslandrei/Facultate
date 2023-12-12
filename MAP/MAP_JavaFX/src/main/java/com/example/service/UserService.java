@@ -1,84 +1,91 @@
 package com.example.service;
 
-import com.example.domain.Friendship;
-import com.example.domain.Tuple;
-import com.example.domain.User;
+import com.example.domain.*;
 import com.example.domain.exceptions.EntityAlreadyExistsException;
 import com.example.domain.exceptions.EntityDoesNotExistException;
-import com.example.domain.graph.BidirectedGraph;
-import com.example.domain.graph.GraphAlgorithmsExecuter;
-import com.example.repository.file.FriendshipFileRepository;
 import com.example.repository.Repository;
-import com.example.utils.events.ChangeEventType;
-import com.example.utils.events.Event;
-import com.example.utils.events.UserChangeEvent;
+import com.example.repository.database.FriendshipDatabaseRepository;
+import com.example.repository.database.UserDatabaseRepository;
 import com.example.utils.observer.Observable;
 import com.example.utils.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicReference;
 
-public class UserService implements Observable<UserChangeEvent> {
+public class UserService implements Observable {
 
-    private final Repository<Long, User> userRepository;
+    private final UserDatabaseRepository userRepository;
 
-    private final Repository<Tuple<Long, Long>, Friendship> friendshipFileRepository;
+    private final FriendshipDatabaseRepository friendshipRepository;
 
-    private final BidirectedGraph<User> communityGraph;
+    private List<Observer> observers = new ArrayList<>();
 
-    private final GraphAlgorithmsExecuter<User> graphAlgorithmsExecuter;
-
-    private List<Observer<UserChangeEvent>> observers = new ArrayList<>();
-
-    public UserService(Repository<Long, User> userRepository, Repository<Tuple<Long, Long>, Friendship> friendshipFileRepository) {
+    public UserService(UserDatabaseRepository userRepository, FriendshipDatabaseRepository friendshipRepository) {
         this.userRepository = userRepository;
-        this.friendshipFileRepository = friendshipFileRepository;
-        this.communityGraph = new BidirectedGraph<>();
-        this.graphAlgorithmsExecuter = new GraphAlgorithmsExecuter<>(communityGraph);
-
-        userRepository.findAll().forEach(communityGraph::addVertex);
-        friendshipFileRepository.findAll().forEach(friendship -> {
-            User user1 = userRepository.findOne(friendship.getId().getLeft())
-                    .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getLeft()));
-            User user2 = userRepository.findOne(friendship.getId().getRight())
-                    .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getRight()));
-            communityGraph.addEdge(user1, user2);
-        });
+        this.friendshipRepository = friendshipRepository;
     }
 
-    public void addUser(User user) {
+    public void registerUser(User user) {
         if (userRepository.save(user).isPresent())
             throw new EntityAlreadyExistsException(user);
 
-        communityGraph.addVertex(user);
+    }
 
-        notifyObservers(new UserChangeEvent(ChangeEventType.ADD, user));
+    public User checkUser(String username, String password) {
+        AtomicReference<Boolean> found = new AtomicReference<>(false);
+        AtomicReference<User> foundUser = new AtomicReference<>(null);
+        userRepository.findAll().forEach(user -> {
+            if (Objects.equals(user.getUsername(), username) && Objects.equals(user.getPassword(), password)) {
+                found.set(true);
+                foundUser.set(user);
+            }
+        }); 
+
+        if (!found.get())
+            throw new RuntimeException("Username or password incorrect!");
+
+        return foundUser.get();
+    }
+
+    public User getUserByUsername(String username) {
+        AtomicReference<Boolean> found = new AtomicReference<>(false);
+        AtomicReference<User> foundUser = new AtomicReference<>(null);
+        userRepository.findAll().forEach(user -> {
+            if (Objects.equals(user.getUsername(), username)) {
+                found.set(true);
+                foundUser.set(user);
+            }
+        });
+
+        if (!found.get())
+            throw new RuntimeException("No user with this username!");
+
+        return foundUser.get();
     }
 
     public void removeUser(Long id) {
         User deletedUser = userRepository.delete(id)
                 .orElseThrow(() -> new EntityDoesNotExistException(id));
 
-        friendshipFileRepository.findAll().forEach(friendship -> {
+        friendshipRepository.findAll().forEach(friendship -> {
             if (Objects.equals(friendship.getId().getLeft(), id)) {
-                friendshipFileRepository.delete(friendship.getId());
+                friendshipRepository.delete(friendship.getId());
             }
             else if (Objects.equals(friendship.getId().getRight(), id)) {
-                friendshipFileRepository.delete(friendship.getId());
+                friendshipRepository.delete(friendship.getId());
             }
         });
 
-        communityGraph.removeVertex(deletedUser);
-
-        notifyObservers(new UserChangeEvent(ChangeEventType.DELETE, deletedUser));
+        notifyObservers();
     }
 
     public void updateUser(User user) {
         if (userRepository.update(user).isPresent())
             throw new EntityDoesNotExistException(user.getId());
 
-        notifyObservers(new UserChangeEvent(ChangeEventType.UPDATE, user));
+        notifyObservers();
     }
 
     public List<User> getAllUsers() {
@@ -87,101 +94,23 @@ public class UserService implements Observable<UserChangeEvent> {
         return users;
     }
 
-    public void addFriendToUser(Long userId, Long friendId) {
-        User user = userRepository.findOne(userId)
-                .orElseThrow(() -> new EntityDoesNotExistException(userId));
-        User friend = userRepository.findOne(friendId)
-                .orElseThrow(() -> new EntityDoesNotExistException(friendId));
-
-        Friendship newFriendship = new Friendship(new Tuple<>(userId, friendId));
-        if (friendshipFileRepository.save(newFriendship).isPresent())
-            throw new EntityAlreadyExistsException(newFriendship);
-
-        communityGraph.addEdge(user, friend);
-    }
-
-    public void removeFriendFromUser(Long userId, Long friendId) {
-        User user = userRepository.findOne(userId)
-                .orElseThrow(() -> new EntityDoesNotExistException(userId));
-        User friend = userRepository.findOne(friendId)
-                .orElseThrow(() -> new EntityDoesNotExistException(friendId));
-
-        if (friendshipFileRepository.delete(new Tuple<>(userId, friendId)).isEmpty() &&
-                friendshipFileRepository.delete(new Tuple<>(friendId, userId)).isEmpty()) {
-            throw new EntityDoesNotExistException(new Friendship(new Tuple<>(userId, friendId)));
-        }
-
-        communityGraph.removeEdge(user, friend);
-    }
-
-    public List<User> getFriendsOfUser(Long id) {
-        userRepository.findOne(id)
+    public User getUserById(Long id) {
+        return userRepository.findOne(id)
                 .orElseThrow(() -> new EntityDoesNotExistException(id));
-
-        List<User> friends = new ArrayList<>();
-        friendshipFileRepository.findAll().forEach(friendship -> {
-            if (Objects.equals(friendship.getId().getLeft(), id)) {
-                friends.add(userRepository.findOne(friendship.getId().getRight())
-                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getRight())));
-            }
-            else if (Objects.equals(friendship.getId().getRight(), id)) {
-                friends.add(userRepository.findOne(friendship.getId().getLeft())
-                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getLeft())));
-            }
-        });
-        return friends;
-    }
-
-    public List<User> getFriendsOfUserFromMonth(Long id, Integer month) {
-        userRepository.findOne(id)
-                .orElseThrow(() -> new EntityDoesNotExistException(id));
-
-        List<User> friends = new ArrayList<>();
-        friendshipFileRepository.findAll().forEach(friendship -> {
-            if (Objects.equals(friendship.getId().getLeft(), id)
-                    && friendship.getCreatedDate().getMonth().getValue() == month) {
-                friends.add(userRepository.findOne(friendship.getId().getRight())
-                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getRight())));
-            }
-            else if (Objects.equals(friendship.getId().getRight(), id)
-                    && friendship.getCreatedDate().getMonth().getValue() == month) {
-                friends.add(userRepository.findOne(friendship.getId().getLeft())
-                        .orElseThrow(() -> new EntityDoesNotExistException(friendship.getId().getLeft())));
-            }
-        });
-        return friends;
-    }
-
-    public Integer getNumberOfCommunities() {
-        graphAlgorithmsExecuter.computeComponents();
-        return graphAlgorithmsExecuter.getComponentsSize();
-    }
-
-    public Tuple<List<User>, Integer>  getLargestCommunity() {
-        graphAlgorithmsExecuter.computeComponents();
-        Tuple<List<User>, Integer> largestCommunity = new Tuple<>(new ArrayList<>(), 0);
-        graphAlgorithmsExecuter.getAllComponents().forEach(component -> {
-            if (component.getRight() > largestCommunity.getRight()) {
-                largestCommunity.getLeft().clear();
-                largestCommunity.getLeft().addAll(component.getLeft());
-                largestCommunity.setRight(component.getRight());
-            }
-        });
-        return largestCommunity;
     }
 
     @Override
-    public void addObserver(Observer<UserChangeEvent> e) {
+    public void addObserver(Observer e) {
         observers.add(e);
     }
 
     @Override
-    public void removeObserver(Observer<UserChangeEvent> e) {
+    public void removeObserver(Observer e) {
         observers.remove(e);
     }
 
     @Override
-    public void notifyObservers(UserChangeEvent t) {
-        observers.forEach(x -> x.update(t));
+    public void notifyObservers() {
+        observers.forEach(x -> x.update());
     }
 }

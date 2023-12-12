@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.map_javafx;
 
 
 import javafx.scene.control.Alert;

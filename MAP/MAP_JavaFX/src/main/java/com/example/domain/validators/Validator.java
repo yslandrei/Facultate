@@ -7,6 +7,4 @@ public interface Validator<ID, T> {
 
     void validate(T entity) throws ValidationException;
 
-    void validateId(ID id) throws ValidationException;
-
 }

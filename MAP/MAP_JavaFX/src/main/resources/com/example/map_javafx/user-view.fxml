@@ -2,50 +2,91 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="520.0" prefWidth="667.0" stylesheets="" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_javafx.UserController">
-  <children>
-    <SplitPane orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <items>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-          <children>
-            <SplitPane prefHeight="329.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                  <children>
-                    <TableView fx:id="tableView" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="663.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                      <columns>
-                        <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="ID" />
-                        <TableColumn fx:id="tableColumnFirstName" prefWidth="75.0" text="Name" />
-                        <TableColumn fx:id="tableColumnLastName" prefWidth="75.0" text="Name" />
-                        <TableColumn fx:id="tableColumnUserName" prefWidth="75.0" text="User Name" />
-                      </columns>
-                      <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                      </columnResizePolicy>
-                    </TableView>
-                  </children>
-                </AnchorPane>
-              </items>
-            </SplitPane>
-          </children>
-        </AnchorPane>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="665.0">
-          <children>
-            <HBox prefHeight="14.0" prefWidth="655.0" spacing="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0">
-              <children>
-                <Button mnemonicParsing="false" onAction="#handleAddUser" text="Add" />
-                <Button mnemonicParsing="false" onAction="#handleDeleteUser" text="Delete" />
-                <Button mnemonicParsing="false" onAction="#handleUpdateUser" text="Update" />
-              </children>
-<!--              <padding>-->
-<!--                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />-->
-<!--              </padding>-->
-            </HBox>
-          </children>
-        </AnchorPane>
-      </items>
-    </SplitPane>
-  </children>
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.map_javafx.UserController">
+   <children>
+      <Label layoutX="220.0" text="Social Network">
+         <font>
+            <Font name="Arial Bold" size="50.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.781813627254509" layoutY="58.0" prefHeight="440.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="499.0">
+               <children>
+                  <TabPane layoutX="-2.0" layoutY="1.0" prefHeight="438.0" prefWidth="622.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Chat">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="listViewMessages" layoutX="14.0" layoutY="14.0" prefHeight="318.0" prefWidth="595.0" />
+                                    <Button fx:id="buttonSendMessage" layoutX="558.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleSendMessage" prefHeight="50.0" prefWidth="50.0" text="▶" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="buttonReplyMessage" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleReplyMessage" prefHeight="50.0" prefWidth="50.0" text="Reply" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font></Button>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Profile">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="379.0">
+               <children>
+                  <TextField fx:id="textFieldSendFriendRequest" layoutX="14.0" layoutY="29.0" prefHeight="26.0" prefWidth="118.0" promptText="Username" />
+                  <Label layoutX="15.0" layoutY="10.0" prefHeight="18.0" prefWidth="157.0" text="Send a Friend Request" />
+                  <Button fx:id="buttonSendFriendRequest" layoutX="136.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="0.0" prefWidth="24.0" text="▶">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Accordion layoutX="15.0" layoutY="66.0" prefHeight="300.0" prefWidth="148.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="241.0" prefWidth="148.0" text="Friends">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="144.0">
+                                 <children>
+                                    <ListView fx:id="listViewFriends" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
+                                    <Button fx:id="buttonChat" layoutX="101.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleChat" text="Chat" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="240.0" prefWidth="148.0" text="Friend Requests">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="listViewFriendRequests" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
+                                    <Button fx:id="buttonRejectFriendRequest" layoutX="5.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleRejectFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Reject" />
+                                    <Button fx:id="buttonAcceptFriendRequest" layoutX="76.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleAcceptFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Accept" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Label fx:id="labelUsername" layoutX="662.0" layoutY="19.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="644.0" layoutY="19.0" text="👨">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextArea fx:id="textAreaWriteMessage" layoutX="14.0" layoutY="436.0" prefHeight="50.0" prefWidth="480.0" promptText="Write a message" wrapText="true" />
+   </children>
 </AnchorPane>

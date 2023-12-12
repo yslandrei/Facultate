@@ -5,17 +5,15 @@ import com.example.domain.validators.Validator;
 import com.example.repository.Repository;
 
 import java.sql.*;
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> implements Repository<ID, E> {
 
-    private final String url;
+    protected final String url;
 
-    private final String username;
+    protected final String username;
 
-    private final String password;
+    protected final String password;
 
     private final Validator<ID, E> validator;
 
@@ -52,7 +50,7 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
 
     @Override
     public Iterable<E> findAll() {
-        Set<E> entities = new HashSet<>();
+        List<E> entities = new ArrayList<>();
 
         try (Connection connection = DriverManager.getConnection(url, username, password);
              PreparedStatement statement = connection.prepareStatement(getFindAllQuery());
@@ -75,6 +73,12 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
     @Override
     public Optional<E> save(E entity) {
         validator.validate(entity);
+        if (entity.getId() != null) {
+            Optional<E> entityOptional = findOne(entity.getId());
+            if (entityOptional.isPresent()) {
+                return entityOptional;
+            }
+        }
 
         try (Connection connection = DriverManager.getConnection(url, username, password);
              PreparedStatement statement = connection.prepareStatement(getSaveQuery())
@@ -89,7 +93,6 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
         return Optional.empty();
     }
 
@@ -144,5 +147,25 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
 
 
     protected abstract String getUpdateQuery();
+
+    public Iterable<E> executeQuery(String query) {
+        List<E> entities = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             PreparedStatement statement = connection.prepareStatement(query);
+             ResultSet resultSet = statement.executeQuery()
+        ) {
+
+            while (resultSet.next()) {
+                E entity = extractEntity(resultSet);
+                entities.add(entity);
+            }
+            return entities;
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 
 }
