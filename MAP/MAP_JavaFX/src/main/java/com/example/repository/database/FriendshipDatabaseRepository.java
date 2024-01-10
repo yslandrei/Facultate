@@ -78,4 +78,14 @@ public class FriendshipDatabaseRepository extends AbstractDatabaseRepository<Tup
     protected String getUpdateQuery() {
         return "update friendships set created_date = ? where user1_id = ? and user2_id = ?";
     }
+
+    @Override
+    protected String getCountQuery() {
+        return "select count(*) as count from friendships";
+    }
+
+    @Override
+    protected String getFindAllPagedQuery() {
+        return "select * from friendships limit ? offset ?";
+    }
 }

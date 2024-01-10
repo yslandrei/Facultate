@@ -31,6 +31,20 @@
                                        <font>
                                           <Font size="11.0" />
                                        </font></Button>
+                                    <TabPane layoutX="279.0" layoutY="-119.0" prefHeight="438.0" prefWidth="171.0" tabClosingPolicy="UNAVAILABLE">
+                                      <tabs>
+                                        <Tab text="Untitled Tab 1">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                          </content>
+                                        </Tab>
+                                        <Tab text="Untitled Tab 2">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
                                  </children></AnchorPane>
                         </content>
                       </Tab>
@@ -42,39 +56,57 @@
                     </tabs>
                   </TabPane>
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="379.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="340.0">
                <children>
-                  <TextField fx:id="textFieldSendFriendRequest" layoutX="14.0" layoutY="29.0" prefHeight="26.0" prefWidth="118.0" promptText="Username" />
-                  <Label layoutX="15.0" layoutY="10.0" prefHeight="18.0" prefWidth="157.0" text="Send a Friend Request" />
-                  <Button fx:id="buttonSendFriendRequest" layoutX="136.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="0.0" prefWidth="24.0" text="▶">
-                     <font>
-                        <Font size="11.0" />
-                     </font>
-                  </Button>
-                  <Accordion layoutX="15.0" layoutY="66.0" prefHeight="300.0" prefWidth="148.0">
-                    <panes>
-                      <TitledPane animated="false" prefHeight="241.0" prefWidth="148.0" text="Friends">
+                  <TabPane prefHeight="438.0" prefWidth="171.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Friends">
                         <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="144.0">
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="200.0">
                                  <children>
-                                    <ListView fx:id="listViewFriends" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
-                                    <Button fx:id="buttonChat" layoutX="101.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleChat" text="Chat" />
-                                 </children>
-                              </AnchorPane>
+                                    <Accordion layoutX="12.0" layoutY="20.0" prefHeight="300.0" prefWidth="148.0">
+                                      <panes>
+                                        <TitledPane animated="false" prefHeight="241.0" prefWidth="148.0" text="Friends">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="144.0">
+                                                   <children>
+                                                      <ListView fx:id="listViewFriends" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
+                                                      <Button fx:id="buttonChat" layoutX="101.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleChat" text="Chat" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" prefHeight="240.0" prefWidth="148.0" text="Friend Requests">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <ListView fx:id="listViewFriendRequests" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
+                                                      <Button fx:id="buttonRejectFriendRequest" layoutX="5.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleRejectFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Reject" />
+                                                      <Button fx:id="buttonAcceptFriendRequest" layoutX="76.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleAcceptFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Accept" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                      </panes>
+                                    </Accordion>
+                                 </children></AnchorPane>
                         </content>
-                      </TitledPane>
-                      <TitledPane animated="false" prefHeight="240.0" prefWidth="148.0" text="Friend Requests">
+                      </Tab>
+                      <Tab text="Add Friends">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ListView fx:id="listViewFriendRequests" layoutX="-1.0" layoutY="-1.0" prefHeight="210.0" prefWidth="148.0" />
-                                    <Button fx:id="buttonRejectFriendRequest" layoutX="5.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleRejectFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Reject" />
-                                    <Button fx:id="buttonAcceptFriendRequest" layoutX="76.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleAcceptFriendRequest" prefHeight="26.0" prefWidth="66.0" text="Accept" />
+                                    <TextField fx:id="textFieldSendFriendRequest" layoutX="13.0" layoutY="14.0" prefHeight="26.0" prefWidth="118.0" promptText="Username" />
+                                    <Button fx:id="buttonSendFriendRequest" layoutX="135.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="0.0" prefWidth="24.0" text="▶">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Button>
                                  </children></AnchorPane>
                         </content>
-                      </TitledPane>
-                    </panes>
-                  </Accordion>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
                </children></AnchorPane>
         </items>
       </SplitPane>
@@ -88,5 +120,6 @@
             <Font size="14.0" />
          </font></Label>
       <TextArea fx:id="textAreaWriteMessage" layoutX="14.0" layoutY="436.0" prefHeight="50.0" prefWidth="480.0" promptText="Write a message" wrapText="true" />
+      <Label layoutX="763.0" layoutY="-29.0" prefHeight="18.0" prefWidth="157.0" />
    </children>
 </AnchorPane>

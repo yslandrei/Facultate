@@ -4,6 +4,8 @@ package com.example.repository.in_memory;
 import com.example.domain.Entity;
 import com.example.domain.validators.Validator;
 import com.example.repository.Repository;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +33,11 @@ public class InMemoryRepository<ID, E extends Entity<ID>> implements Repository<
     @Override
     public Iterable<E> findAll() {
         return entities.values();
+    }
+
+    @Override
+    public Page<E> findAll(Pageable pageable) {
+        return null;
     }
 
     @Override

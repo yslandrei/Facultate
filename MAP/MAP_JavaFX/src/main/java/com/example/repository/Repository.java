@@ -3,6 +3,8 @@ package com.example.repository;
 
 import com.example.domain.Entity;
 import com.example.domain.exceptions.ValidationException;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 
 import java.util.Optional;
 
@@ -31,6 +33,11 @@ public interface Repository<ID, E extends Entity<ID>> {
      * @return all entities
      */
     Iterable<E> findAll();
+
+    /**
+     * @return all entities paged
+     */
+    Page<E> findAll(Pageable pageable);
 
     /**
      * @param entity entity must be not null

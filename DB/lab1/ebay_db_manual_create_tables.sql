@@ -16,7 +16,7 @@ create table buyer (
 	constraint pk_buyer primary key(id),
 	name varchar(50) not null,
 	email varchar(50) not null,
-	address_id bigint foreign key references address(id),
+	address_id bigint foreign key references address(id) ON DELETE CASCADE ON UPDATE CASCADE,
 )
 
 create table seller (
@@ -24,7 +24,7 @@ create table seller (
 	constraint pk_seller primary key(id),
 	name varchar(50) not null,
 	email varchar(50) not null,
-	address_id bigint foreign key references address(id),
+	address_id bigint foreign key references address(id) ON DELETE CASCADE ON UPDATE CASCADE,
 )
 
 create table category (
@@ -39,8 +39,8 @@ create table product (
 	name varchar(50) not null,
 	created_date datetime not null,
 	price money not null,
-	seller_id bigint foreign key references seller(id),
-	category_id bigint foreign key references category(id),
+	seller_id bigint foreign key references seller(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	category_id bigint foreign key references category(id) ON DELETE CASCADE ON UPDATE CASCADE,
 )
 
 create table transporter (
@@ -51,11 +51,11 @@ create table transporter (
 )
 
 create table sale (
-	buyer_id bigint foreign key references buyer(id),
+	buyer_id bigint foreign key references buyer(id) ON DELETE CASCADE ON UPDATE CASCADE,
 	product_id bigint foreign key references product(id),
 	transaction_date date not null,
 	constraint pk_sale primary key(buyer_id, product_id, transaction_date),
-	transporter_id bigint foreign key references transporter(id),
+	transporter_id bigint foreign key references transporter(id) ON DELETE CASCADE ON UPDATE CASCADE,
 )
 
 create table employee (
@@ -64,7 +64,7 @@ create table employee (
 	name varchar(50) not null,
 	salary money not null,
 	hours_per_day datetime not null,
-	address_id bigint foreign key references address(id),
+	address_id bigint foreign key references address(id) ON DELETE CASCADE ON UPDATE CASCADE,
 )
 
 create table department (

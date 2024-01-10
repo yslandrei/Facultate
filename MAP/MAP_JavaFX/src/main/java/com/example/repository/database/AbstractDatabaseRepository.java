@@ -3,6 +3,8 @@ package com.example.repository.database;
 import com.example.domain.Entity;
 import com.example.domain.validators.Validator;
 import com.example.repository.Repository;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 
 import java.sql.*;
 import java.util.*;
@@ -166,6 +168,48 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
             throw new RuntimeException(e);
         }
 
+    }
+
+    protected abstract String getCountQuery();
+
+    protected abstract String getFindAllPagedQuery();
+
+    @Override
+    public Page<E> findAll(Pageable pageable) {
+        int numberOfElements = 0;
+
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             PreparedStatement statement = connection.prepareStatement(getCountQuery());
+             ResultSet resultSet = statement.executeQuery()
+        ) {
+            resultSet.next();
+            numberOfElements = resultSet.getInt(1);
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        int limit = pageable.getPageSize();
+        int offset = pageable.getPageSize() * pageable.getPageNumber();
+        if(offset >= numberOfElements)
+            return new Page<>(new ArrayList<>(), numberOfElements);
+        List<E> entities = new ArrayList<>();
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            PreparedStatement statement = connection.prepareStatement(getFindAllPagedQuery());
+            statement.setInt(2, offset);
+            statement.setInt(1, limit);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                E entity = extractEntity(resultSet);
+                entities.add(entity);
+            }
+        }
+        catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+
+        return new Page<>(entities, numberOfElements);
     }
 
 }

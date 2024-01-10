@@ -4,6 +4,7 @@ import com.example.domain.*;
 import com.example.domain.validators.*;
 import com.example.repository.Repository;
 import com.example.repository.database.*;
+import com.example.repository.paging.Pageable;
 import com.example.service.FriendshipRequestService;
 import com.example.service.FriendshipService;
 import com.example.service.MessageService;

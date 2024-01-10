@@ -78,4 +78,15 @@ public class UserDatabaseRepository extends AbstractDatabaseRepository<Long, Use
     protected String getUpdateQuery() {
         return "update users set first_name = ?, last_name = ?, username = ?, password = ? where id = ?";
     }
+
+    @Override
+    protected String getCountQuery() {
+        return "select count(*) as count from users";
+    }
+
+    @Override
+    protected String getFindAllPagedQuery() {
+        return "select * from users limit ? offset ?";
+    }
+
 }

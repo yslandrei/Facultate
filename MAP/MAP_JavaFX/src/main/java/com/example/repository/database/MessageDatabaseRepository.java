@@ -86,4 +86,13 @@ public class MessageDatabaseRepository extends AbstractDatabaseRepository<Long, 
         return "update messages set from_id = ?, message = ?, date = ?, reply_id = ? where id = ?";
     }
 
+    @Override
+    protected String getCountQuery() {
+        return "select count(*) as count from messages";
+    }
+
+    @Override
+    protected String getFindAllPagedQuery() {
+        return "select * from messages limit ? offset ?";
+    }
 }

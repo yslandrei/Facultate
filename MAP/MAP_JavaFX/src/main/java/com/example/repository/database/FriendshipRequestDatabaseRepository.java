@@ -82,4 +82,14 @@ public class FriendshipRequestDatabaseRepository extends AbstractDatabaseReposit
     protected String getUpdateQuery() {
         return "update friendship_requests set created_date = ?, status = ? where user1_id = ? and user2_id = ?";
     }
+
+    @Override
+    protected String getCountQuery() {
+        return "select count(*) as count from friendship_requests";
+    }
+
+    @Override
+    protected String getFindAllPagedQuery() {
+        return "select * from friendship_requests limit ? offset ?";
+    }
 }
