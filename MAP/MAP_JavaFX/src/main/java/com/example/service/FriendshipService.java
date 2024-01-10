@@ -9,6 +9,8 @@ import com.example.domain.graph.GraphAlgorithmsExecuter;
 import com.example.repository.Repository;
 import com.example.repository.database.FriendshipDatabaseRepository;
 import com.example.repository.database.UserDatabaseRepository;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 import com.example.utils.observer.Observable;
 import com.example.utils.observer.Observer;
 
@@ -45,6 +47,16 @@ public class FriendshipService implements Observable {
             }
         });
         return friends;
+    }
+
+    public Page<User> getFriendsOfUserPaginated(Long id, Pageable pageable) {
+        userRepository.findOne(id)
+                .orElseThrow(() -> new EntityDoesNotExistException(id));
+
+        return userRepository.executeQueryPaginated("select * from users " +
+                        "where id in (select user1_id from friendships where user2_id = %d) ".formatted(id) +
+                        "or id in (select user2_id from friendships where user1_id = %d)".formatted(id),
+                pageable);
     }
 
     public List<User> getFriendsOfUserFromMonth(Long id, Integer month) {

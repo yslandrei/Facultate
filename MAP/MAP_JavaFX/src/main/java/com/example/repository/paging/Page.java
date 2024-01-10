@@ -1,22 +1,25 @@
 package com.example.repository.paging;
 
+
+import java.util.List;
+
 public class Page<E> {
 
-    private Iterable<E> elementsOnPage;
+    private List<E> elementsOnPage;
 
-    private int totalNumberOfElements;
+    private int lastPage;
 
-    public Page(Iterable<E> elementsOnPage, int totalNumberOfElements) {
+    public Page(List<E> elementsOnPage, int lastPage) {
         this.elementsOnPage = elementsOnPage;
-        this.totalNumberOfElements = totalNumberOfElements;
+        this.lastPage = lastPage;
     }
 
-    public Iterable<E> getElementsOnPage() {
+    public List<E> getElementsOnPage() {
         return elementsOnPage;
     }
 
-    public int getTotalNumberOfElements() {
-        return totalNumberOfElements;
+    public int getLastPage() {
+        return lastPage;
     }
 
 }

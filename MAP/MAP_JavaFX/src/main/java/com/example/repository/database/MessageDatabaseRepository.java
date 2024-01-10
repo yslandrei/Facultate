@@ -19,7 +19,7 @@ public class MessageDatabaseRepository extends AbstractDatabaseRepository<Long, 
         String message = resultSet.getString("message");
         LocalDateTime date = resultSet.getTimestamp("date").toLocalDateTime();
         long replyId = resultSet.getLong("reply_id");
-        //why if in databasethe value is null here it translates to 0
+
         if (replyId == 0)
             return new Message(id, fromId, message, date, null);
         else
@@ -86,13 +86,4 @@ public class MessageDatabaseRepository extends AbstractDatabaseRepository<Long, 
         return "update messages set from_id = ?, message = ?, date = ?, reply_id = ? where id = ?";
     }
 
-    @Override
-    protected String getCountQuery() {
-        return "select count(*) as count from messages";
-    }
-
-    @Override
-    protected String getFindAllPagedQuery() {
-        return "select * from messages limit ? offset ?";
-    }
 }

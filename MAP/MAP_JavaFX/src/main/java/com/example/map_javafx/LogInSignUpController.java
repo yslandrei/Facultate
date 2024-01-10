@@ -6,6 +6,7 @@ import com.example.service.FriendshipRequestService;
 import com.example.service.FriendshipService;
 import com.example.service.MessageService;
 import com.example.service.UserService;
+import com.example.utils.password.PasswordHashing;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -60,13 +61,15 @@ public class LogInSignUpController {
     }
 
     public void handleSignUp() {
-        User newUser = new User(textFieldFirstNameSignUp.getText(),
-                textFieldLastNameSignUp.getText(),
-                textFieldUsernameSignUp.getText(),
-                passwordFieldPasswordSignUp.getText());
         try {
+            User newUser = new User(textFieldFirstNameSignUp.getText(),
+                    textFieldLastNameSignUp.getText(),
+                    textFieldUsernameSignUp.getText(),
+                    PasswordHashing.hashPassword(passwordFieldPasswordSignUp.getText()));
+
             userService.registerUser(newUser);
             User savedUser = userService.getUserByUsername(newUser.getUsername());
+            clearFields();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("user-view.fxml"));
             AnchorPane layout = loader.load();
@@ -85,7 +88,7 @@ public class LogInSignUpController {
 
     public void handleLogIn() {
         try {
-            User user = userService.checkUser(textFieldUsernameLogIn.getText(), passwordFieldPasswordLogIn.getText());
+            User user = userService.checkUser(textFieldUsernameLogIn.getText(), PasswordHashing.hashPassword(passwordFieldPasswordLogIn.getText()));
             clearFields();
 
             FXMLLoader loader = new FXMLLoader();

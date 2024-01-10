@@ -35,10 +35,6 @@ public class InMemoryRepository<ID, E extends Entity<ID>> implements Repository<
         return entities.values();
     }
 
-    @Override
-    public Page<E> findAll(Pageable pageable) {
-        return null;
-    }
 
     @Override
     public Optional<E> save(E entity) {

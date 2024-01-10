@@ -72,14 +72,4 @@ public class MessageReceiverDatabaseRepository extends AbstractDatabaseRepositor
         return "update messages_receivers set to_id = ?, message_id = ? where id = ?";
     }
 
-    @Override
-    protected String getCountQuery() {
-        return "select count(*) as count from messages_receivers";
-    }
-
-    @Override
-    protected String getFindAllPagedQuery() {
-        return "select * from messages_receivers limit ? offset ?";
-    }
-
 }

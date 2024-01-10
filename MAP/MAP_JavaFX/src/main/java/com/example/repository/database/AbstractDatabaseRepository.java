@@ -28,7 +28,6 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
 
     protected abstract E extractEntity(ResultSet resultSet) throws SQLException;
 
-
     @Override
     public Optional<E> findOne(ID id) {
         try (Connection connection = DriverManager.getConnection(url, username, password);
@@ -170,46 +169,33 @@ public abstract class AbstractDatabaseRepository<ID, E extends Entity<ID>> imple
 
     }
 
-    protected abstract String getCountQuery();
-
-    protected abstract String getFindAllPagedQuery();
-
-    @Override
-    public Page<E> findAll(Pageable pageable) {
-        int numberOfElements = 0;
+    public Page<E> executeQueryPaginated(String query, Pageable pageable) {
+        List<E> entities = new ArrayList<>();
 
         try (Connection connection = DriverManager.getConnection(url, username, password);
-             PreparedStatement statement = connection.prepareStatement(getCountQuery());
+             PreparedStatement statement = connection.prepareStatement(query +
+                     " LIMIT " + pageable.getPageSize() +
+                     " OFFSET " + pageable.getPageSize() * (pageable.getPageNumber() - 1));
              ResultSet resultSet = statement.executeQuery()
         ) {
-            resultSet.next();
-            numberOfElements = resultSet.getInt(1);
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        int limit = pageable.getPageSize();
-        int offset = pageable.getPageSize() * pageable.getPageNumber();
-        if(offset >= numberOfElements)
-            return new Page<>(new ArrayList<>(), numberOfElements);
-        List<E> entities = new ArrayList<>();
-        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            PreparedStatement statement = connection.prepareStatement(getFindAllPagedQuery());
-            statement.setInt(2, offset);
-            statement.setInt(1, limit);
-            ResultSet resultSet = statement.executeQuery();
 
             while (resultSet.next()) {
                 E entity = extractEntity(resultSet);
                 entities.add(entity);
             }
-        }
-        catch (SQLException e){
-            System.out.println(e.getMessage());
+
+            String countQuery = "SELECT COUNT(*) AS total_count " + query.substring(query.toLowerCase().indexOf("from"));
+            PreparedStatement statementCount = connection.prepareStatement(countQuery);
+            ResultSet resultSetCount = statementCount.executeQuery();
+            resultSetCount.next();
+            int lastPage = (int) Math.ceil((double) resultSetCount.getInt("total_count") / pageable.getPageSize());
+
+            return new Page<>(entities, lastPage);
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
 
-        return new Page<>(entities, numberOfElements);
     }
 
 }

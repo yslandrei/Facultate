@@ -35,11 +35,6 @@ public interface Repository<ID, E extends Entity<ID>> {
     Iterable<E> findAll();
 
     /**
-     * @return all entities paged
-     */
-    Page<E> findAll(Pageable pageable);
-
-    /**
      * @param entity entity must be not null
      * @return an {@code Optional} - null if the entity was saved,
      * - the entity (id already exists)

@@ -30,7 +30,6 @@ public class UserService implements Observable {
     public void registerUser(User user) {
         if (userRepository.save(user).isPresent())
             throw new EntityAlreadyExistsException(user);
-
     }
 
     public User checkUser(String username, String password) {

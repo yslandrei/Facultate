@@ -4,6 +4,8 @@ import com.example.domain.Friendship;
 import com.example.domain.Tuple;
 import com.example.domain.validators.Validator;
 import com.example.repository.database.AbstractDatabaseRepository;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -79,13 +81,4 @@ public class FriendshipDatabaseRepository extends AbstractDatabaseRepository<Tup
         return "update friendships set created_date = ? where user1_id = ? and user2_id = ?";
     }
 
-    @Override
-    protected String getCountQuery() {
-        return "select count(*) as count from friendships";
-    }
-
-    @Override
-    protected String getFindAllPagedQuery() {
-        return "select * from friendships limit ? offset ?";
-    }
 }

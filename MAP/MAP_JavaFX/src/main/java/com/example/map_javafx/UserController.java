@@ -2,6 +2,8 @@ package com.example.map_javafx;
 
 import com.example.domain.*;
 import com.example.repository.database.MessageDatabaseRepository;
+import com.example.repository.paging.Page;
+import com.example.repository.paging.Pageable;
 import com.example.service.FriendshipRequestService;
 import com.example.service.FriendshipService;
 import com.example.service.MessageService;
@@ -21,7 +23,11 @@ public class UserController implements Observer {
 
     private ObservableList<String> observableListFriends = FXCollections.observableArrayList();
 
-    private List<User> listFriends = new ArrayList<>();
+    private Page<User> listFriends;
+
+    private int listFriendsItemsPerPage = 9;
+
+    private int listFriendsCurrentPage = 1;
 
     private ObservableList<String> observableListFriendRequests = FXCollections.observableArrayList();
 
@@ -35,6 +41,8 @@ public class UserController implements Observer {
     private ListView<String> listViewFriends;
     @FXML
     private ListView<String> listViewFriendRequests;
+    @FXML
+    private TextField textFieldListFriendsCurrentPage;
     @FXML
     private Label labelUsername;
     @FXML
@@ -94,11 +102,12 @@ public class UserController implements Observer {
     }
 
     private void initFriendsList() {
-        listFriends = friendshipService.getFriendsOfUser(loggedUser.getId());
-        observableListFriends.setAll(listFriends.stream()
+        listFriends = friendshipService.getFriendsOfUserPaginated(loggedUser.getId(), new Pageable(listFriendsCurrentPage, listFriendsItemsPerPage));
+        observableListFriends.setAll(listFriends.getElementsOnPage().stream()
                 .map(User::getUsername).toList());
         if (observableListFriends.isEmpty())
             observableListFriends.add("");
+        textFieldListFriendsCurrentPage.setText(String.valueOf(listFriendsCurrentPage));
     }
 
     private void initFriendRequestsList() {
@@ -167,13 +176,28 @@ public class UserController implements Observer {
         }
     }
 
+    public void handleListFriendsLeftPage() {
+        if (listFriendsCurrentPage == 1)
+            return;
+        listFriendsCurrentPage -= 1;
+        initFriendsList();
+
+    }
+
+    public void handleListFriendsRightPage() {
+        if (listFriendsCurrentPage == listFriends.getLastPage())
+            return;
+        listFriendsCurrentPage += 1;
+        initFriendsList();
+    }
+
     public void handleChat() {
         if (listViewFriends.getSelectionModel().getSelectedIndices().isEmpty())
             return;
         selectedMessage = null;
         buttonReplyMessage.setText("Reply");
         chattingUsers = listViewFriends.getSelectionModel().getSelectedIndices()
-                .stream().map(listFriends::get).toList();
+                .stream().map(listFriends.getElementsOnPage()::get).toList();
         initMessagesList();
     }
 
