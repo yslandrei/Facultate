@@ -17,11 +17,11 @@ import java.util.Optional;
 
 public class FriendshipRequestService implements Observable {
 
-    private final UserDatabaseRepository userRepository;
+        private final UserDatabaseRepository userRepository;
 
-    private final FriendshipDatabaseRepository friendshipRepository;
+        private final FriendshipDatabaseRepository friendshipRepository;
 
-    private final FriendshipRequestDatabaseRepository friendshipRequestRepository;
+        private final FriendshipRequestDatabaseRepository friendshipRequestRepository;
 
     private List<Observer> observers = new ArrayList<>();
 

@@ -12,7 +12,7 @@ create table address (
 )
 
 create table buyer (
-	id bigint identity,
+	id bigint,
 	constraint pk_buyer primary key(id),
 	name varchar(50) not null,
 	email varchar(50) not null,

@@ -1,14 +1,8 @@
 ;11. Se da un arbore de tipul (2). Sa se afiseze nivelul (si lista corespunza-toarea nodurilor) avand numar maxim de noduri. Nivelul rad. se considera 0
 
-
-; (car l) - the first element of the list is the root of the tree
-; (cadr l) - the second element of the list, at superficial level, is the left subtree
-; (caddr l) - the third element of the list, at the superficial level, is the right subtree
-
-
-; myAppend(l1l2...ln, p1p2...pm) = 
-; = p1p2...pm, if n = 0
-; = {l1} U myAppend(l2...ln, p1p2...pm), otherwise
+; myAppend(l1...ln, p1...pm) = 
+; = p1...pm, daca n = 0
+; = l1 + myAppend(l2...ln, p1...pm), altfel
 
 
 (defun myAppend (l p)
@@ -19,8 +13,8 @@
 )
 
 ; myMax(a,b) = 
-; = a, if a > b
-; = b, otherwise
+; = a, daca a > b
+; = b, altfel
 
 (defun myMax(a b)
   (cond
@@ -29,32 +23,59 @@
   )
 )
 
-; findLevel(l1l2l3, elem, counter) = 
-; = counter, if l1l2l3 is empty
-; = myMax(findLevel(l2, elem, counter + 1),findLevel(l3, elem, counter + 1)), otherwise
 
-(defun findMaxLevel(l counter)
-  (cond
-    ((null l) counter)
-    (t (myMax (findMaxLevel (cadr l) (+ 1 counter)) (findMaxLevel (caddr l) (+ 1 counter))))
-  )
+; findNodesOfLevel(l1...ln, level, currLevel)
+; = 0, daca l1...ln e goala 
+; = 1, daca currLevel = level
+; = findNodesOfLevel(l2...ln, level, currLevel + 1) + findNodesOfLevel(l3...ln, level, currLevel + 1)
+
+
+(defun findNodesOfLevel(l level currLevel)
+  (cond 
+    ((null l) 0)
+    ((= currLevel level) 1)
+    (t (+ (findNodesOfLevel (cadr l) level (+ currLevel 1)) (findNodesOfLevel (caddr l) level (+ currLevel 1))))
+  )  
 )
 
 
-; nodesFromLevel(l1l2l3, level, counter)
-; = nil, if l1l2l3 is empty
-; = l1 , if counter = level
-; = myAppend((list (nodesFromLevel(l2, level, counter + 1))) (list (nodesFromLevel(l3, level, counter + 1)))), otherwise
+; findMaxLevel(l1...ln, currLevel, maxLevel, chosenLevel) =
+; = maxLevel, daca findNodesOfLevel(l1...ln, currLevel, 0) = 0
+; = findMaxLevel(l1...ln, currLevel + 1, myMax(maxLevel, findNodesOfLevel(l1...ln, currLevel, 0)) currLevel), daca maxLevel < findNodesOfLevel(l1...ln, currLevel, 0)
+; = findMaxLevel(l1...ln, currLevel + 1, myMax(maxLevel, findNodesOfLevel(l1...ln, currLevel, 0)) chosenLevel), altfel
+
+
+(defun findMaxLevel(l currLevel maxLevel chosenLevel)
+  (cond
+    ((= (findNodesOfLevel l currLevel 0) 0) chosenLevel)
+    (t 
+     (findMaxLevel 
+        l 
+        (+ currLevel 1) 
+        (myMax maxLevel (findNodesOfLevel l currLevel 0))
+        (if (< maxLevel (findNodesOfLevel l currLevel 0))
+          currLevel
+          chosenLevel
+        )
+      )
+    )
+  )  
+)
+
+; nodesFromLevel(l1...ln, level, counter)
+; = nil, daca l1...ln e goala
+; = l1 , daca counter = level
+; = myAppend((list (nodesFromLevel(l2, level, counter + 1))) (list (nodesFromLevel(l3, level, counter + 1)))), altfel
 
 (defun nodesFromLevel(l level counter)
   (cond
-    ((null l) nil)
+    ((atom l) nil)
     ((equal counter level) (list (car l)))
     (t (myAppend (nodesFromLevel (cadr l) level (+ 1 counter)) (nodesFromLevel (caddr l) level (+ 1 counter))))
   )
 )
 
+(setq list '(A (B (F)) (C (D) (E))))
+(print (findMaxLevel list 0 0 0))
+(print (nodesFromLevel list (findMaxLevel list 0 0 0) 0))
 
-(defun main(l)
-  (nodesFromLevel l (findMaxLevel l -1) 0)
-)

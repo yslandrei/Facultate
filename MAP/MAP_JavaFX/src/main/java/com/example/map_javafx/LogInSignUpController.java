@@ -19,8 +19,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class LogInSignUpController {
-    @FXML
-    private TextField textFieldUsernameLogIn;
+     @FXML
+     private TextField textFieldUsernameLogIn;
     @FXML
     private PasswordField passwordFieldPasswordLogIn;
     @FXML
@@ -70,6 +70,7 @@ public class LogInSignUpController {
             userService.registerUser(newUser);
             User savedUser = userService.getUserByUsername(newUser.getUsername());
             clearFields();
+
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("user-view.fxml"));
             AnchorPane layout = loader.load();
