@@ -1,6 +1,7 @@
 # Să se determine cuvintele unui text care apar exact o singură dată în acel text. 
 # De ex. cuvintele care apar o singură dată în ”ana are ana are mere rosii ana" sunt: 'mere' și 'rosii'.
 
+# O(n)
 def prob4(s: str) -> list[str]:
     wordMap = dict()
     for word in s.split(" "):
@@ -11,6 +12,6 @@ def prob4(s: str) -> list[str]:
         words.append(word)
     return words
 
-print(prob4("ana are ana are mere rosii ana")) # ['mere', 'rosii']
+assert prob4("ana are ana are mere rosii ana") == ['mere', 'rosii']
 
     

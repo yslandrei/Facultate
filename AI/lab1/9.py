@@ -2,6 +2,7 @@
 # formate din coordonatele a 2 căsuțe din matrice ((p,q) și (r,s)), să se calculeze suma 
 # elementelor din sub-matricile identificate de fieare pereche.
 
+# O(n * m + p)
 def prob9(m: list[list[int]], pairs: list[tuple[tuple[int]]]) -> list[int]:
   partialM = [[0 for _ in range(len(m[0]) + 1)] for _ in range(len(m) + 1)]
   for i in range(1, len(m) + 1):
@@ -15,11 +16,28 @@ def prob9(m: list[list[int]], pairs: list[tuple[tuple[int]]]) -> list[int]:
 
   return result
 
-print(prob9([
+# O(n * m * p)
+def prob9_b(m: list[list[int]], pairs: list[tuple[tuple[int]]]) -> list[int]:
+  result = []
+  for pair in pairs:
+    (p, q), (r, s) = pair
+    result.append(sum([sum(m[i][q:s + 1]) for i in range(p, r + 1)]))
+
+  return result
+
+assert prob9([
 [0, 2, 5, 4, 1],
 [4, 8, 2, 3, 7],
 [6, 3, 4, 6, 2],
 [7, 3, 1, 8, 3],
-[1, 5, 7, 9, 4]] , [((1, 1), (3, 3)), ((2, 2), (4, 4))])) # [38, 44]
+[1, 5, 7, 9, 4]] , 
+[((1, 1), (3, 3)), ((2, 2), (4, 4))]) == [38, 44]
+assert prob9_b([
+[0, 2, 5, 4, 1],
+[4, 8, 2, 3, 7],
+[6, 3, 4, 6, 2],
+[7, 3, 1, 8, 3],
+[1, 5, 7, 9, 4]] , 
+[((1, 1), (3, 3)), ((2, 2), (4, 4))]) == [38, 44]
 
 

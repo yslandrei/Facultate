@@ -3,11 +3,21 @@
 
 import heapq
 
+# O(n)
 def prob7(nums: list[int], k: int) -> int:
   heap = []
-  for num in nums:
-    heapq.heappush(heap, -num)
-    if len(heap) > k:
+  heap = nums[:k]
+  heapq.heapify(heap)
+  for num in nums[k:]:
+    if num > heap[0]:
       heapq.heappop(heap)
+      heapq.heappush(heap, num)
 
   return heap[0]
+
+# O(nlogn)
+def prob7_b(nums: list[int], k: int) -> int:
+  return sorted(nums, reverse=True)[k - 1]
+
+assert prob7([7,4,6,3,9,1], 2) == 7
+assert prob7_b([7,4,6,3,9,1], 2) == 7
