@@ -1,25 +1,24 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 
 <head>
-  <title>html4</title>
+  <title>Comanda</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <body>
   <center>
-    <h1> <b>
-        Comanda
-      </b> </h1>
+    <h1>Comanda</h1>
     <table border="1">
       <tr>
         <th colspan="4">Detalii Personale</th>
       </tr>
       <tr>
         <td>Nume</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="nume"> </td>
         <td>Prenume</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="prenume"> </td>
       </tr>
       <tr>
         <th colspan="4">Adresa</th>
@@ -27,35 +26,36 @@
       <tr>
         <td>Judet</td>
         <td>
-          <select>
+          <select name="judet">
             <option selected>Cluj</option>
             <option>Bucuresti</option>
             <option>Timisoara</option>
           </select>
         </td>
         <td>Localitate</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="localitate"> </td>
       </tr>
       <tr>
         <td>Strada</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="strada"> </td>
         <td>Nr.</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="nr"> </td>
       </tr>
       <tr>
         <td>Scara</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="scara"> </td>
         <td>Bloc</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="bloc"> </td>
       </tr>
       <tr>
         <td>Etaj</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="etaj"> </td>
         <td>Apartament</td>
-        <td> <input type="text"> </td>
+        <td> <input type="text" name="apartament"> </td>
       </tr>
       <tr>
         <th colspan="4">Curieri</th>
+      </tr>
       <tr>
         <td colspan="4">
           <table border="1" width="100%">
@@ -83,12 +83,9 @@
               <td>4-5 zile</td>
               <td><input type="radio" id="posta" name="curier"></td>
             </tr>
-
           </table>
-
         </td>
       </tr>
-
       <tr>
         <th colspan="4">Observatii</th>
       </tr>
@@ -98,28 +95,29 @@
     </table>
     <br>
     <button>Trimite Comanda</button>
-
   </center>
-  <p>Limbi străine cunoscute:</p>
-  <ul>
-    <li><input type="checkbox" name="limba_engleza" value="engleza"> Engleză</li>
-    <li><input type="checkbox" name="limba_germana" value="germana"> Germana</li>
-    <li><input type="checkbox" name="limba_maghiara" value="maghiara"> Maghiara</li>
-  </ul>
-
-  <p>Specializari</p>
-  <ol type="A">
-    <li>Informatica</li>
-    <li>Matematica</li>
-    <li>Informatica-Matematica</li>
-  </ol>
-  <p>Mod Invatamant</p>
-  <ol type="1">
-    <li>IF</li>
-    <li>IFR</li>
-    <li>IR</li>
-  </ol>
-
+  <div>
+    <a href="https://www.cs.ubbcluj.ro/">Site-ul Facultatii</a>
+    <img src="https://clujwebstory.ro/images/2019/06/Logo-UBB-Traditie-si-Excelenta.jpg" alt="Logo UBB">
+    <p>Limbi străine cunoscute:</p>
+    <ul>
+      <li><input type="checkbox" name="limba_engleza" value="engleza"> Engleză</li>
+      <li><input type="checkbox" name="limba_germana" value="germana"> Germana</li>
+      <li><input type="checkbox" name="limba_maghiara" value="maghiara"> Maghiara</li>
+    </ul>
+    <p>Specializari</p>
+    <ol type="A">
+      <li>Informatica</li>
+      <li>Matematica</li>
+      <li>Informatica-Matematica</li>
+    </ol>
+    <p>Mod Invatamant</p>
+    <ol type="1">
+      <li>IF</li>
+      <li>IFR</li>
+      <li>IR</li>
+    </ol>
+  </div>
 </body>
 
 </html>
