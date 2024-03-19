@@ -3,16 +3,24 @@
 // Host=localhost;Port=5432;Database=festival;Username=postgres;Password=root;
 
 using System.Diagnostics;
-using csharp.domain;
+
 using csharp.repository;
+using Microsoft.Extensions.Configuration;
+using Serilog;
 
-string con_string = "Host=localhost;Port=5432;Database=festival;Username=postgres;Password=root;";
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateLogger();
 
-UserDatabaseRepository userDatabaseRepository = new UserDatabaseRepository(con_string);
+IConfiguration configuration = new ConfigurationBuilder()
+    .AddJsonFile("config.json", optional: true, reloadOnChange: true)
+    .Build();
+
+IUserRepository userDatabaseRepository = new UserDatabaseRepositoryImpl(configuration["url"]);
 Console.WriteLine(userDatabaseRepository.FindOne(1L).Email);
 
-ConcertDatabaseRepository concertDatabaseRepository = new ConcertDatabaseRepository(con_string);
+IConcertRepository concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(configuration["url"]);
 Console.WriteLine(concertDatabaseRepository.FindOne(1L).Date);
 
-TicketDatabaseRepository ticketDatabaseRepository = new TicketDatabaseRepository(con_string);
+ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(configuration["url"]);
 Console.WriteLine(ticketDatabaseRepository.FindOne(1L).Concert.Id);

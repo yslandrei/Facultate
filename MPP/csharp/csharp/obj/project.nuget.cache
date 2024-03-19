@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Uoj4dQBWh6It2MKCwxx2FWIHFXi3/Y6BbDabgpRbqKIJSRoW7giCSWUU6ef3fIGLM9rgyzdaVxAz69A0NVwILg==",
+  "dgSpecHash": "Ff5USuU9sXpfgmxaXvWHQ0HW2zwdp1+lH7CVXd5W8h00lbk3uruq44dPNIs+tKIIb3+srXEzVu9p9opS/XoDoQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\andre\\Documents\\GitHub\\Facultate\\MPP\\csharp\\csharp\\csharp.csproj",
   "expectedPackageFiles": [
@@ -10,15 +10,25 @@
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.relational.9.0.0-preview.1.24081.2.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0-preview.1.24080.9\\microsoft.extensions.caching.memory.9.0.0-preview.1.24080.9.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.configuration.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0-preview.2.24128.5\\microsoft.extensions.configuration.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.2.24128.5\\microsoft.extensions.configuration.abstractions.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.0-preview.2.24128.5\\microsoft.extensions.configuration.fileextensions.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.0-preview.2.24128.5\\microsoft.extensions.configuration.json.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0-preview.1.24080.9\\microsoft.extensions.dependencyinjection.9.0.0-preview.1.24080.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.0-preview.2.24128.5\\microsoft.extensions.fileproviders.abstractions.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.0-preview.2.24128.5\\microsoft.extensions.fileproviders.physical.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.0-preview.2.24128.5\\microsoft.extensions.filesystemglobbing.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0-preview.1.24080.9\\microsoft.extensions.logging.9.0.0-preview.1.24080.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.1.24080.9\\microsoft.extensions.logging.abstractions.9.0.0-preview.1.24080.9.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.1.24080.9\\microsoft.extensions.options.9.0.0-preview.1.24080.9.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.1.24080.9\\microsoft.extensions.primitives.9.0.0-preview.1.24080.9.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.2.24128.5\\microsoft.extensions.primitives.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
-    "C:\\Users\\andre\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.0-preview.1\\npgsql.entityframeworkcore.postgresql.9.0.0-preview.1.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.0-preview.1\\npgsql.entityframeworkcore.postgresql.9.0.0-preview.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\serilog\\4.0.0-dev-02122\\serilog.4.0.0-dev-02122.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\serilog.sinks.console\\5.1.0-dev-00943\\serilog.sinks.console.5.1.0-dev-00943.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.encodings.web\\9.0.0-preview.2.24128.5\\system.text.encodings.web.9.0.0-preview.2.24128.5.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.text.json\\9.0.0-preview.2.24128.5\\system.text.json.9.0.0-preview.2.24128.5.nupkg.sha512"
   ],
   "logs": []
 }

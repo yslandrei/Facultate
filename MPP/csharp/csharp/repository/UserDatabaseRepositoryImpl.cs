@@ -4,9 +4,9 @@ using Npgsql;
 namespace csharp.repository;
 
 
-public class UserDatabaseRepository : AbstractDatabaseRepository<long, User>
+public class UserDatabaseRepositoryImpl : AbstractDatabaseRepository<long, User>, IUserRepository
 {
-    public UserDatabaseRepository(string url) : base(url)
+    public UserDatabaseRepositoryImpl(string? url) : base(url)
     {
     }
 

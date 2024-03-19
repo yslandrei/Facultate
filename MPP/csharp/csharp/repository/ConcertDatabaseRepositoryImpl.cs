@@ -3,9 +3,9 @@ using csharp.domain;
 using Npgsql;
 namespace csharp.repository;
 
-public class ConcertDatabaseRepository : AbstractDatabaseRepository<long, Concert>
+public class ConcertDatabaseRepositoryImpl : AbstractDatabaseRepository<long, Concert>, IConcertRepository
 {
-    public ConcertDatabaseRepository(string url) : base(url)
+    public ConcertDatabaseRepositoryImpl(string? url) : base(url)
     {
     }
 

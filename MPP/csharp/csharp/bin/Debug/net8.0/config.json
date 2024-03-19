@@ -1,0 +1,3 @@
+{
+  "url": "Host=localhost;Port=5432;Database=festival;Username=postgres;Password=root;"
+}

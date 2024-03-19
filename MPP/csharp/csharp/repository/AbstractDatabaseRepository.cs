@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using csharp.domain;
 using Npgsql;
+using Serilog;
+using Serilog.Core;
 
 namespace csharp.repository;
 
@@ -21,6 +23,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
 
     public virtual E FindOne(ID id)
     {
+        Log.Information("Se incearca conexiunea cu baza de date");
         using (NpgsqlConnection connection = new NpgsqlConnection(url))
         {
             connection.Open();
@@ -32,6 +35,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 {
                     if (resultSet.Read())
                     {
+                        Log.Information("S-a gasit entitatea cu id-ul: " + id);
                         return ExtractEntity(resultSet);
                     }
                 }
@@ -45,6 +49,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
     public virtual List<E> FindAll()
     {
         List<E> entities = new List<E>();
+        Log.Information("Se incearca conexiunea cu baza de date");
         using (NpgsqlConnection connection = new NpgsqlConnection(url))
         {
             connection.Open();
@@ -56,6 +61,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                     while (resultSet.Read())
                     {
                         E entity = ExtractEntity(resultSet);
+                        Log.Information("S-a gasit entitatea cu id-ul: " + entity.Id);
                         entities.Add(entity);
                     }
                 }
@@ -68,6 +74,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
 
     public virtual E Save(E entity)
     {
+        Log.Information("Se incearca conexiunea cu baza de date");
         using (NpgsqlConnection connection = new NpgsqlConnection(url))
         {
             connection.Open();
@@ -78,6 +85,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 int rowsInserted = statement.ExecuteNonQuery();
                 if (rowsInserted == 0)
                 {
+                    Log.Information("S-a gasit entitatea cu id-ul: " + entity.Id);
                     return entity;
                 }
             }
@@ -91,6 +99,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
 
     public virtual E Delete(ID id)
     {
+        Log.Information("Se incearca conexiunea cu baza de date");
         E entity = FindOne(id);
         if (entity != null)
         {
@@ -101,6 +110,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 {
                     statement.CommandText = GetDeleteQuery();
                     statement.Parameters.AddWithValue("@id", id);
+                    Log.Information("S-a sters entitatea cu id-ul: " + id);
                     statement.ExecuteNonQuery();
                 }
             }
@@ -112,6 +122,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
     
     public virtual E Update(E entity)
     {
+        Log.Information("Se incearca conexiunea cu baza de date");
         using (NpgsqlConnection connection = new NpgsqlConnection(url))
         {
             connection.Open();
@@ -122,6 +133,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 int rowsUpdated = statement.ExecuteNonQuery();
                 if (rowsUpdated == 0)
                 {
+                    Log.Information("S-a updatat entitatea cu id-ul: " + entity.Id);
                     return entity;
                 }
             }

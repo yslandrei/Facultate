@@ -3,14 +3,14 @@ using csharp.domain;
 using Npgsql;
 namespace csharp.repository;
 
-public class TicketDatabaseRepository : AbstractDatabaseRepository<long, Ticket>
+public class TicketDatabaseRepositoryImpl : AbstractDatabaseRepository<long, Ticket>, ITicketRepository
 {
 
-    private ConcertDatabaseRepository concertDatabaseRepository;
+    private ConcertDatabaseRepositoryImpl concertDatabaseRepository;
     
-    public TicketDatabaseRepository(string url) : base(url)
+    public TicketDatabaseRepositoryImpl(string? url) : base(url)
     {
-        concertDatabaseRepository = new ConcertDatabaseRepository(url);
+        concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(url);
     }
 
     protected override Ticket ExtractEntity(NpgsqlDataReader resultSet)

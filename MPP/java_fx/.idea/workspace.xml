@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="194e2c3f-e358-4f0f-a0a2-4b2d1d3eecce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Serilog.Sinks.Console.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Serilog.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/repository/IConcertRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/repository/ITicketRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../csharp/csharp/repository/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/java_fx/LogInSignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/java_fx/UserAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/AbstractDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ConcertDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ConcertRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TicketDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ConcertService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ConcertServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TicketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/java_fx/log-in-sign-up-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/domain/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/domain/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/javafx/LogInSignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/javafx/UserAlert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/AbstractDatabaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/ConcertDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/ConcertRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/TicketDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/UserDatabaseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/ConcertService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/ConcertServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/TicketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javafx/src/main/resources/org/example/javafx/log-in-sign-up-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/.idea/.idea.csharp/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/.idea/.idea.csharp/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/bin/Debug/net8.0/csharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/csharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/csharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/csharp.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/ref/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/ref/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/refint/csharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/Debug/net8.0/refint/csharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/csharp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/csharp.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/csharp.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/csharp.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/repository/AbstractDatabaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/repository/AbstractDatabaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/repository/ConcertDatabaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/repository/ConcertDatabaseRepositoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/repository/TicketDatabaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/repository/TicketDatabaseRepositoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../csharp/csharp/repository/UserDatabaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../csharp/csharp/repository/UserDatabaseRepositoryImpl.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2dsPtjmKRtfvfclA4ngZZEXAY8J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/andre/Documents/GitHub/Facultate/MPP/java_fx/src/main/resources/org/example/java_fx",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\GitHub\Facultate\MPP\java_fx\src\main\resources\org\example\java_fx" />
+      <recent name="C:\Users\andre\Documents\GitHub\Facultate\MPP\java_fx\src\main\java\org\example\java_fx" />
+      <recent name="C:\Users\andre\Documents\GitHub\Facultate\MPP\java_fx\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="194e2c3f-e358-4f0f-a0a2-4b2d1d3eecce" name="Changes" comment="" />
+      <created>1710794030482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710794030482</updated>
+      <workItem from="1710794032352" duration="203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

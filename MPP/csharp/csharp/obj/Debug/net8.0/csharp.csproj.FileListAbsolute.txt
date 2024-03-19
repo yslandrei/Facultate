@@ -29,3 +29,15 @@ C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Mic
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Serilog.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\config.json

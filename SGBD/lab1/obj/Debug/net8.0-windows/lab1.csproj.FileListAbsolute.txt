@@ -23,3 +23,4 @@ C:\Users\andre\Documents\GitHub\Facultate\SGBD\lab1\bin\Debug\net8.0-windows\run
 C:\Users\andre\Documents\GitHub\Facultate\SGBD\lab1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\andre\Documents\GitHub\Facultate\SGBD\lab1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\andre\Documents\GitHub\Facultate\SGBD\lab1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\andre\Documents\GitHub\Facultate\SGBD\lab1\obj\Debug\net8.0-windows\lab1.Form2.resources
