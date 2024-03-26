@@ -5,22 +5,20 @@
 using System.Diagnostics;
 using csharp.domain;
 using csharp.repository;
-using Microsoft.Extensions.Configuration;
+using System.Configuration;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 
-IConfiguration configuration = new ConfigurationBuilder()
-    .AddJsonFile("config.json", optional: true, reloadOnChange: true)
-    .Build();
+string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
 
-IUserRepository userDatabaseRepository = new UserDatabaseRepositoryImpl(configuration["url"]);
+IUserRepository userDatabaseRepository = new UserDatabaseRepositoryImpl(connectionString);
 Console.WriteLine(userDatabaseRepository.FindOne(7L).Email);
 
-IConcertRepository concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(configuration["url"]);
+IConcertRepository concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(connectionString);
 Console.WriteLine(concertDatabaseRepository.FindOne(1L).Date);
 
-ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(configuration["url"]);
+ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(connectionString);
 Console.WriteLine(ticketDatabaseRepository.FindOne(1L).Buyer);

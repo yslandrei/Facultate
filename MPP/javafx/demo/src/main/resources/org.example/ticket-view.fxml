@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.TicketController">
+   <children>
+      <TableView fx:id="tableViewConcerts" layoutX="94.0" layoutY="98.0" prefHeight="200.0" prefWidth="363.0">
+        <columns>
+          <TableColumn fx:id="artistColumn" prefWidth="101.0" text="Artist" />
+          <TableColumn fx:id="dateColumn" prefWidth="91.0" text="Data" />
+            <TableColumn fx:id="locationColumn" prefWidth="89.0" text="Locatie" />
+            <TableColumn fx:id="availableTicketsColumn" prefWidth="78.0" text="Nr Bilete" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="datePicker" layoutX="217.0" layoutY="66.0" />
+      <Label layoutX="158.0" layoutY="68.0" text="Cautare">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldBuyer" layoutX="93.0" layoutY="309.0" prefHeight="25.0" prefWidth="115.0" promptText="Nume Cumparator" />
+      <TextField fx:id="textFieldSeats" layoutX="217.0" layoutY="309.0" prefHeight="25.0" prefWidth="115.0" promptText="Numar Bilete" />
+      <Button fx:id="buttonBuyTicket" layoutX="342.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleBuyTicket" prefHeight="25.0" prefWidth="115.0" text="Cumpara Bilete" />
+   </children>
+</AnchorPane>

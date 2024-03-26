@@ -59,6 +59,10 @@
             "Serilog.Sinks.Console": {
               "target": "Package",
               "version": "[5.1.0-dev-00943, )"
+            },
+            "Walter.Web.FireWall.SqlLogger": {
+              "target": "Package",
+              "version": "[2023.11.13.1117, )"
             }
           },
           "imports": [

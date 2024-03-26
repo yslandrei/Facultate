@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ConcertService {
     List<Concert> getConcertsFromDay(LocalDateTime date);
+
+    List<Concert> getAllConcerts();
 }

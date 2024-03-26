@@ -53,6 +53,7 @@ public class TicketController implements Observer {
         this.ticketService.addObserver(this);
 
         tableViewConcerts.setItems(concertObservableList);
+        concertObservableList.setAll(concertService.getAllConcerts());
     }
 
     @FXML
@@ -82,6 +83,7 @@ public class TicketController implements Observer {
                 }
             }
         });
+
 
         datePicker.valueProperty().addListener((observable, oldValue, newValue) -> {
             concertObservableList.setAll(concertService.getConcertsFromDay(datePicker.getValue().atStartOfDay()));

@@ -61,7 +61,7 @@ public class LogInSignUpController {
             clearFields();
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("ticket-view.fxml"));
+            loader.setLocation(getClass().getResource("org.example/ticket-view.fxml"));
             AnchorPane layout = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Festival Ticket Store");
@@ -82,7 +82,7 @@ public class LogInSignUpController {
             clearFields();
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("ticket-view.fxml"));
+            loader.setLocation(getClass().getResource("org.example/ticket-view.fxml"));
             AnchorPane layout = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Festival Ticket Store");

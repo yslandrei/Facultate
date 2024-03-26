@@ -18,4 +18,9 @@ public class ConcertServiceImpl implements ConcertService {
     public List<Concert> getConcertsFromDay(LocalDateTime date) {
         return concertRepository.findAllByDate(date);
     }
+
+    @Override
+    public List<Concert> getAllConcerts() {
+        return concertRepository.findAll();
+    }
 }
