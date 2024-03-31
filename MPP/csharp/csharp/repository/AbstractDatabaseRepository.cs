@@ -10,7 +10,7 @@ namespace csharp.repository;
 
 public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> where E : Entity<ID>
 {
-    private readonly string url;
+    protected readonly string url;
 
     public AbstractDatabaseRepository(string url)
     {
@@ -19,8 +19,10 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
 
     protected abstract E ExtractEntity(NpgsqlDataReader resultSet);
 
-    protected abstract void PopulateStatement(NpgsqlCommand statement, E entity);
+    protected abstract String GetFindOneQuery();
 
+    protected abstract void SetIdParameter(NpgsqlCommand statement, ID id);
+    
     public virtual E FindOne(ID id)
     {
         Log.Information("Se incearca conexiunea cu baza de date");
@@ -30,7 +32,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
             using (NpgsqlCommand statement = connection.CreateCommand())
             {
                 statement.CommandText = GetFindOneQuery();
-                statement.Parameters.AddWithValue("@id", id);
+                SetIdParameter(statement, id);
                 using (NpgsqlDataReader resultSet = statement.ExecuteReader())
                 {
                     if (resultSet.Read())
@@ -41,10 +43,10 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 }
             }
         }
-        return default;
+        return null;
     }
-
-    protected abstract string GetFindOneQuery();
+    
+    protected abstract string GetFindAllQuery();
 
     public virtual List<E> FindAll()
     {
@@ -69,8 +71,10 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
         }
         return entities;
     }
-
-    protected abstract string GetFindAllQuery();
+    
+    protected abstract string GetSaveQuery();
+    
+    protected abstract void SetSaveQueryParameters(NpgsqlCommand statement, E entity);
 
     public virtual E Save(E entity)
     {
@@ -81,7 +85,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
             using (NpgsqlCommand statement = connection.CreateCommand())
             {
                 statement.CommandText = GetSaveQuery();
-                PopulateStatement(statement, entity);
+                SetSaveQueryParameters(statement, entity);
                 int rowsInserted = statement.ExecuteNonQuery();
                 if (rowsInserted == 0)
                 {
@@ -90,12 +94,10 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 }
             }
         }
-        return default;
+        return null;
     }
-
-    protected abstract string GetSaveQuery();
     
-    protected abstract void SetSaveQueryParameters(NpgsqlCommand statement, E entity);
+    protected abstract string GetDeleteQuery();
 
     public virtual E Delete(ID id)
     {
@@ -109,7 +111,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 using (NpgsqlCommand statement = connection.CreateCommand())
                 {
                     statement.CommandText = GetDeleteQuery();
-                    statement.Parameters.AddWithValue("@id", id);
+                    SetIdParameter(statement, id);
                     Log.Information("S-a sters entitatea cu id-ul: " + id);
                     statement.ExecuteNonQuery();
                 }
@@ -117,8 +119,10 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
         }
         return entity;
     }
-
-    protected abstract string GetDeleteQuery();
+    
+    protected abstract string GetUpdateQuery();
+    
+    protected abstract void SetUpdateQueryParameters(NpgsqlCommand statement, E entity);
     
     public virtual E Update(E entity)
     {
@@ -129,7 +133,7 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
             using (NpgsqlCommand statement = connection.CreateCommand())
             {
                 statement.CommandText = GetUpdateQuery();
-                PopulateStatement(statement, entity);
+                SetUpdateQueryParameters(statement, entity);
                 int rowsUpdated = statement.ExecuteNonQuery();
                 if (rowsUpdated == 0)
                 {
@@ -138,11 +142,8 @@ public abstract class AbstractDatabaseRepository<ID, E> : IRepository<ID, E> whe
                 }
             }
         }
-        return default;
-    }
 
-    protected abstract string GetUpdateQuery();
-    
-    protected abstract void SetUpdateQueryParameters(NpgsqlCommand statement, E entity);
+        return null;
+    }
 
 }

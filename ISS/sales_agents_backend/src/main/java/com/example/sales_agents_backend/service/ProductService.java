@@ -16,6 +16,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -30,9 +31,13 @@ public class ProductService {
     @Autowired
     private OrderRepository orderRepository;
 
+    @Autowired
+    private SimpMessagingTemplate template;
+
     public ProductResponseDTO addProduct(ProductRequestDTO product) {
         Product newProduct = new Product(product.name(), product.quantity(), product.price());
         productRepository.save(newProduct);
+        template.convertAndSend("/topic/updates", "Repository data changed, please refresh.");
         return new ProductResponseDTO(newProduct.getId(), newProduct.getName(), newProduct.getQuantity(), newProduct.getPrice());
     }
 
@@ -43,6 +48,7 @@ public class ProductService {
         updatedProduct.setQuantity(product.quantity());
         updatedProduct.setPrice(product.price());
         productRepository.save(updatedProduct);
+        template.convertAndSend("/topic/updates", "Repository data changed, please refresh.");
         return new ProductResponseDTO(updatedProduct.getId(), updatedProduct.getName(), updatedProduct.getQuantity(), updatedProduct.getPrice());
     }
 
@@ -51,6 +57,7 @@ public class ProductService {
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
         orderRepository.deleteAll(orderRepository.findAllByProductId(id));
         productRepository.delete(product);
+        template.convertAndSend("/topic/updates", "Repository data changed, please refresh.");
     }
 
     public Page<ProductResponseDTO> filterProducts(ProductFiltersDTO filters) {
@@ -64,7 +71,7 @@ public class ProductService {
             case DESC_QUANTITY -> pageable = PageRequest.of(filters.page() - 1, pageSize, Sort.by("quantity").descending());
             case ASC_NAME -> pageable = PageRequest.of(filters.page() - 1, pageSize, Sort.by("name").ascending());
             case DESC_NAME -> pageable = PageRequest.of(filters.page() - 1, pageSize, Sort.by("name").descending());
-            case NONE -> pageable = PageRequest.of(filters.page() - 1, pageSize);
+            case NONE -> pageable = PageRequest.of(filters.page() - 1, pageSize, Sort.by("id").ascending());
         }
 
         return productRepository.findAll(ProductSpecifications.nameContains(filters.name())

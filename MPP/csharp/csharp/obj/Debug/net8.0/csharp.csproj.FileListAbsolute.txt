@@ -40,7 +40,6 @@ C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Mic
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\config.json
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\csharp.dll.config
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\csharp\bin\Debug\net8.0\Azure.Identity.dll

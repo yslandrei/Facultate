@@ -6,14 +6,13 @@ import org.example.domain.User;
 import org.example.repository.ConcertRepository;
 import org.example.repository.TicketRepository;
 import org.example.repository.UserRepository;
+import org.example.utils.observer.Observable;
 import org.example.utils.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TicketServiceImpl implements TicketService {
-
-    private final UserRepository userRepository;
+public class TicketServiceImpl implements TicketService, Observable {
 
     private final ConcertRepository concertRepository;
 
@@ -21,8 +20,7 @@ public class TicketServiceImpl implements TicketService {
 
     private List<Observer> observers = new ArrayList<>();
 
-    public TicketServiceImpl(UserRepository userRepository, ConcertRepository concertRepository, TicketRepository ticketRepository) {
-        this.userRepository = userRepository;
+    public TicketServiceImpl(ConcertRepository concertRepository, TicketRepository ticketRepository) {
         this.concertRepository = concertRepository;
         this.ticketRepository = ticketRepository;
     }

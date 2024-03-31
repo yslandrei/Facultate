@@ -10,6 +10,7 @@ import com.example.sales_agents_backend.repository.OrderRepository;
 import com.example.sales_agents_backend.repository.ProductRepository;
 import com.example.sales_agents_backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -26,6 +27,9 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
+    @Autowired
+    private SimpMessagingTemplate template;
+
     public OrderResponseDTO placeOrder(OrderRequestDTO order, Long userId) {
         Product product = productRepository.findById(order.productId())
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found"));
@@ -38,6 +42,7 @@ public class OrderService {
                 .orElseThrow(() -> new ResourceNotFoundException("User not found"));
         Order newOrder = new Order(product, user, order.quantity(), LocalDateTime.now());
         orderRepository.save(newOrder);
+        template.convertAndSend("/topic/updates", "Repository data changed, please refresh.");
         return new OrderResponseDTO(newOrder.getId(), newOrder.getProduct().getId(), newOrder.getUser().getId(), newOrder.getQuantity(), newOrder.getDate());
     }
 

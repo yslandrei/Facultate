@@ -20,5 +20,5 @@ Console.WriteLine(userDatabaseRepository.FindOne(7L).Email);
 IConcertRepository concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(connectionString);
 Console.WriteLine(concertDatabaseRepository.FindOne(1L).Date);
 
-ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(connectionString);
+ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(connectionString, concertDatabaseRepository, userDatabaseRepository);
 Console.WriteLine(ticketDatabaseRepository.FindOne(1L).Buyer);
