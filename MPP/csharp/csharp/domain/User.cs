@@ -1,8 +1,14 @@
+using System;
+
 namespace csharp.domain;
 
 public class User(long id, string name, string email, string password)
     : Entity<long>(id)
 {
+    public User(string name, string email, string password) : this(0, name, email, password)
+    {
+    }
+
     public string Name { get; set; } = name;
 
     public string Email { get; set; } = email;

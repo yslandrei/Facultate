@@ -1,9 +1,16 @@
+using System;
+using csharp.domain;
+
 namespace csharp.domain;
 
 public class Ticket(long id, Concert concert, string buyer, int seats, User user)
     : Entity<long>(id)
 {
     public Concert Concert { get; set; } = concert;
+
+    public Ticket(Concert concert, string buyer, int seats, User user) : this(0, concert, buyer, seats, user)
+    {
+    }
 
     public string Buyer { get; set; } = buyer;
 

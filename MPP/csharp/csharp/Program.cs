@@ -18,7 +18,7 @@ IUserRepository userDatabaseRepository = new UserDatabaseRepositoryImpl(connecti
 Console.WriteLine(userDatabaseRepository.FindOne(7L).Email);
 
 IConcertRepository concertDatabaseRepository = new ConcertDatabaseRepositoryImpl(connectionString);
-Console.WriteLine(concertDatabaseRepository.FindOne(1L).Date);
+concertDatabaseRepository.Save(new Concert("artist", DateTime.Now, "locatie", 100));
 
 ITicketRepository ticketDatabaseRepository = new TicketDatabaseRepositoryImpl(connectionString, concertDatabaseRepository, userDatabaseRepository);
 Console.WriteLine(ticketDatabaseRepository.FindOne(1L).Buyer);

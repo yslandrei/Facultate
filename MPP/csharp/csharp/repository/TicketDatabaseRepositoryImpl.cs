@@ -46,7 +46,7 @@ public class TicketDatabaseRepositoryImpl : AbstractDatabaseRepository<long, Tic
 
     protected override string GetSaveQuery()
     {
-        return "insert into tickets (id, concert_id, buyer, seats, user_id) values (@id, @concert_id, @buyer, @seats, @user_id)";
+        return "insert into tickets (concert_id, buyer, seats, user_id) values (@concert_id, @buyer, @seats, @user_id)";
     }
 
     protected override void SetSaveQueryParameters(NpgsqlCommand statement, Ticket entity)

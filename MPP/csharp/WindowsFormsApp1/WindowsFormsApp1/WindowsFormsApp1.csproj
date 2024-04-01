@@ -80,6 +80,9 @@
         <Reference Include="Serilog.Sinks.Console, Version=5.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
           <HintPath>..\packages\Serilog.Sinks.Console.5.1.0-dev-00943\lib\net471\Serilog.Sinks.Console.dll</HintPath>
         </Reference>
+        <Reference Include="Serilog.Sinks.File, Version=5.0.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+          <HintPath>..\packages\Serilog.Sinks.File.5.0.1-dev-00972\lib\net45\Serilog.Sinks.File.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
           <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -135,11 +138,17 @@
         <Compile Include="domain\Entity.cs" />
         <Compile Include="domain\Ticket.cs" />
         <Compile Include="domain\User.cs" />
-        <Compile Include="Form1.cs">
+        <Compile Include="TicketView.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="TicketView.Designer.cs">
+          <DependentUpon>TicketView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="LogInSignUpForm.cs">
             <SubType>Form</SubType>
         </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
+        <Compile Include="LogInSignUpForm.Designer.cs">
+            <DependentUpon>LogInSignUpForm.cs</DependentUpon>
         </Compile>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
@@ -159,6 +168,9 @@
         <Compile Include="service\UserService.cs" />
         <Compile Include="utils\IObservable.cs" />
         <Compile Include="utils\IObserver.cs" />
+        <EmbeddedResource Include="LogInSignUpForm.resx">
+          <DependentUpon>LogInSignUpForm.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,6 +180,9 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <EmbeddedResource Include="TicketView.resx">
+          <DependentUpon>TicketView.cs</DependentUpon>
+        </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>

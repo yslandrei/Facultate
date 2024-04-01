@@ -41,7 +41,7 @@ public class UserDatabaseRepositoryImpl : AbstractDatabaseRepository<long, User>
 
     protected override string GetSaveQuery()
     {
-        return "insert into users (id, name, email, password) values (@id, @name, @email, @password)";
+        return "insert into users (name, email, password) values (@name, @email, @password)";
     }
 
     protected override void SetSaveQueryParameters(NpgsqlCommand statement, User entity)

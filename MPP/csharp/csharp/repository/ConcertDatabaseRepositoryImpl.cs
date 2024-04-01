@@ -41,7 +41,7 @@ public class ConcertDatabaseRepositoryImpl : AbstractDatabaseRepository<long, Co
 
     protected override string GetSaveQuery()
     {
-        return "insert into concerts (id, artist, date, location, available_tickets) values (@id, @artist, @date, @location, @available_tickets)";
+        return "insert into concerts (artist, date, location, available_tickets) values (@artist, @date, @location, @available_tickets)";
     }
 
     protected override void SetSaveQueryParameters(NpgsqlCommand statement, Concert entity)

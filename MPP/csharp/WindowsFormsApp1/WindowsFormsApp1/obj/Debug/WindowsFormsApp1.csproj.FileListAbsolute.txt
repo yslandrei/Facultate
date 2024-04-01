@@ -62,3 +62,8 @@ C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFor
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.ValueTuple.xml
 C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Serilog.Sinks.File.pdb
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LogInSignUpForm.resources
+C:\Users\andre\Documents\GitHub\Facultate\MPP\csharp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TicketView.resources
