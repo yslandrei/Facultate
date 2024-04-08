@@ -36,15 +36,9 @@ namespace WindowsFormsApp1
             ITicketService ticketService = new TicketService(concertRepository, ticketRepository);
             
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            try
-            {
-                Application.Run(new LogInSignUpForm(userService, concertService, ticketService));
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message, "Error", MessageBoxButtons.OK);
-            }
+            Application.SetCompatibleTextRenderingDefault(false); 
+            Application.Run(new LogInSignUpForm(userService, concertService, ticketService));
+            
         }
     }
 }

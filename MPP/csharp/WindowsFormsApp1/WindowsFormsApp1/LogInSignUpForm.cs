@@ -40,8 +40,18 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Password text box can't be empty", "Error", MessageBoxButtons.OK);
                 return;
             }
-
-            User user = _userService.LogInUser(textBoxLogInEmail.Text, textBoxLogInPassword.Text);
+            
+            User user;
+            try
+            {
+                user = _userService.LogInUser(textBoxLogInEmail.Text, textBoxLogInPassword.Text);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK);
+                return;
+            } 
+            
             TicketView ticketView = new TicketView(_userService, _concertService, _ticketService, user);
             ticketView.Show();
         }
@@ -63,7 +73,17 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Password text box can't be empty", "Error", MessageBoxButtons.OK);
                 return;
             }
-            User user = _userService.RegisterUser(new User(textBoxSignUpName.Text, textBoxSignUpEmail.Text, textBoxSignUpPassword.Text));
+
+            User user;
+            try
+            {
+                 user = _userService.RegisterUser(new User(textBoxSignUpName.Text, textBoxSignUpEmail.Text, textBoxSignUpPassword.Text));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK);
+                return;
+            } 
             TicketView ticketView = new TicketView(_userService, _concertService, _ticketService, user);
             ticketView.Show();
         }
