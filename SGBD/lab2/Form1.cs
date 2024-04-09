@@ -26,7 +26,6 @@ namespace lab1
         string childTable = ConfigurationManager.AppSettings["ChildTable"];
         string[] columnNamesChild = ConfigurationManager.AppSettings["ColumnNamesChild"].Split(';');
 
-
         string selectParentCommand;
         string selectChildCommand;
         string insertChildCommand;
@@ -92,7 +91,10 @@ namespace lab1
                 label.Size = new Size(70, 30);
                 labelRecord.Text = column;
                 textBoxes.Add(column, new TextBox());
-                textBoxes[column].Text = dataGridChildView.Rows[0].Cells[k].Value.ToString();
+                if (dataGridChildView.Rows.Count > 1)
+                    textBoxes[column].Text = dataGridChildView.Rows[0].Cells[k].Value.ToString();
+                else
+                    textBoxes[column].Text = "";
                 textBoxes[column].Location = new Point(70, (k - 1) * 30);
                 k++;
                 panel1.Controls.Add(label);
@@ -127,7 +129,10 @@ namespace lab1
             int k = 1;
             foreach (string column in textBoxes.Keys)
             {
-                textBoxes[column].Text = dataGridChildView.Rows[0].Cells[k].Value.ToString();
+                if (dataGridChildView.Rows.Count > 1)
+                    textBoxes[column].Text = dataGridChildView.Rows[0].Cells[k].Value.ToString();
+                else
+                    textBoxes[column].Text = "";
                 k++;
             }
         }

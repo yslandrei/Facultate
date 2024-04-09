@@ -49,13 +49,13 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(23, 25);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(343, 342);
+            dataGridView1.Size = new Size(389, 342);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // buttonFirst
             // 
-            buttonFirst.Location = new Point(30, 373);
+            buttonFirst.Location = new Point(48, 373);
             buttonFirst.Name = "buttonFirst";
             buttonFirst.Size = new Size(75, 23);
             buttonFirst.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             // buttonPrev
             // 
-            buttonPrev.Location = new Point(111, 373);
+            buttonPrev.Location = new Point(129, 373);
             buttonPrev.Name = "buttonPrev";
             buttonPrev.Size = new Size(75, 23);
             buttonPrev.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // buttonNext
             // 
-            buttonNext.Location = new Point(192, 373);
+            buttonNext.Location = new Point(210, 373);
             buttonNext.Name = "buttonNext";
             buttonNext.Size = new Size(75, 23);
             buttonNext.TabIndex = 3;
@@ -85,7 +85,7 @@
             // 
             // buttonLast
             // 
-            buttonLast.Location = new Point(273, 373);
+            buttonLast.Location = new Point(291, 373);
             buttonLast.Name = "buttonLast";
             buttonLast.Size = new Size(75, 23);
             buttonLast.TabIndex = 4;
