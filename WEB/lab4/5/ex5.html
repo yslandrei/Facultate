@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel</title>
+    <style>
+        ol {
+            list-style: none;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #image-list li:not(:first-child) {
+            display: none;
+            opacity: 0;
+        }
+
+        #image-list img {
+            border: 2px black solid;
+        }
+
+        #image-list a {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            text-decoration: none;
+            padding: 20px;
+            transform: translateY(-74px);
+            color: white;
+			width: 960px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        button {
+            font-size: 22px;
+            padding: 5px 10px;
+			background-color: black;
+			border: 0;
+			opacity: 70%;
+			color: white;
+        }
+
+        #previous-button {
+            transform: translate(40px, -270px);
+			border-right: 20px;
+        }
+        #next-button {
+            transform: translate(970px, -270px);
+			border-left: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="ex5.js" defer></script>
+</head>
+<body>
+        <ol id="image-list">
+            <li><img src="1.jpg"><a href="#">UBB - Membru Guild</a></li>
+            <li><img src="2.jpg"><a href="#">Sarbatori Luminate</a></li>
+            <li><img src="3.jpg"><a href="#">Istorie</a></li>
+        </ol>
+        <div>
+            <button id="previous-button"><</button>
+            <button id="next-button">></button>
+        </div>
+</body>
+</html>

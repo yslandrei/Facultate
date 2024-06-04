@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate Inputs</title>
+    <style>
+        .form-style {
+           display: flex;
+           flex-direction: column;
+           width: 400px
+        }
+        .ok-input {
+            border: 1px solid black;
+        }
+        .invalid-input {
+            border: 1px solid red;
+        }
+    </style>
+    <script type="text/javascript" src="ex2.js" defer></script>
+</head>
+<body>
+    <form id="myForm" action="javascript:void(0);">
+        <fieldset class="form-style">
+            <legend>Form</legend>
+
+            <label for="name">Nume:</label>
+            <input
+                    id="name"
+                    type="text"
+                    class="ok-input"
+                    onfocus="setOkStyle(this)" /><br>
+
+            <label for="birthdate">Data Nasterii</label>
+            <input
+                    id="birthdate"
+                    type="date"
+                    class="ok-input"
+                    onfocus="setOkStyle(this)" /><br>
+
+            <label for="age">Varsta:</label>
+            <input
+                    id="age"
+                    type="number"
+                    class="ok-input"
+                    onfocus="setOkStyle(this)" /><br>
+
+            <label for="email">Mail-ul:</label>
+            <input
+                    id="email"
+                    type="email"
+                    class="ok-input"
+                    onfocus="setOkStyle(this)" /><br>
+
+            <input value="Trimite" type="submit" onclick="handleFormButtonPressed()" />
+        </fieldset>
+    </form>
+</body>
+</html>

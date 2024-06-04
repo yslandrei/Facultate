@@ -70,7 +70,7 @@ namespace lab1
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != bs.Count - 1)
+            if (e.RowIndex != bs.Count)
             {
                 dataGridView1.ClearSelection();
                 bs.Position = e.RowIndex;
@@ -78,7 +78,7 @@ namespace lab1
                 dataGridChildViewUpdate();
                 records();
             }
-            
+
         }
 
         private void dataGridChildView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -139,7 +139,8 @@ namespace lab1
             try
             {
                 int.Parse(textBoxPrice.Text);
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Price text box needs to be a number", "Error", MessageBoxButtons.OK);
                 return false;
@@ -192,6 +193,11 @@ namespace lab1
             cs.Close();
             dsChild.Clear();
             da.Fill(dsChild);
+        }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

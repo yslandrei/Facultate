@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sortable Tables</title>
+    <style>
+        table {
+            border: 2px solid black;
+        }
+        td, th {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 24px;
+            padding: 12px;
+        }
+    </style>
+    <script type="text/javascript" src="ex4.js" defer></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th onclick="sortColumn(this)">Universitate</th>
+
+            <td>UBB</td>
+            <td>UTCN</td>
+            <td>UMF</td>
+        </tr>
+        <tr>
+            <th onclick="sortColumn(this)">Facultati</th>
+
+            <td>18</td>
+            <td>12</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th onclick="sortColumn(this)">Studenti</th>
+            <td>55000</td>
+            <td>22000</td>
+            <td>12000</td>
+        </tr>
+    </table>
+    <br /><br />
+    <table>
+        <tr>
+            <th onclick="sortRow(this)">Universitate</th>
+            <th onclick="sortRow(this)">Facultati</th>
+            <th onclick="sortRow(this)">Studenti</th>
+        </tr>
+        <tr>
+            <td>UBB</td>
+            <td>18</td>
+            <td>55000</td>
+        </tr>
+        <tr>
+            <td>UTCN</td>
+            <td>12</td>
+            <td>22000</td>
+        </tr>
+        <tr>
+            <td>UMF</td>
+            <td>3</td>
+            <td>12000</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -138,6 +138,7 @@
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(100, 23);
             textBoxName.TabIndex = 9;
+            textBoxName.TextChanged += textBoxName_TextChanged;
             // 
             // textBoxPrice
             // 

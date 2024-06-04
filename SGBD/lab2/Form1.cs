@@ -25,6 +25,7 @@ namespace lab1
 
         string childTable = ConfigurationManager.AppSettings["ChildTable"];
         string[] columnNamesChild = ConfigurationManager.AppSettings["ColumnNamesChild"].Split(';');
+        string[] columnTypesChild = ConfigurationManager.AppSettings["ColumnTypesChild"].Split(';');
 
         string selectParentCommand;
         string selectChildCommand;
@@ -101,7 +102,7 @@ namespace lab1
                 panel1.Controls.Add(textBoxes[column]);
             }
 
-            labelRecord.Text = "Record " + (bs.Position + 1) + " of " + bs.Count;
+                labelRecord.Text = "Record " + (bs.Position + 1) + " of " + bs.Count;
         }
 
         private void records()
@@ -199,6 +200,26 @@ namespace lab1
 
         private bool validateTextBoxes()
         {
+            for (int i = 0; i < columnNamesChild.Length; i ++)
+            {
+                if (textBoxes[columnNamesChild[i]].Text.Length == 0)
+                {
+                    MessageBox.Show($"{columnNamesChild[i]} text box can't be empty", "Error", MessageBoxButtons.OK);
+                    return false;
+                }
+                if (columnTypesChild[i].Equals("int"))
+                {
+                    try
+                    {
+                        int.Parse(textBoxes[columnNamesChild[i]].Text);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"{columnNamesChild[i]} text box needs to be a number", "Error", MessageBoxButtons.OK);
+                        return false;
+                    }
+                }
+            }
             return true;
         }
 
